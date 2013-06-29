@@ -1,10 +1,10 @@
 cricketbot
 ==========
 
-A bot for Reddit's /r/cricket
+A bot for /r/cricket
 
-==========
+----------
 
-There is currently no interesting functionality, but the plan is to eventually add more and more interesting features.
+Currently, the bot just crawls the comments of the front page of http://reddit.com/r/cricket and looks for comments saying 'Hello'. The bot then replies to this saying 'World!'. It is a very simple functionality but more work is being done on searching through the text as this will allow more advanced functionality of the bot.
 
-If you have any features you wanted added, please contact me.
+
