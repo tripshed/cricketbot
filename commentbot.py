@@ -6,7 +6,7 @@
 
 import praw
 
-r = praw.Reddit('Comment Scraper v1.0 by u/ppyil. Code available on https://github.com/sunnyamrat/cricketbot')
+r = praw.Reddit('Comment Scraper v1.0 by u/ppyil. Code available on https://github.com/sa2812/cricketbot')
 r.login(username='username',password='password')              #enter login details
 subreddit=r.get_subreddit('subreddit')                        #insert subreddit to crawl
 post_limit = 25                                               #the number of posts on the subreddit to crawl
