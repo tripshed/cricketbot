@@ -19,14 +19,14 @@ i=0
 while i < post_limit:
     submission = r.get_submission(submission_id=subid[i])
     flat_comments = praw.helpers.flatten_tree(submission.comments)
-    with open('alreadydone.txt', 'r') as f:
-        already_done = [line.strip() for line in f]
+    with open('alreadydone.txt', 'r') as f:                   #reads file and adds each
+        already_done = [line.strip() for line in f]           #line to already_done
     f.close()
     for comment in flat_comments:
         if "Hello" in comment.body and comment.id not in already_done:
             comment.reply('World!')                           #replies to the comment which says 'Hello'
             already_done.append(comment.id)
-            with open("alreadydone.txt", "a") as f:
-                f.write("\n"+comment.id)
+            with open("alreadydone.txt", "a") as f:           #adds each new element of the
+                f.write("\n"+comment.id)                      #list to alreadydone.txt
             f.close()
     i+=1
