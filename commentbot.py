@@ -24,7 +24,7 @@ while i < post_limit:
     f.close()
     for comment in flat_comments:
         if "Hello" in comment.body and comment.id not in already_done:
-            comment.reply('World!')                           #replies to the comment saying 'Hello'
+            comment.reply('World!')                           #replies to the comment which says 'Hello'
             already_done.append(comment.id)
             with open("alreadydone.txt", "a") as f:
                 f.write("\n"+comment.id)
