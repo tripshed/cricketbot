@@ -15,6 +15,7 @@ Currently, the bot just crawls the comments of the front page of http://reddit.c
 - Sri Lanka
 - West Indies
 - Zimbabwe
+
 The bot responds with the top ESPNCricinfo articles on those countries.
 
 Contents
