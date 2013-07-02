@@ -22,7 +22,7 @@ So, Cricketbot is summoned when someone writes, for example, "Cricketbot, give m
 
 Current Status
 -----------
-Online!
+Offline
 
 Contents
 -----------
