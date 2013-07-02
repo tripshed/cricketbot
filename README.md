@@ -20,6 +20,10 @@ The bot responds with the top ESPNCricinfo articles on those countries.
 
 So, Cricketbot is summoned when someone writes, for example, "Cricketbot, give me Indian news".
 
+Current Status
+-----------
+Online!
+
 Contents
 -----------
 - The License being used is the Common Development and Distribution License is an open source license which allows software to be used, modified, and shared.
