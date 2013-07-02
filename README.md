@@ -4,7 +4,18 @@ cricketbot
 A bot for /r/cricket
 -----------
 
-Currently, the bot just crawls the comments of the front page of http://reddit.com/r/cricket and looks for comments saying 'Hello'. The bot then replies to this saying 'World!'. It is a very simple functionality but more work is being done on searching through the text as this will allow more advanced functionality of the bot.
+Currently, the bot just crawls the comments of the front page of http://reddit.com/r/cricket and looks for comments of the type, "Cricketbot, give me [team] news". The bot can currently deal with the main Test playing nations:
+- Australia
+- Bangladesh
+- England
+- India
+- New Zealand
+- Pakistan
+- South Africa
+- Sri Lanka
+- West Indies
+- Zimbabwe
+The bot responds with the top ESPNCricinfo articles on those countries.
 
 Contents
 -----------
