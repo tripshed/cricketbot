@@ -1,10 +1,17 @@
-cricketbot
-==========
+#cricketbot - a bot for /r/cricket
 
-A bot for /r/cricket
+####Live scorecard
 -----------
+When a match thread is created by the bot, it will auto-update the body of the post in regular intervals with the current score of the match.
 
-Currently, the bot just crawls the comments of the front page of http://reddit.com/r/cricket and looks for comments of the type, "Cricketbot, give me [team] news". The bot can currently deal with the main Test playing nations:
+Usually in match threads, the OP isn't consistent with updating the match thread and so it is usually a static bit of text. This will allow for the score to continually update allowing for a new way to check the score and comment on the match simultaneously.
+
+Possible expansion areas from here are to perhaps have a timeline in chronological order of the key moments of the game. This will take a lot longer to implement, however.
+
+
+####Comment Replies
+-----------
+The bot crawls the comments of the front page of http://reddit.com/r/cricket and looks for comments of the type, "Cricketbot, give me [team] news". The bot can currently deal with the main Test playing nations:
 - Australia (Australian)
 - Bangladesh (Bangladeshi)
 - England (English)
@@ -22,10 +29,10 @@ So, Cricketbot is summoned when someone writes, for example, "Cricketbot, give m
 
 Current Status
 -----------
-Offline
+Online!
 
 Contents
 -----------
 - The License being used is the Common Development and Distribution License is an open source license which allows software to be used, modified, and shared.
 - alreadydone.txt contains the comment IDs of comments which have already been replied to so that the bot does not reply twice.
-- commentbot.py contains the bot which at present, searches all the comments and replies accordingly.
+- commentbot.py shows all the code required to make the bot run
