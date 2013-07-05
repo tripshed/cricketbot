@@ -28,6 +28,7 @@ endmessage1 = '\n \n Scores will auto-refresh approximately every minute. This p
 subreddit1=r.get_subreddit('cricket')
 post_limit = 50             #the number of posts on the subreddit to crawl
 
+
 while True:
     teams=[]
     def get_sub():
@@ -56,9 +57,6 @@ while True:
             current_score = i[0]
             link_to_match = i[1]
             get_sub().edit(current_score+'\n \n ***** \n \n [Follow Here]('+link_to_match+')'+endmessage1)
-    time.sleep(5)
-
-while True:
     subreddit=r.get_subreddit('cricket')
     post_limit = 25                                               #the number of posts on the subreddit to crawl
     subreddit_posts = subreddit.get_hot(limit=post_limit)
