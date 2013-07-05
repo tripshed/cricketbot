@@ -35,4 +35,4 @@ Contents
 -----------
 - The License being used is the Common Development and Distribution License is an open source license which allows software to be used, modified, and shared.
 - alreadydone.txt contains the comment IDs of comments which have already been replied to so that the bot does not reply twice.
-- commentbot.py shows all the code required to make the bot run
+- commentbot.py shows all the code required to make the bot run.
