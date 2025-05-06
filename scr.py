@@ -1,35 +1,54 @@
-Got it! Here’s the revised version that reflects that the issue was reported to you:
+Absolutely. Here's an expanded version of the write-up incorporating that important point:
 
 
 ---
 
-Subject: [Action Required] Secure Your MongoDB Connection Strings in Java Applications
+Why Checkmarx Is Not the Right Tool for TLS Cipher Suite Detection
 
-Hi Champions,
+Checkmarx is a static application security testing (SAST) tool that scans application source code to identify vulnerabilities early in the development lifecycle. While it is highly effective for catching issues like insecure coding patterns, hardcoded credentials, or weak cryptographic usage in code, it is not designed to detect TLS cipher suite configurations.
 
-We’ve been informed of a critical issue with MongoDB connection strings in Java applications. When a connection attempt fails (due to incorrect credentials, hostname, or network issues), the MongoDB driver logs the entire connection string, including sensitive credentials, to log files. This could lead to unauthorized access if logs are exposed.
+TLS cipher suites are typically negotiated at runtime, and their actual behavior depends on the underlying infrastructure, not just application code.
 
-What We’ve Implemented:
+Key Limitation: Code-Level TLS Settings Are Often Overridden
 
-Upon receiving reports of this issue, we developed a static analysis check to prevent this from happening in Java applications. This check identifies misconfigured connection strings before they can cause harm.
+Even if developers configure TLS protocols or cipher suites in code (e.g., using SSLContext or HttpsURLConnection), these settings are often overridden by web servers, application servers, load balancers, or network appliances such as:
 
-What You Need to Do:
+NGINX, Apache HTTP Server
 
-Test the new check in your Java projects over the next 30 days.
+AWS ELB/ALB, Azure Front Door, Cloudflare
 
-Report any findings or issues you encounter, so we can refine the check.
-
-Educate your teams about this issue and encourage secure coding practices.
+F5, Citrix ADC, or other reverse proxies
 
 
-Why It Matters:
+These components terminate TLS connections before they ever reach the application. As a result, any cipher suite settings in the application code may be irrelevant. The actual cipher suites and protocol versions used in production are defined by the server or network layer configuration.
 
-Preventing this misconfiguration helps protect sensitive data and maintain compliance with security standards.
+Why Checkmarx Can’t Help Here
 
-Thank you for your prompt attention and support!
+Checkmarx:
 
-Best regards,
-[Your Name]
-[Your Team/Role]
+Cannot observe runtime behavior or TLS handshakes.
+
+Cannot inspect live traffic or server-side SSL/TLS configuration.
+
+Does not analyze infrastructure or device settings unless explicitly included and modeled in code.
 
 
+What to Use Instead
+
+To assess TLS configurations and cipher suites effectively, organizations should use:
+
+TLS scanners like Qualys SSL Labs, testssl.sh, or Nmap's ssl-enum-ciphers
+
+Dynamic Application Security Testing (DAST) tools that simulate real-world traffic and observe encryption behavior
+
+Infrastructure audits to review web server, load balancer, or appliance configurations
+
+
+Recommendation
+
+Use Checkmarx to secure your application’s source code. For validating secure TLS configurations in production, rely on runtime tools that are purpose-built to inspect encryption behavior across your actual infrastructure.
+
+
+---
+
+Would you like a version of this suitable for a PDF, slide deck, or internal communication template?
