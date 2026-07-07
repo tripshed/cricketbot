@@ -1,171 +1,263 @@
-Using Machine Learning to Predict False Positives in Regex-Based Secret Detection Queries
+  Speaker 1 00:00
+Determination was as part of that event, like, but I think you know two years have passed, uh, you know, people are a lot more comfortable using AI for product development. I'm sure check marks known. Or check marks. Another right has invested a lot in in sort of beefing of its product as well.
 
-Regex-based secret detection tools are widely used to identify hardcoded secrets, such as API keys, passwords, and tokens, in code repositories. However, these tools often generate false positives due to the generality of regex patterns. Machine learning (ML) can help by predicting whether a detected secret is a false positive, streamlining the triage process. Below is a targeted approach to address this problem:
+00:17
+So, um, I think, I think, a fresh look is warranted, um, regardless. And you know, we should just important? Yeah, we we have check marks and we are moving on to the SAS expression of it correct? Yep.
 
+  Speaker 2 00:31
+So now. Yeah, the the new platform has, I mean, the product has obviously changed a lot since 2024. Now, they have, like next, next-gen SAS capabilities and a lot of AI stuff, and uh, they already also have like a. I mean, this is all theater I've not seen in action.
 
----
+00:48
+They have a finding analysis engine, and they say that, uh, it's going to get rid of 60 of all the false positives. According
 
-1. Define the Problem
+  Speaker 1 00:56
+To that, yeah, of course, so you know Christian and myself and a joy? Can I think even David now was on a call? We had a call with the check marks folks last week. Yeah, but I, I was there later on on the call. Yep. Okay, fine, so you saw that, like they were claiming some, you know, like?
 
-The objective is to classify findings from regex-based secret detection queries as false positives or true positives based on relevant features extracted from the findings and the code context.
+01:17
+70 FF, yeah. F1 score, then whatever. Um, of course, it remains to be seen, and I think in our context, because we have put in so much work around with us. Um, they give us a really good, you know, comparative test capability as well, and to see how well we've done versus how will, you know, check marks one task?
 
+01:36
+Okay. Absolutely!
 
----
+  Speaker 2 01:40
+So, yeah,
 
-2. Data Collection
+  Speaker 1 01:40
+Dude noise. Any? Like, any tenants, or or anything, was set up for checkbox, one back in 24 that we use, or will we just start from scratch? No, I mean, they did set up a temporary tenant.
 
-Detection Logs: Gather historical outputs from the regex-based queries, including labeled examples of true secrets and false positives.
+  Speaker 2 01:53
+It was a POC tenant at that time, but it was subsequently, you know, they shut it down so you don't have that anymore. So, yeah, I mean, the check marks is a, you know, I'll be honest with you, you know, they are a little reluctant to do another POC.
 
-Features: Identify relevant characteristics of the findings. Examples include:
+02:09
+Um, given that the the previous one did not, you know, go anywhere, right? So, but I mean, they'll be more than happy to, you know? Um, go ahead and do one. But yeah, they'll have to set one up again.
 
-Regex Pattern: The specific regex used for detection.
+  Speaker 1 02:20
+Like I, I got. I got a sense towards the end of the call, like they were trying to. You know, kind of, get some kind of commitment from us to say, I guess, if we can do this again, we didn't really consider this kind of thing, but
 
-Matched String Characteristics:
+  Speaker 2 02:30
+Right?
 
-Length of the detected string.
+  Speaker 1 02:31
+Can I take nothing? Sandeep and the team did get the message that, you know, it's been two years. We need to look at this again, and now everybody has many thoughts, right? So, in some ways, it's a check marks's own interest, um, that they partner with us, you know, on the new POC, right, because otherwise, you know, like, worst cases we are going to walk up.
 
-Use of special characters or patterns typical of secrets (e.g., = signs, common prefixes like AKIA, etc.).
+02:48
+You're gonna sell, like, fine, you know what, Billy Miss? Some capability ourselves. Get a few object Engineers and then continue using lethals. And you know whatever new model comes up so, right? Exactly, yep. So?
 
+  Speaker 2 03:00
+Briefly share, you know, what was done in the previous PFC, right? Uh. So this was, you know, I dug up the old document. I was actually part of that POC right at that time, um, and since then, a bunch of people have left the organization. I mean, some of them are still here.
 
-File Context:
+03:17
+Uh, Ian Quaker. From. I think he reports to your team he's under your organization, so he's he was primarily.
 
-File type (e.g., .env, .py, .yaml).
+  Speaker 1 03:25
+Yeah, so
 
-File path (e.g., presence in tests/ or config/).
+  Speaker 2 03:26
+He was family at that point and check punishment, so he's I would say he's very well versed with. You know, the platform, and how it works and stuff at least two years ago, not maybe not currently. But yeah. So, anyway, I mean, going back, we looked at privately these three things, right?
 
+03:43
+The check mark SAS engine, and they have a SCA, and there was a training program called code bashing, which did not land well. But primarily, you know, we looked at SAS and SEA at that point. And the outcome was, you know, that? It was the SAS is pretty much what we have today, right?
 
-Code Context:
+04:01
+So the checkpoint is on-prem test.
 
-Variable names or comments near the match (e.g., "test", "example").
+  Speaker 1 04:05
+And
 
-Line length or indentation (indicating config or test code).
+  Speaker 2 04:05
+Check marks. One SAST is like one on one. The engines are exactly the same, so the same results that you would get on the on-prem SAS today is the exact same thing that you would get in the. The checklist engine as well, right? But the sca is a brand new tool completely.
 
-Presence of suppression markers (e.g., # no secret).
+04:21
+So right now, we have black duck and SCA would be a completely University engine. But when we do the POC at the time, it was very. It seemed reason, I mean, it's. It's SCA at the end of the day, right? So, it seemed to be doing reasonably well. Of course, you know, it had some gaps, and the plan was to work with the, you know, the vendor to iron out all these things and go forward.
 
+04:44
+But, you know, that never happened.
 
-Detection Metadata:
+  Speaker 1 04:47
+So,
 
-Frequency of similar detections in the same repository or project.
+  Speaker 2 04:47
+Yeah, I can share this document, but it has like a lot of degrees of what. Like, you know, what was actually tested and who are involved and all that stuff, uh? So, coming back to this, the other one, I mean, currently, what check marks, you know, on that call the other day?
 
-Historical accuracy of the regex pattern.
+05:04
+What they also also mentioned was, you know, they said, we can also do. We can. Check my skin pretty much. Initiate. Llm scans using our own instance of llm signal. If we have, like mitos, they can. They said they can potentially call. Michael was using check mark one, and in just those results inject function, but we haven't seen that in action.
 
+05:31
+And checkmates has told me, you know, through my side Channel text that, you know, they're already watching another big, big bang? To actually make that working so. There are other Banks who are already apparently doing this. But yeah, yeah.
 
+  Speaker 1 05:47
+I mean, I, I, I know for a fact as well. I know, I know, people from, you know, a couple of past, but instead of they're looking at, you know, check marks and other tools in the same capacity, like, but the national is? Audiences. Thank you for being for the models.
 
+06:00
+Why would you pay twice through a window as well? Exactly,
 
+  Speaker 2 06:03
+Yeah. So you said you were? You were from Chase, right? I mean, did they have any? Any check marks presents there, or was it something else altogether? They had moved to snake. Oh, the snake, okay? Um, but I mean, look, I mean you'll need to bank after at the end of the year.
 
----
+  Speaker 1 06:23
+I'm sure there was some corner of the world where you know, people decided we will not go in the Enterprise for the Enterprise, tells us because you know, we make more money, and therefore we get the truth. What we want to use, right? So, wait, um, I'm sure the same.
 
-3. Feature Engineering
+06:37
+Yeah, the same story applies everywhere, but no, I think officially integrated tool into the pipeline was snake. Got it. Okay, yep. So typically, I mean.
 
-Categorical Encoding: Encode patterns, file types, and paths into numerical values.
+  Speaker 2 06:49
+This time, I think ajoy wants everybody's watch. I mean, instead of him going alone, I think he wants, uh, you know? Obviously, everybody wants others to also watch for the the solution before we go ahead. So,
 
-Derived Features:
+  Speaker 1 07:03
+So,
 
-Count uppercase/lowercase characters in the matched string.
+  Speaker 2 07:03
+From your perspective right from your architecture perspective, who do you think? I mean, obviously, you'll directly be involved, but who else should be part of, you know, a potential POC? If you were to start, yeah, so I think I think Adrian Lane.
 
-Check for common secret indicators (e.g., presence of tokens or keys like AWS, GCP).
+  Speaker 1 07:20
+On a Christian, right? He's he's a t so for
 
-Calculate entropy of the string to differentiate between secrets and regular text.
+  Speaker 2 07:22
+Hdlc,
 
+  Speaker 1 07:24
+Um? So you know, I think he should be involved, and then you know, any A1 architect from my team if and I'll ask you now, right again, wants to be involved, you know? That's fine, uh, we'll have to catch him up to speed a little bit because I think he's been, you know, slightly out of the loop, uh, as far as because another efforts go so?
 
-Normalization: Scale numerical features like string length and entropy.
+07:41
+Um, can we'll have to catch him up. And you know, because we like to that document that you showed, right, uh? Below to the fresh it a little bit because you can obviously check marks now has new capabilities, but we also want in a competitive analysis, um, to be done as well, and so.
 
+08:00
+How exactly are we going to get check marking to scan? You know, one of our production apps that meet us also scanned. I didn't like, what came out of it? Like, how do we, uh, how do we scan for variety? You know, do we have? Multiple languages, so you're not going to stick to this, you know?
 
+08:17
+Java and python, like, what do we? What do you want to do, right? I think I think all of those things will need to be planned out, um? Ian and I can pretty much, uh, you sort of set out. The expectations, right? For, like, what would it do like?
 
----
+08:31
+This need to do, right? Um, and then, you know, I'm interested in the mediation agent as well, um, because you know, we, we've been living in-house. Yep, um. And from an architecture standpoint. I like simple architecture, right? So if that means we? We reduce two things to one. That wouldn't be my documentation.
 
-4. Model Selection
+08:53
+Now you know whether that is politically, that's a separate question. Yeah, uh. But ideally, right. Like, you know, I, I would like bring your own model should be a thing like we should always be using our own model wherever possible, right? So
 
-Use supervised learning models to classify detections. Potential models include:
+  Speaker 2 09:07
+That
 
-Logistic Regression: For interpretable results.
+  Speaker 1 09:07
+We can have these things go through tachyon, and you know all that sort of stuff, um, like? But even if not right, at least use our own subscription. So we, we kind of control things to bedrock or vertex or whatever. But outside of that, I think. Requirements are not going to change very much, I suppose, from.
 
-Tree-Based Models: Random Forest, Gradient Boosting (e.g., XGBoost, LightGBM) for feature importance and high accuracy.
+09:28
+Um. Somewhat was done two years ago. We now have a sort of, you know, feedback loop. You know that the validator challenge and effect, so probably the only thing I would add to the architecture is to say, we'll bring, you know, uh, non-check marks based, uh, sampling, uh, once in a while, to the process as well, just to make sure it's doing, you know, at least as good as what our homegrown tools can do, because without that, there is no value in the tool,
 
-Neural Networks: If the data is complex and large-scale.
+  Speaker 2 09:56
+Of course. Yeah, that makes sense here. Absolutely! Yeah, there is already also an effort to look at third party llm scanning, and they are trying to build. You know, um? As for the mitos effort, they are trying to actually build a third-party llms carrying as part of the pipeline.
 
-Ensemble Models: Combine predictions from multiple algorithms to improve accuracy.
+10:15
+So that would be directly against this effort, you know? Check marks if you bring in check marks one. We can avoid that, so I don't know what's what they're thinking, but? That effort is already underway. You know, I mean. There is a methaus related effect that I'm part of right, right?
 
+10:34
+But, but the third party, one who's involved there? Uh, so this is this is same the same set of people, uh, do yeah Constantine their team. They want to, you know, build the hardness, but the absec would be okay. Okay, okay. So, so that that I know that, I know, right?
 
+10:53
+Uh, because we've all been talking about. Um, you know how, how, to, how to get it to work, um? So, let me. You know, and once it once it.
 
----
+  Speaker 1 11:06
+I'm sure you've seen the page, but you know, if not, take a look? Yeah, um, and you're like that, that competes directly with. You know what you want to do with check mark? So okay, I think we'll have to be very scientific and many videos about, you know, the conditions in which check marks gets?
 
-5. Training the Model
+11:23
+Accept it.
 
-Data Splitting: Divide the dataset into training, validation, and test sets (e.g., 70/15/15).
+  Speaker 2 11:24
+Like,
 
-Imbalanced Data Handling:
+  Speaker 1 11:24
+Unless you know a joy and money share of the opinion that you must have at least two competing tools doing things right, but even if that is the case, we need to see how it fits into this architecture. Like that, can? You can check marks one, you know, light out.
 
-Use oversampling techniques like SMOTE or undersampling for balanced datasets.
+11:41
+Avrs, right, can. Can other things interpret, you know? Check mark one's findings. You know Canadian degree with 11, for example, lately we'll have to see how all of that works. Um, we don't want a whole parallel architecture just because it's a different tool. You're correct. Yeah.
 
-Adjust class weights in the model.
+  Speaker 2 12:01
+Yeah, but I want to keep the POC to a, you know, very targeted indirect, otherwise, you know this, they tend to go on for, like, a very long time, and we won't have any. Yeah, so that's, uh.
 
+  Speaker 1 12:14
+Yeah, no, I think I think. So, from an engineering standpoint, like, you obviously think about, you know, sort of code integration and and output generation, and things like that, right. From an architecture standpoint, we will assess whether you know it gives us the hooks to, you know, put our custom overlays on top if we need to, right?
 
-Hyperparameter Tuning: Optimize parameters using grid search or random search.
+  Speaker 2 12:32
+Absolutely.
 
+  Speaker 1 12:33
+Um, yeah, and you know, maybe Ian will get involved with the integrities with you, but you know, I, I don't anticipate either having the bandwidth, uh, you know, or frankly, the expertise to? And to look at every single finding. I mean, those those things. Yes, like, we'll have to do do them in parallel.
 
+12:51
+And, like, you said, like, constrain the amount of time you spend in this. Um, yeah, things are set up, but? You know, I mean, just in the, uh, the security for AI box as well. I, I don't know if you hung around long enough last time, uh, but that was a chat I was having with them.
 
----
+13:07
+Okay, um, that right, yeah, um, so AI model scanning MCB scanning, like, how do we, you know? Can that be invoke programmatically? Right? Check marks is, of course, integrated into sdlc into our pipeline so. Can it detect like, what about skills and skills? Was the one thing that I had a question for them?
 
-6. Evaluation
+13:29
+Can you? Can you detect skills right and, and just like HCA, can you figure it out if skills are being hand coded or they are being sourced from a central Depot, because that is the other Vector. For this, we have correct, which is, you know, people bringing in skills, you know?
 
-Evaluate model performance using metrics that prioritize minimizing false positives and maximizing precision:
+13:46
+Left hand and Center. So I, I want to focus on that aspect. I mean, the developer security, the the runtime security compartment. In that time, I'm not sure we'll do it, we'll see, right? But, but the first two boxes like developer and supply chain those, I'll of course leave it to you.
 
-Precision: Key metric for secret detection to avoid overwhelming users with irrelevant findings.
+14:03
+And you know, Ian and other people to to kind of keep dive on. Great idea. So this is this is brand new.
 
-Recall: Ensure no true secrets are missed.
+  Speaker 2 14:09
+And this was not there at the time when we did the POC, right? So, this is, yeah. None of this has been explored or looked into with checkpoints, one at least. Yeah, and, and have you heard anything about SCA? I'm being told I'm getting mixed messages whether we should pursue a CA with check marks one or not.
 
-F1-Score: Balances precision and recall.
+14:28
+I think here's the thing that it comes down to. Um, a competitive.
 
-ROC-AUC: Measures the trade-off between true positive and false positive rates.
+  Speaker 1 14:34
+Um, analysis, like, does it give us more insight? So, I mean, SEA at some point is is kind of a little function, right? Like, there's a trillion people. Doing SC out there, gonna give, um, so you know, I mean, if if cost is not an issue, right, if if it's being priced?
 
+14:55
+Um, as part of the offering, like, then, then why not? I mean, then the optionality makes sense, right? But if we have to pay separately for it, then I think we need to do a competitive analysis, uh, between that and. Right? Yep, I mean, like?
 
+  Speaker 2 15:13
+Yeah, of course. If it's coming from feet, but nothing really, it's free. They don't price it. Definitely, of course. Yep. Yeah, I don't think it's, uh, it's free. I mean, they'll definitely want us to pay for it if we want it. Yeah. Is interestingly, and you're looking at say that.
 
----
+15:34
+Is weaves and open source libraries.
 
-7. Deployment
+15:41
+Yeah, we have you.
 
-Integration: Embed the ML model into the secret detection pipeline to classify findings in real-time.
+  Speaker 1 15:43
+Right. And of course, we are working with chain guard and IBM and others to patch those as well. Yes, right,
 
-Feedback Loop: Allow developers to label predictions as false positives or true positives, feeding this data back into the system for retraining.
+  Speaker 2 15:47
+Yeah, I think performing some
 
-Alerts and Reports: Customize alerts to display only true positives or highly confident findings.
+  Speaker 1 15:49
+Form of leachability analysis, looking back up from the library level to the project level, but actually be interesting to to see if you know it can. Um, it can integrate with like custom findings as well, because these, you know, these are obviously zero days that no one has. Batch the egg blade, and there might not even be a CVE for them, but you know is there?
 
+16:14
+What kind of visibility analysis does it give us if you point it to, you know, a piece of code in in some library and say, like, you know, this is potentially malicious? Can you? You know, can you tell us how many projects are exposed to me, right? Exactly.
 
+  Speaker 2 16:27
+Yeah, I mean, that's what I mean. They had reachability analysis at that time. So what, what happens is if you run SCA and SAST at the same time? It will tell you if there is an open TV. It will tell you how exploitable that particular CVA is looking at your source code.
 
----
+16:42
+It will correlate that so, and now they are saying they have a new way of doing it. So, maybe it's better we'll have to see that. But yeah, that sort of SCA SAS conversation. Yeah, good. Yeah.
 
-8. Challenges and Considerations
+  Speaker 1 16:55
+Yeah, I'm I was saying, it's Tony, I was saying, what's going to be new, right, like they would have thrown a few skills and some prompts at them, like, exactly, most likely?
 
-High False Positive Rate in Regex: Regex patterns often match legitimate test data or dummy values, so careful feature engineering is essential.
+17:07
+Right here. Yeah, it'll be nice, so I think we should focus on the first three boxes. Yeah. Are, you see, you know what? I'm really not sure, because I'd rather we do, uh, you know what? It's fine. We do wish for that time, and we'll do ISC scanning as part of.
 
-Contextual Dependencies: Understanding the context around detections (e.g., test files, documentation) is critical.
+17:26
+Uh, the pipeline generally IAC tends to have a few more false positives then. Um, London time, which I'm kind of hesitant, you know? Putting too much hope in the IDC portion, but we'll see secrets. Detection is useful, but I suppose we have that today as well. So yeah,
 
-Explainability: Use interpretable models or visualization techniques like SHAP to explain why a match is classified as a false positive.
+  Speaker 2 17:42
+Secret status is that, so check marks today on-prem. We have a, you know, we built a regexis from truggle travel log into SAST, so part of Secrets is done through check marks today. Check mark SAS. And part of it is done through truffle hog. In the pipeline. So, I mean, it works.
 
-Scalability: Ensure the model is efficient enough for large codebases with frequent updates.
+18:03
+It is meant to be a stopgap solution, but uh, it still is stock cap for after three years so. I don't know. Yeah, they haven't talked about what's going to be next, and I don't know how good the secret solution is with check mark one as well, so. Yeah, yeah, we put them in.
 
+18:20
+Like, you know, two or tier three requirements? Yeah. It's not like, we don't have anything there today. Got it. Yep.
 
+18:32
+Okay, perfect. I think this is great. So, um, I will put some notes based on what we have discussed. I,
 
----
+  Speaker 1 18:39
+Yeah, send them out. I'll I'll put some thoughts in as well, and then then we can. You know, make that shortly formal kind of requirement so. Give an assessments or whatever you want to call it. Got it. Yep.
 
-9. Tools and Frameworks
-
-Programming Language: Python is ideal for prototyping and deployment.
-
-ML Libraries: Scikit-learn, XGBoost, LightGBM for model building.
-
-Regex Libraries: Python’s re module or third-party tools for testing regex patterns.
-
-Pipeline Management: Tools like MLflow or custom CI/CD scripts for deployment and monitoring.
-
-
-
----
-
-Conclusion
-
-ML can significantly improve regex-based secret detection by reducing false positives, allowing developers to focus on real security issues. A well-trained model that leverages both regex matches and contextual code features can greatly enhance the efficiency of secret detection workflows.
-
-Would you like to discuss implementation details or specific aspects of this approach?
-
+  Speaker 2 18:52
+Okay, yep. Thank you. Thanks. All right, bye. All right. Awesome. Awesome. Take care. Thank you, bye.
