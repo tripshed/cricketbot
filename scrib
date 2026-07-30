@@ -1,515 +1,125 @@
-00:00
-Efficacy, right? Because I think all yours is like, does it do a better job, right, you know? Is it worth it? Is it also a very important question? Yep, agreed. The other thing, and it was talking about earlier. It's like.
+  Speaker 1 00:00
+Five, six false positives specifically on paa and ecpa. So we have the numbers, right? The numbers are in the dashboards. That's not really what people are after. We're going to keep that in the slide because I think it's an important marker, but really, what? I think the question is from Krishna is?
 
-  Speaker 1 00:15
-There's other stakeholders, and either we can take ownership of the data format and ensuring that. We have what the downstream Auto remediation and false positive. All those processes have. Are going to need. Or we can bring in other people as stakeholders. I don't know what you guys think, but I think there's a testing requirement that you know, we need to make sure that stuff is not disrupted as we change the prompts, because that could happen if they change the reporting portion of the prompt.
+00:16
+Why are there so many darn false positives on 5.6? Which are the noise markers that you've identified and that we fed back to Jake and Ryan, and they've been tuning their harness. So essentially, what I want to do is I want to. I want to show a breakdown specifically for GPT, and we'll bring Tom Johnson in as well to provide some thematics on Mythos, but essentially the way I see the slide breaking down is top level, you know?
 
-00:51
-Day, Ian, any thoughts there? I know, Jay, you've been more close to what movie needs and things like that, but I think? That's an important time that we have to make sure that agreement that contract stays solid. Yep, you know, I think this is definitely important. I, I think there's a kid.
+00:40
+Mythos, paa, ecpa, false positive percentages? Gbt. Kcpa false positive percentage is y, and then two breakdowns, right? Mythos the false positives broken down by thematic category GPT? False positives broken down by thematic category bottom line. These findings, you know this? This Insight this information has been fed back to osrt and as part of their refined harness.
 
-01:09
-I'm not sure I, I think it would have to be a sep. It probably would need to be a separate code base, I would assume or a separate, you know, something specific to determine. That we say it's indicative of scan time and cost. I'm sorry again. I didn't fall, I guess, I guess what, I'm trying to think of is, you're so this requirement for, for testing, scan time, and scan cost would require a different.
+01:12
+So, we expect the volume of false positives to be less on the next run with gbt56. Makes sense. Yeah, it makes sense. Okay.
 
-01:38
-Code based probably than is being used for. Determining, uh? You know, effectiveness, or vulnerability protection? It may be a different test, yes, but it's, we may not need to monitor all these things in all tests, right? It depends on what's changing. Yeah, this is the Baseline for what we may put in a hold-unquote test plan.
+  Speaker 2 01:22
+So, but Mike, I thought we did the the a b testing between these two right, and we had the Precision recall. Can we use that to justify? We, we do, right? Like, that's how we justified using.
 
-02:04
-Okay, perfect tool.
+  Speaker 1 01:36
+Ryan's harness. But when we remove the needs review, there's still a higher percentage of false positives in GPT than there was in Mythos. And so people want to know why? And we, we know why, but we need to show that breakdown, right? Like, if we look at the total number of avots that have been marked as false positive.
 
-  Speaker 2 02:06
-So, in the the test Suite that we have maybe 10 percent of them should look at this. John, is that the idea? That,
+01:54
+How many of them fall into those different noise marker categories? That's the breakdown. Okay.
 
-  Speaker 1 02:13
-It really depends. Like, so I, I can picture this being more of a factor, like. One thing to prove, you know, on, you know how the system is doing validation of whether the vulnerability is real or not? It's very different than us, saying, you know, what? Let's look at GPT.
+  Speaker 3 02:08
+Um, I expect Tom Johnson will probably be online within the hour. So, the ask for you two is to put together that breakdown for GPT. Okay.
 
-02:33
-As opposed to Mythos, right? I
+  Speaker 1 02:20
+And I think you guys are already three quarters of the lake there, Jay. If you could jump in, you said that you provided something you expect relief to do an overlay with his analysis?
 
-  Speaker 2 02:35
-Can tell you
+  Speaker 3 02:30
+Yeah, in the chat. Mike, you'd asked for, um, I, I had brought up that the data from Riot, I think, was not all like net new data. I think it was basically inclusive of of even findings that we had loaded into AVR already, and so to try to narrow down, um.
 
-  Speaker 1 02:36
-That from last night and what we were experiencing, you know, like, Mythos? What average scan time was like 20 minutes. Scans were running like an hour and a half last night, and you know they were timing out all sorts of things. So there's other things that you may be looking at as we make model decisions versus prompt decisions.
+02:49
+You focus on to just those that were new. We needed to take the list of findings that was. Um, that spreadsheet that I loaded and then bumped that against the data set that pretty was working with. So that we could get to, you know, just that population of of what was new?
 
-02:58
-Still confusing?
+03:10
+Okay. The reason? Yeah, the reason? Yeah, pretty, because I mean you had the your analysis already done in your session, and you already have all the the knowledge and everything on the on the on the markers in your sessions. So that's why? Um, it just it made sense to hand it over, you know, and let you apply it on top.
 
-  Speaker 2 03:03
-Yep, it makes sense. Yep. So how do we factor that in John? I mean, should we, should the harness have all that?
+03:28
+Okay, sounds good. Yeah, I'll, uh.
 
-  Speaker 3 03:14
-I mean it. This goes back to the Cyber AI team, right, because they'll be the ones. In charge of all that.
+  Speaker 2 03:31
+So, when is this? Is
 
-  Speaker 1 03:20
-Yeah, they have to report that information, right, right? Yes, and I think they have this ability to, so I don't think that would be a surprise to them. I don't care. Yep. And would they have? Would they know how much the scan would cost?
+  Speaker 1 03:33
+It feasible to have a breakdown of the gpt5 six stuff within the hour? It doesn't have to be in the pretty slide, just like the table breakdown of there's a hundred false positives 50 or x 40 or Y 10 or Z. Yeah, I think something.
 
-  Speaker 3 03:36
-Because we have visibility to the tokens used. Okay, um. And then, you know, there's a cost per token and whatnot. Okay, perfect. So, and another one of your comparisons there, right? Like, you know, comparing efficacy, comparing scan time comparing cost? Um, multiple multiple types of tests. It sounds like and.
+  Speaker 2 03:53
+Okay, okay. Because I'm gonna wait for Tom Johnson to provide that for Mythos. And then we put together the slide in the frame that I provided. Sure, yep, and one one area I'm curious about is. I mean, they're, I think, a couple different types of. A false positives, um?
 
-03:59
-You know, um?
+  Speaker 3 04:14
+Like one of them that's sticking out of my mind, is the ones that? Um are being flagged around. Apogee.
 
-  Speaker 2 04:02
-Yeah, I'll put the contract basically. You know, that's, that's a, that's a. That's a functional requirement. Pretty much, you know, for every one of these. You know, it's, it should output. What's expected?
+  Speaker 1 04:23
+Oh yeah,
 
-  Speaker 1 04:15
-You know, uh, according to either what exists, or if it changes are expected, then you know it needs to Output, you know, to match the expected changes. So, um, it's definitely gonna be a battery of tests, but um. And this is. Uh, I think pretty comprehensive approach for, you know, the yeah, the AV of the the efficacy.
+  Speaker 2 04:24
+Yeah,
 
-04:37
-Uh, the pradeeps put together here. I would agree. I don't think this is great. More than our first draft, which is good. Yeah.
+  Speaker 1 04:24
+Yep, that's one of the key categories, right? Because we're, we're, yeah, worms, and then we're attributing all the vulnerabilities to all the downstream consumers. Well, for all the downstream consumers rather. Right, so I guess. First of all, do we have? Do we have numbers on those because?
 
   Speaker 3 04:46
-Head. I mean, I put the first craft and had the the team also look at it, and they provided some insights. And you know, it's not just just not just me, so? Uh, in the matching. I mean, there are some finer details that, you know. Uh, that have to be ironed out.
+That information isn't information we can pull from data out of Scarpie.
 
-05:03
-You know, how do we agree, you know, sometimes? How do we know where if the llm is producing the same finding as the ground truth? Or if it's slightly different, but it's the same finding. Sometimes the the model might say the vulnerable line is somewhere else. And it's not on the same line, so?
+  Speaker 1 04:54
+Right, that's, that's post. AVR load false, positive information. I guess it would be there if they've all been updated in AVR, the data and the data Lake, but otherwise, we do. We feel confident that we've got an accurate numbers there, and then also, I mean, is it? Do we want to lump them all together because?
 
-05:25
-These variances are, you know, sort of captured here? Within, like, plus to 5 minus 5 lines of the actual variability. For, you know. And again, it depends on the type of vulnerability, right? So if you have a secret detection, and it's a straightforward answer, right? But For something like a SQL injection where you have a source and a sink and a back.
+05:16
+Is, is this something that Jake's team is even going to be able to tune? I think this is sort of a situation where the scanner just doesn't have enough information. So, I'm not sure that what they could do to tune it specifically to reduce that that noise. Um, I.
 
-05:46
-Then you know it's more nuanced so.
+05:35
+I guess I'm I'm wary of how we present this, like the numbers wise, what we're including in the total false positives, because obviously there's going to be expectation that? You know, these numbers reduce. Um. So, I mean, are we again, are we? Are we lumping everything together?
 
-05:51
-Yeah, it has to be. There has to be some. Identify. I just call that out here so that you know we are not. It should not be like a labor heavy.
+  Speaker 2 05:54
+I
 
-06:07
-And one of the yeah.
+  Speaker 1 05:54
+Think I think I think Ryan's team is accountable for figuring it out. We're accountable for giving him the feedback loop and saying, hey, these shouldn't be marked. As you know, the scanner shouldn't identify these in this way, and then it's their team's job to figure out how to solve that.
 
-  Speaker 1 06:12
-And the other one is the multiple ground truth entries, right? So? So, sometimes what happens is you have?
+06:08
+Um, so I don't want to take on too much of the responsibility, since we don't control the harness. Sure, sure, um? But this. This probably is why we need Tom Johnson to decorate with the jira data, right? Because the AVR data is not going to necessarily be as rich in terms of, you know, what we may have the noise flag, but we probably won't be able to pick out those like platform level issues.
 
-  Speaker 3 06:24
-Multiple findings, but they point to the same finding so. We will have to take the route and classify that as a single finding. So that we are not over calculating. So, the llm might report the same finding in three different ways. But in, in truth, it's only a single finding so.
+06:36
+Unless you guys tell me otherwise. But yeah, maybe you can't.
 
-06:43
-That also has to be accounted for in the. So, there is like a manual step. Passing that output that comes out so?
+06:47
+Philippe, he's still there.
 
-  Speaker 2 06:51
-Yeah, I just just call it out as well. We just, uh, you know, the? The d-duplication and the other one is the unknown, suitably finding counts. So, what? What is this, you know, is this? Are these considered? I mean, we consider them as false positives because we don't have what category they fall into.
+  Speaker 2 06:48
+Yeah, I'm just listening. Yeah,
 
-07:16
-Again, we'll have to Deep dive into what that specific finding is, whether it's a, whether it's noise or it's something that's something that has to be looked into. So, I mean, that'll be reporting the metric, but it would potentially require some additional. You know, individual analysis there. Uh, yeah, that's more or less pretty much it.
+  Speaker 1 06:50
+Yeah, so, so, would your noise markers pick up or be able to differentiate? For example, what we saw with the apigee findings?
 
-  Speaker 3 07:40
-And
+  Speaker 2 06:59
+Yeah, I, yeah. I agree with Jay, right? So some of the things we cannot just look at it just from the results. You know, you have to have outside information to make a determination so that that's a tricky part. So? Yeah, I would not.
 
-  Speaker 2 07:41
-This, the rest of stuff talks about, you know? How do we worship this so that? It's properly used run after run.
+  Speaker 1 07:14
+We'll get calm to do that part. The Tom Johnson, when he's I'm, gonna try and get him online here soon, and then we'll work on that. But I put a link to the. To the 1994-4. Not sure if you guys have access to that, but that gives us the total kind of denominator?
 
-  Speaker 3 07:50
-So, I see that John has dropped, but.
+07:33
+Of false positives that we're looking at for gpt56. Okay, got it, and I just want to make sure that we're tracking to that because I don't want to. I don't want to represent different numbers. Um, so, so far, let's see, just a ballpark we're talking about. I don't think those guys gonna have access to that dashboard, um, okay.
 
-  Speaker 2 07:53
-Maybe he didn't get bored? Any thoughts on the? And document anything that we can potentially add.
+07:55
+Probably around a 50 false positive rate.
 
-  Speaker 3 08:08
-Uh, are you guys still there, or did I lose
+08:06
+Versus Mythos. Which was I think below 30, maybe? Yeah, but much lower, yeah, 20. So that that that's really the question we're trying to answer is. Why? So, what are the categories? Why does dupt have higher false positives, and what are we doing about it, right? And I think we have those answers.
 
-  Speaker 2 08:10
-You?
+08:27
+We just have to pull together. So. Can you guys take that away and work on that for the next 45 minutes and then regroup? Yep, awesome. Yep, okay. Yep, we'll try and get Tom Jones. Okay, one other quick thought, perhaps, like, yeah, I'm not sure how many of the, I guess, the view of the false positives that's making its way to, you know, Manish, are those obviously that we've loaded.
 
-  Speaker 1 08:10
-Yeah, what's the? What's the mechanism for for reviewing these, like? So, how does sort of the so does this run like on a regular basis against any? Like, any, so you have any change in? Is that model changes or configurations? So, so, yeah, how often would you expect this to be run?
+08:50
+Otherwise, people wouldn't know about them, right? Uh, with Mythos we? We filtered on the likely FP. Validation verdict, right, with with GPT. That value didn't exist when, when with gbt, there was a whole different set of validation verdict values. And when we loaded paas, we didn't filter anything. Right, the question was raised, but there was, you know, everybody's, like, nope, just load, you know?
 
-08:32
-And then, at that meeting evaluation, so any material change to an existing scanner prompt?
+09:20
+There's no likely false positives, so we loaded everything with Paa, no filters on Foundation verdict, so I'm wondering how many of these false pauses were actually needs to review and how much of a role does that really play in this story, because then we turned around and filtered it.
 
-  Speaker 2 08:40
-Sorry, I was talking on mute, so it just basically covers any. You know, significant change in a existing? Model prompt. Or the model itself. Our configuration. Right. So this has to. You have to go through that AV testing. Initially, you know, we'll have to compare the ground truth with the new model, but once a productionized model is out there, we would use that, and we would do that at that VA.
+09:35
+I think for the ecpa so? I think that's a key part of the story is like, I don't know that necessarily Mythos. Is that much better? I think we just filtered it, you know, and so Les made its way Downstream. Yep, yeah, no, I think that's an integral part of the story, honestly.
 
-09:06
-And then we would do a b comparison so. We have the set of metrics for model A that's already productionized, and the B would be the new one you know, which I, which is either a new model. At the same llm with the new prompt, or there is a.
+09:54
+So, let's fold that into the analysis. Okay, okay, all right, so we can. Let's take that away. I'm gonna try and get Tom Johnson online. I'm gonna ping him see if I can get him, and uh, we'll regroup here shortly. Sound good? Yep, okay, all right. Thank you all right.
 
-09:21
-A change in configuration that would basically trigger. The AV testing requirement.
-
-  Speaker 1 09:28
-Sure. I guess what I meant, kind of, like, does, does a report get generated and send out to stakeholders for approval? Or, like, how's that work? Absolutely!
-
-  Speaker 2 09:38
-Yep, so I think yeah,
-
-  Speaker 1 09:40
-So I gotta I'm getting pulled into something else. I think this great, first progress, I mean, more than a first draft. I think we should get in front. Um, pretty people could put this and get some feedback from cyber AI. I think that'd be a great next step as well.
-
-09:53
-Okay, I'll
-
-  Speaker 2 09:54
-Do that. So, yeah, don't answer Ian's question. So, yeah, Duke, they would run the, you know, they would run the scans and then? We would. I mean, we pretty much could do the comparisons and generate the reports. And, uh, adsec, you know, Mike's team, whoever he chooses, you know, they would review the results.
-
-10:14
-And then, once we agree on something, and we send to everybody, right? I mean, obviously. John Steam would also review the results, and once everything is good, we would send it out to everybody. Uh, but the approval from what I understand from John is it? It sits within a joyous team, so?
-
-10:31
-A joyous group has to be okay with that change. So that approval has to come from. These three groups pretty much.
-
-  Speaker 1 10:40
-And then, yeah,
-
-  Speaker 2 10:41
-Once we're okay with it, I think they'll you know. The Cyber AI team is going to go back and deploy it to production, and we
-
-  Speaker 3 10:47
-Would use that going forward.
-
-  Speaker 2 10:53
-And I think you you've already said that, but I'm just trying to get a little clarification. Is that? Did you guys already have a set of? Of code that you've been curating.
-
-  Speaker 1 11:05
-For use of in other systems, like check marks, is that right? Yeah,
-
-  Speaker 2 11:09
-The check mark system. It uses known vulnerable applications, so these are,
-
-  Speaker 3 11:14
-Yeah. So, the problem with
-
-  Speaker 2 11:15
-That is, it would work for a deterministic, rule-based scanner, like, check marks, but it would not work for an llm, right? So if you give a web code non-vulnerable finding to llm? It'll just tell you it's a false positive because it's a vulnerable application, and it will not tell you.
-
-11:31
-That lets a SQL injection, right? So? Oh, because it recognizes the fact that this is, that's the exact application. Yeah, so we don't use it. Yeah. And it just tells you that your these are all these are. This is all you know. Yeah, this is Discord.
-
-  Speaker 1 11:48
-Okay, so you're just, so you would have to develop this so that that code would need to be developed. No, we have that inventory. So the other day I? I, I don't know if you you were on that call. So, I shared a list as an Excel sheet. It basically has a list of repos.
-
-12:04
-Let me try to pull that up quickly here.
-
-  Speaker 3 12:06
-Uh oh, you do. Okay,
-
-  Speaker 1 12:07
-I'm sorry. I, I wasn't on that also. Um, yeah, I'd have to find that it's somewhere here, but, uh, yeah. It's basically a sheet of.
-
-  Speaker 2 12:18
-We took this into consideration of different languages, and you know, different types of applications and? We had a list of. Commits like specific code versions. And you know that was suggested as? The base. So, 50 might be a little excessive, but? That that is a diverse population for you know the ground truth.
-
-12:43
-And are these are these? Develop for that purpose or these.
-
-  Speaker 1 12:50
-Like real applications that had defects. Yeah, these are
-
-  Speaker 2 12:53
-Actual applications that Wells Fargo uses, which actually have defects based on. Oh, okay, yeah. Check marks, scans, and mitos scans, and all the. Other reports that have come out so far, so. So, these are actual real applications, but probably. Older versions of them, you know, so?
-
-13:18
-I need to drop guys, but this is good. Pretty. I appreciate sharing. Yeah, thank you. Yep. Any other thoughts? Yeah. Yep, thanks. Thanks! Now, let me try to. Yeah, this is the.
-
-13:37
-List of repos that you know we have created, so it's basically. Okay, commit, and I mean these were found to have, you know? Volume of findings. And. And also, you know, we put in.
-
-  Speaker 1 13:55
-And when you say they're, so were they. Where these these findings were manually reviewed to to verify that they did have those vulnerabilities.
-
-14:10
-Or, I just like, how do we know that they have vulnerabilities? I mean, that's from the historical scans so.
-
-  Speaker 2 14:19
-From check, mark scans, and all the the mito scans that have been done.
-
-14:28
-Oh, so these haven't haven't been manually reviewed for. To make sure that they've. The defects.
-
-  Speaker 3 14:42
-The like, real. True positives.
-
-  Speaker 2 14:46
-Yeah, correct. Yep, and that's yeah, that's an exercise that has to be done for. Um. You know, I mean to arrive at the ground truth, we have to. Do that for each of the repository here.
-
-  Speaker 1 14:59
-Okay,
-
-  Speaker 3 14:59
-Right, okay, yeah, I
-
-  Speaker 1 15:01
-Mean, yeah, that you think that are vulnerable. They need to be verified just, uh, so that we, we confirm that, and then. And then, at that point. We'd be good to go for this. Yeah, that's the the ground. Yeah, that's the ground root, so? That's why I did not put that list here and.
-
-  Speaker 2 15:21
-You know, we maintain that separately. And then, I mean, some. We all have to agree that this is. This is the list of apps. And we obviously can change it. So this was based on languages and the wall and the volume of. A whole large small. And medium-sized. The ripples are so all that was factored into get this list.
-
-15:42
-But yeah, we can definitely. Go, go one step further and to see how many actual vulnerabilities are there in each. Some of them definitely have. You know, true vulnerabilities that are remediated and? But this is where it gets a little tricky, right? Don't for Sast you, you know, there are a set of people who would argue that this is an actual Mobility and then?
-
-16:03
-You have somebody else living against, they say, oh, this is not. You know? This is a false positive because the application has mitigating controls. So, yeah, yeah, that gets a little nuanced so. That gets to the sort of the fundamental.
-
-  Speaker 1 16:20
-What code review does I mean, right? My
-
-  Speaker 3 16:24
-General view is code review fights.
-
-  Speaker 1 16:27
-Coding defects. A vulnerable. It may also find vulnerabilities. But, but not necessarily. Yes, because it doesn't have the full view of unnecessary. It might not have the full view of all the controls of mitigations. Yeah, um. And so, part of that is. What is the expectation are? We is the.
-
-16:53
-Are we? Are we asking for it to be a, you know, a externally, or a? What was a phrase that was used?
-
-17:06
-But basically, you know, it's it's. It's a reachable, and that's right. It's a reachable vulnerability. As opposed to. Uh, poor, you know, not meeting coding standards or poor coding? I mean.
-
-  Speaker 2 17:22
-The problem is, I mean, the Assumption would apply to the scanner also, right? So, whatever llm that is being tested, the scanner also would not know whether that particular application is external facing or not so. We would have to arrive at the ground truth having that same assumption that the model would have.
-
-17:42
-Which is, we assume that the application is external facing. And that is, it is exploitable, and then we would. Derive the ground truth based on that, and we would not put in any mitigation controls as a reason for something being false positive. But what if you, what it said, let's, let's, I guess?
-
-18:03
-If you saw something that said? Um. Because I think I've seen stuff like this. I haven't seen a lot of the findings, but I've seen some of them. There's a local file, right, that? The application is reading from.
-
-  Speaker 1 18:20
-And then that has some Downstream impacts, SQL injection, or some sort of injection. Um. But it requires local access to that.
-
-18:35
-Right, what would that be considered? A false positive, or would that be considered? A true positive it would be.
-
-  Speaker 2 18:43
-I mean, from a static perspective, it would be a true positive, right? But from a dynamic? Exploitable, deep penetration testing perspective. It would be a false first use because the exploitability. Taken into account there, right? So? But from a sassed perspective alone, that would you assume that somebody already has local access and can tamper with that input?
-
-19:08
-And then you would mark that as a true positive finding. And that's what the model also would assume, right? So the model does not know whether you have other materials. Yeah, so I agree.
-
-  Speaker 1 19:17
-I didn't know if that was something covered you would like, uh, yeah. Outside of that, I understand, because we actually, I don't know if you were far. I can't remember if you were part of the discussion with. Uh, Microsoft. When we were looking at their their tool? Um. And that was one of the things right.
-
-19:37
-Their threat model is a much typically a more broad threat model than we have.
-
-19:47
-But I mean, if that's what you is, if that's what the current standard is for code review today. Like, you know, our SAS review, I should say, um. Then, yeah, then. That's fine. Let's stick with that. Um, I guess I didn't know that was. That was the that was the criteria.
-
-20:06
-Um, but I mean,
-
-  Speaker 2 20:06
-Yeah, I, I get what you're saying, but how would SAS know whether? The external factors of it. It would have no knowledge, right? So, we'll have to. Yeah, this is why SAS is hard. Right. I mean, I, I think it's, it's correct from a from.
-
-  Speaker 1 20:27
-A defect standpoint, right? I think
-
-  Speaker 2 20:30
-The harder
-
-  Speaker 1 20:31
-Part is you, and this is sometimes we have to deal. We, we deal. I deal with Dynamic testing, but sometimes it kind of leads over, and this is where where it becomes. As soon as as soon as you call something out. People want to have a risk a risk discussion, right, and, and they want to get into.
-
-20:52
-Um. You know, risk-based discussions where mitigations, or hey, well, that's not even possible, you know, that's? If they had access to that, then they could do all kinds of things, right? So there's a much more complicated thing. I'm just trying to understand this and and part of this is just.
-
-21:08
-Um. Trying to understand what the current? Thinking is when, when review when looking at. Sass, so that that's good to know. I, I didn't know that was the the, but I, but you're right, there's very difficult to unless you. Um. Yeah, unless you said local files are, you know, outside of scope or something like that, and that right, that's going to depend on?
-
-21:39
-Well, what happens if this is a mobile app, or this is a client-side app, right? So, it gets a complicated in terms of. Um. Yeah,
-
-  Speaker 2 21:48
-But wait typically like the AACs make those decisions, so if there's something so, yeah, so AC's work. They're closer to the application, right? So they would argue and have a conversation with the app team and then. Make something like that, a false positive. But until that time, it is assumed to be, you know, true, positive.
-
-22:06
-So sure.
-
-  Speaker 1 22:08
-Yeah, I mean. That's why I mentioned John that, you know, we should not look at sast on its own, given llm. We should look at SCA and other.
-
-  Speaker 2 22:18
-Other vectors so that you know we get a holistic picture of the vulnerabilities rather looking at SAS on its own. And I guess that's a much broader exercise, right? So they're just looking at. They just want to dump the source code to an llm model and get findings out of it and send them for remediation so.
-
-22:38
-And this is, you know. So,
-
-  Speaker 1 22:40
-In the current SAS process, so if there is so, the ASC is able to identify something as a false positive based upon. Additional factors? Yep. Okay.
-
-  Speaker 2 22:56
-I mean, it's so if there's a finding it goes to the app teams and the app teams have a way to look at the finding and? There is. There are states within check markets, you know? There's something called propose not exploitable, and they can change the state of a finding to propose not exploitable and add a comment.
-
-23:12
-Stating that why they think this is? Of false positive, and then AAC comes in, and they they can agree or disagree whether something is false possible. So again, this varies between AC. Some ACS are more liberal. Some ACS are more conservative in terms of agreeing with. Yeah, what is a false positive?
-
-23:29
-So, yeah, I did. Yeah. That's good to know. I mean that, that makes sense that.
-
-  Speaker 1 23:36
-Um, that that's makes a lot of sense, you know, I, you know, coming from the dash world? Because you know our big thing is, it has to be. Like, you know, sometimes we find stuff like we'll look through code and we'll look through other things, and we'll find issues.
-
-23:51
-But if we can't exploit it dynamically, then we don't. We don't call it out because,
-
-  Speaker 2 23:56
-Right?
-
-  Speaker 1 23:57
-The main reason is the developers, can't? They can. They can say they think it's a false positive, but it's. It's up to us to determine whether it is or isn't,
-
-  Speaker 2 24:10
-Right, uh, yep. So it's a little bit different, but yeah, it makes sense. Okay, yeah, thanks for. Thanks for walking through me through that. I didn't know that.
-
-  Speaker 3 24:19
-Yeah, this is great. Uh, I, I, and I'd love to I, I'm really curious to see. I can't wait till we get our first.
-
-  Speaker 1 24:30
-Report, you know, like, what? Like, how I don't? I don't have a good sense right now of how the llms are doing. Yeah, it's, uh. It's all over the place so.
-
-  Speaker 2 24:40
-El, I mean, they have a llm, and then they have a validator llm. And yeah, yeah, it's a false positive, a duty getting llm it's. It's a mess so. And the vendors, you know, you've heard of check marks, right? So they are trying to
-
-  Speaker 1 24:56
-Build
-
-  Speaker 2 24:57
-Something on their own. And if you have a few minutes, I can show you.
-
-  Speaker 1 25:01
-They had something that we're looking at right now. Yeah, so,
-
-  Speaker 2 25:05
-So this is one of the upcoming stuff that they are coming up with. So right now, they have a deterministic scanner. The SAS portion is what we use today, right? We don't have all the other stuff, but uh, they are their parenting to introduce the AI based scanner for the languages that they don't support.
-
-25:24
-And then they've added another llm to get rid of all the noise from these.
-
-  Speaker 1 25:31
-From the combination of these two.
-
-  Speaker 2 25:33
-And this would be the actual output of SAST. And they will also introduced something called, you know, they call it, you know, pan Sofia? Some weird name, but this word basically can interface with all the the frontier models, right? So?
-
-  Speaker 1 25:49
-Okay, you haven't seen
-
-  Speaker 2 25:50
-Any of this in action, but they're saying that, you know, we can have their product call any of the frontier models. And in just those results and do all the, you know, triaging, and all that stuff and? Give you an actionable output for the actions to yeah, so? This is something I mean.
-
-  Speaker 1 26:10
-So, the first part is really the the first part of you're you're looking at where it's the Next Generation engine. The top part is is more like the validation, like what our validation like they run a deterministic standard that they would validate it with using an llm, yep, and then and then they would just use.
-
-26:32
-For those students or the use of Basics, these are an AIM scanner and then do the validation. So it's and then? Most companies, and then the pan Sophia. Is? That's more about. That's more of, like, what we're working. Yeah, exactly. So, it's just, uh, setting the the looking for.
-
-26:57
-Vulnerabilities within. The code, but it's purely from. Viewpoint. Yeah. So they're saying that bless this.
-
-  Speaker 2 27:08
-And they have something called a triagine remediation agent where it would again do. A holistic view of all the findings. And it'll
-
-  Speaker 1 27:18
-Do a risk reading.
-
-  Speaker 2 27:20
-I mean, I mean, Wells Fargo. We have bug bar, right? So we go by CW to bhagwar mapping. But they have stated that you know they do triage and? Adjudicate the risk of each of those findings that comes from the entire set. And then they also do auto remediation, right?
-
-27:34
-So? They'll tell you exactly what has to be changed to fix this, so they have any agent for that. So, man. And that's their solution, right? So
-
-  Speaker 1 27:48
-Uh, where are they on it? Do they have? And they have beta versions of it, or is it still? Yeah, so I, I mean? They didn't tell me officially what?
-
-  Speaker 2 28:00
-They are apparently the Bank of America is testing, you know, beta testing, at least this part. This person, this is GA already, right? The next generation engine? But the pants of your face is something that they are beta testing with some other. Some of the major clients. And one of the big Bank of America so.
-
-28:23
-So, yeah, I mean, enjoy. And there was a meeting couple of weeks ago, where Joey and a couple bunch of his peers were there and? They were interested and then. And Joy said, you know, you have to do a POC and then.
-
-  Speaker 1 28:38
-Sort of in a weird state right now, so?
-
-  Speaker 2 28:44
-Well, yeah, I mean, it's it. Yeah.
-
-  Speaker 1 28:50
-How this would you know, because obviously we're spending a fair amount of effort in generating our own system. So, um, although some of it's reusable, right, you know, like, what you're building out? Is sort of, independent of all of this. Which is kind of the point, right? Yeah, um.
-
-29:10
-And then. You know, obviously, we vulnerability, you know, so? Yeah, I think it's interesting because? I mean. Yeah, I mean, you know, theoretically? I don't know if this is the right one decision or not, but you know, theoretically. People in these companies could get. You know, people who are dedicated AI experts and coding, you know?
-
-29:41
-And have them build this out and produce a good system or at least the best as possible.
-
-29:50
-I can't imagine it's it's. It's strange that we're, I don't know. It is a little strange that we're we're building this at ourselves and part of it, I guess, is just timing. Yeah, I suppose if this was a year or two from now, we would just pick one. Yeah, it's.
-
-30:08
-It's. I think we have spending too much money, and I mean, in my opinion, right? So?
-
-  Speaker 2 30:13
-I think they
-
-  Speaker 1 30:14
-Are spending too much time and effort to.
-
-  Speaker 2 30:16
-Manually create this. I think we should probably go something say for something commercial because. I, what I've noticed is people tend to leave, and that knowledge gets lost, and the process gets stale. You know, that has happened. I've seen that many times, so.
-
-30:39
-You know and requires a very? High level set of skills to be able to support it. Yep, exactly.
-
-30:49
-Awesome!
-
-  Speaker 1 30:52
-And, you know, and the people who supported are also the people who are have the knowledge to actually know if it's working or not, right? She's never the best situation, right? You know, when you're basically arm, am I going to do a good job? Yes, I'm doing a great job.
-
-31:10
-And, um, you know, it's good. That's one of the advantages of having, you know, a vendor product is a you, can you, you, and all the people who are using it can have a can can spend their time evaluating it how well it is working. As opposed to just making it work.
-
-31:26
-Yeah. Yeah, I think with the company like Wells Fargo. I think they should. Just look at a commercial solution and then trying to create something on their own. Yeah, yeah,
-
-  Speaker 2 31:37
-It's. Um, it's probably best for them.
-
-  Speaker 1 31:40
-I mean, right now, we're we're. I think the book scanner is kind of that we're working. I mean, which I think is kind of, it's the it's the part that. That is the that, you know, this right where, where it's the it's repeatable. It's within the sdlc, you know.
-
-31:56
-It's one thing to have something to kind of.
-
-  Speaker 2 31:59
-Hey, because we're in the short term squeeze of, you know, like, we're worried that we're?
-
-  Speaker 1 32:04
-Be out of, you know? The vulnerability is going to be discovered. Um. You know, we have, we have a solution, but? In terms of integrating it into the daily lives of. Of developers. Gap, a vendor product probably. Yeah, I mean, yeah, exactly. Given that we have service now Downstream and?
-
-32:34
-You will also have to build connectors to. Send it to servicenow where a vendor product would have all those built in right, so?
-
-32:44
-Yeah, I mean, I guess that's what's happening, right? But, you know, a lot of people have been pulled off of their regular projects to support this exactly. And I don't know if you know, but now they're complaining about. The all this costing too much.
-
-  Speaker 2 33:03
-Oh, I died. I finally read some numbers. I had never heard any numbers, right? Yeah, so, so it's exactly. Yeah, I mean, there was a estimate. Yeah, millions of dollars a month. Yeah. It's one of the estimates of even tens of millions, potentially if we if we're not careful, right?
-
-33:24
-But just for us, I mean, so it's like. Um. So, yeah, so that's the other, the other. Part of it is is real money.
-
-33:39
-Well, thank you very much pretty. This is very insightful, and um yeah, I think I think that's a like. John was saying, uh.
-
-  Speaker 1 33:48
-You know that? I think we're well on our way in terms of that validation and how to, um, we have. I was about to say, do I have a copy? I do have a copy because you send that out.
-
-  Speaker 2 33:58
-Yeah, I'll send this one. It's still working out that's in this list over here. But yeah, this this list of 50 amps, right? I mean. You know if you have time, take a look at it if you think? There are others which might warrant addition here. And, you know, feel free to me.
-
-34:16
-It's not a definitive list for any means so. You have. Okay, so, so, yeah, you have language. What else lines of code?
-
-34:29
-You have?
-
-  Speaker 1 34:30
-Client, do you? Did you try to get? I don't know if that's in here client versus. Uh, server. Apis. So, yeah, it has. You know? I was able to the reason why it's here. Okay. Okay, oh wait, uh, is that something you've sent out to? What is that? Uh, the did you do you have that list?
-
-34:59
-The full list. Yeah, the one that you show. Yeah, I, I can share this with you again. Yeah, I just
-
-  Speaker 2 35:07
-Yeah, I didn't put this in the document because you know, that would just make this I just. Keep it simple and then reference the list of. Things that we're testing separately. Yeah. Set this over to you as well. Oh, there, people? Yep. Um. Thanks! I'm sure we'll talk again.
-
-35:30
-Yep, thank you. Thanks again, bye! Actually.
+10:12
+Thank you.
