@@ -1,55 +1,131 @@
-Here's the consolidated list, reframed around static analysis / detection engineering. Same option set behind both AI Assisted and AI Generated.
+  Speaker 1 00:00
+Uh, through the scanner, and also, if you, if you all find the app, please. Uh, send an email to this group. Uh, so that we could quickly generate the dollar application button for that from our side. Um. So that we could, uh, edit any keys since you joined the call.
 
-**Query & Detection Engineering**
-- Query Development (new queries)
-- Query Tuning / Optimization
-- Preset & Ruleset Configuration
-- False Positive Analysis / Triage
-- Query Migration (version or platform upgrades)
+00:22
+I, I just shot you an email a few minutes ago as well. Can you send the package for the five components and the gpow to Ryan? He wants to look at the data points of what we have and stuff like that. Yes, and the impression that someone else had some previous.
 
-**Code & Engineering**
-- Code
-- Code Suggestion (IDE autocomplete, e.g. Copilot in VS Code)
-- PR / Code Review
-- Test Cases (unit / integration)
-- Automation Script / Tooling
+00:42
+Information, and he's thinking that, you know? We don't have sufficient information. I said no, you've not seen the latest one. We are gonna send you the latest one. Take a look at it, and he may come back with some recommendations based on what you see, like. You should send the one that we sent on GPU gprw and also send the components as well.
 
-**Deployment & Ops**
-- Deployment / Release Artifact (Helm chart, Docker image, pipeline config)
-- Migration / Upgrade Support
+01:04
+Like, he said, the file component. Just send the whole thing. Yeah, gpaw and the pi components here. And then today, I think Mike they have another app ID. Let's create. Plug that up ID as well. That's what we'll use as a ground truth.
 
-**Documentation**
-- Design Doc
-- Product Doc
-- Control Doc
-- POC Doc
-- Runbook / SOP
+  Speaker 2 01:20
+Who's on the hook? Once we have that
 
-**Diagrams**
-- Architecture Diagram
-- Workflow Diagram
-- Sequence Diagram
+  Speaker 3 01:23
+App ID to actually do it, is that ikisa or you or someone? So we have a guy between me and Shiva, so Raj, he actually works in, uh, in Shiva's work, but I can guide him. Okay.
 
-**Analysis & Reporting**
-- Report
-- Security Assessment
-- Data Analysis & Research
-- Vendor / Tool Evaluation
-- Remediation Support Analysis
-- Security Investigation Support
+  Speaker 2 01:41
+Okay, I think we may have solved our next steps, which makes it a lot better in less than by a minute. And like, about five minutes. What, what else do we need, uh, together with everyone here on the call? I'm so, Danielle, I think definitely. We need to talk to.
 
-**AI/LLM Work**
-- LLM Scanning / Model Evaluation
+01:58
+Uh, the product, the seven o'clock call. Um.
 
-**Other** (free-form justification in ticket comment)
+  Speaker 1 02:03
+I'll be going next week sometime. And yeah,
 
-That's 27 — trim if R wants it tighter. The first block is the one I'd defend hardest; everything else is standard.
+  Speaker 2 02:07
+I would like to do Tuesday. Um, so I'm gonna reach out to. I think I think that's realistic. Now that we we have some steps, even if it's, you know, this is where we are. This is, you know, this is currently the path forward. Um, so I'll pull together a slide and can share with you guys on Monday, and then I hope to go Tuesday.
 
-**Three notes to send along with it**
+02:26
+That'd be easiest for me.
 
-1. Single shared option set for both fields. Same dropdown behind Assisted and Generated so `category = Query Tuning AND AI Generated = yes` compares cleanly against the assisted equivalent. Two divergent lists would break the dashboard.
+02:33
+Okay, yeah, you have a?
 
-2. Keep "Other." Without a catch-all, people either skip the field or mis-tag, and the data gets worse rather than better.
+  Speaker 3 02:35
+A couple of questions. If you, if you have the time here.
 
-3. Expectation-setting for 's org: your team manages security business rules, not a platform or an app. Volume will concentrate in query work, analysis, and docs — "Code" and "Deployment" will look thin. That's the shape of detection engineering, not low AI adoption. Better said now than explained after the first dashboard review.
+  Speaker 1 02:38
+Yeah, okay, so, yeah, so deep Wiki, it's looking at the entire application, right? So, all the components within the application?
 
+  Speaker 2 02:47
+The nickname is we are moving over from the word technology, but the new terminology is knowledge bundle or application bundle. Um.
+
+  Speaker 1 03:01
+Yeah, so it's going to be at the component level. And then there's summarized version at the application, uh, component level. And then it is summary, uh, summarize that the application level, the?
+
+  Speaker 3 03:12
+Okay, got it. So, yeah, I mean, today. I mean, the ground truth was built primarily. I mean, I'm just giving you a background, right? The ground truth of the 50 apps that we have that is will primarily. For the llm scanners, right? So, there have been so many changes to the llm scanning methodology every day.
+
+03:28
+There is a news scanner out there. And we wanted to weigh a measure, you know, to measure them and the way the elements candle works is they only work on a single source code, right? They don't have information on outside. Knowledge, so I think that's so the ground truth for deep Wiki has to be slightly different, right?
+
+03:48
+So? Whatever the scanner, a DP key is using, it's looking at the entirety of. The components are not just a single component in its own, right? Yeah, yeah. So the the way? But to go ahead.
+
+  Speaker 1 04:03
+Yeah, yeah. So basically, what it does is, it looks like each component, right? It generates the, um, the call graph, and that's the ground truth for their component. Then it is llm calls and then generates that, uh, you know what the three different aspects application architecture, security, privacy, you know, bindings, and all that, and then rolls up into the top level and then generates the application level.
+
+  Speaker 2 04:29
+Um, and, and then, as part of the rolling up, we have the application manifest we have. Um.
+
+  Speaker 1 04:38
+Connexes, which kind of show you application application dependencies and blast radius.
+
+  Speaker 3 04:42
+Oh, uh, okay, so that's that. That's the additional information that you get and then.
+
+  Speaker 1 04:48
+Uh, it also has, if I'm not, mistaken has things like whether an application is exposed to the internet or not. Um, so that way you can decide to criticality of the application as well. Anything you want to add? That's perfect. And also, like, we have done some. Generated for an app and also few components.
+
+05:12
+We can send it to you. Take a look at it. Once you see it, you will, you know, it's. It's easier for you to navigate and understand what it is right, and I did. Yeah, I'm drinking from a ground truth perspective, right? So, if I were to build ground truth for?
+
+  Speaker 4 05:26
+To measure deep Wiki, I think, which is the goal here, right? So, in my manual reviews, and in the llm scans that I'm initiating, it should have the same. Information and knowledge that deep Wiki would have when it is actually doing this camera
+
+  Speaker 1 05:41
+100 because you are going to have a commit ID. Whatever the app you are going to select, you are going to give us an app ID and not an app ID, app ID, and a comment, and we will generate the knowledge application bundle for that commit. ID, right. Okay, so that's I should also take that in as a input.
+
+  Speaker 4 06:02
+Yes, and the people doing the manual reviews, right? So, they should know what's all in there. Okay, otherwise, the country would not be valid for your test.
+
+06:15
+What
+
+  Speaker 1 06:15
+Have you? Why did you say ground truth is not valid for hotels
+
+  Speaker 4 06:18
+It? Would I mean, unless I? So, when I build the ground truth, it should have the same. Information that the people have.
+
+06:32
+That's exactly what he means. Like when you give us an app ID and a commit hash.
+
+  Speaker 1 06:42
+We've been giving you an application bundle, which exactly describes. Dot comment hash for the code, and when you redo the scan, you are going to run the scan for that commit hash. All that is application bundle will have knowledge, right? So the thought process predict is, so, how much so we met with diaper today, like a few few minutes ago.
+
+07:08
+Okay, the
+
+  Speaker 4 07:09
+First suggestion,
+
+  Speaker 1 07:10
+They said, is to do this, which we've been trying to suck it. You've been trying to do this for three weeks now, right? The first generation is okay. This is where. Companies need to look at not just at a component level in all reference. To identify a severity up and vulnerability, we need other Dimensions in one set and look at an app level, the threat level, and all of those.
+
+07:32
+So, that's where that's where we are going after. Okay,
+
+  Speaker 4 07:35
+I got it. Yeah, that's one of my. I think we are pretty much saying the same thing. So when I built the ground, the ground truth that is built today, it doesn't have that knowledge, right? So, when I take a commit hash and scan it, so this ground truth is.
+
+07:49
+Different than the the one that exists, so it has to have that the output outside knowledge as well. Oh, okay, perfect. Yeah, I think, yeah, if you could share that with me as to what deep Wiki has access to?
+
+08:07
+And meanwhile, I think we'll get back to you on. You know what the, what? That app is that Mike referred to you earlier, so I think that's a good starting point. What is that?
+
+  Speaker 2 08:16
+So, my, have we decided on an app, you know, Mike was, get back. Sorry, yeah, he's going to. I mean, I, I tried to look for, but uh. He's going to get some additional help to identify that app, which would satisfy what you're looking for, right, because the ground truth today.
+
+  Speaker 4 08:31
+All the the 50 Benchmark. I don't know if you have taken a look at it, but they are all independent of each other, right? So yeah, and when I adjudicate them, I only adjudicate them based only on the source code, not on outside knowledge. Yeah, right, so that won't be applicable to your use case here.
+
+08:47
+So, okay, okay, that's correct. Yeah. Okay, that's all I heard here. Thank you. Thanks for sparing the time. Thanks guys! Appreciate it!
+
+  Speaker 3 09:01
+We're all set. I feel so much better. Have a good weekend. Everyone, yes.
