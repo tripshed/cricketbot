@@ -1,131 +1,272 @@
-  Speaker 1 00:00
-Uh, through the scanner, and also, if you, if you all find the app, please. Uh, send an email to this group. Uh, so that we could quickly generate the dollar application button for that from our side. Um. So that we could, uh, edit any keys since you joined the call.
+00:00
+Okay, let me make a note.
 
-00:22
-I, I just shot you an email a few minutes ago as well. Can you send the package for the five components and the gpow to Ryan? He wants to look at the data points of what we have and stuff like that. Yes, and the impression that someone else had some previous.
+  Speaker 1 00:33
+Okay.
 
-00:42
-Information, and he's thinking that, you know? We don't have sufficient information. I said no, you've not seen the latest one. We are gonna send you the latest one. Take a look at it, and he may come back with some recommendations based on what you see, like. You should send the one that we sent on GPU gprw and also send the components as well.
+00:39
+All right. So
 
-01:04
-Like, he said, the file component. Just send the whole thing. Yeah, gpaw and the pi components here. And then today, I think Mike they have another app ID. Let's create. Plug that up ID as well. That's what we'll use as a ground truth.
+  Speaker 2 00:40
+Now, uh, you wanna?
 
-  Speaker 2 01:20
-Who's on the hook? Once we have that
+00:47
+And then you can fit in and I'll share my screen. I'll send make. Uh, editable for you, because I'll take another copy. Yep, and then we'll go then. Then we need to adjust a few things, right? So that's. Yeah, as I moved his meetings, I I could meet with him with your updates.
 
-  Speaker 3 01:23
-App ID to actually do it, is that ikisa or you or someone? So we have a guy between me and Shiva, so Raj, he actually works in, uh, in Shiva's work, but I can guide him. Okay.
+01:08
+That happens quite a bit, right? So, so pretty much, he asked me. Okay, what are the tabs that I showed a instruction? These are the weights which we have. These are this. This is the summary on this.
 
-  Speaker 2 01:41
-Okay, I think we may have solved our next steps, which makes it a lot better in less than by a minute. And like, about five minutes. What, what else do we need, uh, together with everyone here on the call? I'm so, Danielle, I think definitely. We need to talk to.
+01:22
+They showed him. This is this. This was changed based on. Lord, be adjusting it. So that and what you can do is we'll make some edits and I just. You can send a prompt to table saying. Align align all the tabs. Now, sure, going by going by tab? And then it's going to update all the other pieces, and then we'll do a cross check.
 
-01:58
-Uh, the product, the seven o'clock call. Um.
+01:46
+Okay. And we should. We should kind of meet on this. But they also. A little bit.
 
-  Speaker 1 02:03
-I'll be going next week sometime. And yeah,
+01:57
+So, what you wanted is he didn't want SCA detection, so he wanted. So, two things architecture? She wants low. Okay, so because it's architecture team will decide, so he basically that. Five percent. And Commercial and vendor viability suggested for finance SCA, the tax detection, and all this put a lower thing because we are mainly called doing this.
 
-  Speaker 2 02:07
-I would like to do Tuesday. Um, so I'm gonna reach out to. I think I think that's realistic. Now that we we have some steps, even if it's, you know, this is where we are. This is, you know, this is currently the path forward. Um, so I'll pull together a slide and can share with you guys on Monday, and then I hope to go Tuesday.
+02:27
+Okay. So that that was your suggestion. In the in the developer workflow, this is 12, so he said, let's split it. The one is a developer workflow service now AVR slash ID integration. Said, the other one is the cicd integration. Okay, oh, okay, so? Will be splitted like a variable workflow.
 
-02:26
-That'd be easiest for me.
+  Speaker 1 02:59
+Integration cost, like the whatever plugin they have plus. The resources we spend.
 
-02:33
-Okay, yeah, you have a?
+  Speaker 2 03:08
+Uh, integrate with solar snow area, right? This is a new product we'll have to spend. To integrate. Great! Yeah. Uh, how did the original check marks regarded who did the development for check marks or service now? Oh, actually, that actually happened. Like, couple of years ago, we previously had threadfix.
 
-  Speaker 3 02:35
-A couple of questions. If you, if you have the time here.
+  Speaker 3 03:33
+Right, and then we got rid of threadfix, and uh, they did, uh, there was like a multi-year engagement. Oh, that was very painful to do the service now. AVR integration. Not only for check marks for black duck, you know? All the other manual process and, oh, that is a painstaking.
 
-  Speaker 1 02:38
-Yeah, okay, so, yeah, so deep Wiki, it's looking at the entire application, right? So, all the components within the application?
+03:49
+Yeah, Khalil was the one leading it, so he is fully. Yeah, he's. Yeah, that cost a lot of money, and a lot of man hours and stuff, so.
 
-  Speaker 2 02:47
-The nickname is we are moving over from the word technology, but the new terminology is knowledge bundle or application bundle. Um.
+04:02
+Yeah, so we can ask. So this is what we'll evaluate on the integration because you put that question there already, right?
 
-  Speaker 1 03:01
-Yeah, so it's going to be at the component level. And then there's summarized version at the application, uh, component level. And then it is summary, uh, summarize that the application level, the?
+  Speaker 2 04:11
+Integrational service now. AVR input put that there, but they won't be able to comment. This is the other side being too great. What did she ask for from us to go through this and see if it's all good. Okay, yeah, so I think what she did. Yeah, she put it in.
 
-  Speaker 3 03:12
-Okay, got it. So, yeah, I mean, today. I mean, the ground truth was built primarily. I mean, I'm just giving you a background, right? The ground truth of the 50 apps that we have that is will primarily. For the llm scanners, right? So, there have been so many changes to the llm scanning methodology every day.
+  Speaker 3 04:29
+Copile it and made that question form. And then we'll have to. Yeah. Well, I'll do anything. So, why is this? And I saved the wrap text or something. This is going north. Okay.
 
-03:28
-There is a news scanner out there. And we wanted to weigh a measure, you know, to measure them and the way the elements candle works is they only work on a single source code, right? They don't have information on outside. Knowledge, so I think that's so the ground truth for deep Wiki has to be slightly different, right?
+  Speaker 2 04:51
+Yeah, so that's fine.
 
-03:48
-So? Whatever the scanner, a DP key is using, it's looking at the entirety of. The components are not just a single component in its own, right? Yeah, yeah. So the the way? But to go ahead.
+  Speaker 3 04:52
+Yeah,
 
-  Speaker 1 04:03
-Yeah, yeah. So basically, what it does is, it looks like each component, right? It generates the, um, the call graph, and that's the ground truth for their component. Then it is llm calls and then generates that, uh, you know what the three different aspects application architecture, security, privacy, you know, bindings, and all that, and then rolls up into the top level and then generates the application level.
+  Speaker 2 04:52
+But here, now we have to get to 100. So, should I edit this? And then, then we will ask. Uh, basically, because this scorecard will change given the weightage at all right, so? Uh, so,
 
-  Speaker 2 04:29
-Um, and, and then, as part of the rolling up, we have the application manifest we have. Um.
+  Speaker 3 05:06
+And I see that you have removed SCA from it. Go back to the
 
-  Speaker 1 04:38
-Connexes, which kind of show you application application dependencies and blast radius.
+  Speaker 2 05:11
+Yes,
 
-  Speaker 3 04:42
-Oh, uh, okay, so that's that. That's the additional information that you get and then.
+  Speaker 3 05:12
+Okay, yes. He basically said the unified platform. Cover some of it because it's fast SCA all of that. What's the architecture?
 
-  Speaker 1 04:48
-Uh, it also has, if I'm not, mistaken has things like whether an application is exposed to the internet or not. Um, so that way you can decide to criticality of the application as well. Anything you want to add? That's perfect. And also, like, we have done some. Generated for an app and also few components.
+  Speaker 2 05:23
+But you didn't want to give that much weightage to FCA.
 
-05:12
-We can send it to you. Take a look at it. Once you see it, you will, you know, it's. It's easier for you to navigate and understand what it is right, and I did. Yeah, I'm drinking from a ground truth perspective, right? So, if I were to build ground truth for?
+  Speaker 3 05:27
+I got it. Okay, so there's no, even
 
-  Speaker 4 05:26
-To measure deep Wiki, I think, which is the goal here, right? So, in my manual reviews, and in the llm scans that I'm initiating, it should have the same. Information and knowledge that deep Wiki would have when it is actually doing this camera
+  Speaker 2 05:29
+Though I explained to him that we are looking at as looking at it as the potential replacement for black duck inside. The unified system will do it.
 
-  Speaker 1 05:41
-100 because you are going to have a commit ID. Whatever the app you are going to select, you are going to give us an app ID and not an app ID, app ID, and a comment, and we will generate the knowledge application bundle for that commit. ID, right. Okay, so that's I should also take that in as a input.
+  Speaker 1 05:39
+And then the unified platform should also have the ESPN part right this. Uh, well, that's fine. ASPM can be can be of this piece. That's fine. Yes, okay, so now. Let's get.
 
-  Speaker 4 06:02
-Yes, and the people doing the manual reviews, right? So, they should know what's all in there. Okay, otherwise, the country would not be valid for your test.
+  Speaker 3 05:55
+I mean, if you're going to look at ASPM, then some mentors do it better than the others. And. Okay, I mean it. It broadens the scope if you're looking into ASPM and all that so. Uh, no. The thing is, if broaden, the scope and checkbox one will.
 
-06:15
-What
+  Speaker 2 06:12
+That station that, that that's what it is, right?
 
-  Speaker 1 06:15
-Have you? Why did you say ground truth is not valid for hotels
+  Speaker 3 06:15
+No, actually, whiz would whiz has a better. I mean, they are actually an ASP platform, which, and some of the other vendors.
 
-  Speaker 4 06:18
-It? Would I mean, unless I? So, when I build the ground truth, it should have the same. Information that the people have.
+  Speaker 2 06:22
+Yeah, I think, take one of these sort of catching up. But yeah, good. Okay, okay.
 
-06:32
-That's exactly what he means. Like when you give us an app ID and a commit hash.
+06:34
+All right, and I showed him that our sample one, which is. He's preferred what I said for some. These stuff. This sneakers get coming up higher than check marks. He said, yeah, that's good. Okay, so now, how do we get this to 90 so his priority is? The integration cost is huge, so that's why we put 10 there.
 
-  Speaker 1 06:42
-We've been giving you an application bundle, which exactly describes. Dot comment hash for the code, and when you redo the scan, you are going to run the scan for that commit hash. All that is application bundle will have knowledge, right? So the thought process predict is, so, how much so we met with diaper today, like a few few minutes ago.
+07:00
+Okay, unified platform. Should you put detection quality higher, like 15, because that's the main thing, right? Could you put more weightage on that? Yeah, I think we should get absolutely. Let's. And the platform. Yes, platform should be 12, and the agentic is already 14, so that's good and negative.
 
-07:08
-Okay, the
+07:26
+Make it 15, make it 15, right? Yep, and then.
 
-  Speaker 4 07:09
-First suggestion,
+  Speaker 3 07:32
+Where else can we act? So here we, he. He wanted six a6b6c. Or should we just put?
 
-  Speaker 1 07:10
-They said, is to do this, which we've been trying to suck it. You've been trying to do this for three weeks now, right? The first generation is okay. This is where. Companies need to look at not just at a component level in all reference. To identify a severity up and vulnerability, we need other Dimensions in one set and look at an app level, the threat level, and all of those.
+  Speaker 2 07:42
+We can do. We can insert rows, right? I can insert it here.
 
-07:32
-So, that's where that's where we are going after. Okay,
+  Speaker 3 07:46
+No, we already, so you already have the scorecards and the weights are being calculated from the scores cards, right? The scorecards have all the the subsections. So, if you change it here, I mean, if you change it here, then change change the scorecard. Yeah, it's gonna basically. Yeah, so if you go to six here.
 
-  Speaker 4 07:35
-I got it. Yeah, that's one of my. I think we are pretty much saying the same thing. So when I built the ground, the ground truth that is built today, it doesn't have that knowledge, right? So, when I take a commit hash and scan it, so this ground truth is.
+08:11
+Six already has? All the? Subsections, right?
 
-07:49
-Different than the the one that exists, so it has to have that the output outside knowledge as well. Oh, okay, perfect. Yeah, I think, yeah, if you could share that with me as to what deep Wiki has access to?
+08:20
+Id
 
-08:07
-And meanwhile, I think we'll get back to you on. You know what the, what? That app is that Mike referred to you earlier, so I think that's a good starting point. What is that?
+  Speaker 2 08:21
+Feedback. And this is fine. Six is fine here. Yeah, we don't change that. So six is good. Yeah, I did, right? Yeah, it makes it. No, not necessarily. I mean, nobody's going to look at all the sheets, so maybe this sheet and one, two, three is probably what they're going to look at.
 
-  Speaker 2 08:16
-So, my, have we decided on an app, you know, Mike was, get back. Sorry, yeah, he's going to. I mean, I, I tried to look for, but uh. He's going to get some additional help to identify that app, which would satisfy what you're looking for, right, because the ground truth today.
+  Speaker 3 08:40
+So we could. Yeah,
 
-  Speaker 4 08:31
-All the the 50 Benchmark. I don't know if you have taken a look at it, but they are all independent of each other, right? So yeah, and when I adjudicate them, I only adjudicate them based only on the source code, not on outside knowledge. Yeah, right, so that won't be applicable to your use case here.
+  Speaker 2 08:42
+Yeah, this shade and summary, and then if somebody wanted to go to the store, right? So all I did is I changed three. Okay, so three is, uh, now. When you give this, just say, take this as a base. And align part 2 and 4. Yep, or or what you can do is you can actually manually edit it because we already asked the cost we added later, right?
 
-08:47
-So, okay, okay, that's correct. Yeah. Okay, that's all I heard here. Thank you. Thanks for sparing the time. Thanks guys! Appreciate it!
+09:07
+So, I think that will that will help? Okay, so did you only add the the AVR pieces in?
 
-  Speaker 3 09:01
-We're all set. I feel so much better. Have a good weekend. Everyone, yes.
+09:21
+India is in six. But it did not have any cost. You also wanted the cost to be factored in, right? The AVS integration cost. Yes, that is. That is three. That is three. Three is what we have to change. This is, this is where we are to change it cost, so we have to put.
+
+09:43
+We have to put. Uh, we have to put. So, to keep at least disruptive, right? Think of five items here, yeah,
+
+  Speaker 3 09:54
+Which which we can give the same weightage.
+
+  Speaker 2 09:58
+Evidence required. What Goods look like, so think of five items on the integration cost. Whatever the history, I've showed the integration cost is what service now changes?
+
+10:13
+The resources are additional.
+
+10:19
+Additional band power required, so additional. Uh, tools required things like that. Uh, use use Devon to help you with this section. Just say, I want to replace. Yeah, yeah, of course. Your attention, quality. Yes, detection quality with. Integration cost so? Right, and then retraction quality can. The SAS already has the same parameters here, right on the score term.
+
+10:46
+Yep, fast also has the same thing, right, published version. Oh yeah, so we won't lose this if we replace these five bullet points or the integration cost, then that should be okay. And then six is already part of. Fix is already there.
+
+  Speaker 1 11:06
+It's already talks about service now AVR IDE CX. You can see that's not already use nothing to change, but should I put some notes here saying?
+
+  Speaker 2 11:16
+Why are you taking nonsense, right? Yep, I am. Integration cost.
+
+  Speaker 1 11:26
+Action. Um, in weights.
+
+  Speaker 2 11:33
+Which scorecard needs to be aligned? Summary is based on, yeah, just just update these two and say, make it consistent, right? I think that should be it.
+
+11:47
+Please tab.
+
+  Speaker 1 12:00
+It could be a line okay.
+
+  Speaker 2 12:03
+So, that's, uh, and I will take a copy of it so that those is feedback. So, let's go back to get this one. Okay, so, he said, put all this together, put five percent there.
+
+12:16
+And then this. This summary section 10 summary also should be. A commercial vector viability, so row 10, so 10, basically.
+
+12:30
+And should be this one that also needs to be aligned. So you just add a few points?
+
+  Speaker 1 12:50
+That this one needs to be lined.
+
+13:07
+And those those two, like, what we are changing fundamentally King? This is a new section we are introducing. We want to align it here.
+
+  Speaker 2 13:16
+And that the 10, which is commercial. And flip that, so that's that. Everything else is same. We're just adjusting the weed. So now we have two percent where we want to put. You decide you want to put? Uh, or should we put 12 on the integration cost?
+
+  Speaker 1 13:39
+I think we can just make the last one, oh no. We can split it four and four. And then 410, 8, and B something like that you want to do? Yeah, it's fine. I mean, we can come back to this. We just about making it 100, right? So, this is.
+
+13:59
+We can do this later as well. I'll, I'll mean, let me fix the rest of the stuff first, and I can come back to this one. Uh, yeah, yeah, so? For now, I want to put. Yeah, just make the make it the 14 percent the top one.
+
+14:28
+I was 14. This is 16, integration is 10, agent equals 15. Developer rules for the three parts here. Thanks!
+
+  Speaker 2 14:40
+So this here this this? It's all mapped with. If I change something here, the scorecard okay here. Let's see. There is now cicd integration. Let's put that here. At the SAS detection file. Okay, yeah. This is saved. And I can let me take a copy of that. Hold on.
+
+15:04
+Just let and give a copy here. Uh, this one I don't need it.
+
+15:16
+Let me just. Ctrl. And we could say, replace, I'll just save things.
+
+15:29
+I don't need this. Do I need this original? Lucky, let's find this. This is the original line. This is. First draft.
+
+  Speaker 1 15:49
+The one that this one, you're going to put V2, but I put B2 here so that you. Yeah, sure. So, which one do you want me to update the V2? Hey, yeah, okay, okay, perfect.
+
+16:06
+Yeah, unless if you want to keep it, then you can keep it or. Give it like a working, working copy or something so that we know that that's the working copy that you're working on. V2, yeah, let's say, V. Copy paint. And this is the.
+
+  Speaker 2 16:29
+What do you want to tell me about what is saying we should say we to have taken a copy right now based on what we just discussed. Okay, all right, so wyp, right? Yes, correct? Yep, just call it V2 wib.
+
+16:50
+Okay, yes. Yeah, I'm not gonna touch. I'll only touch that one, not the last. So. Uh, yeah, yeah, so this did. Yeah, this is the.
+
+  Speaker 1 17:05
+And wwmb. That's the one I gave you. Here, let me open this.
+
+17:14
+I can't share anything on this one.
+
+  Speaker 2 17:24
+Make me edit as well. Otherwise, it's yeah. Okay, you have it now.
+
+  Speaker 3 17:31
+Okay, perfect. Yep, and uh, I had changed some of the criteria right from must should to should. Yeah, should we go back? I mean, if I do that, the the must the con the 50 is, it will go lower right in my version. The most quantity is only 26.
+
+17:51
+It still will still be 100.
+
+  Speaker 2 17:55
+Yeah, it's just just a dark part to change it, right? Okay,
+
+  Speaker 3 17:58
+Watch that here. Yeah,
+
+  Speaker 2 17:59
+First, merge it first budget and then make the other changes okay. Where that way it's less of edit. After that, okay, make it 26. And then the mandatory ones. Can you give me a shot? I know I have another meeting in 15 minutes. Ajay asked me to follow up on something.
+
+18:20
+I have. I have a few I have about 15 minutes, so let's. Uh, you want me to. So, this is with you. Okay, I'm closing this. Yes, yeah, I will. I will handle that. Yep. Okay, and then can you. Can you? Do you want to share your screen to show me quickly what you changed?
+
+18:35
+Well, there's. And then we'll go through this piece. This piece, let's just scan through in a bit. Okay. I don't want to stop sharing. Show me your version. Okay.
+
+  Speaker 3 18:48
+The only thing is just measure the best ones. Yeah, the most ones, I I changed it, you'll have to go through each one of them. Some other ones. It's not fair to. I mean, not all the winters are going to have. You cannot reject a vendor based on just the musts.
+
+19:04
+So, I only put the real core ones as the must ones.
+
+  Speaker 2 19:10
+Between you and me,
+
+  Speaker 3 19:13
+Right?
+
+  Speaker 1 19:13
+We have to rig it in a type. What Crystal was saying openly? I will not make a statement. Yeah, that's that's a given, right? Yeah. Yeah, we have to rig it in a way. So, like checkbox means. Keep that in mind in the must right? Absolutely. Yep.
+
+19:33
+So, uh, and yeah, we will Circle back, uh, Rudy. I gotta jump to another one now.
+
+  Speaker 2 19:39
+Let's, uh, let's, uh, you know what to change. Yes,
+
+  Speaker 1 19:43
+You switch the update. The masks in my spreadsheet, then do the other edits, and we will do okay. Okay, all right. Thanks, bye.
