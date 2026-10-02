@@ -1,143 +1,287 @@
-00:00
-Came up. Khalid needs a lot of help on the OSS side, right? This is. What SN? Is going to own eventually.
+Unknown 0:00
+Our same submission process, as far as I know, anytime like super super soon. I think probably the first first wave will be a little bit more manual. We'll store them somewhere, and then the team, the engineering team, product team are going to look at those and kind of weed out like, okay, how do we actually want Athena members to be sending this information? What data is relevant? How are we going to be able to handle these chains? We're not. Yeah, I don't. I don't have anything to tell you in terms of like this is the format we need, and like here's where you submit it. We don't have any of that in place yet.
 
-  Speaker 1 00:10
-Please joined already, so he's owning it. This is all the packages that come from chain guard packages that come from Red Hat. There's a the workflow. So? Uh, he suggested that asan is going to be out for a week next week, but he joined he has. You joined yesterday, and he had some additional.
+Unknown 0:32
+All right, good. So that part is the part I needed. That last piece, right? Because all of a sudden, Christian's like, send everything over to them. They need split pad, and I'm like, time. And then literally, what I say soon as a timeout, it was like, first of all, we're not doing this the way we did it before. I need the full automation path, you know. Like, so I'm not surprised by what you tell us. That said, that said, what we let me tell you what I got. Okay, so I knew everything you said. There was definitely another discussion this morning and flurry of stuff that happened past this morning. What I got was that your, we don't care about backported changes. We are all about end. Yep. Our strategy, and I know that we're different from other folks in the whole environment, but we are all about end. And as long as we get the latest end, we're fine to go. Yeah, because we're forcing the application teams to all move to n, and we're telling them to stay on the latest version, not even n minus 1n, And so, we did some analysis to look at what you have, and the overlap between what you have currently to us on the latest end is only like I think what was 11% something like that, right? From the work that Hassan you did last night was like you know like 11% low in comparison to maybe some you know if we look at the entire population it's much higher and so according to Christian not I say Christian said he had some sort of conversation with Dan where Dan's like send me everything that you have they definitely talked about this other thing, which I'm going to call exploit path. Sure. Okay. For now, but send them everything. Send them the exploit path. They're going to go ahead and they're going to start remediating to N, and they've committed that that's what he's going to start focusing on is going full full fledged N. So I sat there and I was like, okay, that's why I wanted to talk to you guys. I am comfortable sending you all our stuff before we sent you a subset of our findings. Okay, but I think what and they're talking about. In addition, I am put. You know, right now instead of sending according to Christian, instead of sending you finding ID, finding ID, finding ID, one of the things we can do is go package, and you have all of the findings. It doesn't necessarily give you the full exploit, but I mean, we already did what's critical, what's high, what's medium, and low, you know. And really, that's what we care about. Yes, you can turn around and be like, oh, if I combine two lows and go in, then I might I might get into a critical. We can do that later. I need the critical high to what I have today is really our priority.
 
-00:37
-And since you had already scheduled a trip to India, so just kind of. Is using some? Like leave without K or something. I don't know that video works, but. He's planning on, you know? When I see the approval, they'll see, but he's going that night short of it. He's going for a week, so he suggested I work with you to, you know, pick up some of it and then.
+Unknown 3:11
+Yep.
 
-01:02
-Anything that happens? Um, we can, you know, once he comes back, he'll transition to him. Okay.
+Unknown 3:12
+Yep. Yeah, I think we're
 
-  Speaker 2 01:12
-Okay, so.
+Unknown 3:13
+aligned there. Yeah. The the part that that you were just talking about with the end stuff was to me sounds like what what Dan was talking about with just fixing the latest exploitable version and then backporting for those who need it. Obviously, that's not you guys, but I think that makes sense. The only thing we lose if you submit, so you could still zip everything up into one submission the way you did already. The only thing we're going to lose if you submit that way is an easily easy way to look at the finding IDs, because right now you're doing finding the way it is style. Let's just keep it the way
 
-  Speaker 1 01:14
-So, put everything else on hold or, and finally, work on this one, right? Which one? What would you sorry? Can you repeat that? Yeah, so everything else would currently be on so. The model evaluation and all that stuff.
+Unknown 3:46
+it is, and I send you the ladies the way it is. We're not yeah yeah, but you
 
-  Speaker 2 01:30
-That will take a back seat, right? So, OSS. Yeah, we will give the analyst they say they needed yesterday. We can give the commitment to, you know? Uh, we can see.
+Unknown 3:50
+absolutely can send scan everything, send every finding you have. That you don't have to hold back from that perspective. Just send it all, keep it in the format you've got it today. Send it the way you've been Sending it, but but yeah, send us send us latest whatever you've got.
 
-  Speaker 1 01:43
-We'll give you in this time, right, okay? And you can assign some of it to kifika on the background. I don't know if he every day. No, she's not has a full eight hour workload, right? So, yeah,
+Unknown 4:05
+Okay, and then the the latter part of what you talked about will work through design over time.
 
-  Speaker 2 01:53
-Yeah, she's not ready yet. But, yeah, okay, you got it. Yeah, I mean, get things going so next. So, here's the deal. Again, there is busy with.
+Unknown 4:12
+Yeah, the whole like exploit path and the chain. Yeah, we're gonna work together
 
-  Speaker 1 02:03
-And again, there is busy with the aacps, right? He's out for two weeks, at least as footage. His commitment was, uh, J, and again, there are on there. Essan is out next week, so this is about just one week. Okay, okay, so? And of hand off this to add off to keep sticker and.
+Unknown 4:15
+though on that agenda. We're gonna that needs to be a whole different design approach. Okay, actually.
 
-02:22
-And keep things going, unless if it is super urgent thing, they need it. They have a presentation. Just say we need time to do it, right? That's it. Okay, expanding calls anything, just say. I'm helping out with Oasis. Because we need help there. So, yeah, and keep me at any interrupt, uh, keep me up that.
+Unknown 4:22
+So in the current, the ask is to get the PAA and ECPA N priority packages ready for a submission.
 
-02:42
-So, what I'm going to suggest is? We have a meeting with. I'll have a son schedule something with you. Okay, because we only have two days, right? So at least, so he's responsible for the metrics he's responsible for. Uh, you know? Getting the data pulling the data. This is everything is bad.
+Unknown 4:32
+Why would I only do PAACPA?
 
-03:03
-One pretty, so point is the people who are executing it themselves get confused as hell. Okay, what was it okay? Yeah, so it's, it's literally. A workflow. I'll show you and I'll, and then we jump on a call. So let me just show it by the way. I approved your corporate card.
+Unknown 4:35
+Because if you read, okay, go back to Christian's.
 
-03:23
-Uh, so.
+Unknown 4:37
+I read. I read Christian. I talked to Joy. I will tell them what's PAA CPA, but I'm gonna probably send them everything. Okay, but that's okay. I got it, Suzanne. I know what you're saying. I just I've had a conversation with the joy. I'm gonna leave it with me for a minute because the other conversation I had with the joy is this. So Rudy, Asan, everyone, listen quickly. My the the Wells Fargo team. I said to a joy, now is the moment of truth. You've got to make this decision, and I need this decision quickly. Do you want us to rescan? Our scans are from months ago, guys. We did our scan in April. Okay, it's very different now, and I only have I have, and we've changed the entire environment to all end end. You know what I mean? God knows what the latest findings are with all the population it is. I recommended he makes us run a scan before I send the stuff to Jane Guard. So he has to do some work on his side to do the dollars and all that other stuff. And then I said, and when I scan it, I'm going to scan everything. I can tranche it to be able to say what the PAACP of it, but I and I can you know start with PAA, start with UCPA, but then I will follow it up right away with the others. Because Suzanne, remember what we said before. What did we say earlier today? If I don't do that, then they're going to say, look at their entire population. Did they fix something else? I am doing that. We're not doing that anymore. We're changing our approach, and so I got a joint agree to that approach, and everyone else agreed to that approach. So we have no. So the ideation, just this is for the Wells Fargo team, Zach and team, because you don't know everything I'm talking about. I said I cannot run free work streams anymore. So I got them all, and I actually said I'm not going to run three workstreams anymore. I said your team is dying, and I cannot do that, and I will not do that unless you give me more capacity and resources to run the others. We're going to simplify, and so Tanner and Hassan, you know how we were breaking things up into those three buckets, and we were going to try to run. Nope, nope. There's one. It's all happy path. What I what I keep calling happy path, from scan to chain guard, to artifactory, to verification-all those downstream. The nine stepper we keep talking about is the happy path nine stepper. Okay. All right. So a joy has to give me that answer. The minute I get that answer, which I believe will be yes, we have to do some quick cost analysis and all that other jazz. We will then decide to push. You might want to give Casey, not Shane. Casey a heads up. Yep, we will most likely do this. Rudy, I need you to track this decision. I need this decision in the next 24 hours.
 
-03:28
-You, you. I mentioned some corporate card, right, you? Yeah, I don't. I don't need that. I mean, the last time.
+Unknown 7:17
+Do we rescan?
 
-  Speaker 2 03:35
-I, I won me. On the off side, they wanted me to use that for the expenses which I did, but I don't need that. I don't use it. I have no use for it. If I, if I need, I can apply one so. It's it's, I don't need the car anymore so.
+Unknown 7:19
+Do we rescan? That's the decision.
 
-03:51
-You can cancel it if you want.
+Unknown 7:22
+Okay, Joy and Jacob didn't
 
-03:56
-Uh, so.
+Unknown 7:26
+know that yet. I just talked to Joy. He's traveling. I told Khalil he knows. I don't know who's actually chasing that down. Usually, what happens is Rudy, we pull together the scanner team. They do a quick estimate on dollars, which is why I told Sam, give Casey a heads up because I'm gonna need the dollar at Jacob as well. Do a quick number on dollars, and we go talk, create one little one pager, and they talk to Manish. That's usually the steps that we do. Yeah.
 
-  Speaker 1 04:03
-Okay, uh, one second.
+Unknown 7:54
+Okay, I'll follow up on that.
 
-04:10
-Uh, let me just show you you're gonna take over the OSS anyway, right? At some point. It's happening now. I mean, I I? It's, it's, it's.
+Unknown 7:56
+Yeah. Okay. So we're gonna want to run. We're gonna run that because I feel like we need. We're gonna do this now. We're going to send you everything. I want to send you clean everything, because what I could send you is actually stuff that's old, and then I might have to send it. Okay. Okay. The other thing is, when we send this, not everybody's here. It needs to be sent the automated way. I want to send through through Molly's process. Molly worked with Zach and others around that integration. Remember that and how to send that information in. I want it done that way. I don't want to have second vault. Okay. So Suzanne, you're going to go and get with that Molly team, and you're going to let them know if you run automation, yeah, and let them know that's why we want to do it. And I would suggest we do a test run with a smaller set, everybody together, check that what I sent actually landed, and we make sure it looks nice, and then we can send the rest. And I want it fully auditable. Okay. Good so far. Questions?
 
-  Speaker 2 04:23
-Okay,
+Unknown 9:09
+Okay. I have a question. Sure. Are Zach? Are we still sticking to Java and Python only?
 
-  Speaker 1 04:24
-Uh, yeah, it's happening. Now, there's a meeting with, uh, a joy basically said. You take over and? Fix it with that son.
+Unknown 9:20
+Today, yeah, that's that's what we're. I want to avoid
 
-04:36
-And make sure. We have coverage, so that's what he told me last night. You know, because he's speaking, I mean, just like he volunteered Jay, and you know they get there, so he, I think he has a good understanding of what this team does. So that's that's, that's that's.
+Unknown 9:23
+what we did the last time and sending you stuff that is garbage. Want to make sure we have a clean run. So, is it and is it only Maven? Like, tell me what repositories and what languages.
 
-04:50
-That's a good thing, right? Okay, that way. Uh, so that, that's yeah. It is happening now. Okay, I'll give you.
+Unknown 9:36
+Java Python. I would send send everything you have for Java Python. If we can't process it. We'll be able to reflect that in the submit, like you know, on the submission details. But you know, generally.net,
 
-05:02
-Was there anything else about? My aspirations and stuff. Anything else come up or?
+Unknown 9:49
+No, none of that.
 
-  Speaker 2 05:14
-Uh, no, no, he said, productize gt50. Uh, and then what else? Make sure we get it. Uh, you know?
+Unknown 9:50
+Not yet. Yeah, yeah. Just go Java, Python, and yeah, we'll we'll we'll be able to. Say like, oh, we couldn't process it, right? We're looking for anything that's in like Maven Central public is going to be good. Anything in in a GitHub repo somewhere that's public is good. But I don't think you guys really need to go take the time to figure that out. Just submit the Java Python stuff. If we can't process it, we can surface that we can't process it.
 
-  Speaker 1 05:28
-Formalize, make a gt100. If you want things like that, so he's he's on board and pushing things along. And your aspirations. You mean your promotion and all? Yeah, I mean that I think it was. Presented or something, but I'm not in. The discussions won't happen till later, right? So, I don't have any any, any update there?
+Unknown 10:18
+Okay, right. That should also be automated. If you can't process, I should be able to get a little alert that says I can't process. Just you guys, you have a session with Molly, and you go through it together. Find out how I'm going to know that. It needs to be all tracked. You know what I mean? Not manually tracked, not people tracked, no more. We've done enough to be able to do it this in the right way. Any other questions? Okay. There was something else when we processed last time that we said we had to take out Suzanne to the questions that you're asking. Do you remember Tanner? Tanner, when we went and posted over the old sense. Yeah, Tana, when we went and gave them the stuff, you remember it was like only 50% could be processed or 60% Remember that, Tana?
 
-05:53
-Oh, is it okay? I, I okay. Yeah.
+Unknown 11:10
+Yep.
 
-  Speaker 2 06:00
-So, really, I, I don't want to wait until the end of the year to find out that, you know, it's not happening, you know, I would rather hear it now, right? So, so that you know my? You know, I I'm not blindsided, right? So? If it's not happening, just let me know in advance so that you know I can set my expectations.
+Unknown 11:11
+Yep. Make sure Susanna's on a good path. Make sure that all of that is understood with Molly, and that we clean out as much of the noise as possible. There might still be additional noise that can't be processed, but we can't have it be 50, 60%
 
-06:19
-I think the discussions happen in October or. November, correct, I know. I think they have. They do happen earlier. But I, I don't know, I'm not in the management. So, I was hoping you.
+Unknown 11:27
+Okay.
 
-06:40
-As I didn't. There are meeting the official meetings that are happening this year. Okay. Well, I can. I could give you an update after that. Okay, all right. Did you heard anything from Mike's family or because Mike Spandy was also? You know, you spoke to him before even I joined correct?
+Unknown 11:28
+Yeah, you remember you had a nice sheet that summarized it all.
 
-06:57
-Yeah, I did, and he said. He said he'll vouch for me. And he is hiring people P5, you know? I have a meeting with somebody. On his team later today, like an introduction. Yeah. So he, he is hiring people left and right.
+Unknown 11:32
+Yeah, yeah.
 
-07:21
-And what is this? What's that? What is this role?
+Unknown 11:33
+There's got to be a way we could filter that stuff out before we even send it. Yeah, pre-releases. Yeah, it was all that that kind of old old the old old stuff. Yeah, and then the type to what you said, Suzanne.
 
-  Speaker 1 07:27
-I have no idea. I have no idea you got an invite. I got an invite. Yeah, I don't know like that. That's, that's a contractor. You have? You have the support there, so I, I mean, what else can I say, right? Yeah, okay. Yeah, so I mean. I can tell you once it happens what the discussions go.
+Unknown 11:48
+Yeah, and if you're submitting latest versions of stuff, I think that'll that'll definitely be a lot cleaner. Yeah, unless
 
-07:49
-I can tell you whether it was. What was the outcome? The discussions haven't happened, so that's pretty much what? Uh, everything else you know, like, what's happening in Mike's family stream? I, I don't know, right? How did you did he talk to you directly about it or not? Uh, about what?
+Unknown 11:58
+well, well, guys, last time we thought we did submit latest land. Well, it's because
 
-  Speaker 2 08:10
-About, you know, hiring,
+Unknown 12:02
+it's because of stuff that is no longer actively maintained, or stuff that was migrated from one Maven repo to the next. Like that's technically the latest version because it's not. Yeah, that trained was like renamed. Yeah,
 
-  Speaker 1 08:11
-And what? What did he vouch for? Or, I know, he vows for because he talked to me, he said. He'll talk to a joy, right, okay, which is fine. That Joy knows that it's in. Of, I mean, it's under consideration from his side, and I had mentioned it to him also okay, but the official process doesn't happen till there.
+Unknown 12:17
+it's like before it used to be travel 1.3, and then it went to now they called it you know Tony 15 and it was like it's the same name. And then we thought the John Love That Three was new, and Tony told no, it's like 15 years old. Anyway, yeah, that kind of weird stuff that went on. We have to just figure out how that goes. Okay, so all of that needs to be metriced at every point. What we sent, when we sent it, what we sent, when we sent it. Okay. Any other questions? Because I have more. Okay. We are in a position to begin the automation of how we pull. I don't know if Sam, give you a heads up, Zach and team, how we pull the information we need, right? Scotty, the artifactory team is going to be doing that automation. There's going to be a meeting to talk to you about setting that up and how the scripts are run. I think we're trying to get it scheduled for when, Suzanne.
 
-08:31
-There are meetings and stuff like that. Okay, sounds good. So, so that's pretty much what I know, okay, and
+Unknown 13:17
+We're having an internal meeting today first, Tony, and then we're gonna meet with Changguard. Was the decision
 
-  Speaker 2 08:37
-We digress.
+Unknown 13:23
+okay? Fine. We'll do that. Just heads up. We're gonna need. We're gonna sit down. The only reason why I thought it would be good to have Zach because I wanted to talk a little bit about the script he did have or not have and what it does. But that's what's possible. You know what I mean? But we wanted to do an internal one first. That's fine. Okay, but we need to. We that's going to be. So you're going to start hearing us just talk automation, automation, automation all the time. It's just going to be the focus point versus what package did I get? What's the latest? What does it look like? You know what I mean? It's going to this call has to be fully full about automation. Zach, at one point, you guys had taken an action to start providing metrics dashboards for us. Do we know the status of that?
 
-  Speaker 1 08:38
+Unknown 14:18
+I know it's still being heavily worked on. I don't have any. I don't have any updates. Mia, do you have any updates on timing on that? I don't think I've seen anything.
+
+Unknown 14:27
+No, but I know it's top of mind slash urgent priority for at least two other members. So I know they are treating as top priority.
+
+Unknown 14:37
+Okay, we're gonna need to make it. We need gonna need to know an ETA, so can you try to work? I I don't know if that's like an ETA's top priority is still four or five weeks away, or you know within a week. You know what I mean? Like uh, so if you can give me some sort of range, that would be helpful.
+
+Unknown 14:55
+Yeah, I'll see it. I'll give that to us.
+
+Unknown 14:58
+Because what's starting to happen is because these. And I and I do feel it. What's starting to happen is we're getting a lot of like it's the pickup is starting to come, right? The flurry is starting to come, which means the minute we start processing this stuff, everybody's going to start asking for status of what did we process, when did we process, what did we get back, how long did it take. So they're going to want to I sent you something on this date and I got it back on this date, you know what I mean, and all that, and then they're going to want to how far is Jane Guard, and that's all your reports. They're also going to want to know Wells Fargo. So somehow, is there any way? See, you can't you can't say there's an indication of what I sent you, right? There's no way to show. Zach, is there any way for us to know which ones are ours?
+
+Unknown 15:39
+Well, you can look at your submissions, and we can see what files, the names of the files you submitted, and which CGP's are tied to those files. And then you could use those CGP IDs to look up records and stuff. So that's how we've been connecting it. That's how the scripts I wrote are doing it. Oh, so we
+
+Unknown 15:57
+can tell what our population is today. We don't have to. We don't have to filter it later.
+
+Unknown 16:01
+Sorry. I just not say it again.
+
+Unknown 16:04
+Just on our conversation earlier that we were having, there is absolutely a way for us to, when we pull, to know what our population is.
+
+Unknown 16:11
+Of course, yes, that I do.
+
+Unknown 16:13
+There's no, there's no, there's no additional automation I have to do later. The script has that already. Okay, that's helpful. And you also confirm that there's timestamps so that if I decide I'm going to pull every Monday, I can ignore anything that was prior. I could just go to latest Monday. Yeah, yeah. There's a
+
+Unknown 16:30
+created and modified timestamp for all the records. Yep.
+
+Unknown 16:33
+All of that's going to be important because as we start to think about this, you know, automation, we want to make it as simple as possible. So that's helpful, and then obviously the reporting stuff that we need to do. Okay. Okay. I don't have anything else on my list.
+
+Unknown 16:51
+There is. I can drop it in the channel here. We there's some OSV feed stuff behind a feature flag in the console. I think John shared this before in some other meeting, but if you log into the console with that link, that'll flip the feature flag for you for your session, and you can start to see what what new stuff is coming into the into the the console. And I could demo a little bit of it, if you wanted, but that's showing some of the OSV feed stuff in the in the console directly.
+
+Unknown 17:26
+Okay, right. So you got that, Scott and Adrian, because that's going to help us in the conversation later. Yeah.
+
+Unknown 17:31
+Yes. We're also having a timestamp discussion on our side, Tony, because we're going to need to. We might need to modify some of the data structures Molly's got to make sure we've got the appropriate timestamps.
+
+Unknown 17:45
+Yeah, that's what that's what I need. Yeah, at this point, when we sent, when it was processed, when we got it back, all that stuff. When we sent, anyway, you guys get it. And
+
+Unknown 17:57
+then, and then the opposite, we also need to be true, so we definitely want to know everything that we submitted. Well, I guess never mind. That won't be necessary anymore if we give them everything.
+
+Unknown 18:13
+We're gonna give them everything. We're changing our approach. Everything. Everything. Everything. Everything. Go chain guard. All right. Any other questions from anybody? All right. We go. Thank you, Hassan. Can you stay on for a minute, Hassan, Rudy, and Tanner for a minute with Susanne?
+
+Unknown 18:41
+Sure.
+
+Unknown 18:41
+We're going to talk. We'll split our metrics. Everybody else can stay if you want, Adrian. Whatever. Thank you. Have a good weekend.
+
+Unknown 18:47
+Cheers. Have a good weekend. Take a sec.
+
+Unknown 19:13
+Okay, so I wanted to just bring you guys together because I wanted to make sure you understood what the other update was regarding the simplification approach of only doing workstream C, yeah, and so I don't want you to create or spend the time anymore breaking things up and tracking that separately. Okay, so I think it's going to make your lives a lot easier. And I got Khalil there, and I've got a joy there. We might have to have one session where we say, "Well, we did this pre-disclosure. Remember, because you did one thing for Chamber for pre-disclosure. I think all you do is put it within the same workstream C. You just say the just call out the." Packages that were done and what the campaign was. So you know how we have the bullets within the same row. You just create another bullet and you say this was submitted on this date. You know what I mean? And process blah blah blah. You with me?
+
+Unknown 20:16
+And then a separate item on pre-disclosure, right?
+
+Unknown 20:20
+Instead of a whole stream of pre-disclosures, because from now on, if we stand on that, I think under
+
+Unknown 20:24
+that same submitted Wells Fargo submitted section that's had a pre-disclosure thing. Okay. Yeah. So if you
+
+Unknown 20:29
+take a stab at it, we can look at it real fast because I'm trying to connect the history of what we had to now this new approach. Yeah. So we don't lose it. But I don't. We take a stab at it, and then if you want, I could spend like 15 minutes with you to see. Yep, that makes sense. We could do the before and after.
+
+Unknown 20:45
+Yeah, I'm working on the slides for this week. I'll go ahead and remove A, B, and just do C. And yes,
+
+Unknown 20:51
+for this week, if there was something in like the B, like the pre-disclosures, put it in the C. Yes, we'll do. Okay, and then we're out of that business, guys. And if anybody asked you to do that business, you explained to me. Okay. Yeah. Suzanne asked me. Suzanne. Hi. Sorry.
+
+Unknown 21:07
+Well, I gave him a heads up, but I didn't realize you were going to try and do it for this week because I didn't think Manish would have time to explain it to Charlie. I thought you would do it for next week, but whatever. The only thing
+
+Unknown 21:16
+that's been going on to Charlie is Workshop.
+
+Unknown 21:18
+Okay. That's fine then.
+
+Unknown 21:20
+Fine. That's why I got to merge it a certain way, but yeah, I just don't want to report it out anymore. Done, kill it, gone. But I want to be able to see it so that I can tell Khalil and Joy what to see, what what we did. But if we get this done, it was a way to actually help up some capacity, right? Because I'm I'm like I can't we can't run three workstreams. I'm done. So now we're back to only two workstreams: one for IBM and one for Chain Guard, and I call it the Happy Path. Happy path. And only one automation approach. Go ahead.
+
+Unknown 21:49
+The remediated inventory, which we did last week for Chain Guard as well as you know Red Hat. Red Hat all failed, anyways. But for Red Hat, we had eight packages that passed, which which we already sent to the campaign. So moving forward, we are just excluding the remediated inventory totally. Yes. Okay. Because you just
+
+Unknown 22:14
+merged what we did do before, you know, because we did do some things we merge it into the other line.
+
+Unknown 22:20
+Okay. Even the remediated inventory.
+
+Unknown 22:23
+Yeah, we're just seeing them. Don't don't store it.
+
+Unknown 22:26
+Okay.
+
+Unknown 22:27
+Because if we turned them out at some point
+
+Unknown 22:30
+related to our packages, in the end, they were still related to our packages.
+
+Unknown 22:34
+Okay. We just had to. And their packages
+
+Unknown 22:36
+is in there. All the only reason why we didn't see it in there is because we didn't send it to them, because we only sent 120 75% the other 75. Now that we send everything, by the way, this was Susan's idea. Little cards to Hussain. While we decided to send them all everything, we send them all everything. The step I need to do, which I didn't discuss here because not you guys, I have to do in a separate meeting, is now we have to just do a redoup later. Because if I sent it to both, and they send it to me both, I'm gonna take the whoever sent it to me first. I'm gonna take that one, and then I have to dedupe the other one. See what I'm saying? Yeah. That's processing. We have to not talk to. We have to discuss it with architecture how I do that decision point. But I mean, I haven't sent anything yet to everybody. We have to tell Red Hat we're sending them everything too. After we give the decision of rescanning everything. But this is what we're doing, guys.
+
+Unknown 23:21
+Okay. It
+
+Unknown 23:23
+helps us, and I just, I just told them this too. By the way, I couldn't get a decision yesterday, and I was like, I thought about it last night after I talked to to Suzanne, and then I just called them this morning and said, this is what I'm doing. Okay. Unless they can give me additional capacity, there's nothing else to do. But they were very very supportive. They like these words, so it works. Okay, I'm done. Anything else? Suzanne. She's raising her hand and shaking her hand. Casey
+
+Unknown 23:53
+is out of office and Shane is driving in a car. Who do we give a heads up to? Do I have to go to Jacob?
+
+Unknown 24:01
+I'll give Jacob a heads up, but yeah. Thank you. I was like, I think it should come from you. Okay. Okay. But the biggest thing is calling. The biggest thing is calling Christian. I'll I'll put it in that window right now, and I'll type it in. I said we just had a meeting with Chain Guard. As much as you want us to send this week, they're not ready, so they'll let us know when they're ready. I I I I I chose to leave that to you. I didn't put that in that window. I told the other team. Well, it's funny because I actually talked to Zelena earlier, and I was like, just so we're clear, I I didn't do this now. I was like, just so we're clear, there's just no way unless it's automated, and we might have to do because he's like, let's get it done today, and I see it. I'm like, ah, there's no no no. Can you imagine if we had to try to do something this substantial manually?
+
+Unknown 24:45
+Well, and Tony, just to manage expectations, because I'm out a couple of days next week, and Stephen was asking the question: if they call for a new scan, that will take a couple of days if we do a full new scan. So. Molly and those guys probably need to be ready for the end of next week, right? They can do their testing and stuff in the beginning, but I don't think those guys would have an output ready for us to submit until at least the middle of the end of next week, right? Yeah. Even if they could pull it off in the beginning. Yes.
+
+Unknown 25:18
+Yeah, that's all true, but Molly has one to do
+
+Unknown 25:20
+in parallel. That only. No, no, no. I just, I was just trying to. People have never done through a full scan before. I'm like, this is days, not hours.
+
+Unknown 25:28
+Yeah, no, no, no. This is days. Yeah. No, everybody knows that. No, you know, this is days. But in parallel to doing the days, all this automation has to be finished. And just remember, even though it's days, I want to take a piece of it and and process and test it. I don't have to wait for the full scan to test. So like all that has to happen next week in parallel to the scanning.
+
+Unknown 25:47
+To the once we get to everything else that Molly's doing. So yes, I will talk to.
+
+Unknown 25:51
 Yeah,
 
-  Speaker 2 08:38
-So OSS, I'll uh send it to me, and we can improve the process right, or we have to stick to what what's being done currently. Uh, we can improve the process. We'll own the process, so let me send you. So, there is a matrix review, so just join that meeting.
+Unknown 25:52
+he's he's going to be the next one to tell you he's out of capacity, but that's okay.
 
-08:57
-Okay, so just join that meeting.
+Unknown 25:57
+Yeah.
 
-09:03
-Uh, let me forward this to you. I, I will join in 15 minutes. Okay, so sure. Essan, who has it? It's restaurants needing really, but we need to get. We need to figure out our time for you and Nassan to meet.
+Unknown 25:59
+All right. Do we
 
-  Speaker 1 09:19
-Came to give you a transfer knowledge transfer. Sure, because I thought whoever his backup was Nick Creator. Uh, he's not. Uh, he's not. Okay, he's working with Nick. Okay, that's, that's strange. I mean. Yeah, he's more an into. Machine learning and stuff. I don't know what it does right now, but.
+Unknown 26:00
+still need to send requirements to Molly for the dashboard based on our current approach of metrics, Tony and Suzanne, or does he have? Yeah, you got to
 
-  Speaker 2 09:51
-Yeah, I don't know everything he does is through
-
-  Speaker 1 09:54
-Devon, and he's basically wrong most of the time. So that's why Neil Lamp on called me yesterday. You need to be his backup, and I spoke to a son and. Uh, we realize there's a gap. Uh, I asked that son to put some documentation. That this topic came up with with the joy I brought it up, and that's funny.
-
-10:17
-That's when that's how you were okay. Okay, so join the meeting. It's at nine. Just watch the metrics, and then I'll send you a couple of links. One is. The Matrix themselves. What Sr is working on and then the other piece is the overall both flow, so I'll send you these two links in this video.
-
-10:36
-Okay, our chat later, but join the nine the 9 APD. Okay, yep. Sounds good. And right now, I just sent you the forward. Yeah, I just. Yep. Okay, thanks. Okay, good. Thanks, bye.
+Unknown 26:09
+change it. But yes, you got to change it, then send it. Yes, you're just going to send it. You know, here's here's simpler ones. We simplify the the report. There's no reason to call it out to these different things, and we are changing it. Yeah, go on. Okay. Am I dismissed? Goodbye. Bye bye. Thank you.
