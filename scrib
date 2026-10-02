@@ -1,287 +1,185 @@
-Unknown 0:00
-Our same submission process, as far as I know, anytime like super super soon. I think probably the first first wave will be a little bit more manual. We'll store them somewhere, and then the team, the engineering team, product team are going to look at those and kind of weed out like, okay, how do we actually want Athena members to be sending this information? What data is relevant? How are we going to be able to handle these chains? We're not. Yeah, I don't. I don't have anything to tell you in terms of like this is the format we need, and like here's where you submit it. We don't have any of that in place yet.
+00:01
+Hey, hey, Mike. I'm good. It feels like it's been a while since I've spoken to you. Yeah, I know, we're working pretty close to there for a while. And then, yeah, surprisingly, I'm actually on time for a meeting one, so that's good.
 
-Unknown 0:32
-All right, good. So that part is the part I needed. That last piece, right? Because all of a sudden, Christian's like, send everything over to them. They need split pad, and I'm like, time. And then literally, what I say soon as a timeout, it was like, first of all, we're not doing this the way we did it before. I need the full automation path, you know. Like, so I'm not surprised by what you tell us. That said, that said, what we let me tell you what I got. Okay, so I knew everything you said. There was definitely another discussion this morning and flurry of stuff that happened past this morning. What I got was that your, we don't care about backported changes. We are all about end. Yep. Our strategy, and I know that we're different from other folks in the whole environment, but we are all about end. And as long as we get the latest end, we're fine to go. Yeah, because we're forcing the application teams to all move to n, and we're telling them to stay on the latest version, not even n minus 1n, And so, we did some analysis to look at what you have, and the overlap between what you have currently to us on the latest end is only like I think what was 11% something like that, right? From the work that Hassan you did last night was like you know like 11% low in comparison to maybe some you know if we look at the entire population it's much higher and so according to Christian not I say Christian said he had some sort of conversation with Dan where Dan's like send me everything that you have they definitely talked about this other thing, which I'm going to call exploit path. Sure. Okay. For now, but send them everything. Send them the exploit path. They're going to go ahead and they're going to start remediating to N, and they've committed that that's what he's going to start focusing on is going full full fledged N. So I sat there and I was like, okay, that's why I wanted to talk to you guys. I am comfortable sending you all our stuff before we sent you a subset of our findings. Okay, but I think what and they're talking about. In addition, I am put. You know, right now instead of sending according to Christian, instead of sending you finding ID, finding ID, finding ID, one of the things we can do is go package, and you have all of the findings. It doesn't necessarily give you the full exploit, but I mean, we already did what's critical, what's high, what's medium, and low, you know. And really, that's what we care about. Yes, you can turn around and be like, oh, if I combine two lows and go in, then I might I might get into a critical. We can do that later. I need the critical high to what I have today is really our priority.
+00:19
+Oh, they took any anything new or I can. You know, did anyone, uh, reach out to you on, uh? On the, uh, there was an ask from Christian that they wanted to do some testing. I think they were talking about was it IBM concert? No, nothing. Yeah, when you send me a message, and uh, I followed up with a couple of folks, and nobody heard anything about anything from Christians or.
 
-Unknown 3:11
-Yep.
+00:48
+And okay, so it looks like, um.
 
-Unknown 3:12
-Yep. Yeah, I think we're
+00:55
+Couldn't find this medium calendars. Okay, awesome, uh? Let me check. Oh yeah, you're on the meeting from not the meeting, but the message from Paul Sullivan from IBM he was trying to, um. To get time, I'm going to add Albert so that I can be involved. But, uh, yeah.
 
-Unknown 3:13
-aligned there. Yeah. The the part that that you were just talking about with the end stuff was to me sounds like what what Dan was talking about with just fixing the latest exploitable version and then backporting for those who need it. Obviously, that's not you guys, but I think that makes sense. The only thing we lose if you submit, so you could still zip everything up into one submission the way you did already. The only thing we're going to lose if you submit that way is an easily easy way to look at the finding IDs, because right now you're doing finding the way it is style. Let's just keep it the way
+01:17
+So essentially, what they're trying to do, is they're bringing in IBM concert, and they want to test it. So essentially, what that is, is like an IBM grown. Llm harness, right? So essentially, the equivalent of what we've been building and doing and what they want to do is, uh, test it against.
 
-Unknown 3:46
-it is, and I send you the ladies the way it is. We're not yeah yeah, but you
+01:35
+Our gt50 performs against other models. So, I think that's a good good test for us to have. And then, you know, once we get check marks Fusion, it'll be the same thing. Oh, okay, yeah, perfect. Yeah, this is, this is great, but IBM, I never heard of, uh, doing anything in the business?
 
-Unknown 3:50
-absolutely can send scan everything, send every finding you have. That you don't have to hold back from that perspective. Just send it all, keep it in the format you've got it today. Send it the way you've been Sending it, but but yeah, send us send us latest whatever you've got.
+01:55
+We'll say that again. Yeah, as everybody's getting in the business, it seems like, I mean, I think eventually someone will Define this as their core competency and be better than other people, right? Hopefully it's check marks. I don't. They seem to have a lead, but you know, I don't think it makes sense for us to do this forever.
 
-Unknown 4:05
-Okay, and then the the latter part of what you talked about will work through design over time.
+02:11
+Building our own harnesses, right? Yep, absolutely. Yep. But then, then I guess the other flip side is. We're starting to do some research and testing with the open weight models. And you know what one once we dial that in the the calculus is going to change significantly on the tokenomics, right?
 
-Unknown 4:12
-Yeah, the whole like exploit path and the chain. Yeah, we're gonna work together
+02:28
+Yep. So interesting, all right? Well, what do you have on your list? Yeah, so one of the things that we could do for the the gt50 is also look at the the dollar numbers, right? So look at the token consumption for the scans. And that could also be a metric that we could track with the gt50, right?
 
-Unknown 4:15
-though on that agenda. We're gonna that needs to be a whole different design approach. Okay, actually.
+02:48
+But we don't have that data today. So, I know that Ryan Lynn's team tracks that, yeah, so they, they measure that for certain things. So, I don't know if that would be necessary. It might be a nice to have, right, okay? And Jeff, yeah, so, are you continuing to expand the gt50 in terms of like?
 
-Unknown 4:22
-So in the current, the ask is to get the PAA and ECPA N priority packages ready for a submission.
+03:06
+Now, we've run a bunch of stuff against it. Have we done any of the manual adjudications on any of the additional findings? Yeah, here's. Yeah, I want to do a bunch of things Mike, you know, you know, the inter integrator reliability? How effective the yeah, I want to do?
 
-Unknown 4:32
-Why would I only do PAACPA?
+03:20
+All that I put all that in the stories and? A Joy says, you know, do anything that you want. You have my full support and. I mean, it's. But yeah, sensing about. Yeah, the butt is that it's we need the, you know, we need a full-fledged? Way to actually, you know, use these tokens, right?
 
-Unknown 4:35
-Because if you read, okay, go back to Christian's.
+03:42
+So right now, it's only of the co-pilot. And Amit keeps asking, you know, why are you spending totally co-pilot tokens? And this has to be sitting on a Vortex AI sort of a setup. And that's what Rudy and everybody says, you know, we have to put this on the cloud so that, you know, we can use the the frontier models there.
 
-Unknown 4:37
-I read. I read Christian. I talked to Joy. I will tell them what's PAA CPA, but I'm gonna probably send them everything. Okay, but that's okay. I got it, Suzanne. I know what you're saying. I just I've had a conversation with the joy. I'm gonna leave it with me for a minute because the other conversation I had with the joy is this. So Rudy, Asan, everyone, listen quickly. My the the Wells Fargo team. I said to a joy, now is the moment of truth. You've got to make this decision, and I need this decision quickly. Do you want us to rescan? Our scans are from months ago, guys. We did our scan in April. Okay, it's very different now, and I only have I have, and we've changed the entire environment to all end end. You know what I mean? God knows what the latest findings are with all the population it is. I recommended he makes us run a scan before I send the stuff to Jane Guard. So he has to do some work on his side to do the dollars and all that other stuff. And then I said, and when I scan it, I'm going to scan everything. I can tranche it to be able to say what the PAACP of it, but I and I can you know start with PAA, start with UCPA, but then I will follow it up right away with the others. Because Suzanne, remember what we said before. What did we say earlier today? If I don't do that, then they're going to say, look at their entire population. Did they fix something else? I am doing that. We're not doing that anymore. We're changing our approach, and so I got a joint agree to that approach, and everyone else agreed to that approach. So we have no. So the ideation, just this is for the Wells Fargo team, Zach and team, because you don't know everything I'm talking about. I said I cannot run free work streams anymore. So I got them all, and I actually said I'm not going to run three workstreams anymore. I said your team is dying, and I cannot do that, and I will not do that unless you give me more capacity and resources to run the others. We're going to simplify, and so Tanner and Hassan, you know how we were breaking things up into those three buckets, and we were going to try to run. Nope, nope. There's one. It's all happy path. What I what I keep calling happy path, from scan to chain guard, to artifactory, to verification-all those downstream. The nine stepper we keep talking about is the happy path nine stepper. Okay. All right. So a joy has to give me that answer. The minute I get that answer, which I believe will be yes, we have to do some quick cost analysis and all that other jazz. We will then decide to push. You might want to give Casey, not Shane. Casey a heads up. Yep, we will most likely do this. Rudy, I need you to track this decision. I need this decision in the next 24 hours.
+04:04
+Like how the scans are running? And the process to get that apparently is very cumbersome. You have to go through an eirr process and explain to them yeah. So it's all these roadblocks that. That are in the way to actually, you know? Do that. I mean, it's interesting because the?
 
-Unknown 7:17
-Do we rescan?
+04:25
+The Challenger model that we use for remediation validation is in vertex, and it's not, uh, we didn't go through airr for that. Oh, is it okay if if there is a way I can? Not do that. Somehow get on vertex, you know that? You know, that really helps. Talk to Garland.
 
-Unknown 7:19
-Do we rescan? That's the decision.
+04:46
+He'd be able to help. Okay. And I, I did mention to John and John said. They had back door access previously, and all that has been closed. And now, everything has been. Funnel through ARR. Okay, well, maybe they've closed that Gap. Yeah, the point of the air that is having it.
 
-Unknown 7:22
-Okay, Joy and Jacob didn't
+05:09
+It's good, but uh, they get into very minor details of what exactly it is. And. We could do that, right? But it's gonna. We try to do that with corgia, and uh, they, you know, they have like a fine fine-tooth comb. And you know, they dig into the very minute details, and they want everything to, you know, they want to know exactly what the ins and outs are.
 
-Unknown 7:26
-know that yet. I just talked to Joy. He's traveling. I told Khalil he knows. I don't know who's actually chasing that down. Usually, what happens is Rudy, we pull together the scanner team. They do a quick estimate on dollars, which is why I told Sam, give Casey a heads up because I'm gonna need the dollar at Jacob as well. Do a quick number on dollars, and we go talk, create one little one pager, and they talk to Manish. That's usually the steps that we do. Yeah.
+05:31
+Oh yeah, so yep. And which models you're sending it to, and uh, it's? That's what we got. I mean, it's probably a good thing just burdensome for what we need. Yeah, and, uh, yeah. With that aside, the other thing is. Jeff from Lions vineline's team. I mean, there looks like they're still doing some new model testing I.
 
-Unknown 7:54
-Okay, I'll follow up on that.
+05:57
+I got a note about there trying the vertex, the Astra six, and trying to see how that Compares. Yep, and they did some initial analysis and. I gave them my thoughts as well, but, uh, yeah. We don't have any of the findings from Master 6 itself right in the ground truth, so?
 
-Unknown 7:56
-Yeah. Okay. So we're gonna want to run. We're gonna run that because I feel like we need. We're gonna do this now. We're going to send you everything. I want to send you clean everything, because what I could send you is actually stuff that's old, and then I might have to send it. Okay. Okay. The other thing is, when we send this, not everybody's here. It needs to be sent the automated way. I want to send through through Molly's process. Molly worked with Zach and others around that integration. Remember that and how to send that information in. I want it done that way. I don't want to have second vault. Okay. So Suzanne, you're going to go and get with that Molly team, and you're going to let them know if you run automation, yeah, and let them know that's why we want to do it. And I would suggest we do a test run with a smaller set, everybody together, check that what I sent actually landed, and we make sure it looks nice, and then we can send the rest. And I want it fully auditable. Okay. Good so far. Questions?
+06:17
+But but yeah, we don't. Yeah, they also a little reluctant in how they. You know, run the, I mean, 12 to 50 ground. Truth itself is gonna it's running them around, like? Hundred thousand dollars is that? Is that right? Now, what? What's costing them a hundred thousand dollars just the the ground through the 50 repos in the ground?
 
-Unknown 9:09
-Okay. I have a question. Sure. Are Zach? Are we still sticking to Java and Python only?
+06:40
+Truth, it's some. It's costing the money. It's not. Yeah, it's not free, right? Yeah, I know we've been blowing money like it's going out of style, and this stuff, right? So, yeah, I mean, as long as Manish is okay with it, then you know. Bucket is under r d, right?
 
-Unknown 9:20
-Today, yeah, that's that's what we're. I want to avoid
+07:00
+Yep. And you mentioned checkbox Fusion, right? So the rfps in a limbo right now. So, what happened is, I don't know if you're up to speed on that one? But, uh, I am not so. The vendors responded. Only six of the vendors responded, and, uh, there is a weighted.
 
-Unknown 9:23
-what we did the last time and sending you stuff that is garbage. Want to make sure we have a clean run. So, is it and is it only Maven? Like, tell me what repositories and what languages.
+07:19
+I can send that over to you. It's basically a sheet where you have to, they have responded. You have to rank them based on the responses. Uh, yeah. They wanted the feedback from a whole lot of people. I thought it's going to be limited to a few people, but, uh, chiradeep, and.
 
-Unknown 9:36
-Java Python. I would send send everything you have for Java Python. If we can't process it. We'll be able to reflect that in the submit, like you know, on the submission details. But you know, generally.net,
+07:37
+This team. Um, but it's being sent to, you know, Adrian Lane, you know, a bunch of people from Cloud they want feedback from cdxo, so? Krishna's team, so I think they're sending it to at least like five six people. So that they work. They get an unbiased opinion on where to land on, and then that's what it's at.
 
-Unknown 9:49
-No, none of that.
+07:58
+So there's a meeting schedule later this month, I think mid this month with Amit. To go over all those results and then hopefully make a decision. So, besides you, who asks for mapsec is providing an opinion. Yeah, they wanted one from me and also one from Rudy, which is kind of weird, but yeah, um, kind of interesting.
 
-Unknown 9:50
-Not yet. Yeah, yeah. Just go Java, Python, and yeah, we'll we'll we'll be able to. Say like, oh, we couldn't process it, right? We're looking for anything that's in like Maven Central public is going to be good. Anything in in a GitHub repo somewhere that's public is good. But I don't think you guys really need to go take the time to figure that out. Just submit the Java Python stuff. If we can't process it, we can surface that we can't process it.
+08:18
+Okay, yeah, Mr President asked for someone from John's team. Yeah, they should. I mean, it's. I think Amit knows that we are biased towards Jack Marchmont. So he wants to get like an unbiased opinion. Um, sure, so? At the same time, I, I mean, it's like deja vu, the last couple of years.
 
-Unknown 10:18
-Okay, right. That should also be automated. If you can't process, I should be able to get a little alert that says I can't process. Just you guys, you have a session with Molly, and you go through it together. Find out how I'm going to know that. It needs to be all tracked. You know what I mean? Not manually tracked, not people tracked, no more. We've done enough to be able to do it this in the right way. Any other questions? Okay. There was something else when we processed last time that we said we had to take out Suzanne to the questions that you're asking. Do you remember Tanner? Tanner, when we went and posted over the old sense. Yeah, Tana, when we went and gave them the stuff, you remember it was like only 50% could be processed or 60% Remember that, Tana?
+08:40
+It's been the we get get so close, and then we, you know, back off. And then, another another year, after doing the same thing. So it's? Yeah, yeah, terribly frustrating. I, I can send you that feedback sheet, uh, how? Weighted and stuff I I? I'd like to see it once we get the results.
 
-Unknown 11:10
-Yep.
+09:04
+Like, are you collecting the results or the results structured and located centrally? I'd like to see what other people say about it. Yeah, it's. Yeah, the sourcing team is the one collecting him so. Ah, okay, yeah, we'll get to see it all until they until we have a meeting.
 
-Unknown 11:11
-Yep. Make sure Susanna's on a good path. Make sure that all of that is understood with Molly, and that we clean out as much of the noise as possible. There might still be additional noise that can't be processed, but we can't have it be 50, 60%
+09:18
+Yeah, I saw some of the couple of the responses, so it's a huge. It's a monstrous Excel sheet with, you know? It has like? 300 rows with the ratings from 0 to 100 for each of them, so it's a it's not easy to fill so. It's, uh. And I imagine most folks will just put it in AI, right?
 
-Unknown 11:27
-Okay.
+09:41
+Yeah. And well, I'm curious to see how that turns out, right? Yep, I believe. Yeah, I think you'll definitely hear about it so. And I did get to speak to Anthony Tony.
 
-Unknown 11:28
-Yeah, you remember you had a nice sheet that summarized it all.
+10:02
+Yeah, it's like 10 minutes so. Yeah, we just, uh, just brought him on board. Uh, he came over from Google, actually okay, and so he's. Well, what I want them to do is I want them to to automate the rapid process, turn it into more of a self-healing kind of approach, and so I've asked them to start thinking that through as well as.
 
-Unknown 11:32
-Yeah, yeah.
+10:23
+Uh, I, I've been pushing for a more Dynamic bug bar that's more exploit, um. Oh, okay, that'd be cool. Exploit Primitives focused, so he's gonna take that and run with it. So those are his first two major initiatives. Oh, okay. Yeah, the rapper can be. I don't know how.
 
-Unknown 11:33
-There's got to be a way we could filter that stuff out before we even send it. Yeah, pre-releases. Yeah, it was all that that kind of old old the old old stuff. Yeah, and then the type to what you said, Suzanne.
+10:40
+Yeah, that'll be interesting. Yeah, so we started to introduce that. I don't know how much you've caught up on what we're doing with the secure development Playbook stuff, right? So that that's been a major major implementation so. Essentially, we we've implemented a maker Checker capability in the coding agent, so it's in devx right now.
 
-Unknown 11:48
-Yeah, and if you're submitting latest versions of stuff, I think that'll that'll definitely be a lot cleaner. Yeah, unless
+11:03
+It's in Devon and limited use. We're going to move it into GitHub co-pilot as well. So, the maker skill, essentially, whenever you're prompting an agent to write code for you, particularly on feature development, right. We, the maker skill, has recipes for different functionality that you'll be building in the code to ensure that you write it in a way that meets Wells Fargo standard, and you're not introducing vulnerabilities that we've identified through all the llms and static analysis.
 
-Unknown 11:58
-well, well, guys, last time we thought we did submit latest land. Well, it's because
+11:29
+And so we, we're putting that in all the coding agents. And then we're also putting the Checker on the pipeline, which essentially is the the pipeline's going to invoke the Dev and Playbook on every PR, and then that PR. If it comes back with a sub 172, actually, it's block the merge, break the build.
 
-Unknown 12:02
-it's because of stuff that is no longer actively maintained, or stuff that was migrated from one Maven repo to the next. Like that's technically the latest version because it's not. Yeah, that trained was like renamed. Yeah,
+11:45
+But the idea is, if they're using maker. Right, and then we're captioning capturing all that Telemetry. And then we're also use. We're tying that Telemetry control plane into Raven, and so Raven will then generate based on the metrics that we capture from the Telemetry and the rules, uh, it'll feed back into.
 
-Unknown 12:17
-it's like before it used to be travel 1.3, and then it went to now they called it you know Tony 15 and it was like it's the same name. And then we thought the John Love That Three was new, and Tony told no, it's like 15 years old. Anyway, yeah, that kind of weird stuff that went on. We have to just figure out how that goes. Okay, so all of that needs to be metriced at every point. What we sent, when we sent it, what we sent, when we sent it. Okay. Any other questions? Because I have more. Okay. We are in a position to begin the automation of how we pull. I don't know if Sam, give you a heads up, Zach and team, how we pull the information we need, right? Scotty, the artifactory team is going to be doing that automation. There's going to be a meeting to talk to you about setting that up and how the scripts are run. I think we're trying to get it scheduled for when, Suzanne.
+12:07
+Devon and Devin will provide recommendations on how to improve the skills in the Playbook, and that'll Auto generate a PR that gets a manual review. And then we'll have self-healing for the Playbook and the skills. Oh wow, is that already live or it's in the process? It goes live for paas on next Friday.
 
-Unknown 13:17
-We're having an internal meeting today first, Tony, and then we're gonna meet with Changguard. Was the decision
+12:26
+Okay, so, is it also looking at the the other scans, like the check marks and black duck as well, or is there only okay, it's just so well. So it was, it was trained on all of the available findings that were in AVR. So it did look at all the check marks in Black Doc and llm findings, but what it's doing is it's reviewing the pr diff, specifically to see if new and new vulnerabilities are being introduced, right?
 
-Unknown 13:23
-okay? Fine. We'll do that. Just heads up. We're gonna need. We're gonna sit down. The only reason why I thought it would be good to have Zach because I wanted to talk a little bit about the script he did have or not have and what it does. But that's what's possible. You know what I mean? But we wanted to do an internal one first. That's fine. Okay, but we need to. We that's going to be. So you're going to start hearing us just talk automation, automation, automation all the time. It's just going to be the focus point versus what package did I get? What's the latest? What does it look like? You know what I mean? It's going to this call has to be fully full about automation. Zach, at one point, you guys had taken an action to start providing metrics dashboards for us. Do we know the status of that?
+12:54
+That of any of the functionality in the pr touches code that's not in the pr. It goes deeper into that code, and if there's a vulnerability that's already been identified by check marks, it'll call it out again. Got it okay? But it'll recognize that it's a check marks finding right, okay?
 
-Unknown 14:18
-I know it's still being heavily worked on. I don't have any. I don't have any updates. Mia, do you have any updates on timing on that? I don't think I've seen anything.
+13:10
+So, but pretty cool stuff. Um, I'm hoping that it has a massive impact. We tested it on. I tested it on 12 apps, 18 app components, and it was able to effectively prevent 88 of the static findings and 83 percent of the llm findings. Wow, okay, let's, uh. We'll see if that holds at scale.
 
-Unknown 14:27
-No, but I know it's top of mind slash urgent priority for at least two other members. So I know they are treating as top priority.
+13:34
+Right, but I, I did run the the Playbook ones, but it does take time, right? It's not like instant, so it? You know if you give it like a? A set of findings. It's gonna. Take its time to actually generate, so it's, uh, there might be some time delay before.
 
-Unknown 14:37
-Okay, we're gonna need to make it. We need gonna need to know an ETA, so can you try to work? I I don't know if that's like an ETA's top priority is still four or five weeks away, or you know within a week. You know what I mean? Like uh, so if you can give me some sort of range, that would be helpful.
+13:55
+And what we measured in the pipeline was the the regular PR run process went from two minutes to four minutes. Okay, okay, got it. So it wasn't wasn't major, but there were. There were cases where it timed out, so we have a timeout mechanism in place too, right? Okay, got it.
 
-Unknown 14:55
-Yeah, I'll see it. I'll give that to us.
+14:11
+But yeah, so that's that's been a heavy effort. And then, we're also implementing the false positive Champion Challenger and IDP. I don't know if you've heard about that. Um, no, no, have it. No. Yeah, so an IDP we're enabling self-serve, false positive validation using the Playbook that I wrote on false positives and a challenger Playbook.
 
-Unknown 14:58
-Because what's starting to happen is because these. And I and I do feel it. What's starting to happen is we're getting a lot of like it's the pickup is starting to come, right? The flurry is starting to come, which means the minute we start processing this stuff, everybody's going to start asking for status of what did we process, when did we process, what did we get back, how long did it take. So they're going to want to I sent you something on this date and I got it back on this date, you know what I mean, and all that, and then they're going to want to how far is Jane Guard, and that's all your reports. They're also going to want to know Wells Fargo. So somehow, is there any way? See, you can't you can't say there's an indication of what I sent you, right? There's no way to show. Zach, is there any way for us to know which ones are ours?
+14:31
+So, essentially, what's going to happen is a developer. If they say, hey, this is a false positive. They've got a claim. They go in the IDP and then an IDP. There's a way that they there's. There's a section under the vulnerability aspect of IDP, where you can then select your Avetts, and then you know, click, you know, submit the false positive claim button.
 
-Unknown 15:39
-Well, you can look at your submissions, and we can see what files, the names of the files you submitted, and which CGP's are tied to those files. And then you could use those CGP IDs to look up records and stuff. So that's how we've been connecting it. That's how the scripts I wrote are doing it. Oh, so we
+14:50
+You provide the evidence that's required that you, you know, you're showing that this is a false positive. There's there's guidance and instructions on what evidence is acceptable. What evidence isn't? And then, essentially, it runs through two playbooks. One's a champion one is a challenger. They're completely different, one completely independent, and if both Playbooks agree that it's a false positive, then IDP is going to update the state of the Avid and AVR to false positive.
 
-Unknown 15:57
-can tell what our population is today. We don't have to. We don't have to filter it later.
+15:13
+Oh, okay. Well, this is, yeah, yeah. And if it doesn't, if they disagree, then it automatically opens a ticket with the ASC. Gets us what it gets us, which is interesting, is so when I did the thematic analysis of false positives, and this will be no surprise to you.
 
-Unknown 16:01
-Sorry. I just not say it again.
+15:29
+Most false positives are not actually false. Positives, right? There are other categories, so only 37 percent of the false positives. Are actually? False positives is, I would Define them, which means the weakness doesn't exist. The tool just missed made a complete mistake. The rest of them are. Things like, okay, I've got compensating mitigating control.
 
-Unknown 16:04
-Just on our conversation earlier that we were having, there is absolutely a way for us to, when we pull, to know what our population is.
+15:54
+Um, this is an exploitable in context or. You know, my business requires this functionality, or you scan the wrong repo, right? So, we're going to be managing all of those States now in AVR. Oh, okay, so does the the false positive Checker and the the other one, the the you said the Challenger, right?
 
-Unknown 16:11
-Of course, yes, that I do.
+16:14
+So, yep, okay, so would those tools have access to the context and the broader? Um, state of the application to make the decision or. Yes, oh, okay. Yeah, so it should have access to the full code base and whatever evidence is presented. And there are classes of evidence, and it can make a determination based on, you know, whether the evidence is programmatic evidence of a compensating control that's validatable, or if it's, you know, like it goes down the rung, but if there's also confidence levels involved too.
 
-Unknown 16:13
-There's no, there's no, there's no additional automation I have to do later. The script has that already. Okay, that's helpful. And you also confirm that there's timestamps so that if I decide I'm going to pull every Monday, I can ignore anything that was prior. I could just go to latest Monday. Yeah, yeah. There's a
+16:50
+Wow, this is, it's pretty cool. So, we are talking about that, right? You probably saw those emails about DB key, right? Yeah, so did I, you know? It's like. You know, they wanted to measure it. Did you hear anything about that after that? I mean, they wanted to basically see if the bundle is.
 
-Unknown 16:30
-created and modified timestamp for all the records. Yep.
+17:12
+Improving the scan confidence which they claim they did. Got it. I mean, it's basically. The I looked at the bundle, so it's actually getting data from, uh, I think they have another tool, so it's basically getting all that Bam data of that application. And then the component data. And it's, there's a lot of information in there, right?
 
-Unknown 16:33
-All of that's going to be important because as we start to think about this, you know, automation, we want to make it as simple as possible. So that's helpful, and then obviously the reporting stuff that we need to do. Okay. Okay. I don't have anything else on my list.
+17:39
+And it's a bunch of MD files and code graphs and stuff I. I don't know how. We just have to have the harness build it, right, so that you know it can consume all the data? And that can vary between what the underlying models are. When you use the Lnnum scanning so?
 
-Unknown 16:51
-There is. I can drop it in the channel here. We there's some OSV feed stuff behind a feature flag in the console. I think John shared this before in some other meeting, but if you log into the console with that link, that'll flip the feature flag for you for your session, and you can start to see what what new stuff is coming into the into the the console. And I could demo a little bit of it, if you wanted, but that's showing some of the OSV feed stuff in the in the console directly.
+17:58
+Hey, yeah, it seemed interesting. But, uh, it sounded like they wanted to somehow. They wanted to make that work. They're purposely trying to prove prove the case. Nice. So Mike, I mean, what, how? I know we have here now. Like the appsec engineering, right? So when you see this team fitting in?
 
-Unknown 17:26
-Okay, right. So you got that, Scott and Adrian, because that's going to help us in the conversation later. Yeah.
+18:25
+Doing some someone. I mean, I have no idea to be honest with you because, like, our our engineering capacity, sits in Tony's team and then, um. In krishna's team, right? Like, so, when I, when I go to build this stuff, I don't go to Rudy. I go to Krishna and I go to Tony, right, and so I, I don't I, I, you know, I hate to say that I don't see it as like a true engineering function.
 
-Unknown 17:31
-Yes. We're also having a timestamp discussion on our side, Tony, because we're going to need to. We might need to modify some of the data structures Molly's got to make sure we've got the appropriate timestamps.
+18:47
+Yeah, maybe when I see it as is more of, like an engineering steering committee or an engineering guide post. You know, like we, we can do. We can do some engineering. We can do proof of concept stuff, but I, you know, we, we've handicapped ourselves that we, we can't, uh, produce Enterprise Solutions by Design.
 
-Unknown 17:45
-Yeah, that's what that's what I need. Yeah, at this point, when we sent, when it was processed, when we got it back, all that stuff. When we sent, anyway, you guys get it. And
+19:11
+Yeah. And so I think that the the value statement for the team probably comes from. Engineering. Engineering deliverables that we require, right? But, I mean, you know, that that I, I haven't seen a vision from Rudy yet either. Oh, okay, is that what a Joe is thinking? I, I mean, right now, it's like mostly B stuff and.
 
-Unknown 17:57
-then, and then the opposite, we also need to be true, so we definitely want to know everything that we submitted. Well, I guess never mind. That won't be necessary anymore if we give them everything.
+20:00
+It's probably too early to tell, I guess, but. Um. I don't know what you was thinking about it to be honest with you. Oh God, okay. I mean, I'm just kind of waxing poetic of how I see it evolving, but you know, ultimately, I think, where we where we go to is there probably needs to be an agentic orchestration layer, and our team needs to be the subject matter experts on that orchestration.
 
-Unknown 18:13
-We're gonna give them everything. We're changing our approach. Everything. Everything. Everything. Everything. Go chain guard. All right. Any other questions from anybody? All right. We go. Thank you, Hassan. Can you stay on for a minute, Hassan, Rudy, and Tanner for a minute with Susanne?
+20:22
+What's happening in the black box? The absec subject matter expertise managing the Lambda functions for any autonomous decision making, right? Like that? That's where I think we get to, right? I mean, we're still a ways away. Yeah, so many people, I mean, they're trying to downplay our contribution. I mean, that's the feeling I get, I don't know.
 
-Unknown 18:41
-Sure.
+20:45
+I don't know if I'd say that. I mean, I feel like absec has been at the spear tip of the spear for this whole llm thing, and I think you know it's, it's highlighted a lot of strengths and a lot of weaknesses. And I think we've gotten, I've, you know, personally, gotten more time with.
 
-Unknown 18:41
-We're going to talk. We'll split our metrics. Everybody else can stay if you want, Adrian. Whatever. Thank you. Have a good weekend.
+20:59
+Monash and Bridget, even up to Charlie with some of the materials that we've produced than any time in years past. Oh, okay, yeah, you know, I think we went. We went from being kind of, not. I wouldn't say ugly ducklings, but like low, low investment, probably not a growth area.
 
-Unknown 18:47
-Cheers. Have a good weekend. Take a sec.
+21:14
+It's just kind of like a maintained area to being the biggest growth area in cyber. Okay. So, I think we've got. We've got all the attention that we could possibly want, right? Okay.
 
-Unknown 19:13
-Okay, so I wanted to just bring you guys together because I wanted to make sure you understood what the other update was regarding the simplification approach of only doing workstream C, yeah, and so I don't want you to create or spend the time anymore breaking things up and tracking that separately. Okay, so I think it's going to make your lives a lot easier. And I got Khalil there, and I've got a joy there. We might have to have one session where we say, "Well, we did this pre-disclosure. Remember, because you did one thing for Chamber for pre-disclosure. I think all you do is put it within the same workstream C. You just say the just call out the." Packages that were done and what the campaign was. So you know how we have the bullets within the same row. You just create another bullet and you say this was submitted on this date. You know what I mean? And process blah blah blah. You with me?
-
-Unknown 20:16
-And then a separate item on pre-disclosure, right?
-
-Unknown 20:20
-Instead of a whole stream of pre-disclosures, because from now on, if we stand on that, I think under
-
-Unknown 20:24
-that same submitted Wells Fargo submitted section that's had a pre-disclosure thing. Okay. Yeah. So if you
-
-Unknown 20:29
-take a stab at it, we can look at it real fast because I'm trying to connect the history of what we had to now this new approach. Yeah. So we don't lose it. But I don't. We take a stab at it, and then if you want, I could spend like 15 minutes with you to see. Yep, that makes sense. We could do the before and after.
-
-Unknown 20:45
-Yeah, I'm working on the slides for this week. I'll go ahead and remove A, B, and just do C. And yes,
-
-Unknown 20:51
-for this week, if there was something in like the B, like the pre-disclosures, put it in the C. Yes, we'll do. Okay, and then we're out of that business, guys. And if anybody asked you to do that business, you explained to me. Okay. Yeah. Suzanne asked me. Suzanne. Hi. Sorry.
-
-Unknown 21:07
-Well, I gave him a heads up, but I didn't realize you were going to try and do it for this week because I didn't think Manish would have time to explain it to Charlie. I thought you would do it for next week, but whatever. The only thing
-
-Unknown 21:16
-that's been going on to Charlie is Workshop.
-
-Unknown 21:18
-Okay. That's fine then.
-
-Unknown 21:20
-Fine. That's why I got to merge it a certain way, but yeah, I just don't want to report it out anymore. Done, kill it, gone. But I want to be able to see it so that I can tell Khalil and Joy what to see, what what we did. But if we get this done, it was a way to actually help up some capacity, right? Because I'm I'm like I can't we can't run three workstreams. I'm done. So now we're back to only two workstreams: one for IBM and one for Chain Guard, and I call it the Happy Path. Happy path. And only one automation approach. Go ahead.
-
-Unknown 21:49
-The remediated inventory, which we did last week for Chain Guard as well as you know Red Hat. Red Hat all failed, anyways. But for Red Hat, we had eight packages that passed, which which we already sent to the campaign. So moving forward, we are just excluding the remediated inventory totally. Yes. Okay. Because you just
-
-Unknown 22:14
-merged what we did do before, you know, because we did do some things we merge it into the other line.
-
-Unknown 22:20
-Okay. Even the remediated inventory.
-
-Unknown 22:23
-Yeah, we're just seeing them. Don't don't store it.
-
-Unknown 22:26
-Okay.
-
-Unknown 22:27
-Because if we turned them out at some point
-
-Unknown 22:30
-related to our packages, in the end, they were still related to our packages.
-
-Unknown 22:34
-Okay. We just had to. And their packages
-
-Unknown 22:36
-is in there. All the only reason why we didn't see it in there is because we didn't send it to them, because we only sent 120 75% the other 75. Now that we send everything, by the way, this was Susan's idea. Little cards to Hussain. While we decided to send them all everything, we send them all everything. The step I need to do, which I didn't discuss here because not you guys, I have to do in a separate meeting, is now we have to just do a redoup later. Because if I sent it to both, and they send it to me both, I'm gonna take the whoever sent it to me first. I'm gonna take that one, and then I have to dedupe the other one. See what I'm saying? Yeah. That's processing. We have to not talk to. We have to discuss it with architecture how I do that decision point. But I mean, I haven't sent anything yet to everybody. We have to tell Red Hat we're sending them everything too. After we give the decision of rescanning everything. But this is what we're doing, guys.
-
-Unknown 23:21
-Okay. It
-
-Unknown 23:23
-helps us, and I just, I just told them this too. By the way, I couldn't get a decision yesterday, and I was like, I thought about it last night after I talked to to Suzanne, and then I just called them this morning and said, this is what I'm doing. Okay. Unless they can give me additional capacity, there's nothing else to do. But they were very very supportive. They like these words, so it works. Okay, I'm done. Anything else? Suzanne. She's raising her hand and shaking her hand. Casey
-
-Unknown 23:53
-is out of office and Shane is driving in a car. Who do we give a heads up to? Do I have to go to Jacob?
-
-Unknown 24:01
-I'll give Jacob a heads up, but yeah. Thank you. I was like, I think it should come from you. Okay. Okay. But the biggest thing is calling. The biggest thing is calling Christian. I'll I'll put it in that window right now, and I'll type it in. I said we just had a meeting with Chain Guard. As much as you want us to send this week, they're not ready, so they'll let us know when they're ready. I I I I I chose to leave that to you. I didn't put that in that window. I told the other team. Well, it's funny because I actually talked to Zelena earlier, and I was like, just so we're clear, I I didn't do this now. I was like, just so we're clear, there's just no way unless it's automated, and we might have to do because he's like, let's get it done today, and I see it. I'm like, ah, there's no no no. Can you imagine if we had to try to do something this substantial manually?
-
-Unknown 24:45
-Well, and Tony, just to manage expectations, because I'm out a couple of days next week, and Stephen was asking the question: if they call for a new scan, that will take a couple of days if we do a full new scan. So. Molly and those guys probably need to be ready for the end of next week, right? They can do their testing and stuff in the beginning, but I don't think those guys would have an output ready for us to submit until at least the middle of the end of next week, right? Yeah. Even if they could pull it off in the beginning. Yes.
-
-Unknown 25:18
-Yeah, that's all true, but Molly has one to do
-
-Unknown 25:20
-in parallel. That only. No, no, no. I just, I was just trying to. People have never done through a full scan before. I'm like, this is days, not hours.
-
-Unknown 25:28
-Yeah, no, no, no. This is days. Yeah. No, everybody knows that. No, you know, this is days. But in parallel to doing the days, all this automation has to be finished. And just remember, even though it's days, I want to take a piece of it and and process and test it. I don't have to wait for the full scan to test. So like all that has to happen next week in parallel to the scanning.
-
-Unknown 25:47
-To the once we get to everything else that Molly's doing. So yes, I will talk to.
-
-Unknown 25:51
-Yeah,
-
-Unknown 25:52
-he's he's going to be the next one to tell you he's out of capacity, but that's okay.
-
-Unknown 25:57
-Yeah.
-
-Unknown 25:59
-All right. Do we
-
-Unknown 26:00
-still need to send requirements to Molly for the dashboard based on our current approach of metrics, Tony and Suzanne, or does he have? Yeah, you got to
-
-Unknown 26:09
-change it. But yes, you got to change it, then send it. Yes, you're just going to send it. You know, here's here's simpler ones. We simplify the the report. There's no reason to call it out to these different things, and we are changing it. Yeah, go on. Okay. Am I dismissed? Goodbye. Bye bye. Thank you.
+21:32
+It's great, okay. Well, anything else you want to chat on really? Not really, Mike, yeah, it's, uh, nice talking to you. I, yeah, good catching up. Cool, we'll talk again soon. Okay, all right. Yeah, thank you, thank you. Take care, bye.
