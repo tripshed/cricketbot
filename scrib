@@ -1,185 +1,578 @@
-00:01
-Hey, hey, Mike. I'm good. It feels like it's been a while since I've spoken to you. Yeah, I know, we're working pretty close to there for a while. And then, yeah, surprisingly, I'm actually on time for a meeting one, so that's good.
+00:00
+Requirements trying to get it. Before I spend the night on this. So, um?
 
-00:19
-Oh, they took any anything new or I can. You know, did anyone, uh, reach out to you on, uh? On the, uh, there was an ask from Christian that they wanted to do some testing. I think they were talking about was it IBM concert? No, nothing. Yeah, when you send me a message, and uh, I followed up with a couple of folks, and nobody heard anything about anything from Christians or.
+  Speaker 1 00:10
+And keep digging. People will at
 
-00:48
-And okay, so it looks like, um.
+  Speaker 2 00:12
+Least watch that we presume, and I know, so, yeah, yeah, the short of it is. There is a big little file, which came from chain guard. And it has about 19.
 
-00:55
-Couldn't find this medium calendars. Okay, awesome, uh? Let me check. Oh yeah, you're on the meeting from not the meeting, but the message from Paul Sullivan from IBM he was trying to, um. To get time, I'm going to add Albert so that I can be involved. But, uh, yeah.
+  Speaker 1 00:26
+Jsons, okay, Ethan. What did you do after that? You opened that in Excel. I open that I did not open it. I gave it to Devin to do the work. I see, so you give you give the all you gave the zip file to develop correct. And then what did Devin spit out?
 
-01:17
-So essentially, what they're trying to do, is they're bringing in IBM concert, and they want to test it. So essentially, what that is, is like an IBM grown. Llm harness, right? So essentially, the equivalent of what we've been building and doing and what they want to do is, uh, test it against.
+00:46
+Seventeen thousand two, twenty three unique packages across 19 000 cgp versions. What's your prompt? Palm simple, just analyze and give me the unique packages. That's what we care about. Okay, let me try and see if I get the same result. Yeah, that would be amazing if you can try it.
 
-01:35
-Our gt50 performs against other models. So, I think that's a good good test for us to have. And then, you know, once we get check marks Fusion, it'll be the same thing. Oh, okay, yeah, perfect. Yeah, this is, this is great, but IBM, I never heard of, uh, doing anything in the business?
+01:08
+And then you can. I'll give you. Yeah, that's fine. So here, Hassan. Nice.
 
-01:55
-We'll say that again. Yeah, as everybody's getting in the business, it seems like, I mean, I think eventually someone will Define this as their core competency and be better than other people, right? Hopefully it's check marks. I don't. They seem to have a lead, but you know, I don't think it makes sense for us to do this forever.
+  Speaker 2 01:14
+Yeah, so now, good that you are here with Roadie so. Um, with that said, too, where are you getting this file from Mr chain guards sending you this file or? So, this is to change CTL, which is their. Command line utility, okay?
 
-02:11
-Building our own harnesses, right? Yep, absolutely. Yep. But then, then I guess the other flip side is. We're starting to do some research and testing with the open weight models. And you know what one once we dial that in the the calculus is going to change significantly on the tokenomics, right?
+  Speaker 1 01:31
+And we have. We don't have access to it. We need to submit a couple of entitlements mine got rejected. I have to submit it again. So, who is doing it now? No, no, currently, it only does Tanner and Adrian, so both are doing, but they had an issue. Through the UI.
 
-02:28
-Yep. So interesting, all right? Well, what do you have on your list? Yeah, so one of the things that we could do for the the gt50 is also look at the the dollar numbers, right? So look at the token consumption for the scans. And that could also be a metric that we could track with the gt50, right?
+01:50
+Then they call changa to fix that issue. Anyways, they were able to get that file, but That is a file. To get multiple things. This is the one-off requests, but For our purpose, even to get the number of packages which they fixed for us, we'll use the same CTL before we hand it off to our parts it and give it to chain, uh, shame.
 
-02:48
-But we don't have that data today. So, I know that Ryan Lynn's team tracks that, yeah, so they, they measure that for certain things. So, I don't know if that would be necessary. It might be a nice to have, right, okay? And Jeff, yeah, so, are you continuing to expand the gt50 in terms of like?
+02:14
+If that makes sense. Yeah,
 
-03:06
-Now, we've run a bunch of stuff against it. Have we done any of the manual adjudications on any of the additional findings? Yeah, here's. Yeah, I want to do a bunch of things Mike, you know, you know, the inter integrator reliability? How effective the yeah, I want to do?
+  Speaker 2 02:16
+That makes sense. Yep, so as of right now, we are relying on until we get access. We are relying on these two guys, Tanner, and Adrian to give us that zip file, right? To give us.
 
-03:20
-All that I put all that in the stories and? A Joy says, you know, do anything that you want. You have my full support and. I mean, it's. But yeah, sensing about. Yeah, the butt is that it's we need the, you know, we need a full-fledged? Way to actually, you know, use these tokens, right?
+  Speaker 1 02:28
+The list of? Packages, which is fixed, which we gave chain guide. So, what we are doing now for Christian is supplied, total separates, and what, okay, they usually do. And do you anticipate this happening again, the zip file thing, or is it a one-off thing?
 
-03:42
-So right now, it's only of the co-pilot. And Amit keeps asking, you know, why are you spending totally co-pilot tokens? And this has to be sitting on a Vortex AI sort of a setup. And that's what Rudy and everybody says, you know, we have to put this on the cloud so that, you know, we can use the the frontier models there.
+  Speaker 2 02:45
+I don't know. Okay, and what is the request come like, regularly, okay, and what is that zip file? It's basically all the. Packages that change our hosts. What is that
 
-04:04
-Like how the scans are running? And the process to get that apparently is very cumbersome. You have to go through an eirr process and explain to them yeah. So it's all these roadblocks that. That are in the way to actually, you know? Do that. I mean, it's interesting because the?
+  Speaker 1 02:55
+No the which which they find everything
 
-04:25
-The Challenger model that we use for remediation validation is in vertex, and it's not, uh, we didn't go through airr for that. Oh, is it okay if if there is a way I can? Not do that. Somehow get on vertex, you know that? You know, that really helps. Talk to Garland.
+  Speaker 2 02:59
+The current one that you have, like some?
 
-04:46
-He'd be able to help. Okay. And I, I did mention to John and John said. They had back door access previously, and all that has been closed. And now, everything has been. Funnel through ARR. Okay, well, maybe they've closed that Gap. Yeah, the point of the air that is having it.
+  Speaker 1 03:01
+This is chain guards intermediated inventory. Athena packages okay, which is their remediated inventory. For all. I think banking customers or everyone. However, they have contracts with right. Okay, so
 
-05:09
-It's good, but uh, they get into very minor details of what exactly it is. And. We could do that, right? But it's gonna. We try to do that with corgia, and uh, they, you know, they have like a fine fine-tooth comb. And you know, they dig into the very minute details, and they want everything to, you know, they want to know exactly what the ins and outs are.
+  Speaker 2 03:18
+These are Latina packages. What what Christians requirement is take that?
 
-05:31
-Oh yeah, so yep. And which models you're sending it to, and uh, it's? That's what we got. I mean, it's probably a good thing just burdensome for what we need. Yeah, and, uh, yeah. With that aside, the other thing is. Jeff from Lions vineline's team. I mean, there looks like they're still doing some new model testing I.
+  Speaker 1 03:24
+And compared to what's applicable in in. Wells Fargo, right,
 
-05:57
-I got a note about there trying the vertex, the Astra six, and trying to see how that Compares. Yep, and they did some initial analysis and. I gave them my thoughts as well, but, uh, yeah. We don't have any of the findings from Master 6 itself right in the ground truth, so?
+  Speaker 2 03:31
+Right?
 
-06:17
-But but yeah, we don't. Yeah, they also a little reluctant in how they. You know, run the, I mean, 12 to 50 ground. Truth itself is gonna it's running them around, like? Hundred thousand dollars is that? Is that right? Now, what? What's costing them a hundred thousand dollars just the the ground through the 50 repos in the ground?
+  Speaker 1 03:31
+Which of those packages are applicable to Wells Fargo and that is the percentage he's he wants because? Some other bank has close to 40 50 percent of those Athena packages. We are trying to get to that okay,
 
-06:40
-Truth, it's some. It's costing the money. It's not. Yeah, it's not free, right? Yeah, I know we've been blowing money like it's going out of style, and this stuff, right? So, yeah, I mean, as long as Manish is okay with it, then you know. Bucket is under r d, right?
+  Speaker 2 03:46
+And how are we doing that comparison? Are we comparing against black duck or what's in-house mechanism?
+
+  Speaker 1 03:53
+So I did not know that we had a tool to do that. There is a dashboard. Where we have to stick in URL by URL to be able to see if it applies. There is no other way. To get this done, unless you have an export from somewhere.
+
+04:13
+Okay, and I do not have access to that dashboard, so I'm asking someone. Um. From whichever chat really added me if they can. However, who builds that dashboard if they can do it for me, so? Oh wow, this is really okay. Exactly, that is everything, right? Like, that's, yeah.
+
+04:36
+I understood that, because we, if we are asked to do the same thing, so the dashboard is basically taking a complete huge dump, and then it will. Dashboard will not take a huge dump. And what, okay, it won't take. It's a dashboard. It's not a UI, so it won't take.
+
+04:53
+I told you, he pasted something there that he pasted in the UI. I saw it.
+
+05:00
+The URL we pasted. How do we paste 1700 together, so we we pull it from? Okay, will you do it one by one? You cannot do that, right? So you'll have to stand around. That's that's what I'm trying, because that's what I'm trying to. That's that's what we should ask.
+
+05:16
+It should take. Uh, it should take the pearls. So, basically, what we want is, you get a zip file, you ask Devin to generate all the pearls. And for, and do the unique calls, right? And then then paste that, whatever that file is, we should be able to paste it, and that should turn on that report.
+
+05:36
+But how will you do one by one? It's impossible. No, so they just, you know what. Let me add it to the sets that you can. D and pretty deep. Yeah, add me as well. Yeah, yeah,
+
+  Speaker 2 05:49
+So this one off thing is one of right, so I think we can Circle back to the usual BAU stuff so that we can hold the fort and.
+
+06:04
+Uh, we
+
+  Speaker 1 06:05
+Can. We can Circle the Asana 13 people. Okay, well, there's so many people here. Somebody has done it, right? So, did you get that zip file and run it by Devin Rodeo? What? What did it spit out? Um, I'm just about to say. Please analyze the zip file and come up with a list of unique packages, unique packages.
+
+06:32
+No unique package URLs pulse. Same thing. It will probably give you the version of it. We don't want the version. Christian doesn't want the version. He wants a unique package name. I see, okay, let's see. But when you search for stuff, you obviously win that format. Already extracting unique package URLs.
 
 07:00
-Yep. And you mentioned checkbox Fusion, right? So the rfps in a limbo right now. So, what happened is, I don't know if you're up to speed on that one? But, uh, I am not so. The vendors responded. Only six of the vendors responded, and, uh, there is a weighted.
+First, let's say the purse would have the name, right? Well, what happened?
 
-07:19
-I can send that over to you. It's basically a sheet where you have to, they have responded. You have to rank them based on the responses. Uh, yeah. They wanted the feedback from a whole lot of people. I thought it's going to be limited to a few people, but, uh, chiradeep, and.
+07:06
+Then, I guess. Spook the package name from the club.
 
-07:37
-This team. Um, but it's being sent to, you know, Adrian Lane, you know, a bunch of people from Cloud they want feedback from cdxo, so? Krishna's team, so I think they're sending it to at least like five six people. So that they work. They get an unbiased opinion on where to land on, and then that's what it's at.
+07:15
+It's doing. It's doing something. Yep. Fusion sessions are now up to 40 more efficient. So, these guys have a database. I think they they can measure the database. Yes, make sure they get ties back to the app. Yes, a lot of this confusion, thinking, this is, you know? And it's all because of lack of information information.
+
+07:42
+It's a communication problem, right?
+
+07:51
+Javier is a failure to communicate.
 
 07:58
-So there's a meeting schedule later this month, I think mid this month with Amit. To go over all those results and then hopefully make a decision. So, besides you, who asks for mapsec is providing an opinion. Yeah, they wanted one from me and also one from Rudy, which is kind of weird, but yeah, um, kind of interesting.
+Close the line from Cool Hand Luke.
 
-08:18
-Okay, yeah, Mr President asked for someone from John's team. Yeah, they should. I mean, it's. I think Amit knows that we are biased towards Jack Marchmont. So he wants to get like an unbiased opinion. Um, sure, so? At the same time, I, I mean, it's like deja vu, the last couple of years.
+  Speaker 2 08:13
+Initial okay. For me, it's coming waiting for action first. So while we are waiting, uh, do you want to share your screen and show something or?
 
-08:40
-It's been the we get get so close, and then we, you know, back off. And then, another another year, after doing the same thing. So it's? Yeah, yeah, terribly frustrating. I, I can send you that feedback sheet, uh, how? Weighted and stuff I I? I'd like to see it once we get the results.
+  Speaker 1 08:23
+Pretty, maybe you went through the two? I think, what? How do we have to hold food? What are the different kinds of requests that will come? This is an ad hoc. So okay, fine. We got a grieve. I gave you that zip file of the chart, right? So this is one way.
 
-09:04
-Like, are you collecting the results or the results structured and located centrally? I'd like to see what other people say about it. Yeah, it's. Yeah, the sourcing team is the one collecting him so. Ah, okay, yeah, we'll get to see it all until they until we have a meeting.
+08:38
+Oh yeah, I cannot access that. I don't think it got an upload. The file. But yeah, we can worry about that later. I'll get that from you, so. Yeah, yeah, so I'm running the same thing. That sounds running.
 
-09:18
-Yeah, I saw some of the couple of the responses, so it's a huge. It's a monstrous Excel sheet with, you know? It has like? 300 rows with the ratings from 0 to 100 for each of them, so it's a it's not easy to fill so. It's, uh. And I imagine most folks will just put it in AI, right?
+  Speaker 2 08:52
+Yeah,
 
-09:41
-Yeah. And well, I'm curious to see how that turns out, right? Yep, I believe. Yeah, I think you'll definitely hear about it so. And I did get to speak to Anthony Tony.
+  Speaker 1 08:53
+Because we have to be at the position whatever Sr does. Whoever Sr asks whoever, you know, exactly those pieces for you while you're waiting. Asana, can we start? Or something or? Yeah, just give me a few minutes.
 
-10:02
-Yeah, it's like 10 minutes so. Yeah, we just, uh, just brought him on board. Uh, he came over from Google, actually okay, and so he's. Well, what I want them to do is I want them to to automate the rapid process, turn it into more of a self-healing kind of approach, and so I've asked them to start thinking that through as well as.
+09:13
+Because I.
 
-10:23
-Uh, I, I've been pushing for a more Dynamic bug bar that's more exploit, um. Oh, okay, that'd be cool. Exploit Primitives focused, so he's gonna take that and run with it. So those are his first two major initiatives. Oh, okay. Yeah, the rapper can be. I don't know how.
+09:39
+Okay, so these
 
-10:40
-Yeah, that'll be interesting. Yeah, so we started to introduce that. I don't know how much you've caught up on what we're doing with the secure development Playbook stuff, right? So that that's been a major major implementation so. Essentially, we we've implemented a maker Checker capability in the coding agent, so it's in devx right now.
+  Speaker 2 09:40
+Guys are saying these guys, these guys, these guys are on the hive team. The data analytics, so mostly Maori and Company okay?
 
-11:03
-It's in Devon and limited use. We're going to move it into GitHub co-pilot as well. So, the maker skill, essentially, whenever you're prompting an agent to write code for you, particularly on feature development, right. We, the maker skill, has recipes for different functionality that you'll be building in the code to ensure that you write it in a way that meets Wells Fargo standard, and you're not introducing vulnerabilities that we've identified through all the llms and static analysis.
+  Speaker 1 09:50
+Yeah, we have to connect with Maui and team as well on the requirements to automate this pradeep. So, yeah, I heard that. So, what's going on there? Are they? Are they close to automating it and? How, how close are they? Are they very far from actually doing that? Yes or no, because?
 
-11:29
-And so we, we're putting that in all the coding agents. And then we're also putting the Checker on the pipeline, which essentially is the the pipeline's going to invoke the Dev and Playbook on every PR, and then that PR. If it comes back with a sub 172, actually, it's block the merge, break the build.
+10:11
+They don't have access to the data.
 
-11:45
-But the idea is, if they're using maker. Right, and then we're captioning capturing all that Telemetry. And then we're also use. We're tying that Telemetry control plane into Raven, and so Raven will then generate based on the metrics that we capture from the Telemetry and the rules, uh, it'll feed back into.
+  Speaker 2 10:14
+Okay, um,
 
-12:07
-Devon and Devin will provide recommendations on how to improve the skills in the Playbook, and that'll Auto generate a PR that gets a manual review. And then we'll have self-healing for the Playbook and the skills. Oh wow, is that already live or it's in the process? It goes live for paas on next Friday.
+  Speaker 1 10:14
+So the data which I'm pulling up manually, for example, change that has a change CTL,
 
-12:26
-Okay, so, is it also looking at the the other scans, like the check marks and black duck as well, or is there only okay, it's just so well. So it was, it was trained on all of the available findings that were in AVR. So it did look at all the check marks in Black Doc and llm findings, but what it's doing is it's reviewing the pr diff, specifically to see if new and new vulnerabilities are being introduced, right?
+  Speaker 2 10:21
+Right? So, they need a
 
-12:54
-That of any of the functionality in the pr touches code that's not in the pr. It goes deeper into that code, and if there's a vulnerability that's already been identified by check marks, it'll call it out again. Got it okay? But it'll recognize that it's a check marks finding right, okay?
+  Speaker 1 10:22
+Meeting, which in uh chain to understand how CTL works and to be able to automate that there was supposed to be a meeting. It didn't happen, right? That is something which we need to push for now with red hat. They don't have anything to be to give us to be able to automate
 
-13:10
-So, but pretty cool stuff. Um, I'm hoping that it has a massive impact. We tested it on. I tested it on 12 apps, 18 app components, and it was able to effectively prevent 88 of the static findings and 83 percent of the llm findings. Wow, okay, let's, uh. We'll see if that holds at scale.
+  Speaker 2 10:38
+Right now. No
 
-13:34
-Right, but I, I did run the the Playbook ones, but it does take time, right? It's not like instant, so it? You know if you give it like a? A set of findings. It's gonna. Take its time to actually generate, so it's, uh, there might be some time delay before.
+  Speaker 1 10:39
+Api, nothing. You're getting a copy, and we have to work through that. So,
 
-13:55
-And what we measured in the pipeline was the the regular PR run process went from two minutes to four minutes. Okay, okay, got it. So it wasn't wasn't major, but there were. There were cases where it timed out, so we have a timeout mechanism in place too, right? Okay, got it.
+  Speaker 2 10:44
+How are they sending their copy? Is that, like, through email email?
 
-14:11
-But yeah, so that's that's been a heavy effort. And then, we're also implementing the false positive Champion Challenger and IDP. I don't know if you've heard about that. Um, no, no, have it. No. Yeah, so an IDP we're enabling self-serve, false positive validation using the Playbook that I wrote on false positives and a challenger Playbook.
+  Speaker 1 10:47
+Oh
 
-14:31
-So, essentially, what's going to happen is a developer. If they say, hey, this is a false positive. They've got a claim. They go in the IDP and then an IDP. There's a way that they there's. There's a section under the vulnerability aspect of IDP, where you can then select your Avetts, and then you know, click, you know, submit the false positive claim button.
+  Speaker 2 10:47
+God, that's horrible. Okay,
 
-14:50
-You provide the evidence that's required that you, you know, you're showing that this is a false positive. There's there's guidance and instructions on what evidence is acceptable. What evidence isn't? And then, essentially, it runs through two playbooks. One's a champion one is a challenger. They're completely different, one completely independent, and if both Playbooks agree that it's a false positive, then IDP is going to update the state of the Avid and AVR to false positive.
+  Speaker 1 10:49
+Exactly. So,
 
-15:13
-Oh, okay. Well, this is, yeah, yeah. And if it doesn't, if they disagree, then it automatically opens a ticket with the ASC. Gets us what it gets us, which is interesting, is so when I did the thematic analysis of false positives, and this will be no surprise to you.
+  Speaker 2 10:50
+We have to fix all that, right? Okay, so if that comes up,
 
-15:29
-Most false positives are not actually false. Positives, right? There are other categories, so only 37 percent of the false positives. Are actually? False positives is, I would Define them, which means the weakness doesn't exist. The tool just missed made a complete mistake. The rest of them are. Things like, okay, I've got compensating mitigating control.
+  Speaker 1 10:53
+So if those two things get fixed, we are a lot of things, get off, upgrade okay, and what data they want to see. Uh, within the dashboard is, let me add you to this chat as well. So that you have an idea because we need to write that requirements, which I did not get to that yet.
 
-15:54
-Um, this is an exploitable in context or. You know, my business requires this functionality, or you scan the wrong repo, right? So, we're going to be managing all of those States now in AVR. Oh, okay, so does the the false positive Checker and the the other one, the the you said the Challenger, right?
+11:15
+Um, in my own modern, right? I'm on the chat already. You are on that chat, but I am trying to find where is that chat? Which chat are we talking about? Because that is, that is again coming from Christian, right? So? But that would eventually end up being the dashboard.
 
-16:14
-So, yep, okay, so would those tools have access to the context and the broader? Um, state of the application to make the decision or. Yes, oh, okay. Yeah, so it should have access to the full code base and whatever evidence is presented. And there are classes of evidence, and it can make a determination based on, you know, whether the evidence is programmatic evidence of a compensating control that's validatable, or if it's, you know, like it goes down the rung, but if there's also confidence levels involved too.
+11:32
+And Khalid gave October 7th that I know, I don't know how they're gonna do that.
 
-16:50
-Wow, this is, it's pretty cool. So, we are talking about that, right? You probably saw those emails about DB key, right? Yeah, so did I, you know? It's like. You know, they wanted to measure it. Did you hear anything about that after that? I mean, they wanted to basically see if the bundle is.
+11:39
+Check.
 
-17:12
-Improving the scan confidence which they claim they did. Got it. I mean, it's basically. The I looked at the bundle, so it's actually getting data from, uh, I think they have another tool, so it's basically getting all that Bam data of that application. And then the component data. And it's, there's a lot of information in there, right?
+11:58
+Okay, 15 people out there in this anyway, guys.
 
-17:39
-And it's a bunch of MD files and code graphs and stuff I. I don't know how. We just have to have the harness build it, right, so that you know it can consume all the data? And that can vary between what the underlying models are. When you use the Lnnum scanning so?
+12:08
+And you can see that those are the views which we want to. We won't have we want module to be able to show it. The data, and that view which actually posted. I will send you an export. The data could be stealthy to refresh, so please leave that one.
 
-17:58
-Hey, yeah, it seemed interesting. But, uh, it sounded like they wanted to somehow. They wanted to make that work. They're purposely trying to prove prove the case. Nice. So Mike, I mean, what, how? I know we have here now. Like the appsec engineering, right? So when you see this team fitting in?
+12:28
+Okay. That's fine.
 
-18:25
-Doing some someone. I mean, I have no idea to be honest with you because, like, our our engineering capacity, sits in Tony's team and then, um. In krishna's team, right? Like, so, when I, when I go to build this stuff, I don't go to Rudy. I go to Krishna and I go to Tony, right, and so I, I don't I, I, you know, I hate to say that I don't see it as like a true engineering function.
+12:36
+And they added me to this. And probably forward it.
 
-18:47
-Yeah, maybe when I see it as is more of, like an engineering steering committee or an engineering guide post. You know, like we, we can do. We can do some engineering. We can do proof of concept stuff, but I, you know, we, we've handicapped ourselves that we, we can't, uh, produce Enterprise Solutions by Design.
+13:45
+What is he sending you? He pasted that 1700 URLs in that, uh, tool, which he showed us right. The dashboard, which I don't have access to and apparently it completed an internal report. We don't know the output of the report. He's going to share that with me. But they're also saying that that data can be stale, which is okay.
 
-19:11
-Yeah. And so I think that the the value statement for the team probably comes from. Engineering. Engineering deliverables that we require, right? But, I mean, you know, that that I, I haven't seen a vision from Rudy yet either. Oh, okay, is that what a Joe is thinking? I, I mean, right now, it's like mostly B stuff and.
+14:08
+It probably won't be months old, rightly so. Okay, and then you're going to do a diff. Or what are you gonna do? I'm just I'm trying to see what's the output? Going to look like to begin with, like, what? What is it in? What is in the file? I want to analyze that.
 
-20:00
-It's probably too early to tell, I guess, but. Um. I don't know what you was thinking about it to be honest with you. Oh God, okay. I mean, I'm just kind of waxing poetic of how I see it evolving, but you know, ultimately, I think, where we where we go to is there probably needs to be an agentic orchestration layer, and our team needs to be the subject matter experts on that orchestration.
+14:24
+Okay, so I got a unique pulse. I have a text file that you see. I just ask him to give out the number, right? Like, why is he giving out files? The way my thinking was, you could upload it to that tool that Colleen sampled. We cannot upload anything to that, too.
 
-20:22
-What's happening in the black box? The absec subject matter expertise managing the Lambda functions for any autonomous decision making, right? Like that? That's where I think we get to, right? I mean, we're still a ways away. Yeah, so many people, I mean, they're trying to downplay our contribution. I mean, that's the feeling I get, I don't know.
+14:42
+We need to copy paste it. Oh, what tool is that?
 
-20:45
-I don't know if I'd say that. I mean, I feel like absec has been at the spear tip of the spear for this whole llm thing, and I think you know it's, it's highlighted a lot of strengths and a lot of weaknesses. And I think we've gotten, I've, you know, personally, gotten more time with.
+  Speaker 2 14:46
+That it's a dashboard. It's not a tool, but it's attached. We have the dashboard. It has a text field.
 
-20:59
-Monash and Bridget, even up to Charlie with some of the materials that we've produced than any time in years past. Oh, okay, yeah, you know, I think we went. We went from being kind of, not. I wouldn't say ugly ducklings, but like low, low investment, probably not a growth area.
+  Speaker 1 14:51
+Oh, like, a Tableau dashboard. If you do all of it, you copy all this. Maybe it does take it? We don't know. Put the capacity of that feeders. It's a Tableau dashboard, right? Oh yeah, okay.
 
-21:14
-It's just kind of like a maintained area to being the biggest growth area in cyber. Okay. So, I think we've got. We've got all the attention that we could possibly want, right? Okay.
+  Speaker 2 15:13
+So, I downloaded that. Let me run that analysis.
 
-21:32
-It's great, okay. Well, anything else you want to chat on really? Not really, Mike, yeah, it's, uh, nice talking to you. I, yeah, good catching up. Cool, we'll talk again soon. Okay, all right. Yeah, thank you, thank you. Take care, bye.
+  Speaker 1 15:19
+And, and I heard from Khalil that he he. Now, he has like eight work streams instead of the. Is there a change in OSS work streams? Oh, who he mentioned in some call, yeah? They're gonna redo the.
+
+  Speaker 3 15:39
+In the in the daily call at 1 pm, right? So? He said he's presented that to Munich about eight words team providers instead of whatever is there. Apparently, there is stale data so. Do we know what? What do you have that slide because I have? Six work steps over seven, hold on.
+
+16:00
+Let me see, no? Yeah, apparently, that changed this morning or yesterday. But yeah, I mean, it does not concern us if Khalil is doing it, but? It's still good to know, I guess.
+
+16:15
+Okay. So, in terms of meetings right as son, are there other meetings and then the ones that?
+
+  Speaker 1 16:26
+Redhead. You have those on your calendar. Yeah, let me
+
+  Speaker 3 16:29
+Go there. So, there is an Oasis daily call, right? And then there is a OSS metrics review that is a one-off thing. Forget that, and uh, no,
+
+  Speaker 1 16:37
+No. The Matrix review is not a one-off. It is scheduled weekly if they didn't put a series to it. Okay, okay. So, anyway, I'll get it. So, um, and then there is a. Vendor call with red hat IBM and the other one is with chain guard correct. Correct, okay, and that's all.
+
+16:54
+Is there anything else? Uh, besides this.
+
+  Speaker 3 16:59
+Office hours.
+
+  Speaker 1 17:05
+That where we learn, ask questions about change CTL and stuff. So that's also an important thing, but I won't say to kind of get on that.
+
+  Speaker 3 17:14
+Okay, right now, as of right now, we are not doing that. It's Tanner and Adrian, who is doing the the call.
+
+  Speaker 1 17:21
+They want us to take over like, ASAP.
+
+  Speaker 3 17:24
+Yeah, I, I get that, but temporarily, okay, perfect. Yep, let's so is there a call for that for the chain guards? Okay, can you forward that as well scheduling? Ad hoc. For officers. And you know, automation, like learning about chain CTL, so I did forward it just now. Okay,
+
+  Speaker 1 17:43
+There is one for next week. I don't think so, right? Is there one there? Actually, there is I, I see it on the sixth, okay? Remediation end to end. That's a series, uh, I think I sent that to you. You sent it already. Okay, send the series to them, we will be attending and also meetings, and we'll give you two offline.
+
+18:09
+Khalil knows that you are out, right? He was. He was asking me why he just joined us. And you know you are scheduled before so? Uh,
+
+  Speaker 3 18:18
+How long are you gone? Esan, like, a week, one week, just one week. Okay, so you have your return everything planned, right? Fact. Okay, good.
+
+  Speaker 1 18:41
+I had a feeling there was a big, big, weird, and right would be able to do this. In their son's absence. But yesterday, it was. I hope that when he gave some wrong files and completely wrong format. Uh, so I was like, okay. Okay, we will. We can hold four.
+
+19:02
+I think we will be. Okay, yeah, yeah, okay. And.
+
+  Speaker 3 19:07
+If Nick is the one I mean, is Mike aware that Nick is part of this, or yeah, okay, only of this project. He, he has some a one of.
+
+  Speaker 1 19:22
+Part of the work he's doing is here. Okay.
+
+  Speaker 4 19:26
+Like, what do we need from we need from there, so that part we should get to right as an as you're working through this?
+
+  Speaker 1 19:33
+Um, okay, let me, I asked. Do you guys have access to the? Uh, so you probably have already, but if you have access to this, which I've shared in the chat on the meeting. Chat the OSS,
+
+  Speaker 3 19:44
+I think somebody requested access. Somebody gave you that access, so that's good. Okay, so that was for last week.
+
+  Speaker 1 19:52
+And in that same SharePoint. Um, there is a new deck, which would be for this week. I just created a copy. I didn't update it. I'll update it tonight or tomorrow morning, but when I get time, so there is one deck for every week, right? One deck, but with updated dates.
+
+20:09
+Yeah, copies, and who updated? Okay.
+
+  Speaker 3 20:14
+Oh, you update the numbers within the sheet. Yes, okay, that is
+
+  Speaker 1 20:17
+The task that is the challenge, the biggest task. Yeah, okay, so can we? Can we walk through as to what numbers are coming from where? Yeah, I mean, we can do that.
+
+  Speaker 3 20:28
+We can do that tomorrow, you know, but you can work on it tonight, and then we can sync up in the morning and. See what has to be done. That makes sense, right?
+
+  Speaker 2 20:39
+Yeah,
+
+  Speaker 1 20:39
+Yeah, we can do that. However, you want to do it, right? I'm assuming Tony wants this entire number generation to be automated right in some way. Yes, that is the push where Maori needs to come in, and then the vendors need to chime in. Yes, they wanted ASAP because I don't think would last for another two or more than two or three weeks because they are really pushing for that because our numbers are messing up, right?
+
+21:05
+We are dropping the ball on a lot. Yeah, and you can see, absolutely. So, yeah. It wasn't messing up, and La Joy has. I'll tell you the birthday meeting that that is there on the calendar. Uh, October 5th. Oss end-to-end strategy, so he basically. He told me last night.
+
+21:25
+If this has to change, so that's what he's doing right now. Uh, did you get that 1700 number as well? Rudy, I got seven. So, yeah, I was going to paste it in the chat. I got 1731 unique packages that drops to 1723 when your three names that they were only in case or separator and the same address
+
+  Speaker 2 21:44
+That's
+
+  Speaker 1 21:44
+Fine. That's 1723, 1723 is what you got 17, 22, 70, 23. And go the same thing, right? Yeah. Uh, two sessions give the same thing. So, that's, that's deterministic. Yeah, yeah, yeah. Now, it makes me think how much are we relying on Demon? And I am pushing for seven lead controls.
+
+22:15
+I'm gonna send it to like each. Each developer ID will be assigned to a deven ID. And the developer school would be developed school. Well, there might be some developer accounts which are not developer accounts like non-coding accounts. So, where the data analysis data crunching? So, when we design that, we'll have.
+
+22:39
+Certainly. Again, this is something I have to figure out with it, but when we design that, we'll have certain accounts, which would be kind of data currency data analysis accounts, so they won't be downloading packages and stuff like that, so. You know, it's really all about. Without having the agent core over it, you expose the whole business to a to like level.
+
+23:08
+Every every, every file we give it's learning, right? Connect. I think if we expose the whole thing, it will be like a hugging face kind of an instrument, but it's not a does not have access to the it's. It's a on-prem version which we are using, right, like, yeah, can also become smarter right over time.
+
+23:26
+That's this all the models, the Enterprise models, the disable. Learning from? For corporate customers at least. Claude.
+
+  Speaker 2 23:39
+Copilot! Definitely don't learn! You don't learn. Okay, maybe they're not supposed to otherwise. That's a huge risky for the Enterprise people at least. There's a meeting in 15 minutes. What is that? What is this remediation? There's a meeting. I don't have it on my calendar.
+
+  Speaker 4 24:09
+Oh, this is
+
+  Speaker 1 24:11
+Scanning platform weekly touch point scanning platform is all Tony, right? Uh, yeah. I don't know.
+
+24:28
+So, I believe, you would know all. I'll tell you the names, yeah, Christopher Guthrie. Follow me, Aaron Hansen. Robin Hood. And all these guys. Yeah, Robin would drink. They're all part of Ryan Lynn's team, right? She's from AVR. Right? Yep.
+
+  Speaker 2 24:56
+The mic. Is there rather Oakley?
+
+  Speaker 1 25:03
+Is that the meeting that's about to happen? Yeah, I'm not really done. I'm going to be on this one. Okay. We so asan, you want to show something you're. I mean, while you're working, I thought will make use of the time. And then, tomorrow, we'll have a more dedicated session so.
+
+25:20
+Uh, if we can do that. It's just basically going over those four slides, which might become six tonight, but. Um. If you want to work on it, that's fine. Let's get a little basic, but tomorrow, we can't have, you know? Tomorrow, we must finish end to end. Every request of the schooling data from chain are doing the analysis, sending you to shape that is one piece of it.
+
+25:48
+I'm getting getting data from Red Hat doing the analysis sending into Shane. So, really, broadly. Those are the two buckets, right? We saw in the meeting today. Yes, one is the Matrix, which is the slide leg, and the second thing is chain guard chain CTL. Somebody does, but they give us give us the five yeah, red hat.
+
+26:06
+We check the file there right there, so when we get those files, we need to evaluate. Yes, yeah, that's another challenge. Yeah, evaluating because what what Suzanne is doing is to not drop any of the findings. She's not asking for a diff because there is some kind of a finding mess up, then we don't get a div from the vendor here and have to analyze what we submitted shared previously.
+
+26:35
+And what we have to submit now, because Shane does not want any duplicates. And then, Shane wants it in a specific order. So be able to parse it, put it in that order, remove duplicates, remove vendor related caveats, and then pass it to shame. And when we pass it to shame, because the ticketing system you want to submit us and then ping him on the side.
+
+26:57
+Okay, what degree system is that? Sorry, wait, sorry. What ticketing system is that you have? All this anywhere. Uh, this is the one. So, I put in the chat.
+
+  Speaker 2 27:12
+Oh, okay, you want an intake. Basically, you got it. Okay,
+
+  Speaker 1 27:14
+He wants an intake, and when he completes that analysis, he sends us the file. Now, what he sends that is again another analysis, which we need to do, some are passed. Some are findings somewhere. We need more information. The failed and more information. 30 empathy disorder. I want to say to kind of keep track of those.
+
+27:36
+And be able to get rid of speed. Can we bring outside? Yeah, I need I have to speak to him where we get those failed and entertainment more information. All those failure back. We don't have track. No one's tracking that. What is happening to the failure packages. Why are we not sending back to the preventer?
+
+27:51
+And then, when we send it back to the vendor, we need to see. How do we follow up with them? Can we? Can they do a separate pull for those packages? How do we keep unless we have that automation. It's going to be a tough task, but that is a task, right?
+
+28:04
+Yeah, okay. Sailed packages aside what gets passed, we analyze it, and then from that analysis, we put it in this slide again. And then we send it to her Khaliland team for the campaign. They're pushing it for the for for the deaf games. This is. Our submissions. Meaning. We submitted packages and finding IDs.
+
+28:35
+A red hat and chain card. Now, there are two other categories. Which we worked on it last week, but this week we did not work on those categories, which is good. And one of the calories categories is what Christians ask is right now, but in a different way. But One category is remediated packages basically.
+
+28:54
+What the vendor has fixed for the entire world? Right from their inventory. What have they fixed? We take that. Be compared with what applies to Wells Fargo. And then we run it through shame to scan it and see how many turns of its findings which are failed, which are passed and are those passed.
+
+29:15
+We send it to campaign. For both vendors. Second thing is pree disclosures. Most of our submissions, which we are doing. Are included in three discretion, but they put it in a separate category, so predisclosures are again. So it does not apply to red hat. It applies only to chain guard where they have a bunch of previous questions.
+
+29:38
+They are obliged to release it to the world on what they find for the findings for the packages. Um, they are giving us that beforehand in that we need to see how it applies to press Fargo. How many cars? How many fail? And before the breed is closed before that date, we need to send it to the campaign and get it patched by the deaf teams.
+
+30:01
+So, these two were part of actively doing this was the toughest pass last week. But this week, we did not get much on it. The only card. New packages from Red Hat, which are about 14 of them after analysis of 56 packages or something, and from chain guard. We did a pull, and it antenna did it, and only one package came in hot.
+
+30:24
+So these two packages? Rn change. To do the analysis. Once we get the results, we need to update the slides. How many past, how many failed and how many are going to go to the campaign, and when are they going to go to the campaign? That is basically the gist of it.
+
+30:46
+Okay? The campaign is the campaign is AVR, right? Camping is. But is that that's? I mean, you're sending it to AVR for the app teams correct or no? Correct. Okay, I think that's my understanding. Yeah.
+
+  Speaker 2 31:08
+And Khalil, does that? No Oasis, he's not sending it. Uh, are we creating events? I don't know the campaign. I think they're creating zero tickets.
+
+  Speaker 1 31:18
+Including zero tickets, I think I don't know. It's probably zero, who was whether who creates that? Yeah. Um, Roger, and India team. Yeah, they're on the campaign. Correct?
+
+  Speaker 2 31:41
+And is there any pushback from the jira tickets that we have to worry about or no?
+
+  Speaker 1 31:49
+Campaign related stuff. It's all them. We just need to send them clean packages. That's our work. Okay, anything from those packages on pushback. They are the ones who kind of deal with it, but We have proof that it came from the vendor. They were clean, went through our validation and scanning that is second part of it.
+
+32:09
+When it comes in, that's clean, and we send it. I mean, that's the best we can do, right? Okay. To believe you had your recorder on, or you were taking yourself, yeah.
+
+32:25
+And then, not visualizing these three pieces.
+
+  Speaker 2 32:29
+Is, what is that Matrix right? And then, the campaign is finally. Campaign is a different workflow, right? This real scans happening right. So, after that, a real validation?
+
+  Speaker 1 32:44
+Anything that goes to the campaign that is a per validation correct per validation. Yes. Because she is doing two kinds of scams, isn't it? That's correct. That's very good point. And then, an important one, because those two formats that we sent to Shane are different for those. Because the first one is validation basically, something which we already scanned.
+
+33:12
+So in April, we did this method scan and stuff, right? So, we have a find ending ID for that, and when we Center, the vendor and vendor gets back to us. We compare it with that finding ID on what was the previous and now, and that's how Shane matches it and sees the results.
+
+33:26
+As the assemble, scan is basically for the remediated inventory and the predisposure from the vendor, which we did not submit, Davis told us. B60s for the world. We are predisclosure, and this is what we fixed. Go ahead and use it. We do a simple scan. The logic is different, but the engine is same, and then we tell them okay, you know what?
+
+33:49
+This had no findings, but this had findings or this hat issues because we didn't have enough data to scan it. So, yeah, but only the past. With no critical High findings or any findings goes to the campaign. Let's see, got it.
+
+34:18
+Yeah, just whatever you you mentioned, right? We should have just driven to cover with the document. And what I suggested yesterday. You won't have time to write it, so speak to devil. And ask him ask it to create a document saying step workstream one, not not Khalilis work screen, so you can just say request type one.
+
+34:40
+Request type 2, request type 3, request type 4, and then it will create the document, and then we review it. Yeah, I think you should do that as something? Yeah, when you create the deck later to write, right, you should do that, you know? Yeah, read what I mean.
+
+34:58
+Speak out as to what you're doing so that, you know, it gets.
+
+  Speaker 2 35:01
+Oh, you know what actually Windows has a? You. You're on Windows 11, right? Yeah, I think so. Yeah, okay, so Windows 11? What, what's that, Windows? No, no, yeah, no, no, yes, I think so. Okay, so Windows 11 has a. Windows 11 has a video recorder, right? So, it can be record the screen.
+
+35:22
+And it can also record your voice at the same time so. If you could do that?
+
+35:33
+Let me see.
+
+  Speaker 1 35:35
+Microsoft store is blocked. Okay, no, no, it's. It's inbuilt, so you don't have to install anything.
+
+  Speaker 2 35:56
+Okay, so. On your computer, press FN and insert, you know, how to do the screenshot, right?
+
+  Speaker 1 36:05
+Yeah,
+
+  Speaker 2 36:06
+So on the screenshot when you click on it, default takes images. But uh, you should also see a video button on the top. Well, it's fun. The snipping tool, you mean, right? Yeah, yeah. Okay, there should be a video button and. It should. It'll ask you where to record.
+
+36:24
+And then you can unmute so that you can speak. So you, you'll in the end, you'll get like a video file of what what you have done. Okay.
+
+  Speaker 1 36:34
+So, do that for do that for the metrics report.
+
+  Speaker 2 36:38
+Yes, but the
+
+  Speaker 1 36:39
+Work streams you are not actively acting, like the work schemes you have to speak to Devil and come up with procedure talks for nothing. And then this this. This quick handoff. Help us in a long way. Let's say it will also learn. You follow what I'm saying, yeah. But those two.
+
+37:00
+If you can do, then we you'll have a much lighter day tomorrow with the last last day of the week. Yeah, and you and I, the three of us can meet. Schedule it. I am also up early, but it's my commute time. I have to get to. Uh, get to explorate.
+
+37:19
+Uh, but I'll I'll listen. I did early would be probably better right before Khalid's Rush happens. Uh, what time will be kind of thing guys? I mean, that is fine. 8 AM Central should be fine, too. We can start. Yeah, we're gonna do that. That way, even I can join at least part of it, you know?
+
+37:46
+So, yeah, let me work on this and. When we are having those meetings, do we have a transcribe or anything AI related stuff? Within this meeting, Wells Fargo for some all these Tony has the access a joy has the access. Others because there Executives, probably. No, it's not the executives you have the business need.
+
+  Speaker 2 38:12
+The policy prohibits regular meetings from being recorded unless you are doing trainings or doing wide audiences. You're not gonna get that access. Okay, yep.
+
+  Speaker 1 38:25
+But I know they don't give that access to anybody, even with the business need.
+
+  Speaker 2 38:29
+No, they do, uh, this guy, the guy who runs the one Demetrius. He has the access. So does Crystal.
+
+  Speaker 1 38:38
+Oh, Crystal has it,
+
+  Speaker 2 38:39
+Of course. Yeah, so those people they do a lot of presentation calls. They call it. Okay, social recorder meeting. We should ask a little recorder that the vector meeting will start.
+
+38:55
+Yeah, but they have to set up the meeting. They cannot just join the meeting and press record. It has to be. Yes, it's their meat has to be their meeting. Uh, okay, okay.
+
+  Speaker 4 39:10
+Uh, what else? Okay, so in terms of access. Looks like?
+
+  Speaker 2 39:17
+We are off the hook, right, for at least for the next week. I mean, we'll have to work on the access at some point. I'm assuming side is going to do it. But at least for the immediate next week. We don't have to worry about any access into chain control or any of those things, right?
+
+39:31
+No, okay, good. Is there anything else that we would need access to besides these apis and utilities like dashboards or anything that we should have access to
+
+  Speaker 1 39:42
+When access is a hive. I think you already have access, but not the OSS part, right? I
+
+  Speaker 2 39:47
+Yeah, I don't know. That's Mowgli, so I, I can talk to him if it comes to that, but we will see how far we'll get along in that one. So bye, yeah. But, and for the next week now? Okay, okay. Okay, perfect. Because I don't have access to X, yeah, yeah.
+
+  Speaker 1 40:06
+And then the chain guard entitlement. What was that with Tanner? Thought we already had it, and you had to get. Can I submit again. It waited in the queue and they rejected because I didn't have a business justification. I asked it to resubmit it and heated resubmaker. Like, did he?
+
+40:23
+You have to have a justification, otherwise every entitlement will get rejected, right? Correct. I mean, when they say justification, it's not like one liner you need to justify. No, just say, as my role, this, and this, and this, I need access. Google, that's all I do for us with that.
+
+40:40
+Yeah, that's what I try to do, but I think it's not even going to Khalil. It's going to Albert now, and Albert kind of rejected my request, saying that I need to.
+
+40:57
+He tries to be. I'm sure you've been, you know? I no comments. I mean, just a regular meeting, you'll try to make it difficult for you. Yeah, you. Okay, yeah, you need a meeting with the joy. Again, he's. Uh, the language all request will be rejected. I'm like, okay, that he enjoys that.
+
+41:24
+You know, he enjoys that. I'm telling you. He, he has that pasted somewhere in a Word document, and he he enjoys.
+
+  Speaker 3 41:46
+Anyway, anything. Come on, all right, so we have.
+
+  Speaker 1 41:51
+Uh, we have a plant, so let's say we will break just now. But what do you need? Do we need more time? Are we okay for today? I think that, okay, we'll wait for that video. Hassan in the morning, and then we'll, we'll take it from there. We'll probably look at.
+
+42:06
+Do another an hour session early tomorrow, so that, uh, yes. Yeah,
+
+  Speaker 2 42:12
+Yeah, I think we should be
+
+  Speaker 1 42:13
+Six. Do it. Do it from six or do if you want earlier than that. Also, I'll be in and out, but I'll be there. Well, I'll start with my laptop and get onto my phone. Things like that because I'm trying to this cake and get to work right tomorrow.
+
+42:27
+Is my home okay? Uh, yeah, my kids send an email to Saeed, uh, by copy it, you, and uh Roadie on it. Um, for him to start getting access to chain TTL and red headlight while UI and stuff. I put it. One of the things if we have to chase people down, we can have.
+
+42:57
+We can split if if it is like crutch time, we can. Yes, sure. No, okay.
+
+  Speaker 2 43:07
+So, we are doing 6 a.m. tomorrow. There's another check marks, but yeah, I'll have to. No, no, I won't do it. 6am, but I'll I'll just once I complete the deck.
+
+  Speaker 1 43:18
+I put the invite in. Probably I'll do it 9am. I don't know central time, some beforehand, is calling.
+
+  Speaker 2 43:24
+Yeah, 6am, and I'm saying 6 am? I'm talking about Pacific time, but yeah, 9 A.M Central because?
+
+  Speaker 1 43:33
+And then let's okay, yeah, I'll let you decide because we probably need a full hour. It may go a little over. If you? Nine Central, then, which is one hour beforehands that time, right? Yeah, we can calculate it in the day two. I mean, we can do one. Yeah, yeah, let's do that.
+
+43:50
+Let's connect after the two calls that happen, right, 8 A.M, and uh, the chain guard meeting.
+
+  Speaker 2 43:57
+We can connect after that. Yeah, that's actually better, right? Okay, I can do that.
+
+  Speaker 1 44:04
+So that there's nothing at the tail end of it, so that if it goes more than na, we have all the time, because that is our last window. Sounds great. Uh, okay, let's do that. All right, guys have a good, uh, rest of your day. All right. Thank you, bye.
