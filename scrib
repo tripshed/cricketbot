@@ -1,578 +1,299 @@
-00:00
-Requirements trying to get it. Before I spend the night on this. So, um?
+  Speaker 1 00:00
+So, the reason for cloud run is because the the jobs and functions that we run are short-lived, right? So, there is no persistent service or. You know, we don't have to run long. These are runs that are very quick, and they run, and they they die. And that's the reason for.
 
-  Speaker 1 00:10
-And keep digging. People will at
+00:22
+Oh, like, a temporary, exactly? Yeah, it's pretty. So the entire ground truth 50 is only a tool to adjudicate other llm scanners, so I don't know if you saw the. The entire the ticket that I put in all answers to. So, let me open up the architecture here.
 
-  Speaker 2 00:12
-Least watch that we presume, and I know, so, yeah, yeah, the short of it is. There is a big little file, which came from chain guard. And it has about 19.
+01:02
+I also put it in the link. Think, give a chat. Oh, you did, okay, perfect? Yeah, that's the confidence page. So? Let me open this up.
 
-  Speaker 1 00:26
-Jsons, okay, Ethan. What did you do after that? You opened that in Excel. I open that I did not open it. I gave it to Devin to do the work. I see, so you give you give the all you gave the zip file to develop correct. And then what did Devin spit out?
+01:14
+So we, we have. I mean, just to, you know, yeah, I see Thomas here. So he was in the the previous call, so he, so the entire effort. To use a certain internals Frozen set of repos. And we have the ground truth established for those reports, right? So ground truth is basically the actual vulnerable findings in those Frozen Reapers.
 
-00:46
-Seventeen thousand two, twenty three unique packages across 19 000 cgp versions. What's your prompt? Palm simple, just analyze and give me the unique packages. That's what we care about. Okay, let me try and see if I get the same result. Yeah, that would be amazing if you can try it.
+01:39
+And we use that ground truth set to adjudicate whether a newer scanner that's being introduced in Wells Fargo is good enough or not, right? So this entire project is a measuring mechanism. For static analysis tools that the Enterprise it reduces. So, anytime, I mean, with the Advent of llm scanning.
 
-01:08
-And then you can. I'll give you. Yeah, that's fine. So here, Hassan. Nice.
+01:58
+There is a whole host of new llm scanners every time. There's a new model released, right? So you have, like, GPT, and you have Claude, you know, anything that comes up? Now we have mitos 5.1, so there is a group within Wells Fargo, which uses all these newer models and trying to make it better and better every day.
 
-  Speaker 2 01:14
-Yeah, so now, good that you are here with Roadie so. Um, with that said, too, where are you getting this file from Mr chain guards sending you this file or? So, this is to change CTL, which is their. Command line utility, okay?
+02:19
+So that the new scanners can be productionized, right? So the whole point of this project is to ensure that anything new that's introduced in terms of models or harnesses are measured accurately, right? So? So, this effort is basically it measures the Precision and recall. And if an F2 scores of those newer scanners, right?
 
-  Speaker 1 01:31
-And we have. We don't have access to it. We need to submit a couple of entitlements mine got rejected. I have to submit it again. So, who is doing it now? No, no, currently, it only does Tanner and Adrian, so both are doing, but they had an issue. Through the UI.
+02:39
+So, that's the background on this entire effort. It started off as a side project. You know, it's currently running in our local, you know, vs code. That's how we run it. So, every time somebody introduces a new model. We ask them to run scans against the existing Frozen reports, the 50.
 
-01:50
-Then they call changa to fix that issue. Anyways, they were able to get that file, but That is a file. To get multiple things. This is the one-off requests, but For our purpose, even to get the number of packages which they fixed for us, we'll use the same CTL before we hand it off to our parts it and give it to chain, uh, shame.
+02:58
+And they give us the findings, and we use this framework to measure them, right? We measure it, and we tell them okay, this is. What do you have is good enough compared to the previous one, or is it trending worse, right? So right now, it's currently running on me on my local vs code and also my my colleague Naginder here.
 
-02:14
-If that makes sense. Yeah,
+03:20
+So we are running it on a local machines, right? So, the reason for the cloud thing is to not do it on our local machines so that it's centralized and sitting on a cloud? A container so that you know we can have these Cloud run jobs. Do these evaluations rather than us doing it locally, right?
 
-  Speaker 2 02:16
-That makes sense. Yep, so as of right now, we are relying on until we get access. We are relying on these two guys, Tanner, and Adrian to give us that zip file, right? To give us.
+03:37
+So, that's the entire. Driver behind this effort, and this is not a production application if you will. So, this is not like a customer facing. Um, application. That has to sit in production and run 24, 7. This is a test evaluation framework, right? So, it only has to be in a Sandbox at the most in a test environment.
 
-  Speaker 1 02:28
-The list of? Packages, which is fixed, which we gave chain guide. So, what we are doing now for Christian is supplied, total separates, and what, okay, they usually do. And do you anticipate this happening again, the zip file thing, or is it a one-off thing?
+03:58
+It doesn't have to go to production. So, I hope I was able to answer why the need for cloud run plus the cloud?
 
-  Speaker 2 02:45
-I don't know. Okay, and what is the request come like, regularly, okay, and what is that zip file? It's basically all the. Packages that change our hosts. What is that
+04:11
+The only problem is cloud run is not ready.
 
-  Speaker 1 02:55
-No the which which they find everything
+  Speaker 2 04:17
+So, when you say not already, can it even be used in the lower alignment? David is not uncomfortable using it for the lower environment. I can again double check with him. I can say it is just for the lower environment, but yeah.
 
-  Speaker 2 02:59
-The current one that you have, like some?
+  Speaker 1 04:38
+Yeah, and it'll most likely stay that way, right? So, we are not going to productionize it. This is not. You know, yeah,
 
-  Speaker 1 03:01
-This is chain guards intermediated inventory. Athena packages okay, which is their remediated inventory. For all. I think banking customers or everyone. However, they have contracts with right. Okay, so
+  Speaker 2 04:47
+It will never go to fraud Pride. Yeah, it won't, right? I mean, like, I said, this is a. An evaluation framework.
 
-  Speaker 2 03:18
-These are Latina packages. What what Christians requirement is take that?
+  Speaker 1 04:54
+And it's, it's used as a measuring framework, right? So, it's not going to be productionized as a an actual application, right? So, these are. Tests that I've used ad hoc as and when needed. So every time there's a newer scanner out there, we fire this up and measure it.
 
-  Speaker 1 03:24
-And compared to what's applicable in in. Wells Fargo, right,
+05:12
+And that's the entire. You know, premise of this application. Can you use gke? Yeah, we could, but it's. Raquel, yeah, it's a war kill for something like this, right? So, yeah, exactly. Thanks. Thanks. Yeah. To
 
-  Speaker 2 03:31
-Right?
+  Speaker 3 05:32
+That point. I don't want to derail's conversation, but I have a legit question. I know, you know, they say, Clive one is not ready or approved. So, is there plans, though, to to put the necessary guard rails around leveraging Cloud run because, you know, no one wants to use gke for everything, right?
 
-  Speaker 1 03:31
-Which of those packages are applicable to Wells Fargo and that is the percentage he's he wants because? Some other bank has close to 40 50 percent of those Athena packages. We are trying to get to that okay,
+05:50
+There's so much overhead with that so much. Set up, you know, BBC, you know, clusters. But all this stuff. Um, whereas for things like this more targeted, you know, quick lift, you know, exes that kind of get in to get out applications? You know, what's the major concern? That they can't approve at least one of the flavors of cloudboard, because I think I believe it's like a cloud run containerized version, which is sort of, you know, we still continue with the container rise, like pattern, but it's also, you know, climbing, like, completely serverless, almost like a quote-unquote rampant job, right?
 
-  Speaker 2 03:46
-And how are we doing that comparison? Are we comparing against black duck or what's in-house mechanism?
+06:22
+Like, I don't think either of those are have been approved if they have been, you know, please, you know, educate me. But, like, what's the the rationale behind, at least, that exploring those types of options for, for use cases like this?
 
-  Speaker 1 03:53
-So I did not know that we had a tool to do that. There is a dashboard. Where we have to stick in URL by URL to be able to see if it applies. There is no other way. To get this done, unless you have an export from somewhere.
+  Speaker 2 06:39
+Let me ask if David can join because he's really the one dictating Cloud run versus gke.
 
-04:13
-Okay, and I do not have access to that dashboard, so I'm asking someone. Um. From whichever chat really added me if they can. However, who builds that dashboard if they can do it for me, so? Oh wow, this is really okay. Exactly, that is everything, right? Like, that's, yeah.
-
-04:36
-I understood that, because we, if we are asked to do the same thing, so the dashboard is basically taking a complete huge dump, and then it will. Dashboard will not take a huge dump. And what, okay, it won't take. It's a dashboard. It's not a UI, so it won't take.
-
-04:53
-I told you, he pasted something there that he pasted in the UI. I saw it.
-
-05:00
-The URL we pasted. How do we paste 1700 together, so we we pull it from? Okay, will you do it one by one? You cannot do that, right? So you'll have to stand around. That's that's what I'm trying, because that's what I'm trying to. That's that's what we should ask.
-
-05:16
-It should take. Uh, it should take the pearls. So, basically, what we want is, you get a zip file, you ask Devin to generate all the pearls. And for, and do the unique calls, right? And then then paste that, whatever that file is, we should be able to paste it, and that should turn on that report.
-
-05:36
-But how will you do one by one? It's impossible. No, so they just, you know what. Let me add it to the sets that you can. D and pretty deep. Yeah, add me as well. Yeah, yeah,
-
-  Speaker 2 05:49
-So this one off thing is one of right, so I think we can Circle back to the usual BAU stuff so that we can hold the fort and.
-
-06:04
-Uh, we
-
-  Speaker 1 06:05
-Can. We can Circle the Asana 13 people. Okay, well, there's so many people here. Somebody has done it, right? So, did you get that zip file and run it by Devin Rodeo? What? What did it spit out? Um, I'm just about to say. Please analyze the zip file and come up with a list of unique packages, unique packages.
-
-06:32
-No unique package URLs pulse. Same thing. It will probably give you the version of it. We don't want the version. Christian doesn't want the version. He wants a unique package name. I see, okay, let's see. But when you search for stuff, you obviously win that format. Already extracting unique package URLs.
+06:52
+But this is not a web app. It's not an.
 
 07:00
-First, let's say the purse would have the name, right? Well, what happened?
+It's for temporary use, and it's for non-production.
 
-07:06
-Then, I guess. Spook the package name from the club.
+07:07
+Okay, let me see. Give me one minute, and I'm gonna put you on the spot shot here. You're just curious as to, you know? And while she's doing that. Something trucks backing up somewhere, right? Oh yeah, oh, that's me. Yeah.
 
-07:15
-It's doing. It's doing something. Yep. Fusion sessions are now up to 40 more efficient. So, these guys have a database. I think they they can measure the database. Yes, make sure they get ties back to the app. Yes, a lot of this confusion, thinking, this is, you know? And it's all because of lack of information information.
+  Speaker 4 07:25
+You know, and there might be some security issues around, you know, running from what someone else had mentioned in the previous meeting. A few weeks ago, I was and but, you know, for certain things like this, I think there's a lot of use cases. Um, at least they could, you know?
 
 07:42
-It's a communication problem, right?
+Apparently started exploring more and once again if there's some necessary guard rails to put around it, you know? I think I think they should look into exploring that, because it, you know, we're really limiting what we can do in the cloud if we just if the only model it parents gke?
 
-07:51
-Javier is a failure to communicate.
+08:00
+Um, that's just my thoughts on it. Thinking for what it's worth?
 
-07:58
-Close the line from Cool Hand Luke.
+08:10
+Yeah, this kid is to. And then choose Google, but because.
 
-  Speaker 2 08:13
-Initial okay. For me, it's coming waiting for action first. So while we are waiting, uh, do you want to share your screen and show something or?
+08:21
+Oh,
 
-  Speaker 1 08:23
-Pretty, maybe you went through the two? I think, what? How do we have to hold food? What are the different kinds of requests that will come? This is an ad hoc. So okay, fine. We got a grieve. I gave you that zip file of the chart, right? So this is one way.
+  Speaker 5 08:29
+No. Yeah, yeah, yeah, okay? We have David. Oh, thank you, David.
 
-08:38
-Oh yeah, I cannot access that. I don't think it got an upload. The file. But yeah, we can worry about that later. I'll get that from you, so. Yeah, yeah, so I'm running the same thing. That sounds running.
+  Speaker 2 08:43
+Okay,
 
-  Speaker 2 08:52
-Yeah,
+  Speaker 1 08:44
+Hello. Hey, hey, David, thanks for joining. So, yeah, like I was talking about this, you know, the tool that we have? Here is a an evaluation framework for llm scanners. So, it's. You know, a small tool that what it does, is it basically? Evaluates any news alarm scanners that are introduced to the Enterprise, and it's a measurement framework, right?
 
-  Speaker 1 08:53
-Because we have to be at the position whatever Sr does. Whoever Sr asks whoever, you know, exactly those pieces for you while you're waiting. Asana, can we start? Or something or? Yeah, just give me a few minutes.
+09:07
+So, let me open this here. So we have like 50 repos that we have pinned within Wells Fargo and. So I can? And we have known vulnerabilities that are identified within those 50 repos, which are true and categorized as true and false positives. And anytime there is a new scanner that's introduced to the Enterprise.
 
-09:13
-Because I.
+09:31
+We use this framework to measure how good that new scanner is, right. So, to determine whether it's good enough, or if it's trending downwards compared to the previous one. So, that's the, you know, the background of this entire thing, right? So right now, it's running in, you know, our vs code locally?
 
-09:39
-Okay, so these
+09:48
+Right. So, anytime, there's a new request that comes when we measure it locally and stuff. So, the the impetus for putting this on the cloud is to not do it on vs code. And put it somewhere Central. That's one, so let me start, I guess, with the basics, I guess.
 
-  Speaker 2 09:40
-Guys are saying these guys, these guys, these guys are on the hive team. The data analytics, so mostly Maori and Company okay?
+10:02
+Why are you putting an also paintings? Yeah, sorry. Say it again.
 
-  Speaker 1 09:50
-Yeah, we have to connect with Maui and team as well on the requirements to automate this pradeep. So, yeah, I heard that. So, what's going on there? Are they? Are they close to automating it and? How, how close are they? Are they very far from actually doing that? Yes or no, because?
+10:17
+So you, you're cutting out yours. Ask me that questions, yeah. Why can't you put it almost?
 
-10:11
-They don't have access to the data.
+  Speaker 2 10:30
+They can get a name space automated in, like two minutes. And you don't start the point. The same towards the B, but then what you're doing in Cavern. Why you're not a point there?
 
-  Speaker 2 10:14
-Okay, um,
+  Speaker 1 10:41
+Yeah, there's a potential for this to not right now, but in the future to connect to, we need access to the vertex AI stuff. Yeah, if you have access feeling laptop to work this, you have access from. Directors don't want to be as well. Okay, so you're saying ocp would also work?
 
-  Speaker 1 10:14
-So the data which I'm pulling up manually, for example, change that has a change CTL,
+10:59
+Yeah, of course.
 
-  Speaker 2 10:21
-Right? So, they need a
+  Speaker 4 11:01
+Right, it will work.
 
-  Speaker 1 10:22
-Meeting, which in uh chain to understand how CTL works and to be able to automate that there was supposed to be a meeting. It didn't happen, right? That is something which we need to push for now with red hat. They don't have anything to be to give us to be able to automate
+11:10
+And does ocp have something similar to Cloud run?
 
-  Speaker 2 10:38
-Right now. No
+  Speaker 3 11:15
+Uh, only to use basically the drug power run, right? We have, like, a huge team that managed also be the employees, and you only need to create an instance which is exact same thing that you would do in in Cloud run, right? You'll create like a something that's fully managed for you, also be.
 
-  Speaker 1 10:39
-Api, nothing. You're getting a copy, and we have to work through that. So,
+11:30
+It's like fully manager for you. You only have to pay your computer image which route to the vocab running your ways right and use the point to to also PNA space.
 
-  Speaker 2 10:44
-How are they sending their copy? Is that, like, through email email?
+11:41
+Okay, and if you don't lower environments if you're in low environments, you got any accessing that you are and click buttons. If you want to live through the UI as one? A higher bombers, you know, you know, get into a sports like an FBI or something to hit it, right?
 
-  Speaker 1 10:47
-Oh
+  Speaker 4 11:56
+Okay, yeah, this most likely won't go to a production environment. This is a test hardness, right? So?
 
-  Speaker 2 10:47
-God, that's horrible. Okay,
+  Speaker 3 12:02
+So, then something probably not product. You is very super easy for you, then you need to like, you know, mess with the stuff and play around with it and like modify it and trigger the manual. You know, stuff like that without having to go through the whole full-long EPLX.
 
-  Speaker 1 10:49
-Exactly. So,
+12:16
+Oh, okay, yeah, we were specifically told to pursue Google Cloud, but, uh, yeah. If it was in ocp, and you know, we get pursue there as well? Specific performance into why, why this isn't working OCB? Um, then, then let's look at those. But if you don't have any, this is going to work, uh, gonna work for you.
 
-  Speaker 2 10:50
-We have to fix all that, right? Okay, so if that comes up,
+  Speaker 1 12:36
+Okay, yeah,
 
-  Speaker 1 10:53
-So if those two things get fixed, we are a lot of things, get off, upgrade okay, and what data they want to see. Uh, within the dashboard is, let me add you to this chat as well. So that you have an idea because we need to write that requirements, which I did not get to that yet.
+  Speaker 4 12:37
+We can explore and see if it works. If it works, you know that that sees real. Otherwise, you'll have to come back and revisit this, right? Yeah.
 
-11:15
-Um, in my own modern, right? I'm on the chat already. You are on that chat, but I am trying to find where is that chat? Which chat are we talking about? Because that is, that is again coming from Christian, right? So? But that would eventually end up being the dashboard.
+  Speaker 3 12:45
+Hours okay, and
 
-11:32
-And Khalid gave October 7th that I know, I don't know how they're gonna do that.
+  Speaker 1 12:47
+Is there any any reason why you would not allow the cloud run I? I think that's one of the questions I've seen this point, right? I promised Tavern today. Tauron doesn't have a lot of things like today, for example.
 
-11:39
-Check.
+  Speaker 3 13:02
+The following obligation to Cloud run doesn't follow our traditional approach by operational.
 
-11:58
-Okay, 15 people out there in this anyway, guys.
+13:12
+So it's we're doing. Actually, we're doing work working with sour. How do we do runtime scanning? Basically, the basic stuff that we need to do for running? Um. Has been enabled for, like data, is like specific things that supports this, but not for just also. Then, all you do is stop fry, like, a I'm assuming this guy like an app or a job they run on trigger, right?
 
-12:08
-And you can see that those are the views which we want to. We won't have we want module to be able to show it. The data, and that view which actually posted. I will send you an export. The data could be stealthy to refresh, so please leave that one.
+13:35
+Yeah, so that's why for that.
 
-12:28
-Okay. That's fine.
+  Speaker 4 13:39
+Uh,
 
-12:36
-And they added me to this. And probably forward it.
+  Speaker 3 13:40
+And being something new, and you have anything. That's why I think the better you can produce, you know, you're so you're supposed to be, which is rare all over and and described that way. Once we're ready, I think we're gonna make Cloud run. Like, yeah, we're working right now through the whole runtime scanning how we're going to lower west.
 
-13:45
-What is he sending you? He pasted that 1700 URLs in that, uh, tool, which he showed us right. The dashboard, which I don't have access to and apparently it completed an internal report. We don't know the output of the report. He's going to share that with me. But they're also saying that that data can be stale, which is okay.
+  Speaker 4 13:58
+Uh, we're working on connecting the whole thing together.
 
-14:08
-It probably won't be months old, rightly so. Okay, and then you're going to do a diff. Or what are you gonna do? I'm just I'm trying to see what's the output? Going to look like to begin with, like, what? What is it in? What is in the file? I want to analyze that.
+  Speaker 3 14:01
+Um, so you can deploy to it using our traditional eplx. In our platform, which is where we don't. We don't have. Only for the resources that are onboarded already that we support right, and once we we finish those, uh? My three decisions I want to do. We're gonna allow this to come in, right?
 
 14:24
-Okay, so I got a unique pulse. I have a text file that you see. I just ask him to give out the number, right? Like, why is he giving out files? The way my thinking was, you could upload it to that tool that Colleen sampled. We cannot upload anything to that, too.
+It will be like the first class citizen type of service for us to support. Okay, because of now, it's not. So, we're trying really just to, um. Container until we get there, right?
 
-14:42
-We need to copy paste it. Oh, what tool is that?
+  Speaker 1 14:32
+Oh, I see. Okay, so would this not be a good use case for you to test Cloud run because you're not going to do production anyway, right? Oh,
 
-  Speaker 2 14:46
-That it's a dashboard. It's not a tool, but it's attached. We have the dashboard. It has a text field.
+  Speaker 4 14:40
+I mean, we all need nothing. We have already use cases steps in Cloud run.
 
-  Speaker 1 14:51
-Oh, like, a Tableau dashboard. If you do all of it, you copy all this. Maybe it does take it? We don't know. Put the capacity of that feeders. It's a Tableau dashboard, right? Oh yeah, okay.
+  Speaker 1 14:44
+Oh, you are, okay, yeah. So, we're actually doing an element work, like adding the. Like, I said, the runtime scanning. The cyber is doing some work on getting the the random Sky working.
 
-  Speaker 2 15:13
-So, I downloaded that. Let me run that analysis.
+  Speaker 4 14:57
+And also, we really want to put in Cloud clouds to lay here. I like paper for purpose, right? Just because we're real Cloud run. We're not going to allow these kids to go in and say, oh, I want to go into it, right? So before Anna, following being there wealth, we changed our kind of started multiple times, right.
 
-  Speaker 1 15:19
-And, and I heard from Khalil that he he. Now, he has like eight work streams instead of the. Is there a change in OSS work streams? Oh, who he mentioned in some call, yeah? They're gonna redo the.
+15:13
+At some point, we were going all in. In Cloud, everything goes to a cloud first, right? But, um. You know? The change that we have now is that we're gonna we're gonna. We're using Cloud for painful purpose, so user really needs to have some requirements. Right. That's why we've made like Houston Bender on-prem with.
 
-  Speaker 3 15:39
-In the in the daily call at 1 pm, right? So? He said he's presented that to Munich about eight words team providers instead of whatever is there. Apparently, there is stale data so. Do we know what? What do you have that slide because I have? Six work steps over seven, hold on.
+15:39
+They have like a thousand questions right now, and also be right, but we have used investment on-prem to Runners. No, we need to run, but if you have a use case that is fed and it needs to run in Cloud, then we have this right. We have gke. We have to run negative better, and we also have a stuffing Azure.
 
-16:00
-Let me see, no? Yeah, apparently, that changed this morning or yesterday. But yeah, I mean, it does not concern us if Khalil is doing it, but? It's still good to know, I guess.
+15:54
+If we need to go there, right? But the idea is that, you know? To have, like, that technical reason of requiring right for you to go there, and
 
-16:15
-Okay. So, in terms of meetings right as son, are there other meetings and then the ones that?
+  Speaker 1 16:03
+What, what would usually be that, I mean, I, I get, you know, we'll pursue OCT, but especially, you know, uh, for example, the UCP would have a bunch of, uh, data. Use cases, right, that are in the cloud because?
 
-  Speaker 1 16:26
-Redhead. You have those on your calendar. Yeah, let me
+  Speaker 4 16:17
+I said, but we're using about, you know this? This chai is based on mind, right? But we have a bunch of like data tooling. That exists in the cloud, and because of that, I gravity. It doesn't make sense for us to have all stuff on France, right? And then go across and pull the data up and down every time.
 
-  Speaker 3 16:29
-Go there. So, there is an Oasis daily call, right? And then there is a OSS metrics review that is a one-off thing. Forget that, and uh, no,
+16:33
+So there's a bunch of data uses that are in the cloud, and they'll stay there. And it makes sense for the workloads that need that data that is in the cloud to go there, right? No, okay, okay. Um, so those I want to start with, I guess I have.
 
-  Speaker 1 16:37
-No. The Matrix review is not a one-off. It is scheduled weekly if they didn't put a series to it. Okay, okay. So, anyway, I'll get it. So, um, and then there is a. Vendor call with red hat IBM and the other one is with chain guard correct. Correct, okay, and that's all.
+16:46
+And then there's, there's some, the only use this for elasticity as well. I, you know, if you stop goes up and down? That frequently, and you can think about elasticity of the cloud versus following this information on brand. That's always something that we think that it makes them fall too long to default Cloud, right?
 
-16:54
-Is there anything else? Uh, besides this.
+17:04
+We have some CIBC uses that I've done some of that. I'm not sure as well. Because all we've been basically the main reasons, um. So, like I said, I'll give it a try. I don't see anything around me for little Lobby. Also, business stuff for in LCB. If you find anything that, let's review it.
 
-  Speaker 3 16:59
-Office hours.
+17:19
+And then, let's, let's vlogging, right? Okay, yeah, we will ID. Is that an easy process, or is that quicker? The ocp. Yeah, also, be, if you have another day in two minutes, you can have it any space and you can be a boy and to also be in two minutes.
 
-  Speaker 1 17:05
-That where we learn, ask questions about change CTL and stuff. So that's also an important thing, but I won't say to kind of get on that.
+17:36
+Okay, I'll try that. Yeah. Hey, I have a question David for you. I'm convincing, like what you guys are, you know, thinking of proving Cloud when it said? What about, like, serverless functions in general, like? Uh, something that doesn't even have to be containerized like an AWS Lambda function.
 
-  Speaker 3 17:14
-Okay, right now, as of right now, we are not doing that. It's Tanner and Adrian, who is doing the the call.
+17:53
+Are you guys got looking to approve that also in gcp or exploring that idea? Yeah, so right now, so we are. Yes, okay, I'm we are all trying, so that's a like. Our next contribute step right there. The serverless keyword that you said, I think it's key, right? We?
 
-  Speaker 1 17:21
-They want us to take over like, ASAP.
+18:10
+Yes, so in, for example, in Azure, we will have a good answer for it right now. We, the team actually, is investigating a serverless version of Azure function in Sauna during the Russia functions. I'm kind of wonky, and they get into any options, but some of them requires you to release an actual computer to run them.
 
-  Speaker 3 17:24
-Yeah, I, I get that, but temporarily, okay, perfect. Yep, let's so is there a call for that for the chain guards? Okay, can you forward that as well scheduling? Ad hoc. For officers. And you know, automation, like learning about chain CTL, so I did forward it just now. Okay,
+18:26
+So the team is actually doing an evolve or a new flavor or electric function. They'll be serverless, right? Once that is an A1 already? Yes, you'll be an operator for you to use Azure serverless functions, right? I mean have in the Azure gcp, we do have comp functions, uh, enable, and in similar stuff.
 
-  Speaker 1 17:43
-There is one for next week. I don't think so, right? Is there one there? Actually, there is I, I see it on the sixth, okay? Remediation end to end. That's a series, uh, I think I sent that to you. You sent it already. Okay, send the series to them, we will be attending and also meetings, and we'll give you two offline.
+18:43
+Like, we also measuring because it will look at it today. Uh, like the artifacts today. For example, we're not enforcing that they come from manufacturing like, there's some maturity of these things that we're doing there, um. To improve the field that we're actually using it, like some of the uses that are cloud native like emission to data examples.
 
-18:09
-Khalil knows that you are out, right? He was. He was asking me why he just joined us. And you know you are scheduled before so? Uh,
+19:03
+So, only that, a notification and process the automation that they need to do. They learn stop fortune for this. They don't fully avoid like an application or something like that, too, right? Consist less overhead, too, right? You know, simple server is functioning that pretty deeps, you know, use case, you know, if it's something that gets in and gets out, it only runs 10 15 minutes.
 
-  Speaker 3 18:18
-How long are you gone? Esan, like, a week, one week, just one week. Okay, so you have your return everything planned, right? Fact. Okay, good.
+19:21
+Whatever it is, I think, serverless, but also increases productivity. It's just that containerization, you know, you have the additional overhead of the containerization. And you know, the configuring of, you know, the container? I'm just, we're just thinking in terms of, you know, being able to produce things quickly and leverage, you know, I mean, I agree, the only problem, the only caveat to that is that?
 
-  Speaker 1 18:41
-I had a feeling there was a big, big, weird, and right would be able to do this. In their son's absence. But yesterday, it was. I hope that when he gave some wrong files and completely wrong format. Uh, so I was like, okay. Okay, we will. We can hold four.
+19:45
+Uh, because of using their priority, you know, where are we doing things for public Cloud, right? It's really not that. But you get it. You need a lot of stuff, right? On Cindy, remember, you're gonna need a Landing songs. You're gonna get. I need a submit. I believe there are some, like, wiring, that is so happen for you to get into a polling cloud as well.
 
-19:02
-I think we will be. Okay, yeah, yeah, okay. And.
+20:03
+Like, it's not just like, spin up a function, right, even to also the whole. Yeah, that's probably more interesting to one cloud, right? But once you have your environment, it would be nice to just be able to say, Hey, you know, I? I need a quick lamp, the python code that does X, you know, whatever?
 
-  Speaker 3 19:07
-If Nick is the one I mean, is Mike aware that Nick is part of this, or yeah, okay, only of this project. He, he has some a one of.
+20:15
+Yeah, reads the file writes to a storage bucket, right? Pretty much forward processing and architecture. It'd be nice to be able to do that, test it all out sometimes to like, test your conceptual theories as opposed to the overhead of. You know, a gke cluster because people want to work in the cloud too, right?
 
-  Speaker 1 19:22
-Part of the work he's doing is here. Okay.
+20:32
+We don't always want to work for some reason. One on-prem. I mean, if that's the pattern here, Wells Fargo, I don't. I think before, yes, before, yes, but today, I mentioned earlier. As I said so, purpose that change, like, like? I definitely hear you, right? Uh, but Is basically straight from properties and stuff.
 
-  Speaker 4 19:26
-Like, what do we need from we need from there, so that part we should get to right as an as you're working through this?
+20:58
+Like, I know, for example, different places like. All the compute servers are all to you, and you pick the one that feels better for your app, right? And you make that decision. But I think the change that happened is like, Billy is, like, hey, like the only the other issues that we kind of make on Prime, you go there, right?
 
-  Speaker 1 19:33
-Um, okay, let me, I asked. Do you guys have access to the? Uh, so you probably have already, but if you have access to this, which I've shared in the chat on the meeting. Chat the OSS,
+21:14
+I think that's the only shift that that we wearing like this. When we started our Cloud program either, right? Uh, it's something that changed. Um. Over the past year. Okay, okay. So, so translation, they spent a ton of money on these next-gen data centers, and they wouldn't run everything on print.
 
-  Speaker 3 19:44
-I think somebody requested access. Somebody gave you that access, so that's good. Okay, so that was for last week.
+21:30
+And there's a reason not to there you go. Like a hundred thousand cor.
 
-  Speaker 1 19:52
-And in that same SharePoint. Um, there is a new deck, which would be for this week. I just created a copy. I didn't update it. I'll update it tonight or tomorrow morning, but when I get time, so there is one deck for every week, right? One deck, but with updated dates.
+21:45
+Okay, well, there'll be still be. People like me and pradeep still pushing for the idea of, you know, 100, like this, right? Um, yeah, I mean, it's not the same screen. It's not the same, um?
 
-20:09
-Yeah, copies, and who updated? Okay.
+22:01
+To be fair, we also trying to make stuff on-prem and in the cloud to work towards that serverless on-premise won't really be serving us that you'll be serious to you, but we're still gonna have some opting managing in the buffer, but we're gonna know a thing where you really.
 
-  Speaker 3 20:14
-Oh, you update the numbers within the sheet. Yes, okay, that is
+22:19
+I've got any.
 
-  Speaker 1 20:17
-The task that is the challenge, the biggest task. Yeah, okay, so can we? Can we walk through as to what numbers are coming from where? Yeah, I mean, we can do that.
+22:25
+Right? So that's something that offices. Well, so we're gonna get there. I think we have a roadmap for. For next year. I think where we're you're not getting an auto deal with all complexion coordinates and you cannot deal just with that, and it's double approach. This is one step you get any closer to where you want to be, right?
 
-  Speaker 3 20:28
-We can do that tomorrow, you know, but you can work on it tonight, and then we can sync up in the morning and. See what has to be done. That makes sense, right?
+22:47
+David. Thanks man. This is good information. Yeah, great. Thanks for following me, uh, David. So, it sounds like a pretty deep a team, uh, you're going to go ahead and. Research on the OCT.
 
-  Speaker 2 20:39
-Yeah,
+  Speaker 2 23:03
+Aspect of it in that, um, you know? It sounds like it's doable for vertex of AI for the future as well. So, um, why don't I? I'm going to go ahead and cancel this ticket with these notes that we meant today in the green one. And if that, you guys do need to come back by all means.
 
-  Speaker 1 20:39
-Yeah, we can do that. However, you want to do it, right? I'm assuming Tony wants this entire number generation to be automated right in some way. Yes, that is the push where Maori needs to come in, and then the vendors need to chime in. Yes, they wanted ASAP because I don't think would last for another two or more than two or three weeks because they are really pushing for that because our numbers are messing up, right?
+23:20
+Um, we can either resurrect this ticket, or you can submit anyone okay?
 
-21:05
-We are dropping the ball on a lot. Yeah, and you can see, absolutely. So, yeah. It wasn't messing up, and La Joy has. I'll tell you the birthday meeting that that is there on the calendar. Uh, October 5th. Oss end-to-end strategy, so he basically. He told me last night.
+  Speaker 1 23:25
+All right, sounds good. Yeah, we will, yeah, thank you.
 
-21:25
-If this has to change, so that's what he's doing right now. Uh, did you get that 1700 number as well? Rudy, I got seven. So, yeah, I was going to paste it in the chat. I got 1731 unique packages that drops to 1723 when your three names that they were only in case or separator and the same address
+  Speaker 4 23:27
+Yeah, I think I do have a good question. Sure, I know we can current for the OCB. You know, dark petition and all that stuff, but do you guys have any quick pointers like, you know?
 
-  Speaker 2 21:44
-That's
+  Speaker 2 23:40
+Let me check, um, maybe I have a a link remote where you could start for the OCT and let me see.
 
-  Speaker 1 21:44
-Fine. That's 1723, 1723 is what you got 17, 22, 70, 23. And go the same thing, right? Yeah. Uh, two sessions give the same thing. So, that's, that's deterministic. Yeah, yeah, yeah. Now, it makes me think how much are we relying on Demon? And I am pushing for seven lead controls.
+  Speaker 4 23:51
+Yeah, when we're checking and looking at Windows in Confluence Pages. And you know, there are continuous things just wanted to. Yeah, yeah, yeah, let me find it. Yeah, let me find it, and uh, and then give it to you. Okay, and I'll open it in in. I am. Sounds good.
 
-22:15
-I'm gonna send it to like each. Each developer ID will be assigned to a deven ID. And the developer school would be developed school. Well, there might be some developer accounts which are not developer accounts like non-coding accounts. So, where the data analysis data crunching? So, when we design that, we'll have.
-
-22:39
-Certainly. Again, this is something I have to figure out with it, but when we design that, we'll have certain accounts, which would be kind of data currency data analysis accounts, so they won't be downloading packages and stuff like that, so. You know, it's really all about. Without having the agent core over it, you expose the whole business to a to like level.
-
-23:08
-Every every, every file we give it's learning, right? Connect. I think if we expose the whole thing, it will be like a hugging face kind of an instrument, but it's not a does not have access to the it's. It's a on-prem version which we are using, right, like, yeah, can also become smarter right over time.
-
-23:26
-That's this all the models, the Enterprise models, the disable. Learning from? For corporate customers at least. Claude.
-
-  Speaker 2 23:39
-Copilot! Definitely don't learn! You don't learn. Okay, maybe they're not supposed to otherwise. That's a huge risky for the Enterprise people at least. There's a meeting in 15 minutes. What is that? What is this remediation? There's a meeting. I don't have it on my calendar.
-
-  Speaker 4 24:09
-Oh, this is
-
-  Speaker 1 24:11
-Scanning platform weekly touch point scanning platform is all Tony, right? Uh, yeah. I don't know.
-
-24:28
-So, I believe, you would know all. I'll tell you the names, yeah, Christopher Guthrie. Follow me, Aaron Hansen. Robin Hood. And all these guys. Yeah, Robin would drink. They're all part of Ryan Lynn's team, right? She's from AVR. Right? Yep.
-
-  Speaker 2 24:56
-The mic. Is there rather Oakley?
-
-  Speaker 1 25:03
-Is that the meeting that's about to happen? Yeah, I'm not really done. I'm going to be on this one. Okay. We so asan, you want to show something you're. I mean, while you're working, I thought will make use of the time. And then, tomorrow, we'll have a more dedicated session so.
-
-25:20
-Uh, if we can do that. It's just basically going over those four slides, which might become six tonight, but. Um. If you want to work on it, that's fine. Let's get a little basic, but tomorrow, we can't have, you know? Tomorrow, we must finish end to end. Every request of the schooling data from chain are doing the analysis, sending you to shape that is one piece of it.
-
-25:48
-I'm getting getting data from Red Hat doing the analysis sending into Shane. So, really, broadly. Those are the two buckets, right? We saw in the meeting today. Yes, one is the Matrix, which is the slide leg, and the second thing is chain guard chain CTL. Somebody does, but they give us give us the five yeah, red hat.
-
-26:06
-We check the file there right there, so when we get those files, we need to evaluate. Yes, yeah, that's another challenge. Yeah, evaluating because what what Suzanne is doing is to not drop any of the findings. She's not asking for a diff because there is some kind of a finding mess up, then we don't get a div from the vendor here and have to analyze what we submitted shared previously.
-
-26:35
-And what we have to submit now, because Shane does not want any duplicates. And then, Shane wants it in a specific order. So be able to parse it, put it in that order, remove duplicates, remove vendor related caveats, and then pass it to shame. And when we pass it to shame, because the ticketing system you want to submit us and then ping him on the side.
-
-26:57
-Okay, what degree system is that? Sorry, wait, sorry. What ticketing system is that you have? All this anywhere. Uh, this is the one. So, I put in the chat.
-
-  Speaker 2 27:12
-Oh, okay, you want an intake. Basically, you got it. Okay,
-
-  Speaker 1 27:14
-He wants an intake, and when he completes that analysis, he sends us the file. Now, what he sends that is again another analysis, which we need to do, some are passed. Some are findings somewhere. We need more information. The failed and more information. 30 empathy disorder. I want to say to kind of keep track of those.
-
-27:36
-And be able to get rid of speed. Can we bring outside? Yeah, I need I have to speak to him where we get those failed and entertainment more information. All those failure back. We don't have track. No one's tracking that. What is happening to the failure packages. Why are we not sending back to the preventer?
-
-27:51
-And then, when we send it back to the vendor, we need to see. How do we follow up with them? Can we? Can they do a separate pull for those packages? How do we keep unless we have that automation. It's going to be a tough task, but that is a task, right?
-
-28:04
-Yeah, okay. Sailed packages aside what gets passed, we analyze it, and then from that analysis, we put it in this slide again. And then we send it to her Khaliland team for the campaign. They're pushing it for the for for the deaf games. This is. Our submissions. Meaning. We submitted packages and finding IDs.
-
-28:35
-A red hat and chain card. Now, there are two other categories. Which we worked on it last week, but this week we did not work on those categories, which is good. And one of the calories categories is what Christians ask is right now, but in a different way. But One category is remediated packages basically.
-
-28:54
-What the vendor has fixed for the entire world? Right from their inventory. What have they fixed? We take that. Be compared with what applies to Wells Fargo. And then we run it through shame to scan it and see how many turns of its findings which are failed, which are passed and are those passed.
-
-29:15
-We send it to campaign. For both vendors. Second thing is pree disclosures. Most of our submissions, which we are doing. Are included in three discretion, but they put it in a separate category, so predisclosures are again. So it does not apply to red hat. It applies only to chain guard where they have a bunch of previous questions.
-
-29:38
-They are obliged to release it to the world on what they find for the findings for the packages. Um, they are giving us that beforehand in that we need to see how it applies to press Fargo. How many cars? How many fail? And before the breed is closed before that date, we need to send it to the campaign and get it patched by the deaf teams.
-
-30:01
-So, these two were part of actively doing this was the toughest pass last week. But this week, we did not get much on it. The only card. New packages from Red Hat, which are about 14 of them after analysis of 56 packages or something, and from chain guard. We did a pull, and it antenna did it, and only one package came in hot.
-
-30:24
-So these two packages? Rn change. To do the analysis. Once we get the results, we need to update the slides. How many past, how many failed and how many are going to go to the campaign, and when are they going to go to the campaign? That is basically the gist of it.
-
-30:46
-Okay? The campaign is the campaign is AVR, right? Camping is. But is that that's? I mean, you're sending it to AVR for the app teams correct or no? Correct. Okay, I think that's my understanding. Yeah.
-
-  Speaker 2 31:08
-And Khalil, does that? No Oasis, he's not sending it. Uh, are we creating events? I don't know the campaign. I think they're creating zero tickets.
-
-  Speaker 1 31:18
-Including zero tickets, I think I don't know. It's probably zero, who was whether who creates that? Yeah. Um, Roger, and India team. Yeah, they're on the campaign. Correct?
-
-  Speaker 2 31:41
-And is there any pushback from the jira tickets that we have to worry about or no?
-
-  Speaker 1 31:49
-Campaign related stuff. It's all them. We just need to send them clean packages. That's our work. Okay, anything from those packages on pushback. They are the ones who kind of deal with it, but We have proof that it came from the vendor. They were clean, went through our validation and scanning that is second part of it.
-
-32:09
-When it comes in, that's clean, and we send it. I mean, that's the best we can do, right? Okay. To believe you had your recorder on, or you were taking yourself, yeah.
-
-32:25
-And then, not visualizing these three pieces.
-
-  Speaker 2 32:29
-Is, what is that Matrix right? And then, the campaign is finally. Campaign is a different workflow, right? This real scans happening right. So, after that, a real validation?
-
-  Speaker 1 32:44
-Anything that goes to the campaign that is a per validation correct per validation. Yes. Because she is doing two kinds of scams, isn't it? That's correct. That's very good point. And then, an important one, because those two formats that we sent to Shane are different for those. Because the first one is validation basically, something which we already scanned.
-
-33:12
-So in April, we did this method scan and stuff, right? So, we have a find ending ID for that, and when we Center, the vendor and vendor gets back to us. We compare it with that finding ID on what was the previous and now, and that's how Shane matches it and sees the results.
-
-33:26
-As the assemble, scan is basically for the remediated inventory and the predisposure from the vendor, which we did not submit, Davis told us. B60s for the world. We are predisclosure, and this is what we fixed. Go ahead and use it. We do a simple scan. The logic is different, but the engine is same, and then we tell them okay, you know what?
-
-33:49
-This had no findings, but this had findings or this hat issues because we didn't have enough data to scan it. So, yeah, but only the past. With no critical High findings or any findings goes to the campaign. Let's see, got it.
-
-34:18
-Yeah, just whatever you you mentioned, right? We should have just driven to cover with the document. And what I suggested yesterday. You won't have time to write it, so speak to devil. And ask him ask it to create a document saying step workstream one, not not Khalilis work screen, so you can just say request type one.
-
-34:40
-Request type 2, request type 3, request type 4, and then it will create the document, and then we review it. Yeah, I think you should do that as something? Yeah, when you create the deck later to write, right, you should do that, you know? Yeah, read what I mean.
-
-34:58
-Speak out as to what you're doing so that, you know, it gets.
-
-  Speaker 2 35:01
-Oh, you know what actually Windows has a? You. You're on Windows 11, right? Yeah, I think so. Yeah, okay, so Windows 11? What, what's that, Windows? No, no, yeah, no, no, yes, I think so. Okay, so Windows 11 has a. Windows 11 has a video recorder, right? So, it can be record the screen.
-
-35:22
-And it can also record your voice at the same time so. If you could do that?
-
-35:33
-Let me see.
-
-  Speaker 1 35:35
-Microsoft store is blocked. Okay, no, no, it's. It's inbuilt, so you don't have to install anything.
-
-  Speaker 2 35:56
-Okay, so. On your computer, press FN and insert, you know, how to do the screenshot, right?
-
-  Speaker 1 36:05
-Yeah,
-
-  Speaker 2 36:06
-So on the screenshot when you click on it, default takes images. But uh, you should also see a video button on the top. Well, it's fun. The snipping tool, you mean, right? Yeah, yeah. Okay, there should be a video button and. It should. It'll ask you where to record.
-
-36:24
-And then you can unmute so that you can speak. So you, you'll in the end, you'll get like a video file of what what you have done. Okay.
-
-  Speaker 1 36:34
-So, do that for do that for the metrics report.
-
-  Speaker 2 36:38
-Yes, but the
-
-  Speaker 1 36:39
-Work streams you are not actively acting, like the work schemes you have to speak to Devil and come up with procedure talks for nothing. And then this this. This quick handoff. Help us in a long way. Let's say it will also learn. You follow what I'm saying, yeah. But those two.
-
-37:00
-If you can do, then we you'll have a much lighter day tomorrow with the last last day of the week. Yeah, and you and I, the three of us can meet. Schedule it. I am also up early, but it's my commute time. I have to get to. Uh, get to explorate.
-
-37:19
-Uh, but I'll I'll listen. I did early would be probably better right before Khalid's Rush happens. Uh, what time will be kind of thing guys? I mean, that is fine. 8 AM Central should be fine, too. We can start. Yeah, we're gonna do that. That way, even I can join at least part of it, you know?
-
-37:46
-So, yeah, let me work on this and. When we are having those meetings, do we have a transcribe or anything AI related stuff? Within this meeting, Wells Fargo for some all these Tony has the access a joy has the access. Others because there Executives, probably. No, it's not the executives you have the business need.
-
-  Speaker 2 38:12
-The policy prohibits regular meetings from being recorded unless you are doing trainings or doing wide audiences. You're not gonna get that access. Okay, yep.
-
-  Speaker 1 38:25
-But I know they don't give that access to anybody, even with the business need.
-
-  Speaker 2 38:29
-No, they do, uh, this guy, the guy who runs the one Demetrius. He has the access. So does Crystal.
-
-  Speaker 1 38:38
-Oh, Crystal has it,
-
-  Speaker 2 38:39
-Of course. Yeah, so those people they do a lot of presentation calls. They call it. Okay, social recorder meeting. We should ask a little recorder that the vector meeting will start.
-
-38:55
-Yeah, but they have to set up the meeting. They cannot just join the meeting and press record. It has to be. Yes, it's their meat has to be their meeting. Uh, okay, okay.
-
-  Speaker 4 39:10
-Uh, what else? Okay, so in terms of access. Looks like?
-
-  Speaker 2 39:17
-We are off the hook, right, for at least for the next week. I mean, we'll have to work on the access at some point. I'm assuming side is going to do it. But at least for the immediate next week. We don't have to worry about any access into chain control or any of those things, right?
-
-39:31
-No, okay, good. Is there anything else that we would need access to besides these apis and utilities like dashboards or anything that we should have access to
-
-  Speaker 1 39:42
-When access is a hive. I think you already have access, but not the OSS part, right? I
-
-  Speaker 2 39:47
-Yeah, I don't know. That's Mowgli, so I, I can talk to him if it comes to that, but we will see how far we'll get along in that one. So bye, yeah. But, and for the next week now? Okay, okay. Okay, perfect. Because I don't have access to X, yeah, yeah.
-
-  Speaker 1 40:06
-And then the chain guard entitlement. What was that with Tanner? Thought we already had it, and you had to get. Can I submit again. It waited in the queue and they rejected because I didn't have a business justification. I asked it to resubmit it and heated resubmaker. Like, did he?
-
-40:23
-You have to have a justification, otherwise every entitlement will get rejected, right? Correct. I mean, when they say justification, it's not like one liner you need to justify. No, just say, as my role, this, and this, and this, I need access. Google, that's all I do for us with that.
-
-40:40
-Yeah, that's what I try to do, but I think it's not even going to Khalil. It's going to Albert now, and Albert kind of rejected my request, saying that I need to.
-
-40:57
-He tries to be. I'm sure you've been, you know? I no comments. I mean, just a regular meeting, you'll try to make it difficult for you. Yeah, you. Okay, yeah, you need a meeting with the joy. Again, he's. Uh, the language all request will be rejected. I'm like, okay, that he enjoys that.
-
-41:24
-You know, he enjoys that. I'm telling you. He, he has that pasted somewhere in a Word document, and he he enjoys.
-
-  Speaker 3 41:46
-Anyway, anything. Come on, all right, so we have.
-
-  Speaker 1 41:51
-Uh, we have a plant, so let's say we will break just now. But what do you need? Do we need more time? Are we okay for today? I think that, okay, we'll wait for that video. Hassan in the morning, and then we'll, we'll take it from there. We'll probably look at.
-
-42:06
-Do another an hour session early tomorrow, so that, uh, yes. Yeah,
-
-  Speaker 2 42:12
-Yeah, I think we should be
-
-  Speaker 1 42:13
-Six. Do it. Do it from six or do if you want earlier than that. Also, I'll be in and out, but I'll be there. Well, I'll start with my laptop and get onto my phone. Things like that because I'm trying to this cake and get to work right tomorrow.
-
-42:27
-Is my home okay? Uh, yeah, my kids send an email to Saeed, uh, by copy it, you, and uh Roadie on it. Um, for him to start getting access to chain TTL and red headlight while UI and stuff. I put it. One of the things if we have to chase people down, we can have.
-
-42:57
-We can split if if it is like crutch time, we can. Yes, sure. No, okay.
-
-  Speaker 2 43:07
-So, we are doing 6 a.m. tomorrow. There's another check marks, but yeah, I'll have to. No, no, I won't do it. 6am, but I'll I'll just once I complete the deck.
-
-  Speaker 1 43:18
-I put the invite in. Probably I'll do it 9am. I don't know central time, some beforehand, is calling.
-
-  Speaker 2 43:24
-Yeah, 6am, and I'm saying 6 am? I'm talking about Pacific time, but yeah, 9 A.M Central because?
-
-  Speaker 1 43:33
-And then let's okay, yeah, I'll let you decide because we probably need a full hour. It may go a little over. If you? Nine Central, then, which is one hour beforehands that time, right? Yeah, we can calculate it in the day two. I mean, we can do one. Yeah, yeah, let's do that.
-
-43:50
-Let's connect after the two calls that happen, right, 8 A.M, and uh, the chain guard meeting.
-
-  Speaker 2 43:57
-We can connect after that. Yeah, that's actually better, right? Okay, I can do that.
-
-  Speaker 1 44:04
-So that there's nothing at the tail end of it, so that if it goes more than na, we have all the time, because that is our last window. Sounds great. Uh, okay, let's do that. All right, guys have a good, uh, rest of your day. All right. Thank you, bye.
+24:09
+Thank you. All right. Thank you all. Yeah, thank you bye.
