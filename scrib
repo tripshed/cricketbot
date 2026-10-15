@@ -1,614 +1,500 @@
-  Speaker 1 00:03
-Oh, Roger. Hello. Hey Jeff, welcome. Hello, thank you. How goes it? It goes. That it does.
+  Speaker 1 00:00
+Hey, pretty. Hey, hello. Um, hi, thank you for joining. Appreciate it. Paul's here sounds good, I don't know. Don't know if Dan's gonna join or not, yeah, except so? Can we just? And I was getting off camera again, guys. I'm I'm pretty sick today, so I'm just, uh, it's all good popping in there.
 
-  Speaker 2 00:19
-Oh man, pretty. I'm gonna go ahead and apologize in advance if I ask a lot of stupid questions today because I am new here, and uh Jeff is. Done his best to kind of get me up to speed, but I still have lots of questions. Are we, uh, let's see?
+00:21
+I'm popping beds as we speak right now. Not a problem, not a problem. Thanks for joining. Hey, pretty, let me just take a second to introduce myself. I'd like to hear your role as well. I'm, uh, Darren Casey and I'm on the the Wells account team for IBM. I'm, uh, one of the technical sellers.
 
-00:37
-Well, we're still one minute, so I don't want to ask if anybody's late. So, nobody's late yet? Since I see we got? Afford it to Raju and Jay. Well, Jay was on the original invite. Yeah, you can get started, I mean.
+00:39
+So, my focus is automation, including concert, which is designed to automate. Uh, vulnerability, remediation, and other things as well. Okay, so they're working on this project since August, with people really on, uh? Those team, you know, them, like, Zach? Uh, McCann, and. Okay, the cast of about thousands, but maybe a dozen or so different people, right, um?
 
-  Speaker 3 00:54
-Well, how do I put this? I mean, they are aware of this effort, but? They're on a different team. But yeah, we can talk. We can. We can fill them in as a joint.
+01:07
+And so one of the one of the things they're interested in is automating the patching of operating systems. And that's not this area. The second thing thing I want to talk to you about is automating the analysis of. Vulnerabilities right in applications to identify what's the exploitability factor of those foreign employees and then the remediation of them?
 
-01:08
-Here, go ahead. I was gonna say if you wanted to share that diagram, you put together. Oh yeah, feel free to open it up. So there you go. Okay, let's go share here going.
+01:29
+And so that's why? That's why I got 50. The reason I'm bringing this up is to kind of you kind of bounce around between different teams trying to find. Those teams are trying to find the ones who can give us the information we need to do this exercise. Oh, okay.
 
-  Speaker 1 01:34
-Oh, can you, yeah, okay, perfect? Yeah, okay, I make this little a little more readable here.
+  Speaker 2 01:45
+So okay, if you don't mind, I mean, I can, you know what? I'll start with my introduction, right? So, I'm a lead infosec engineer at Wells Fargo, I, you know, the reason I was looped into this by Max event is? I own and manage the ground truth. Pipeline, you know?
 
-  Speaker 2 01:43
-So, in just a bit of background, I mean, uh, pretty blue been working together on this stuff. But I'll. Ctm has been asked as you know to evaluate new models as they come out and. And also changes to the harnesses. Um. To determine, you know, should we switch? What impact does the switch have?
+02:04
+That's the the gt50, uh, I, I, you know, it started off as like a side project, but you know, we use that to measure all llm scanners, anything that they roll out. So, that's why he looked me in. So, that's the background, right? So, you know, before we go forward, I ever understand what.
 
-02:05
-Um, and I think Jonathan and I have been chatting about, what do we need to do a better job of those evaluations, um? And so Jonathan's been trying to work on logic on how we should do scoring for some of these. I mean cutting to the chase. It seems like.
+02:20
+What exactly is concert? I was told it's a harness management tool or, or, is it a static analyzer platform? What, what exactly does it do so that you know we are measuring the right things here? Yeah, yeah. Well, um, concert has several.
 
-02:25
-We need more data, right, right? Yeah. There's two things a couple of things there's. There's there's some data that's needed, and, and we need a decent feedback loop. So, um? Yeah, as we're going through and running a campaign on a model, right? We're gonna we, we have. We'll come up with a bunch of findings, right?
+  Speaker 1 02:36
+Things in a synthetic several, I guess, uh, capabilities that it accomplishes. But the one we're focusing on here is, uh, vulnerability management, so it could identify the vulnerabilities in an application, but not just. Oh, look, here's the list of cdes because you know, you guys have, that you have that many times over.
 
-02:46
-We're gonna test those findings against the ground truth that you guys are producing yes, um. And, you know, obviously, if we hit? We have a hit. That's a true, positive, right? We'll record that as a finding, if not. And.
+02:58
+But what we're trying to do what it does is. From this list of vulnerabilities and the application that we have here, like the, let's say, the git repo or the running application. Which one of these vulnerabilities or which ones of them are actually exploitable? Which ones have a risk that?
 
-03:28
-And is that novel finding is not a classification like, true, positive, false, positive? It is like a flag so that we can. Differentiate novel findings when we see them, or if we want to go back and see models that find things novel u.
+03:17
+That something could happen. For example,
 
-  Speaker 3 03:44
-You know how, how many novel true positives they might find or whatever? Uh, we could do that. So, so we'll record that that novel finding on the on the, uh, particular. Model or sorry, the particular find that we're testing against the ground truth, but we need to have a way to send that to you guys, uh, for analysis, because what we'd like.
+  Speaker 2 03:20
+Okay, say
 
-04:07
-Is to update the ground truth essentially, right? So, so send it to you guys and and whatever process that you guys are using today. Uh, to classify that novel, finding either as a false, positive, true, positive, and let it get back into the ground truth, right? So that we're iterating on the ground truth.
+  Speaker 1 03:21
+Simply if there's a if there's an exploit if there's a CBE or exploitability and a code piece of code of method or a function which is never called?
 
-04:28
-And the idea obviously is to send you as few false positives as possible, right? We want. Always keep that ground truth flowing with the and updated with with the false positives. Because the worst thing I could imagine would be inundating you guys with? Tons of new false positives. When we should be eliminating them.
+03:34
+On the other hand, if there's a method that's a public one, it's on a public endpoint. So, external access is available, and it is listed as a. Um. Has a high rating from nist or wherever you're getting your rate your. That your data. We will be able to put that at a higher property, and not only that, we can identify.
 
-04:50
-Um. But we still kind of need to have that. That feedback loop, right? Um, to be able to get the the true positives and the false positives into the the ground truth and potentially? Uh, I don't know if this affects us today, but in the future, potentially also rescoring older models.
+03:57
+This is the patch that you need to do. Maybe it's a pull request for, uh, the next version of the open source code. Or maybe it is, uh, here's the line of your own code, where that vulnerability exists and where you need to remediate.
 
-05:10
-If we find a new, true positive? Um, because obviously, if we find a new, true, positive, and it wasn't? He wasn't found by the older models, then that becomes. You know, something that needs to get? Uh, identified for for future scoring, um. And ideally, Jeff. What I'd like to do is build a system where we can.
+  Speaker 2 04:11
+Okay,
 
-05:32
-Take the findings from previous models and rescore them against the ground truth, you know, relatively quickly. So, anytime there's an iteration of the ground truth, we can reproduce. Or we can produce, uh, you know, updated metrics? Um. But yeah, so the the key here is in that red box on the right is to be able to kind of have the feedback loop that gets.
+  Speaker 1 04:12
+That's like a real high level. Got it. Okay, so the gt50 is primarily designed for. Analysis, right? So?
 
-05:55
-You know any of the, uh, the false positives, or sorry, the novel findings, uh, categorized? Yep, um, I don't know what that looks like, yeah, they'll know what that looks like today. So, yeah, it's more or less. What you're thinking, right? This is. You know, sort of? You know, paints the picture of how the ground truth thing works.
+  Speaker 2 04:24
+The 50 repos that that's being referred to it's purely Source, right? And it's important to note that because what you're talking about is things Beyond Source, right? You want to know what the application tiers are? Whether sectional facing internal facing the criticality of it, and, uh, you know, you're also referring to third-party libraries being in use within the application, right?
 
-06:16
-And that's the reason I introduce versions for the ground truth, right? So we have 1.2, so that's the whole point. Novel findings. There's always going to be new findings, right? So? That's, that was the whole point of reasoning for portioning the ground truth, and I only have a bunch of findings that have to be adjudicated, right?
+04:45
+So? Yep, so. So, the scope is slightly broader than what the gd50 would accomplish so.
 
-06:37
-So. For the lack of resources, it is stuckhead, an older version.
-
-  Speaker 2 06:44
-So, yeah. The
-
-  Speaker 3 06:44
-The red box is is currently a pain point, unfortunately. But yeah, let's.
-
-  Speaker 1 06:51
-But yeah, you pretty much described how the entire thing works so. Oh, this is always nice when we come to the same conclusion. Um, awful to hear that. You guys are inundated, like, that's literally the worst situation, um. In terms of, I mean, the the? The process. The process is going to March on, right?
-
-07:12
-Like, we're gonna keep having these things so. Um. Even still is there?
-
-  Speaker 2 07:20
-Is there a mechanism that you want us to use to get these novel findings to you guys? Is there some, you know, like, I guess, quite, that's the base question. If you're like, I hate to pile on top of. Or, do you guys already have, but? It's, it's still got to happen, right?
-
-07:36
-So how do I get those to you?
-
-  Speaker 3 07:40
-Oh, I mean, the current processes you give us these scan results. And we run it through the. The pipeline, if you will. And then we provide you the metrics, right? You've seen probably seen those. The table of precision recall and F1 and F you don't use upon an F2, but your Precision recall and?
-
-08:00
-The severity based? Precision recall.
-
-  Speaker 2 08:05
-So,
-
-  Speaker 3 08:06
-That's the metric that, we, you know, sort of honed in on today, so? Yeah, and I that seems to be okay with some of the folks higher up, like, uh, some of the execs they seem to be okay with it. They haven't had any feedback. But yeah, that's the.
-
-08:24
-You know, um? That's the, uh, I think the metric that they're looking for. For every ground truth run. So ideally, you know, we would need the the raw output of all the scan results. And. And then, yeah, I mean, if you could separate out the novel findings and send it to us separately, you know that that will?
-
-08:47
-But these two things are separate process you. You understand that right. So when you take a new model and it finds a bunch of findings and we. Rated. The rating is one portion. And the novel adjudication is a separate portion, right? So these two are not hand in hand, right?
-
-09:03
-So the rating is one. The adjudication is separate. Right, yeah, yeah, I mean, I think I think we have to score.
-
-  Speaker 2 09:12
-Today, based on like. Initially, we have to score on what we have, right? Yes, so the ground truth, right? That's why I call this down here at the bottom is a reclassification trigger, right? Uh. You know, like, at that point, like, we have the ability once we have future versions.
-
-09:26
-I didn't want to get too detailed in the, uh, the flow chart here. But yeah, the idea would be that we have that ability to trigger reclassification. Um, and that reclassification trigger will let us, you know, build new findings or build new scores and whatnot. Um, that that was my ideal anyway.
-
-09:46
-Yeah, okay, Raju has a question, please. Yeah, thank you for, uh? A good question. I think it's. You may already have this thing. How are you defying the matches, whether you match the true past, your false positive, like what? What is the criteria that go into the match? I think we should.
-
-10:06
-We should agree on that, right? It's because that becomes the whole basis for everything that we do, right? So Roger, you're jumping ahead of me. Man, that was on my agenda of things to talk about, is actually one of the things that I was going to ask about, uh, in terms of, you know.
-
-10:20
-Do we have agreement there because I'm coming into this kind of? Right, as the new guy and was thinking about how to do matching. And then, once I saw your ground truth stuff, uh, ground truth, uh, repo, started looking, and I saw the consumer side. I was, let's see, what is it the, uh?
-
-10:41
-Oh gosh, uh, I don't have it here. But the, uh, the consumer? Markdown document. It talks about how you guys do Mark, uh, matching, and I was going to ask specifically if if you guys are having good luck with. That particular type of matching, and I need to see if that, you know, aligns with our data as well, because I haven't seen all of our data as of yet either.
-
-11:03
-Yeah,
-
-  Speaker 1 11:04
-I
-
-  Speaker 2 11:04
-Think it's important that the Define what it is very thoroughly, and you know, I can agree that you know that that provides, uh, you know, the solid base that to look for right and one other point is that? It seems to be one way to get into either false positives or the true positive.
-
-11:24
-No false positives and true positive ground truth. But I do Envision reversals, right? You know, like, what happens if it determines something as false positive? For whatever reason it is, we remember we're all doing. No one is doing this manually. We are trying to do this thing through AI.
-
-11:41
-AI may term something as false positive down the line. It may reverse the decision, and I think our process should capture or at least this flow. Should capture those reversals too. Oricas have a mechanism to show that, you know, like? And it was Falls faster at one time, but I think we had reverse and things like that just just about right.
-
-12:03
-I'm not saying,
-
-  Speaker 3 12:03
-Yeah, yeah, it's a. That's a good point, uh, I think that's a great idea.
-
-  Speaker 2 12:08
-Yep, and I thought my assumption, and maybe this is the poor assumption. Is that because you guys were already great versioning the ground truth that there was some sort of change log between versions? Um.
-
-  Speaker 3 12:20
-This is already capturing that it's not. Is that not the case? Yes, I
-
-  Speaker 2 12:24
-Mean, I have so far not encountered reversals, but that's yeah, definitely something that has to be kept track of. I mean, like, we do keep track of the. Reasons why something is a true person fall faster. I mean, that's not in. You know, the flat ground truth yet, but it's there right as to?
-
-12:44
-You know, what's the reason why something is a false positive or a true positive so that data is there?
-
-  Speaker 3 12:50
-Okay, excellent. Yeah, I was going to ask if that was available, because that was one of the things that would be really, really nice to have in terms of. Just doing our own evaluation is is?
-
-13:03
-Any other reasoning, I know, it's not in the ground tree today. But is that something that can be added to the Json? Yep, absolutely. I didn't wanna so for the consumer consumption.
-
-  Speaker 2 13:15
-I don't want to overload that with information that's unnecessary right when? Evaluating a model to see how precises it is. You don't need that justification as to why something is a false positive repository, right? So, that's internal. Justification. But yeah, we I potentially something that we, you know, we can always change it and make it more broader.
-
-13:38
-As in. For evaluation. But yeah, that data is there, of course. I think Jay has a question to take. Yep, yeah, yeah, thanks. Pretty, um, a couple questions one, um?
-
-  Speaker 3 13:53
-So pretty. First, like when you version the ground, truth is, what is the source like, are, is it all like deterministic scanners, like, using check marks, you know, to identify new findings and create, you know, new versions or? Is there like. As part of this feedback process, are we taking the novel findings and then reviewing them and saying, yeah, these are.
-
-14:19
-These are findings that we didn't have in the ground troupe, but they are true positives. And, and then, you know, incorporate those back into the ground. Truth is that happening, or is that that something we need to have, you know, add in? Yeah,
-
-  Speaker 2 14:31
-Both are right. So the the sources deterministic and non-deterministic and the novel findings right and any? Results that were found manually outside of any of these scanners, right? So anything? So the source is open to everything within the confines of the 50 repos so. I
-
-  Speaker 1 14:54
-Mean,
-
-  Speaker 2 14:54
-If you tell me that there is a new vulnerability, that's not there. Then, you know, that has to be added back to the ground truth, right? So, yeah, yeah,
-
-  Speaker 1 15:01
-Perfect, okay? And then, and then. So, um, Jonathan, for you when you? When you say, reclassify what's actually happening there. Like, what are we changing?
-
-  Speaker 3 15:14
-Scan prompts knowledge bases skills where, what are we actually tweaking to reclassify something? Oh, I'm just thinking in terms of like when there's a new? Uh, ground truth with true positives, false positives released. Then we can trigger any kind of new scoring or new evaluation processes on our side to automatically take that data in and.
-
-15:39
-Uh, handle any of the internal processes. I'm still getting up to speed here, so I don't know. I don't know that I can speak to every
-
-  Speaker 1 15:45
-Process that we have internally that might be triggered there, but it's just seemed like an obvious trigger that needs to happen. Yeah, I'm just, I guess what, I'm wondering, is?
-
-  Speaker 3 15:56
-Are we looking to like make modifications to the scanners if there are? Findings from the ground truth that the scanners are not detecting. Um. And if we are? Then, how are we ensuring that we're not introducing so much bias? That we start to lose. Some of the you know detection capabilities we previously had, like, I think we need to kind of somehow track that, like as we as we make changes to the scanners to try to get them to find things that maybe they're missing.
-
-16:36
-I think we want to be able to measure. Are we losing something as a trade-off because we're maybe you know, you know, too much context or just too much bias, you know? Data, like with, and honestly, that's like what I am lacking right now is as much data as humanly possible because.
-
-16:56
-If if we can match findings to something, then we can know whether they're a true positive. They're a false positive. They're like. I'm sure there's like thousands of findings that fall under this. Like, well. Found, but we don't care about them. Type things, so as long as like, we can match any of that, then exactly.
-
-17:16
-We can measure what you're talking about and. I just want to reduce that count of findings that seem new every time we run this evaluation and maybe. Like, maybe I need connections further Downstream and scarpy and Raven. Where your your analysis is is ending up? I don't know if I'm making sense.
-
-17:42
-Yeah, I think, uh, so just some of that. Some of that matching logic is covered in the consumer guide inside the. Um, Groundtree repo. I've been kind of going through that. Um. And and, and it was one of the questions I had here for the folks is like, you know, is that still?
-
-18:03
-The. Approved. Matching logic. Have you guys had good luck with that matching logic, and is that what we should be adopting if we're doing our own, kind of like cleaning on this end? Yeah, I mean, that's the plus or minus.
-
-  Speaker 2 18:27
-Yeah, I could share.
-
-  Speaker 3 18:28
-Let's see, I've got it right here.
-
-18:41
-Yeah, so adapted match your findings. Is the the? Section of the consumer guide that talks about this. Yep.
-
-  Speaker 1 18:50
-I did have one question, though in, in terms of the ground, truth that in the matching logic. Here it talks about using the cwe column, yes. Or field rather. Yep, sorry, it's Json, um. Cwe field, but there's another field that's called cwe normal or cwe. Validated. I think it is right, so that's that goes back to the bhagbar, right?
-
-19:14
-So?
-
-  Speaker 2 19:15
-I, this was something that was added in. As for the grown to this concern? So, the ground truth uses bug bar. As a metric. So, sometimes these llm scanners. They spit out their own severities, right? So you, you know, it might call a very trivial finding as? Very high severity or something as critical.
-
-19:40
-So, to avoid the ambiguity and the severities. We wanted the the ground truth to come firm to bhagavar, right, which is the Wells Fargo internal standard. For all cves cws. Sorry. And, uh, so the output of these scanners should have cwes and the cws is what should decide severity of the findings and not the the scanner severity?
-
-20:04
-And the CW outright is the the default severity. So if you go back to the the main?
-
-  Speaker 1 20:11
+  Speaker 1 04:55
 Um.
 
-  Speaker 2 20:12
-You know, the home page read me file, so it tells you what that normalize is, right? So you have the raw CW output. From the scanner, and then the normalizes the bug bar. You try to find something equivalent within the bhagwar table, and there is also a bug bar equal and stable, right?
+  Speaker 2 04:57
+Yeah, I'll be honest with you, right? So, there isn't a benchmark system currently in place, too. I mean, we can run. The console tool against the ground rule 50, but what you're trying to? Get ideas trying to find out. You'll probably need more data than just source code, right?
 
-20:29
-So you have? Sometimes you have CWS being. Series are a little broader, so you could have the same finding given a different cwe. And these scanners should not be penalized just because it uses differentiatively instead of the one on the book table, right? So? As long as it falls within the confines of the bug bar.
+05:15
+So, okay, so let me back up a little bit, so can concert operate only on just source code.
 
-20:50
-Equal and stable. Then that finding is still considered valid, and it could match to one of the findings already in the key.
+  Speaker 1 05:22
+The answer is yes,
 
-  Speaker 3 20:57
-So, if you have, if you have a c in your CWE table, if you like some of your CWS you have like, uh, one, two, three, four, five, six, I think. Yeah, like, uh, GT14. I think it is gt14 has like six cwes on it. Are you doing matching on?
+  Speaker 2 05:23
+Oh, you can. Okay, so, yeah, yeah. And then, you,
 
-21:15
-Must have all those cwes or must have at least one at least one at least one of them at least one. Okay, and yeah, this is also something that the scanner tends to.
+  Speaker 1 05:27
+You can imagine, well, if we had source codes and we can say, yes, you have a vulnerability, but those other nuances that I was talking about, right, how we see the entire application, not just one component, so we know whether this is being called, and we also have the configuration of running configuration of the app because you know, there's some vulnerabilities say.
 
-  Speaker 2 21:27
-You know, it tries to when some of the scanners, at least not all of them. It tries to add in all the cws that. It thinks is appropriate. And tries to put that in, uh, you know, in the CW field, so that can become really noisy, right? So, you have to at least pick one.
+05:47
+Um, is the vulnerability, but if you have this setting in your in your variables, you know something that was false, then it won't execute that. Or maybe you have, maybe there's an injection data injection vulnerability like a SQL injection?
 
-21:44
-And, uh, you know, see if it finds a match in the in the key. So,
+  Speaker 2 06:01
+But you
 
-  Speaker 3 21:48
-So here's my question, could I build on that a little bit, though, because I've seen instances in the data where the cwe? Column is one thing, and then the confirmed cwe is something else. So, in order to prevent penalizing the model. Shouldn't if you're bashing at least one, shouldn't it match on either or?
+  Speaker 1 06:01
+Have code in your application that actually checks their trumcase the length. Or does the the sentencization? Then we can identify that and say, well, that vulnerability is already mitigated, so you don't have to fix it. Got it. Okay, so, yeah, yeah,
 
-22:14
-Cwe and cwe confirmed as a set and saying, okay, did it identify cwe that's in the set? That is the. The sum of cwe and cwe confirmed, right? So, but how are you doing that? Is that a second pass?
+  Speaker 2 06:14
+It makes sense, yo. I think so. Concert is not a static analyzer by itself, so it relies on other inputs, scan results, and then it's going to act on it, right? So it's more like a. A triaging system if you will. Yeah, is that right? Okay, got it. So, it's gonna I wanna I don't want to undersell it.
 
-  Speaker 2 22:31
-But I'm just asking because I don't. Yeah, we definitely should, I mean, yeah, that logic should be built in within the harness. So you have the scan output? And then you should have a pass which actually. Confirms and validates what the CWD is, and you know, actually, it should have access to the bhagbar table, you know, which also gets frequently updated, right, internally, so that you know that alignment is there only then you otherwise, you know, you have to.
+06:33
+It does do things like, here's what you need to fix, like I could.
 
-22:58
-You have to confirm to that, otherwise, you know you're measuring on. You know, random severities and your output metric that generated is won't make any sense. Is the bug bar available to us as a repo or something else that we couldn't set up access to? It is not a repo, but it is maintained in service.
+  Speaker 1 06:36
+I can actually create the pull request to get the new version of jQuery or whatever the, whatever the package is, open source package, right, or I can inform your IDE. Here's the code snip underneath. Do you need to fix because you have, let's say, an environment variable, or you hard coded a value with it should be an environment variable, or you know whatever that is, okay, got it.
 
-23:20
-Now, there's a different team maintains it, but it is, it is here. Wait, it's, I don't think it's about it's not a GitHub people. They do have, or at least they did pretty. Maybe you, you know, better than I, but they, at least at one time, had rest apis that could be called.
+06:57
+So, how do you wanna? Accomplish this, right? So, this is a very.
 
-  Speaker 3 23:39
-You know to get the latest information. So um, but yeah, I think. To produce point. That service now was sort of considered like the sort of the system of record or access, at least, you know. For the latest book bar ratings. So, you may probably get it from. Yeah, yeah, um, Michael Burkett from from mapsec would be the best contact for bug bar.
+  Speaker 2 07:01
+Niche use case that you have. So, I mean, you're talking to a lot of people. It sounds like you're not getting the right direction, if you will, right? Well,
 
-24:06
-Jay, would you mind putting that name in chat? And here I am writing on a Post-It note. I just do that, because I, you know, I'm always afraid of my misspell somebody's name. And then, I have to bug you 15 minutes after the meeting for the name again or something, so?
+  Speaker 1 07:10
+Tell you, there are three three data sources that we need in order to do a first pass analysis first is access to the code, so the depot which you can help us do.
 
-24:26
-All right, um? Okay, so that's good because I have not actually have not seen bug bar, so I appreciate you guys bringing that up. And I will bend one, one comment. One comment, I'll make. I'm not sure about the confirmed cwe, but I have seen in the findings they're down in Scorpio lease.
+  Speaker 2 07:22
+It
 
-24:45
-We see, um, there's like a cwe ID field, which I guess is like the primary that the scanner's picking, um. And then there is a cwe ID list. Um. A lot of the times that primary cwe ID is also in the cweid list, but not always. So you know from from a matching standpoint when we do matching, you know down in scarby?
+  Speaker 1 07:22
+Would be great if we had access to all the code for an application, and it's even running. That would be even better, but let's just say we're going to start with access to the repos. The second thing we want is the SAST scan results, because again, we're not a scanner.
 
-25:10
-It's, you know, we also look across we sort of create a unified, you know, set of those two, and then make sure that the C of e falls into, you know, from one of those or the other? Yeah, that's so, so if I misunderstood there, I did. You said that you're doing a set of CWE and CWB confirmed, but are you doing it?
+07:38
+We would need the sonar cube or the black duck or check marks or whatever scan files that tell us what the vulnerabilities are. The first is the source code. Second is the scan files. And the third is an lln, and that I think is Ryan's team to help us do that.
 
-25:33
-I don't see a confirmed field, so I'm not really familiar with confirmed cwe, but what we see in scarby is, you know, there's a a single cwe ID field, which I just take that to be sort of like the primary that the scanner is identifying. Um, and it's somewhat inconsistent.
+07:56
+But if you can push us down the road on that. That would be great. We have those three things. Then we can start the process and then maybe we would be able to compare with what you're doing today and see if concert can add value. If we get the fourth thing, which is that full running application so we can just look at.
 
-25:55
-I mean, sometimes. You'll get. Like? A base or a variant cwe, and sometimes you get like. Um, like, an abstract. So you know, um?
+08:12
+Let's say it's running an open shift, or maybe it's running on a VM. It's a C sharp app. It's whatever that application is, we can actually get a. We can create a profile of that running application and do an even more thorough analysis with even better results. Really in, the goal is to reduce those false positives, so you don't have to go running after all those things.
 
-26:12
-We'll just say, but um, the. The cwe ID list will contain any other cwes that the scanner thinks you know, apply, or are relevant to that particular. Vulnerability, and the the primary is usually in the list, but not always so, um. There is. There's some deduplication logic that happens in scarby and.
+08:33
+Just to find out that it's not a vulnerability. Anyway, you
 
-26:43
-Um, that logic, when it it uses cweid as well, but it takes the two Fields. The list and the primary CWe combines them and then checks to make sure you know one is from one the CME from one finding is in in the set of the other basically. Okay, so I, I'm gonna be completely ignorant, asking you I remember all the new guys.
+  Speaker 2 08:37
+Got it. Okay. And how do you accomplish this? Does concept you require the use of llm, or does it have inbuilt?
 
-27:07
-So, uh, what is scarfy? Scarpie is a downstream data warehouse, so when the findings? Basically the the findings. Um, are pulled out of. Um, postgres. And then loaded into scarby, which is basically a cloud era. Based data warehouse for cyber security, and then from there. Um, you know, like, uh?
+  Speaker 1 08:45
+It has its own machine learning, but it uses an llf to do some of the stuff that you guys do. It'll actually try to analyze again the exploitability factor of this particular finding. And you've heard something. Mythos stuff where at least scream together three or four or five low level vulnerabilities.
 
-27:41
-If a deep is doing analysis, you know, based on like these testing results or something like that, the the results are pulled out of scarby? Um. Also, for actually doing, you know, batch scanning campaigns, or, you know, getting ready to do BAU pipeline scanning? Those findings come out of scarby and then go into, you know, AVR?
+09:05
+Do we actually come up with a high level one. It does that kind of stuff as well, so it needs access to an llm as well as the source code and the scan fonts. Those three things? I see. So, if you can help us with the source code. That would be great.
 
-28:05
-Out there. So, scarpie provides some additional post-pro. Well, actually, it's considered pre-processing before it goes into AVR, but it's got some additional. Um, filters that are applied in certain findings or sort of discarded there. So? Yeah, and you brought up an interesting point, though that is, like, so CWE being hierarchical is like hierarchical taxonomy, right?
+09:23
+We could start with your components. I know they're not like you said in your email. They're not full applications.
 
-28:30
-So if? If the bottle just kind of says, like, well, it's? Cwe 787. Or let's say, cwe, yeah, 787, right, um? That, and that's a pillar. Is that, do we score that differently than if it's like, cwe, if it's a class or a base or a variant like, and do we look through the hierarchy to say, like, well, it scored this cwe, but?
+  Speaker 2 09:28
+Yeah, maybe representative. Is that the idea we got some C sharp? We got some python and we got some Java and. Yeah, they are like all over the place. I mean, the whole point of the I can show you what I have. And please, don't take screenshots. I trust you.
 
-29:01
-Um. Our ground truth says it should be this cwe. You know, uh, well, let me think about this. How do I say this? Does the ground truth normalize the cwe on? Pillar class base for variant, or just whatever value came out of a out of like bug bear or something.
+09:43
+You won't
 
-29:22
-Um, I'll let pretty speak to with the ground truth does, but Scarpie does not do that. Um, basically, yeah, the IDS. Have to, you know, exist in the set. So, you know, sometimes, you know, you'll, you know, you'll have some findings that will have. Um. Get an abstract, and some will have a variant or a base.
+  Speaker 1 09:44
+Have screenshots. Yeah.
 
-29:46
-And so, just if it's in the list it matches, otherwise, that's all. It does nothing more, you know, fancy than that.
+  Speaker 2 09:47
+All right, so it's this is the 50. You can see my screen, right? Yes, I can. Okay, so this is the people which houses the the 50 people's and they're all sourced from internal. Actual applications, right? Okay, yeah, so the the goal of this is to use this as a representation of the entire Wells Fargo landscape?
 
-  Speaker 1 29:59
-Okay, and and Jeff, I have a.
+10:09
+We have. Over 4 000 applications in total. And the goal is, you know, this snapshot is a small one, which can, you know? Reasonably represent what. What's out there, right? So, that's right, these are. These are, um.
 
-  Speaker 3 30:01
-Now, if we could? Sorry, just real quick if we could. Influence the scanner to, you know? I guess, make? Best attempt to use base and variant types of cwes and refrain from, you know, abstracts and pillars and things. That's I think that would be a good Improvement. Um, yeah, yeah, basically.
+  Speaker 1 10:26
+Again, intentionally done with the idea of being a cross-section of what well has, yes, okay? And these are some of these might be larger repos some smaller, but the idea is we, when we have these 50, we try to repeat that which we're telling me. You have these 50.
 
-30:26
-Yeah, anything from miter that says, you know? Um, you know, disallowed as far as assignment goes. We should, you know, make sure the scanner is abiding by that. Jonathan, do you understand that, um? If not, I was going to ask Jay to send us paragraph describing that because we can work on that.
+10:41
+We know that we're scanning the kinds of things that we do here at Welsh. Yes, exactly right? Yep, it has, like, all different types of languages and.
 
-30:48
-Oh yeah, I understand base variant in terms of in context of cwe. Um. Energy. What you're saying about the disalls you say that one more time? No, no, no problem. So, if you like, just look up any cwe on the miter website, and it'll tell you like, what type it is.
+  Speaker 2 10:50
+All a large one, small ones monolithic Repose, uh, whatever, whatever, I mean, it cannot be asked as comprehensive. But yeah, it does a reasonable. You know approximation of what Wells Fargo has here?
 
-31:07
-And then there's a um, I forget the name of the field, but it'll basically say whether. Um, assignment of that cwe to a particular finding is allowed or disallowed, and it's usually just based on the type that it is. So, if you've got an abstract or a pillar or a view or something like that, those are disallowed.
+  Speaker 1 11:04
+I'm seeing, you're at the the title. This is a CSV file, so these 50 repos some of them are are internal on github.wellsfargo.com, and some of them are on. So, yeah, so what I've done is, I've put all the the, you know, point in time? Of those ripples in this Ripple, so you don't have to go looking for that.
 
-31:27
-You should not be assigning that as a cw to a specific finding. It's just for classification purposes, and then that hierarchy, so you know you lower down in that hierarchy is where you want to be actually assigning cwe ID, so bases and variance and things like that. That's an interesting question, though I don't know if.
+  Speaker 2 11:27
+That's right. So, yeah, this is the internal Benchmark, right? So, this is just the the name of the repo, so you would obviously have to get access to this. So, and you are mentioning that I can somehow give you access, but you are you actually on Wells Fargo's GitHub?
 
-  Speaker 2 31:46
-Use the bases, or do they also use the variants? Um, I, I think there's a mix of Basin variant, but I haven't seen anything that's higher than that. Yeah, I think so, we pass. We passed the full taxonomy to the the harness today for for classification. I'd have to go look.
+11:41
+Do you have access to it?
 
-  Speaker 3 32:09
-Okay, that's, uh, it's not just that. If not, we can talk about that. We can take that offline, but I mean, that would be a relatively simple data just. Piece of data to pass in. And along with the allow versus disallowed. So it knows like, hey, you're not allowed to assign this one.
+  Speaker 1 11:44
+Oh, what? What is in the past? Is, is someone we work with and I'm hoping we can find? Maybe that's you, maybe that's someone else liking the patching. We have someone on the Wells Fargo team who actually has the access. They're the ones with the service account. They create the token that we can use inside concert.
 
-  Speaker 2 32:28
-I, I think, I mean, whatever you're doing, you should align with what the bug bar team is doing. So that, you know? You know, generating findings, which are closest to the bhagwar, right? If something is missing in the bhagavad, they should, you know, update it. I mean, that's, that's yeah.
+12:02
+We put the token into concert, think concert goes and gets it. Hi Darren, I'm not accessing any any wealth assets. Oh, I see. Yeah, I. I think you would have to.
 
-32:45
-But at the same time, we're talking about AI models, so it's Vibe. It's, it's five categorized, right? So, uh.
+  Speaker 3 12:20
+Yeah, I'm kind of
 
-  Speaker 3 32:53
-That's the thing. We're up against right is the where you, the model's using its best judgment for, for what, that's worth, right? Um. So, so we only have so many different. We could kind of steer it. Um, but but we don't have, like, it's not like a. It's not like a normal piece code process where we can, like, absolutely put.
+  Speaker 2 12:21
+Stumped as to how external vendors would access Wells Fargo repos.
 
-33:15
-A lasso around its neck and pull it in One Direction.
+12:31
+So, just just to be clear. This concert is sitting inside your.
 
-  Speaker 2 33:19
-To nudge it, right? Yep, that's potentially something for the ground. Truth itself, right? Instead of. Yeah, the novel findings could potentially identify cwes that are not within the bug bar. And you know, that could be a feedback loop to the bhagbar team. So?
+  Speaker 1 12:37
+Flab.
 
-33:40
-So I, I had a question for an example. Okay,
+  Speaker 2 12:37
+Okay,
 
-  Speaker 3 33:43
-Sorry, go ahead. Yep, thank you very much. So, Jeff, is there a way we can get access to these Frontier models? Uh, one of the things that we want to do is.
+  Speaker 1 12:38
+When Darren's saying, get us access, get us access as in the teams we're working with or get you access the concert that sits inside your referral walls. To connect your GitHub okay to run.
 
-  Speaker 2 33:54
-Use different classes of model for adjudication. I mean, we also do a manual review, right? When we have novel findings. So, we want to be able to use different classes you know of Frontier models to, you know,
+  Speaker 2 12:51
+Oh, okay,
 
-  Speaker 3 34:09
-Get congruence on?
+  Speaker 1 12:51
+We're really saying to us is just the POC team, but not. It's not leaving your bank. It's not your walls. It's not leaving your environment. Thanks for clarifying Paul. Yeah, okay, sounds
 
-  Speaker 2 34:11
-Whether something is a false first or a true positive? So, my question is, you know, is there a way we can? Get access to the models. That's something. That's, uh, you know, lacking today.
+  Speaker 2 13:01
+Good. So, is the concert tool on-prem, or is it also a SAS?
 
-  Speaker 1 34:22
-Let me talk to Ryan Lynn about how we go about that, um, I mean, primarily it's, I would think so. It's been, um. We just have to operate within. A Sandboxed environment when we're using them is the.
+  Speaker 1 13:05
+Yes, we do. It does come in a SAS and an on-prem version. We're looking at the on-prem version here at Wells. Okay, perfect. So, who is in charge of that who helped you set that up? Zach McCain from Doe's team. And only team underneath Shell Adams in the CTO.
 
-  Speaker 2 34:40
-Is the guidance we have. Okay,
+  Speaker 2 13:23
+Okay, so I, he has to. I'm assuming he's a Wells Fargo employee, right? Yes, right. Okay, so he has to get in touch with me, and I can, you know, help him navigate the access to this repo, and that's the easiest way to get this forward ready rather than me trying to give you access.
 
-  Speaker 1 34:41
-So we just need
+13:40
+If you know what? Yeah, I think it's better that you work through a single point of contact than trying to ask around. It's going to complicate things further. So, if Zach was the ones who set you up, I would drive all the requests and everything to concert through him, including the frontier model access.
 
-  Speaker 2 34:42
-To figure out how to get you guys into a Sandbox environment, um, to do that so. Okay, but like, you know, interacting with Claude code or something like that on a particular system, um? With the frontier model could work. Got it. Okay. I'll I'll take that away. Okay,
+13:57
+Oh well, there's a wrinkle there. There are two use cases we're trying to accomplish. One is. Of patching the OS, and that's the that's. What's important to the infrastructure team? And that's where Zach is. Okay, the analyzing the applications? Is not. That's not.
 
-  Speaker 1 35:02
-Yeah, thanks. So, yeah, this is a good meaning, but we're over time, but, uh, yeah. So, what you guys gonna have time to stick around? Right, but how are you? I mean, I know you're talking about improving the ground truth and all that stuff. So, what do you want to do with?
+  Speaker 1 14:14
+Task, so that would not be the one to do this. He'd say that's not my job. I'm doing the operating system. Oh,
 
-35:18
-I mean, you want to? Are you thinking of like taking this process over or what's the end goal?
+  Speaker 2 14:21
+Okay, somebody else has
 
-  Speaker 2 35:24
-I mean, I'll just do what I'm told here. Honestly, Jeff, uh, what is the end goal here because you, you're asking me for help? On this feedback loop, um? Yeah, so I. You, I guess you tell us, because, uh, I, I don't know that we want to take it over, but we've been asked to.
+  Speaker 1 14:22
+To be the one who gives me the access. So I don't know who that is, and that's one of the things that we're kind of sifting through the, uh. The Wells Fargo environment. Um, see if we can identify just a regular point of contact for me. Like, let's say it's you, you're the one who gets the access, and then you go on a screen.
 
-35:47
-Regularly grade. New models and iterate for improvement, and I think it really comes down to. We just need to tighten this relationship feedback loop. Yep. Because data is key to doing these things, right? Um.
+14:40
+Share with me you go to your. Comfort system that's installed on-prem with you, and you put in the access token like the personal access token for GitHub. And then we can. Ingest the repo.
 
-  Speaker 1 36:04
-So,
+  Speaker 2 14:54
+For
 
-  Speaker 2 36:04
-I honestly, just like looking at what we've been chatting about. I am guessing there's a large percentage of these. Let me just share my screen real quick so you can know what I'm like talking about. So, you know, for this most recent, where we were asked to look at like asteroids six?
+  Speaker 1 14:54
+Example,
 
-36:24
-Um. You know, like, this solid part of the bars are what we could match against the known ground truth. But like, you know, I'm looking at. 20, 000 findings over 50 repos that don't match the ground truth. My guess is a significant portion of those are duplicates, or they're things that or marks don't care about or don't match the bug bar.
+  Speaker 2 14:54
+Okay, go
 
-36:51
-Um, so I may be able to greatly shrink these based on the information we got today, but then there's going to be that portion that just don't align to anything
+  Speaker 1 14:56
+Ahead.
 
-  Speaker 1 37:00
-That you
+  Speaker 2 14:56
+Yeah, I think I can help do that. I, I can. I'll reach out to Mike sabandy. I don't know if he wants me to do that, but I can. I can no problem. Yeah, we can do that
 
-  Speaker 2 37:02
-Know we need to decide. How are we going to triage these because I can't send 20 000 findings to you and say, can you tell me a f***? Are these true or not, right? And we may even want to take a like sample set. That would be like, okay, every time we run this.
+  Speaker 1 15:06
+One who offered you up, right? You're the one, I mean, he, yeah. He added me and asked me to take a look at what this is so. Yeah, but yeah, that's how it starts. So, whereas do you know where the concert thing is installed? Um, I don't know what I don't know.
 
-37:17
-Yes, you know, between the group of us, we triage 30 of them that are selected to be a good sample, and then AI should be able to extrapolate from those and help us with the grading, um. Yep, absolutely. I was going to keep meeting like this with this group, you know, once a week or once every two weeks.
+15:26
+The name of the? The can. If that's what you're thinking, but it's in the lab that Zach managers. No, I see, and it's on an open shift running on open shift there. Okay. We can loop Zach in to say you need to know where it is, or maybe you can get the log on credentials to access it.
 
-37:40
-Tell me what you think. Yeah, I think yeah, something that we I have. Like, I said, you know, earlier, I have a bunch of.
+15:45
+Okay, got it. Yep, I, I can. I think if you could add Zach in and ask him that question, I can, you know, CC, me, and and?
 
-  Speaker 1 37:47
-Backlog novel findings. They'd have to make their way into the ground truth, right? Either as true or false positives? So, and like, you said, you know, a lot of them are probably duplicates, so? It is there, right? So there is a lot of work that can be done and the ground truth.
+  Speaker 2 15:55
+Yeah, we can take it from there. And the actual ground truth itself, right? So, it's basically, it only has the results, right? So? What I'm missing is the you mentioned static analysis scans, so the ground truth is. It's not from a single Source, right? So, we use a combination of deterministic scanners and non-redomistic scanners.
 
-38:03
-And it's not set in stone, right? So we have to keep improving it so. And then there was also requests of adding new repos beyond the 50. So, so that's a completely new. I mean, you have to start the entire processor just for that new repo, right? So, yeah, there's a lot of work to be done.
+16:18
+And we shifted through all the findings. And added manual results. All that is the ground truth.
 
-38:22
-Um. But yeah, I think we should meet, maybe not every at least once a month. Definitely so. Okay, yeah. Because yeah, it definitely is not you on you to process all 20 000 is impossible, um? But uh.
+  Speaker 1 16:26
+So, you have several different sources to do this, some scanning, and then some, uh, individual like person time, exactly? Yep, so if I, if I show you an example?
 
-  Speaker 2 38:41
-You know, some dividing conquer. We can throw some AI on it. And ultimately, I look to you all as the actual like application security experts, um, because when it comes into actually deciding on that sort of step, I don't think Jonathan may be better than I. But it's not my background, so?
+  Speaker 2 16:39
+So, this is what the actual problem won't look like. It will exactly tell you. You know each finding is labeled is given a number. And it's going to tell you whether it's a true false positive or a false positive. And what the, you know, this was. This finding is a false positive, right?
 
-39:00
-Talk about that man. I'm not claiming anything yet. Uh, let me get the speed they won't. They won't make claims, um, okay, so the, uh, the other question I had guys real quick was, um, I missed a meeting yesterday afternoon. I apologize. I was out, but um, about duplicates from the patch side.
+16:57
+So we have over 6, 000 findings. And all have in adjudicated as true or false positives. So, I mean, this is just a round arm, but this is the core of the ground truth, right? So, we use this with me. I see it.
 
-39:18
-And my question to follow that up was? Um. The duplicates apply to the ground. Truth, like, do we see? Multiple instances in the ground truth, where it was a true positive that applied to a single patch.
+17:19
+So? So, this is exactly what what it would have right.
 
-  Speaker 1 39:39
-Uh, so, wait, let me answer the question. I'll get back to you. So, are you saying, yeah, in effect? Are you asking that there are duplicates in the control there should not be?
+17:29
+Okay, it has. I was just one of the things I was thinking it's the file name and the start end lines, so you can identify the exact. Section of code. And. You're using? Um.
 
-  Speaker 2 39:48
-Well, that, yeah, I'm trying to get. I'm trying to, kind of, and I'm coming after this as like playing the telephone game because I missed the meeting yesterday, but apparently there, there's. Chuck, how did you explain it to me? Let me see if I can find it okay. Was there, but basically, if you look at the proposed?
+  Speaker 1 17:45
+You said deterministic and non-determinists, so you're using AI to identify this?
 
-40:04
-Patches that, like you did to get complaint YouTube patches and use that as a deduit key. Um, you know, Jay, you were seeing a lot of duplicates in the most recent, um? 20, 000 skins that were done. Um, and basically it was like, hey, can we look at the data and maybe use patch as a way to identify duplicates to reduce what we're pushing to the downstream teams.
+  Speaker 2 17:50
+It's what? Yeah, it's what it has check marks. As a domestic scanner landed a whole slew of findings. So, every time we measure the ground truth. There is always a subset of novel findings at the ground. Truth doesn't have right, so that is taken in and absorbed to the ground truth, and it is adjudicated independently.
 
-40:28
-Did I summarize that correctly, Jay?
+18:12
+Of all the scanners to determine whether that's true, positive, or false positive. And that's a combination of models plus manual review, right? So that's how the. Ground truth is kept current, and we use this to measure anything new that comes around so. That's the idea. So, how often do you run this scan because you have a commit?
 
-40:35
-The only man lost Jay, uh, so? It's basically another Avenue to look at. Dupe is.
+18:34
+You've pinned a commit, right? So you? The sources that I showed you. These are frozen. Right. Yeah, so the source code does not change. I mean, if so far, we haven't changed it in a couple of months. It's been only up for a couple of months, but if
 
-  Speaker 1 40:43
-Because we may have, and it's possible we have two different findings. There are actually different findings, but are fixed by the same. Thanks! So to speak, all right, that's the that's the danger. But yeah, but still, it's, uh, that's that same effort like had been applied to the ground tree to see if maybe we had any dupes on the ground.
+  Speaker 1 18:53
+Two months ago right, yeah,
 
-41:03
-Truth, what dude in that effect scoring
+  Speaker 2 18:55
+So if the source code if there is a new repo added to the ground truth, then you would have to go through the entire rig model of, you know, finding all the vulnerabilities in that source code. And so, for now, it is frozen. And this. This is usually doesn't change that often, right?
 
-  Speaker 2 41:05
-If two defects, if two patches fix the same two different vulnerabilities those? Are still two different vulnerabilities, right?
+19:10
+So the goal is to only change it as and when it's needed.
 
-  Speaker 1 41:14
-Agree agree. But in terms of, yeah, I agree that in terms of Downstream remediation, it's.
+  Speaker 1 19:14
+Okay, right?
 
-  Speaker 2 41:23
-Yeah, if it's if asphalt is ground, truth is concerned. It should be to still two distinct findings. Yeah.
+  Speaker 2 19:14
+So the source is not changing only. The findings would change based on sometimes the llm would. Find something completely new that the ground root doesn't have, right? So you'll have to look at that finding and then judge it, whether it's false, positive or not. And then you. Would you know bump up the version of the ground truth, so that's the idea of the crown tool, right?
 
-  Speaker 1 41:30
-But I just, I was just curious that there were any instances. And it looks like Jake did drop. So I was just curious if anybody knew if there were any instances where no? These were dupes that might have wrap that might have been a single vulnerability, but a but dupes within the ground truth.
+19:34
+So So, yeah, with this said, we will have to figure out how we can use this to measure concert. And you potentially have to rely on a scanner. Yeah, that's currently in production. Use that and get findings, and then we can. Measure the output of your. We can probably measure the.
 
-41:45
-I don't know if any of that one was done. No, hear me now. Okay, all right. Sorry, I guess, had some audio issues. Yeah. So, so the situation with the duplicates that we've been looking at recently is?
+19:57
+Raw output and the post concert output and see what value. Content ads right in terms of precision and recall. So, the goal is, you know, we measure the Precision and recall the F1 and F2 score. So, yeah, I think that's the best use case for for this. Yeah, yeah, unless you think otherwise, you any other radio, so I'm open to it.
 
-41:59
-Mostly for GPT findings. Um, I think it's because. There are, I guess, parallel. Threads, I don't know. Kicked off, you know? Scans happening in parallel with the same repo? Um. Sometimes, there are multiple findings for, like, the same block of code and. If you look at the the specifics of these findings, um, oftentimes?
+20:20
+But that's that's how I see it.
 
-42:27
-You know, some of the findings are focusing on a very single. Um, precise vulnerability within that block and others are. Um, sort of, I guess, picking multiple vulnerabilities. So, the bottom line is when, when a set of these vulnerabilities gets, you know, um, I guess, sent to? The. What is a unifier?
+  Speaker 1 20:22
+I think for because we don't have like a running application, F1 is probably one we've wanted to. Yeah, so yeah, none of these applications are running. So, yeah, if you want to go down that route, that's a whole new exercise. And that's gonna, you know? I think the quickest bang for the buck in the shortest time of, you know?
 
-42:52
-I think that produces some of the patches. Um. And, and even furthermore, Downstream when. Um, when these findings are batched up and sent to Raven for Raven to generate, you know, PRS, to fix? Um. We're seeing in some cases, the. Either the Raven PR. Um, for one of the findings on the set that's generated.
+  Speaker 2 20:42
+That we can spend us to do what what I was thinking, so you know we can just measure the. The pre and the post concert output and see what the variance in FN and F2 scores are. So, that'll give us clearly give us an indication whether concept is valuable or not.
 
-43:21
-We'll fix all of them. Or, you know from from either buyer itself, there's a singular patch out of the set that fixes all. Now, not all patches are equal, so you know, we can't necessarily just look at the the divs, you know, and say, their duplicates. Yeah, because they all have the same diff, but the main thrust of it is usually one or sometimes, you know, two or three out of a set of, you know, claim duplicates all have a hatch that fixes all of the findings.
+21:00
+And I think that that's a right approach, so? Do you have then?
 
-43:53
-That doesn't necessarily imply that it's. And say, duplicate. Yeah, it's. It's. Usually, there's there. Like, I said, there's one or two findings, sometimes three, that. In their descriptions, we'll actually identify, like, all of the issues and that others are only picking. Like, you know, a piece of that, and so strictly speaking, they're not all you know exact duplicates of one another.
+  Speaker 1 21:05
+Uh, SAS scan results, like what he said, check marks for each of these components? Yes, yes, okay. What else do you have? I mean, what? What? What are the scan files? Uh, scan? Uh, I guess, off-the-shelf scan tools you use for these? Uh, off the shelf is.
 
-44:26
-There are some differences in terms of what the scanner is saying is the issue? Um, but because it's typically like, you know, a fairly large block of code? There ends up being at least one that has all the information needed to generate a patch that fixes all of the issues, and so.
+  Speaker 2 21:25
+Check marks and there is a lot of. Yeah, the deterministic is only check marks.
 
-44:46
-What's happening Downstream, and this is sort of like some context, I guess, to kind of help out with. Why this is, you know, kind of being raised up is? Um, there's. A lot of metrics and a lot of. You know eyes kind of watching very closely on, you know how much Raven is able to actually, um, process, through successfully, and anytime there is an issue with the PR, you know, being rejected or closed, or whatever.
+  Speaker 1 21:31
+Okay,
 
-45:13
-Then you know, that's. That's getting a lot of attention. They want to see, like, high percentages of Raven PR's being, you know, accepted and merged. Uh, because it's considered, I guess you know cost and effective. For one thing, uh, to generate a bunch of PR's, and then they're not.
+  Speaker 2 21:31
+Yeah, and it's not just, uh, out of the box rules, but you know, we have our own custom rules as well within check marks. So, yeah, we have a customized rule set, which I also happen to, you know? Leave the practice on.
 
-45:32
-You know, some of them are not being accepted or whatever. And one of the the categories they identified was, there are multiple findings. That are having their PRS, you know, rejected or canceled because another PR already fixes their issue. Okay. And is there are they also? Coming back with any, like, don't fix or won't fix, like, like, just out out, like refusals.
+  Speaker 1 21:47
+Okay, so it's not like just the out of the box ones that that ship with the product where internal rules as well, so? Okay, this your own requirements. In addition to what check marks might find
 
-46:01
-Sometimes yep, um, sometimes. You know, like, from a timing standpoint, if there's a delay in in Raven getting, you know, the automated, uh? In a PR's out there. The app teams of, in some cases, already fixed the issue. In other cases, the the pr. Um. Doesn't really apply or doesn't really fix because it's lacking context about the application, and so the generated fix doesn't, you know, really thinks the issue, or or just won't work.
+  Speaker 2 22:00
+Yes, yeah, okay?
 
-46:34
-So, there are other categories, but this was why that they were kind of honing in on that. They felt like, you know, we something could be done further left in the process and doesn't add up to Raven. So, how does that? How does that feedback into ground truth. And, like, if it's a don't fix won't fix, or, you know, bad fix, we'll call it.
+  Speaker 1 22:06
+Concert has a feature of being able to adjust a repository just by giving the URL and the token okay. About that makes it, you know, a little bit easier? Click, and it does details it. Does the ingestion and creates a profile from that application? It would call it an application, even though we know it's just a repository reflecting a component of that, right.
 
-46:53
-I see fight for a better term. It should, not right.
+22:32
+For let's say, we're going to pick 10 of these or fandom to do, just just. Step one just to run through and see. What happens?
 
-  Speaker 2 46:56
-I mean, well,
+  Speaker 2 22:38
+Do
 
-  Speaker 1 46:57
-It depends that, like, is it a? Is it a real vulnerability, or like it, might feedback and go, like, hey, this isn't? You know, maybe it feeds back, and that gives us a false positive, like flips of a true positive to a false positive. Um. I guess I'm trying to kind of, kind of, like, narrow, in, on, like, what's real, and what's not real.
+  Speaker 1 22:39
+You think we could just? We could work with you to get access to those, you know, get the URLs and the token. That is, maybe create a token that works for all of them all 10, and then we ingest those. Now we have those 10 profiles in concert. Yeah, we can.
 
-47:19
-And that's right,
+22:55
+Then we would adjust the check marks file for each of them, and that's good because I'm just picking 10 and be a manual process, you know, file upload. Here's the check marks file we. Associated with this application, slash repo, and then concert understands that. Then, we hit the analyze button, and it does the work to turn through those and see what?
 
-  Speaker 2 47:20
-Always the problem here. So one thing to keep in mind is the ground. Truth only relies on the source code, right? So a downstream developer can argue that a finding is a false first, too, because of controls which are outside of the source code. Right?
+23:19
+Uh, what it can find?
 
-  Speaker 1 47:35
-Okay, but we don't push that back in as a false puzzle. We leave it as a true positive
+  Speaker 2 23:20
+Okay, yeah, we could do that. But what exactly are you mentioning so?
 
-  Speaker 2 47:39
-For the ground. Truth, yes, but for the actual process, no right. You have to take you have, but for the ground, truth is, is way left. It's a way just to measure the scanner, not the downstream stuff. Right, and the groundwater is intentionally kept only to source code, and it doesn't pull in the context of what the application is.
+  Speaker 1 23:26
+I mean, what? What exactly are you mentioning? Are you trying to determine how good check marks is? No what we'll do with that that process I just described. We do the analysis and create what we're create, that that one that F1 score. It's going to do the proof of exploitability, and I could show you I don't have it.
 
-48:00
-Whether it's critical High external facing interval facing, does it have databases config files that users? I mean, there's a lot of information that can be factored in to determine whether something is a false, positive or not. Sure, and that can significantly change the ground truth, right? So, we wanted to keep it only the source The Source as the source code and nothing else.
+23:45
+Let's see if I can demo you see how quickly you can get my demo going here just to show you what, uh, the counselor would do.
 
-48:21
-That is intentional, right? So, yeah, and this is Canada, so we don't let. We don't let won't fix, don't fix, or bad fix.
+  Speaker 2 23:57
+I'll just show you if I can here. Yeah, sure, yeah, that's okay. A screenshot of what we're talking about. For each vulnerability. If, like, if the system is up and running, it's a it's one that the. The engineers use so?
 
-  Speaker 1 48:29
-Change the ground. Truth is what you're telling me. It
+  Speaker 1 24:13
+We'll see what state it's in,
 
-  Speaker 2 48:31
-Depends on what the justification is, right?
+  Speaker 2 24:14
+Right, right? But
 
-  Speaker 1 48:33
-So, I mean, if it's an absolute like if they come back, they just say, hey, this is not real like that. That gets filtered in, but like, if they're just, if it's if it's a won't fix. Because it won't fix. Are they are we? Are we taking that out of ground truth or leaving it in ground truth?
+  Speaker 1 24:15
+The idea is that we're going to put this this particular finding in, uh, one of three or four categories, you know, it's a it's, um. We, we've identified that as not at risk because of those mitigating factors I talked about, or one that requires. Future, like a like a human intervention we get.
 
-  Speaker 2 48:50
-If it's again instead of a status it, there has to be a justification as to what what it is, right? So, yeah. Yeah, so yeah, I think. To help, maybe clarify? Um, so pretty. I think what what you do, right? When you get findings that are maybe, um?
+24:37
+We can really go so far. Someone needs to look at this, or we have one. They yell, we, we've identified. This is exploitable, so. It's still, it's the prioritize one. You need to take a look at first, and that's what we're trying to do. Okay. So? My system. We'll see, I'm gonna I'm gonna be watching it here and.
 
-  Speaker 1 49:11
-Like novel findings not already in in your ground truth, and you do the analysis. I imagine you do take. Um, you know, uh, or take the help of the app teams and say, hey, is this, you know, a real finding or whatever, and and that might make its way back into the ground truth.
+25:00
+It doesn't work if it's in the process of being updated, then that's well to set. Uh, postpone this, but? About, so that's that's what we're trying to do. So, not just say how good, uh, the SAS scan is, but to be able to categorize those, and that's that. You know, that's the secret sauce, and the thing that makes concert valuable.
 
-49:28
-And they say, you know? Um, yeah. This is a false positive for whatever reason, but I think the the won't fix can't fix already fixed, um, coming out of Raven. Like, you know, Raven is, is the automated? Um, you know, a fixed generator for our, like, batch scanning, and then pipeline scanning.
+  Speaker 2 25:20
+Okay,
 
-49:50
-So, that's that's kind of a separate process from from the ground truth. So, um? So, yeah, what
+  Speaker 1 25:21
+To be able to be able to do that categorization of those of the vulnerabilities. Okay, so you
 
-  Speaker 2 49:57
-Do you say about this? So I, I don't, right? So intentionally, I don't take any feedback from the app teams because that's going to poison the ground truth, right? Yeah,
+  Speaker 2 25:27
+Would need more data Beyond just the source code, right? You need metadata about the application. Right? Well, again, to get to get a really full orbed view of the application to be. More confident in our. Rating of the exploitability factor. That's when the the Dynamics of a running application are important.
 
-  Speaker 1 50:06
-No, that's, that's good. Yeah, I was, I was afraid that we were taking, like, no,
+25:52
+Okay, so how would that work? I mean,
 
-  Speaker 2 50:11
-No, we, I absolutely don't know,
+  Speaker 1 25:54
+So let's say we have a running application. So, how would concert get Telemetry from the running application? All of the application's running, let's say, on a kubernetes environment like openshift,
 
-  Speaker 1 50:12
-And like turning them into false positives, which would have like messed up scoring up. But yeah, that that's good. Okay, cool.
+  Speaker 2 26:06
+We can.
 
-50:25
-Jeff, I think I'm out of questions for today. I think of you and I need to Circle up and kind of figure out. Other than, oh, I guess we have one other question, who do we talk to for, uh, Scarpie access?
+  Speaker 1 26:07
+We can have a token. That gives read access to that particular namespace, or maybe the whole cluster and point out that that namespace or those namespaces and concert can ingest that information and add to the profile that it gets from GitHub. Oh wow, okay. Okay, so then it has okay.
 
-50:41
-Um, for access, go to Molly and type his name in the chat. Yeah, yep. Jeff knows Molly, but I'll put him in the chat anyway. Yeah, I know it's a good reminder because I'll try. From the meeting. Cuz, yeah, I think we've got several takeaways on this. I think the only other thing I had is pradeep.
+26:27
+I know everything there is to know about this application, including, like I talked about a configuration data, what the endpoints are public or private endpoints, and that factors into the exploitability of application and then, um, then it. Does the analysis with with that information creates more robust result? Oh, okay.
 
-51:06
-Uh, there it looks like we would like to switch to switch models and harnesses for the next round of. Uh, source code scanning is what we just used for the open source scanning. And it's so, it's a combo of Mythos 5 line and then deep and then Soul six, but in a different harness.
+26:46
+So, as a runtime component, right?
 
-51:31
-Um. I know I had sent you that, um. Vibe coded report on the analysis of those, but? How do I get your official feedback on that? If you could give
+26:52
+And yeah, it uses. The run time. Is that what you're yeah? Yeah, okay. It uses the runtime now. Again, we don't have to. We can create an analysis with just the.
 
-  Speaker 2 51:43
-Me the the raw output, I actually did, you know, I was able to get the raw output and my my output was more or less similar to. It is not exactly the same, but more or less similar to what you had. Okay, well, I can run run that through again.
+27:08
+The get Theta, right? It's you know, it's not. I think it says. As robust as we wanted to, got it okay, so to do. Full-Fledged POC. We would probably have to have a running application somewhere, right, at least for a few of them. Yeah, I get that too. Oh.
 
-51:59
-You know if you could give me the raw output? And
+27:31
+Yeah, running, that is gonna.
 
-  Speaker 1 52:03
-I don't even know if I have new data. So, yeah, I just didn't know how you get the raw data. You get it from scarcy if you're getting it from postgres. Yeah, because I've got campaign IDs, but then, yeah, I ask. Ask Jay for the router output. What I can?
+27:37
+And again, it would be running inside your environment, so the only thing would be. Have you guys scaned applications with one of these llns, and we picked that application and just rescan it through concert because. The whole the whole thing. When we talked to Christian was?
 
-52:16
-Yeah, I'll work with Jay to get that. I think if you have a campaign, I you push it to scarpie, not scarpie, whatever that layer is. Through a campaign ID, right?
+27:55
+Okay, so there's some dupes between what we're doing. But if your mouse trap's going to reduce the amount of false positives? By a number that's obviously important. That's the whole goal of everything we're doing is really focusing on determining what we need to focus on. And. What the business doesn't need to focus on it.
 
-  Speaker 2 52:29
-Okay, I'll start a thread with you with this group and then
+28:17
+So, we're not wasting time patching things that are not exploitable. Got it okay. And did Christian mention?
 
-  Speaker 1 52:32
-Molly to just make sure that you guys have that data and that we'll get a final call on on that. Okay, sounds good. Okay, and you said, you wanna run the the ground truth against Astra? That's just six, right?
+  Speaker 2 28:23
+Talk about how you? Well, that's when you put some chart put us in touch with Tony and Mike. Oh, I see, I said, okay, then we got the repositories and.
 
-  Speaker 2 52:47
-Yeah, we already have, oh, you have. Okay, so, uh, let me get you those campaign IDs. Yeah, okay, perfect? Yep, thank you. Okay. Yeah,
+  Speaker 1 28:35
+You know, I think maybe there are some people just now understand what we're doing, except I know you said like this is a niche solution. I'd love to double click on your mind. Why? Why is Niche per se versus? And then, obviously, we're only talking about a part of our platform.
 
-  Speaker 1 52:58
-Thank you, man, I might. I might do another one for two weeks from now, just to kind of keep this conversation going.
+28:50
+There's other components to it. Oh, I see, but this is the part that. I think is that you guys are actively trying to solve internally and what I mean by Solomon is know that? There's like your false positive rate is as factual as it can be across, not just your team, but the app owners when they get the data as well.
 
-  Speaker 2 53:02
-Sure,
+29:15
+And that, really, when you're walking forward, these are the things that we need to prioritize to ensure our environment is as secure as possible. And we're not. Spending time on things or going back and forth on things and listen. Got it. This is not something easy, right? Everybody. Working on this in different ways.
 
-  Speaker 1 53:03
-I'll be helping you guys don't mind.
+29:37
+All of you think we have a pretty unique switch of how to do this within our platform, leveraging data that you guys already own.
 
-  Speaker 2 53:04
-Yep, sounds good. Thanks!
+  Speaker 2 29:43
+Got it. Yep, I mean, I think this is. This is a great solution. I mean, it's good, but I think I think I mean, at the end of our time, but I think we should start with these just the static code to begin with, and then we can look at what we can do in terms of runtime, right?
 
-  Speaker 1 53:05
-Thanks, thanks everybody. I really appreciate. It's been really helpful.
+29:58
+So? I don't know how, what, what it would take because the repos that I have are frozen in time and they're probably no longer in production and definitely no longer in production, right? So the vulnerabilities in them are already patched, and uh, you know, that's the you know, that's the whole point of the ground.
+
+30:15
+Truth, right? So? You are not. These are not like live production applications anymore. And the production versions are probably several versions ahead, right? So So, yeah, to sum up, I think we should start with the the Statics code portion of it. So, if you could, you know, send an email to Zach and copy me, we?
+
+30:36
+You know, start there and then. See what, how, how this takes us forward? And I'll talk to Mike. Meanwhile, to see what his thoughts are as well. That sounds good. Okay. Yeah, and yeah, if you can, yeah, please get in touch with Ryan. He'll help you with all the.
+
+30:55
+To llm stuff. Okay.
+
+  Speaker 1 30:57
+Okay, let's see if I can do that. Um, I'll send not to to you and Zach, saying, we want to access this. I think Zach will say predict it's your job or it's not my job. So before we go from there, all right, sounds good, and um, I'll, uh, I'll.
+
+31:16
+Don't think it's entire unit to walk you through.
+
+  Speaker 2 31:21
+Don't make it like a demo for black and better term, but this is what we're trying to do this. DM gold okay, have you done that with others within Wells Fargo or no? Oh yeah, yeah, this is how it started. Okay, this is what we're doing. In fact, I have just here.
+
+31:36
+Let me just, this is, this is, uh. Uh, remember, I talked about proof of exploitability, right? That's what we're trying to do. I talked about these categories. Um 3, 000 findings in this one application. Uh, 48 of them.
+
+31:53
+Uh.
+
+  Speaker 1 31:55
+2, 900 of them requires investigation, and 10 percent are not exploitable. This is just one component randomly,
+
+  Speaker 2 32:00
+So
+
+  Speaker 1 32:01
+That's the idea of these categories. So, hey, we're only knocking 10 out. That's, that's not the greatest. Maybe we can do better next time, but here, we're saying that once you really should do is only one percent of the 33, 000 findings you will need to work on these 48 persons.
+
+32:15
+That's the idea. Got it okay. And then, for each one of these, you click on them. And it tells you something. I got to stop you how to jump to my next one, but if you could send that email?
+
+32:35
+Um, April, Deep, um,
+
+  Speaker 2 32:37
+Hey,
+
+  Speaker 4 32:37
+Thank you for joining in or just waiting for, um, David Garcia, to join us. Um, chai reached out. He's um, other Cloud architect, so, um.
+
+  Speaker 1 32:50
+He's tied up with something else, so I already have spoken to Dennis Byrd, David.
+
+  Speaker 4 33:03
+But not this bird, but David right f*** this is Cloud run.
+
+  Speaker 1 33:08
+Right, right?
+
+  Speaker 3 33:09
+Yeah, yeah. Dennis Burke, Dennis bird, is a cyber, um Champion, as well. Ajaya, so, yeah, yeah, yeah, so that's fine. Yeah, additionally, uh, pretty, um, I, because um, Cloud run is in limited use, meaning that it needs to be reviewed first by the cloud Architects. Before we could, you know, proceed.
+
+33:30
+I mean, of course, you already got approval from the Champions. Um, it's just that cl.
