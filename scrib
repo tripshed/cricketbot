@@ -1,500 +1,497 @@
   Speaker 1 00:00
-Hey, pretty. Hey, hello. Um, hi, thank you for joining. Appreciate it. Paul's here sounds good, I don't know. Don't know if Dan's gonna join or not, yeah, except so? Can we just? And I was getting off camera again, guys. I'm I'm pretty sick today, so I'm just, uh, it's all good popping in there.
+Uh, no, I mean, put it in a Word document and paste it an email. I mean, you have Rich editor in your Outlook composer, right? So, you could just give an image in the email you follow. What I'm saying, oh, okay.
 
-00:21
-I'm popping beds as we speak right now. Not a problem, not a problem. Thanks for joining. Hey, pretty, let me just take a second to introduce myself. I'd like to hear your role as well. I'm, uh, Darren Casey and I'm on the the Wells account team for IBM. I'm, uh, one of the technical sellers.
+  Speaker 2 00:11
+So, instead of putting a PDF for a PDF, sending a pptx or pptf put all the images. Put all the images in an email. Okay, that way, it's kind of embedded. I'm just thinking which way attachments. They probably scam embedded images. I don't know if they do. Inline images.
 
-00:39
-So, my focus is automation, including concert, which is designed to automate. Uh, vulnerability, remediation, and other things as well. Okay, so they're working on this project since August, with people really on, uh? Those team, you know, them, like, Zach? Uh, McCann, and. Okay, the cast of about thousands, but maybe a dozen or so different people, right, um?
+00:29
+Do they?
 
-01:07
-And so one of the one of the things they're interested in is automating the patching of operating systems. And that's not this area. The second thing thing I want to talk to you about is automating the analysis of. Vulnerabilities right in applications to identify what's the exploitability factor of those foreign employees and then the remediation of them?
+  Speaker 1 00:30
+I mean, all emails. They, if it's going to an external domain, they get scanned for you, know it. They check for customer information or SS and anything sensitive. But.
 
-01:29
-And so that's why? That's why I got 50. The reason I'm bringing this up is to kind of you kind of bounce around between different teams trying to find. Those teams are trying to find the ones who can give us the information we need to do this exercise. Oh, okay.
+  Speaker 2 00:40
+Yeah, I mean the worst thing if it gets flanked, it will be blocked. That's it, so, and you will get notified saying that, you know, one of your reportees has sent an email, and you, you'd be asked to explain as to what's going on.
+
+  Speaker 1 00:52
+I asked him, what did? He said. I know they
+
+  Speaker 2 01:00
+Didn't ask me to explain. They just gave me an FYI. Oh, or maybe they did. And I didn't act on it. They didn't come back to me. I'm, like, okay.
+
+  Speaker 1 01:09
+But, uh, okay, yeah, this is fine, okay, and you send it to him and just the request to them would be if they can make it official from checkmas as a recommendation. Yeah, we will
+
+  Speaker 2 01:19
+Know that
+
+  Speaker 1 01:19
+We did it right, we, that. That is something we know, know, but. We want them to take on the referee of this thing wrong, because if they present it, then Dale's on board. Everybody who's saying they are on board, right? This is what check months gave us. Yes,
+
+  Speaker 2 01:34
+And, and okay, yeah, let's. Let's do that. Okay, this is good. Good progress.
+
+  Speaker 1 01:40
+Yeah, what else do we need to talk about? Yes, right?
 
   Speaker 2 01:45
-So okay, if you don't mind, I mean, I can, you know what? I'll start with my introduction, right? So, I'm a lead infosec engineer at Wells Fargo, I, you know, the reason I was looped into this by Max event is? I own and manage the ground truth. Pipeline, you know?
+When I did tell him that she's good at coordinating, so that 2 pm meeting will? Pacific meeting will continue. I took you off that, yeah, okay. So, now I'm going to have keep the joy in that one. Okay. Uh,
 
-02:04
-That's the the gt50, uh, I, I, you know, it started off as like a side project, but you know, we use that to measure all llm scanners, anything that they roll out. So, that's why he looked me in. So, that's the background, right? So, you know, before we go forward, I ever understand what.
+  Speaker 1 02:01
+So those other important ones, and again for one thing he was starting to. He was on the Raven of his house, right? So we asked Tom Stanley today. Does he need he's a couple more weeks? So that's a couple more weeks, okay? Yeah, yeah.
 
-02:20
-What exactly is concert? I was told it's a harness management tool or, or, is it a static analyzer platform? What, what exactly does it do so that you know we are measuring the right things here? Yeah, yeah. Well, um, concert has several.
+02:19
+Um, like, of all Hands-On keyboard 800, right? I mean, you already have. He can return like 45 minutes to one hour a day. It's fine, yeah, price. If it affects any stories and all specifically which we have, which is a time-bound delivery this week or next week, then let me know otherwise.
 
-  Speaker 1 02:36
-Things in a synthetic several, I guess, uh, capabilities that it accomplishes. But the one we're focusing on here is, uh, vulnerability management, so it could identify the vulnerabilities in an application, but not just. Oh, look, here's the list of cdes because you know, you guys have, that you have that many times over.
+02:37
+I'll just continue to the end of the month. And then we will see.
 
-02:58
-But what we're trying to do what it does is. From this list of vulnerabilities and the application that we have here, like the, let's say, the git repo or the running application. Which one of these vulnerabilities or which ones of them are actually exploitable? Which ones have a risk that?
+  Speaker 2 02:40
+Okay, perfect. So he is working on the, so we, I mean, he saw my note, right? So, I'm giving you updates as soon as as and when I get them, rather than waiting for the one-on-one. Yeah, the gcp stuff, they said, that's a no-go, right? I mean, yeah, it is possible.
 
-03:17
-That something could happen. For example,
+02:57
+So, the cloud run is a com. They're still testing out some of the components that would have been nice for us, but?
 
-  Speaker 2 03:20
-Okay, say
+  Speaker 1 03:04
+They are saying they already are testing it out with a couple of applications, and it will easily be another, you know, several months before it's ready for. Wider use, right? So, they said, try OCB.
 
-  Speaker 1 03:21
-Simply if there's a if there's an exploit if there's a CBE or exploitability and a code piece of code of method or a function which is never called?
+  Speaker 2 03:15
+So, ocp is the internal stuff, so if that doesn't work out, you can come back to us, but try that first, so it's on-prem.
 
-03:34
-On the other hand, if there's a method that's a public one, it's on a public endpoint. So, external access is available, and it is listed as a. Um. Has a high rating from nist or wherever you're getting your rate your. That your data. We will be able to put that at a higher property, and not only that, we can identify.
+  Speaker 1 03:23
+It's not Cloud native, so it's on-prem so. Isn't that open shift container platform, right? That's the one, yeah. But that's not the it's not Cloud openshift as Cloud native, right? Why? Why it is cloud? It's not like a third-party Cloud. It's like internal.
 
-03:57
-This is the patch that you need to do. Maybe it's a pull request for, uh, the next version of the open source code. Or maybe it is, uh, here's the line of your own code, where that vulnerability exists and where you need to remediate.
+03:43
+On it's it's? Private virtual Cloud, you would say, right, it. It is within the Wells Fargo data centers. I mean, that doesn't make any difference to us. We still have the container deployment. Yeah, right, I mean, he's saying, yeah, it pretty much has everything that you need so. You're not doing anything fancy that would require gcp, so try that.
 
-  Speaker 2 04:11
-Okay,
+04:06
+And, and then, if that doesn't work, yes? So, yeah, nagindr is, is working on that. I'm also, it's the problem with Wells Fargo is, you know, all the they have all these fancy tools, but? There are too many tickets to submit and so many people to talk to to get that going so.
 
-  Speaker 1 04:12
-That's like a real high level. Got it. Okay, so the gt50 is primarily designed for. Analysis, right? So?
+04:24
+So, it's yeah. Let him do on the ocp. Yes, I think he can balance it. Yeah, we. Uh, okay, yeah, that's fine. Let's just switch to ocp. Yes, okay. Create and create a story because your gcp has stories gcp. You put a comment on hold advice by this based off this, and now to now track same level of granularity on the ocp.
 
-  Speaker 2 04:24
-The 50 repos that that's being referred to it's purely Source, right? And it's important to note that because what you're talking about is things Beyond Source, right? You want to know what the application tiers are? Whether sectional facing internal facing the criticality of it, and, uh, you know, you're also referring to third-party libraries being in use within the application, right?
+04:55
+And then just informed either. And those guys they can track it,
 
-04:45
-So? Yep, so. So, the scope is slightly broader than what the gd50 would accomplish so.
+  Speaker 2 04:59
+Right? Okay, but that is what we will let product know that that's happening, right? Yeah, okay, and the next one is the the ground truth stuff, right? So there was one meeting with Jeff and Co. The city of people, so I also had. Yeah, so basically, I think he brought in another person from his team.
 
-  Speaker 1 04:55
-Um.
+05:20
+So, they are basically using the ground truth to test newer models, right? So, if, then, they are getting like Astra 6 or anything new. They are testing there. We have a public repo right consumer repo.
 
-  Speaker 2 04:57
-Yeah, I'll be honest with you, right? So, there isn't a benchmark system currently in place, too. I mean, we can run. The console tool against the ground rule 50, but what you're trying to? Get ideas trying to find out. You'll probably need more data than just source code, right?
+  Speaker 1 05:32
+So it
 
-05:15
-So, okay, so let me back up a little bit, so can concert operate only on just source code.
+  Speaker 2 05:33
+Has a 1.2 version of the control, so they are using that to test the newer models. And they are also seeing the same gaps that we are seeing, right? So when we test the ground truth, there is a section of vulnerabilities that are not there in the ground truth at all.
 
-  Speaker 1 05:22
-The answer is yes,
+  Speaker 1 05:45
+So, the models are finding new stuff.
 
-  Speaker 2 05:23
-Oh, you can. Okay, so, yeah, yeah. And then, you,
+  Speaker 2 05:49
+Which have either false positives, or which have to have we have to have adjudication on those findings also, right? So that, you know? All everything is accounted for in the ground rule. That's the reason I explained to them. That's why we have versions, you know. There are gaps here within the model.
 
-  Speaker 1 05:27
-You can imagine, well, if we had source codes and we can say, yes, you have a vulnerability, but those other nuances that I was talking about, right, how we see the entire application, not just one component, so we know whether this is being called, and we also have the configuration of running configuration of the app because you know, there's some vulnerabilities say.
+06:07
+And they said, you know, let us know what we can do to help. He
 
-05:47
-Um, is the vulnerability, but if you have this setting in your in your variables, you know something that was false, then it won't execute that. Or maybe you have, maybe there's an injection data injection vulnerability like a SQL injection?
+  Speaker 1 06:10
+Asked me that, so I told him.
 
-  Speaker 2 06:01
-But you
+  Speaker 2 06:12
+Here. We'll, uh, you know, we are struggling to get the token for the frontier model, I, you know, is there a way you can set us up with me, he said. He is going to take that as an action item. So, he's gonna do that, so he's gonna help us set that up and set.
 
-  Speaker 1 06:01
-Have code in your application that actually checks their trumcase the length. Or does the the sentencization? Then we can identify that and say, well, that vulnerability is already mitigated, so you don't have to fix it. Got it. Okay, so, yeah, yeah,
+06:29
+You know, the the vortex AI key? So, you know, we also get the access to the, you know, the frontier. Why shouldn't we?
 
-  Speaker 2 06:14
-It makes sense, yo. I think so. Concert is not a static analyzer by itself, so it relies on other inputs, scan results, and then it's going to act on it, right? So it's more like a. A triaging system if you will. Yeah, is that right? Okay, got it. So, it's gonna I wanna I don't want to undersell it.
+  Speaker 1 06:38
+Do we have access to vertex AI Keys through ocp, because now it's not on gcp? Yeah, I did ask them that, so they said yes, it is possible so.
 
-06:33
-It does do things like, here's what you need to fix, like I could.
+  Speaker 2 06:47
+It's just that AI key. So, even from OTP, you can call vertex on gcp, so it does not requirement that you have to be on gcp to call vertex AI. Even from ocp, you can call vertex area.
 
-  Speaker 1 06:36
-I can actually create the pull request to get the new version of jQuery or whatever the, whatever the package is, open source package, right, or I can inform your IDE. Here's the code snip underneath. Do you need to fix because you have, let's say, an environment variable, or you hard coded a value with it should be an environment variable, or you know whatever that is, okay, got it.
+  Speaker 1 07:00
+So that way we're going to expand. We're going to what version is it now? Gt50 what is 1.1.2 version 1.2? And it's been in 1.2 for couple of. Yep, almost a couple of months now. If we get the vertex here and get the ocp, then we can do. Of 2.0 with multi llm education, right?
 
-06:57
-So, how do you wanna? Accomplish this, right? So, this is a very.
+07:20
+We could correct, yeah, so
 
-  Speaker 2 07:01
-Niche use case that you have. So, I mean, you're talking to a lot of people. It sounds like you're not getting the right direction, if you will, right? Well,
-
-  Speaker 1 07:10
-Tell you, there are three three data sources that we need in order to do a first pass analysis first is access to the code, so the depot which you can help us do.
-
-  Speaker 2 07:22
-It
-
-  Speaker 1 07:22
-Would be great if we had access to all the code for an application, and it's even running. That would be even better, but let's just say we're going to start with access to the repos. The second thing we want is the SAST scan results, because again, we're not a scanner.
+  Speaker 2 07:21
+We have a lot of data from previous scans where there is a section of vulnerabilities which are not rated at all, so which are not there in the ground truth and which are novel, which are new. So usually, a section of these would be duplicate. A section of this would be false, positive, and suction.
 
 07:38
-We would need the sonar cube or the black duck or check marks or whatever scan files that tell us what the vulnerabilities are. The first is the source code. Second is the scan files. And the third is an lln, and that I think is Ryan's team to help us do that.
+Obviously, of them would be, you know, legitimate findings. So? We'll have to churn through that. You know, there are like around four or five iterations of previous runs, where we have a subset of findings, right, all those have to be Incorporated, and we have to bump up the version every time something changes.
 
 07:56
-But if you can push us down the road on that. That would be great. We have those three things. Then we can start the process and then maybe we would be able to compare with what you're doing today and see if concert can add value. If we get the fourth thing, which is that full running application so we can just look at.
+Yeah, and uh. We can bump up the version because? Social help, let's say. These new findings we want to incorporate in the gt50, right? So?
 
-08:12
-Let's say it's running an open shift, or maybe it's running on a VM. It's a C sharp app. It's whatever that application is, we can actually get a. We can create a profile of that running application and do an even more thorough analysis with even better results. Really in, the goal is to reduce those false positives, so you don't have to go running after all those things.
+  Speaker 1 08:11
+Uh, what version would that be? So this?
 
-08:33
-Just to find out that it's not a vulnerability. Anyway, you
+08:21
+So, yeah, depending on the. Sorry, let me open this up.
 
-  Speaker 2 08:37
-Got it. Okay. And how do you accomplish this? Does concept you require the use of llm, or does it have inbuilt?
+  Speaker 2 08:30
+So, right now, it's the ground. Truth is version 1.2.0, right? So, when something changes in terms of the findings and stuff? We will change. We will update this to, you know? If it's a minor change, we will do a subversion 1.2.1. If it's a major bump, then 1.2 dot, you know, 1.3 dot?
 
-  Speaker 1 08:45
-It has its own machine learning, but it uses an llf to do some of the stuff that you guys do. It'll actually try to analyze again the exploitability factor of this particular finding. And you've heard something. Mythos stuff where at least scream together three or four or five low level vulnerabilities.
+08:49
+And then, if it's a complete rework, you know, when we are doing the integrator? Then, you know, we can probably bump it to two dot 2 dot X, right? So, that's the thought, yeah. So, we probably should plan a
 
-09:05
-Do we actually come up with a high level one. It does that kind of stuff as well, so it needs access to an llm as well as the source code and the scan fonts. Those three things? I see. So, if you can help us with the source code. That would be great.
+  Speaker 1 09:01
+1.3 1.4, maybe with some subsets of those findings with the current education process. And then we do the overall correct, which would be the multi-education. And you know, yes, yep. And yeah. Meanwhile, parallely the AAR process is also. And then you know I've given them. But yeah, that's I don't know when that's.
 
-09:23
-We could start with your components. I know they're not like you said in your email. They're not full applications.
+09:26
+Um. That's gonna, you know, take its own course? Uh, yeah, that will take months, but we, if we have vertex, we don't have anything, right? But yeah, he said, he's gonna help out. But, uh, I mean, if you have contact contact with, uh, Ryan Lynn? You know, that might also, yeah, just just talk to Ryland.
 
-  Speaker 2 09:28
-Yeah, maybe representative. Is that the idea we got some C sharp? We got some python and we got some Java and. Yeah, they are like all over the place. I mean, the whole point of the I can show you what I have. And please, don't take screenshots. I trust you.
+09:46
+He's, uh, he talks to. I think he collaborates well with John's team, right, like Garland and those guys? Yes, so I just have a relationship with him. It's good for him. Who to contact environments. They must ask this guy,
 
-09:43
-You won't
+  Speaker 2 10:04
+So he, yeah. Jeff is the he he's under Ryanel in Steve Jeff. I forgot his last name core or something. Okay. Yeah, that's fine. Jeff Corbett. And forward, okay?
 
-  Speaker 1 09:44
-Have screenshots. Yeah.
+  Speaker 1 10:21
+Yeah, so can you keep he's probably just C? Okay, so yeah, that's fine. Let us let him be. Then it will serve our purpose. We will get the keys and then the budget and all how they track it right by. C okay, if you type it there, then he gets pinned.
 
-  Speaker 2 09:47
-All right, so it's this is the 50. You can see my screen, right? Yes, I can. Okay, so this is the people which houses the the 50 people's and they're all sourced from internal. Actual applications, right? Okay, yeah, so the the goal of this is to use this as a representation of the entire Wells Fargo landscape?
+10:39
+You know that right now, you? No, no, it doesn't so. And unless you add the person to chat, then you would. You won't get pinned. Yeah.
 
-10:09
-We have. Over 4 000 applications in total. And the goal is, you know, this snapshot is a small one, which can, you know? Reasonably represent what. What's out there, right? So, that's right, these are. These are, um.
+  Speaker 2 10:51
+No, that is good. That is good. He said, it's an action item. He's gonna take it back, and he haven't heard from him yet, but.
 
-  Speaker 1 10:26
-Again, intentionally done with the idea of being a cross-section of what well has, yes, okay? And these are some of these might be larger repos some smaller, but the idea is we, when we have these 50, we try to repeat that which we're telling me. You have these 50.
+11:06
+Okay, so then ocp. Yeah, like that. Note here.
 
-10:41
-We know that we're scanning the kinds of things that we do here at Welsh. Yes, exactly right? Yep, it has, like, all different types of languages and.
+  Speaker 1 11:14
+So, should we push for the resource now or no? Not yet. Okay, so.
 
-  Speaker 2 10:50
-All a large one, small ones monolithic Repose, uh, whatever, whatever, I mean, it cannot be asked as comprehensive. But yeah, it does a reasonable. You know approximation of what Wells Fargo has here?
+  Speaker 2 11:26
+That's already there with Catherine too. Okay? Yeah, yeah.
 
-  Speaker 1 11:04
-I'm seeing, you're at the the title. This is a CSV file, so these 50 repos some of them are are internal on github.wellsfargo.com, and some of them are on. So, yeah, so what I've done is, I've put all the the, you know, point in time? Of those ripples in this Ripple, so you don't have to go looking for that.
+11:36
+Uh, okay, what else was there?
 
-  Speaker 2 11:27
-That's right. So, yeah, this is the internal Benchmark, right? So, this is just the the name of the repo, so you would obviously have to get access to this. So, and you are mentioning that I can somehow give you access, but you are you actually on Wells Fargo's GitHub?
+  Speaker 1 11:41
+You tell me I had, I think something. So, yeah, the other one is the IBM concert stuff, right? So, yes, this is where, uh, Ryan Lynn was part of one of the meetings.
 
-11:41
-Do you have access to it?
+  Speaker 2 11:52
+Brian Lin pretty much said he so IBM concert or constantly also needs access to Frontier model access. So I heard from my dream concert team that they got access to the frontier model access through with Ryan Lin's help this morning. Actually, so they already have the model access through vertex AI from Lion Lin, so he, he knows how to set it up so.
 
-  Speaker 1 11:44
-Oh, what? What is in the past? Is, is someone we work with and I'm hoping we can find? Maybe that's you, maybe that's someone else liking the patching. We have someone on the Wells Fargo team who actually has the access. They're the ones with the service account. They create the token that we can use inside concert.
-
-12:02
-We put the token into concert, think concert goes and gets it. Hi Darren, I'm not accessing any any wealth assets. Oh, I see. Yeah, I. I think you would have to.
-
-  Speaker 3 12:20
-Yeah, I'm kind of
-
-  Speaker 2 12:21
-Stumped as to how external vendors would access Wells Fargo repos.
-
-12:31
-So, just just to be clear. This concert is sitting inside your.
+12:19
+Hey, just get just work with this guy Jeff Corbett, right? Yeah. And then, if we get it, we use it. For we start with. Whichever project. And then we can use it for. Our own purpose. As long as we get it. That way, you know?
 
   Speaker 1 12:37
-Flab.
+Yeah, that's good, so consent. What do we have to do? You should probably create a story for that. Yes, yeah,
 
-  Speaker 2 12:37
-Okay,
+  Speaker 2 12:42
+I have a story. I have a feature, not a story, but I have created a feature. So, IBM concept is basically it's a it's similar tool, something similar to kogi, what we had. Right, so it can take like static analysis results from check marks. And can also look at SCA findings.
 
-  Speaker 1 12:38
-When Darren's saying, get us access, get us access as in the teams we're working with or get you access the concert that sits inside your referral walls. To connect your GitHub okay to run.
+13:00
+And at the same time it will. It has it has to be given access to the source code repository. All right, and then it's going to look at the findings it can. It's going to look at the code, and it will tell you. Based on its own AI llm.
 
-  Speaker 2 12:51
-Oh, okay,
+13:16
+The magic that it does. It will tell you how many of them are real vulnerabilities. How many of them are false positives? Are they really exploitable and all that stuff? So, that's all IBM concept is doing so. It is not a scanner. So it can take existing scan results, and it can.
 
-  Speaker 1 12:51
-We're really saying to us is just the POC team, but not. It's not leaving your bank. It's not your walls. It's not leaving your environment. Thanks for clarifying Paul. Yeah, okay, sounds
-
-  Speaker 2 13:01
-Good. So, is the concert tool on-prem, or is it also a SAS?
-
-  Speaker 1 13:05
-Yes, we do. It does come in a SAS and an on-prem version. We're looking at the on-prem version here at Wells. Okay, perfect. So, who is in charge of that who helped you set that up? Zach McCain from Doe's team. And only team underneath Shell Adams in the CTO.
-
-  Speaker 2 13:23
-Okay, so I, he has to. I'm assuming he's a Wells Fargo employee, right? Yes, right. Okay, so he has to get in touch with me, and I can, you know, help him navigate the access to this repo, and that's the easiest way to get this forward ready rather than me trying to give you access.
-
-13:40
-If you know what? Yeah, I think it's better that you work through a single point of contact than trying to ask around. It's going to complicate things further. So, if Zach was the ones who set you up, I would drive all the requests and everything to concert through him, including the frontier model access.
+13:33
+You know, look at the source code and the more context you give. It's gonna present you some evidence as to why a vulnerability is more. What remediating an attention given attention to than others, so it's more like a triaging system, you know, using AI llm? Which constantly check marks 1 also has within.
 
 13:57
-Oh well, there's a wrinkle there. There are two use cases we're trying to accomplish. One is. Of patching the OS, and that's the that's. What's important to the infrastructure team? And that's where Zach is. Okay, the analyzing the applications? Is not. That's not.
+Also has this feature, right, all this all this stuff, so nothing new or groundbreaking that IBM console is doing, but?
 
-  Speaker 1 14:14
-Task, so that would not be the one to do this. He'd say that's not my job. I'm doing the operating system. Oh,
+  Speaker 1 14:06
+On socket. Okay,
 
-  Speaker 2 14:21
-Okay, somebody else has
+  Speaker 2 14:13
+Okay, this is the same thing, and I want to show you this in our meeting today.
 
-  Speaker 1 14:22
-To be the one who gives me the access. So I don't know who that is, and that's one of the things that we're kind of sifting through the, uh. The Wells Fargo environment. Um, see if we can identify just a regular point of contact for me. Like, let's say it's you, you're the one who gets the access, and then you go on a screen.
+  Speaker 1 14:19
+Uh, but let's finish your topics. Okay, yeah, so,
 
-14:40
-Share with me you go to your. Comfort system that's installed on-prem with you, and you put in the access token like the personal access token for GitHub. And then we can. Ingest the repo.
+  Speaker 2 14:22
+Yeah, so that's what it's doing, but uh, so as of right now, they only support four languages like Java. Python and JavaScript, so their language support is minimal at this point. And they are planning to expand it to other languages in the future. But as of right now, they only have supported.
 
-  Speaker 2 14:54
-For
+14:38
+So, when I looked in gt50, only 12 of the reports in the entire 50 are fully supported by IBM concert. So, if we do a limited POC, which would be very straightforward is to only pick the check mark scans for those 12 repos. And give the check marks cast to a game concert.
 
-  Speaker 1 14:54
-Example,
+14:57
+And IBM concert. Also, get access to the GitHub repos. And then it. Can, you know, do its thing and tell you how many of the check marks findings that were submitted are actually true, positive or not, and we can compare that against the ground truth for only the check marks portion of the findings.
 
-  Speaker 2 14:54
-Okay, go
+15:15
+So, that's a small test that we can do. And we can, you know, submit our response. And that should be it at that point, so, and they are also telling me come over the POC proposal, like the one pager or something shared to me. Okay, you and I will go through that.
 
-  Speaker 1 14:56
-Ahead.
+15:29
+Okay, yes. And the other thing is, they also can do SCA findings. So, if you have an open source Library, so it can look at cves and correlate that with source code and find out which library is actually exploitable. All right, yeah, so a lot of the tools do that checkpoint.
 
-  Speaker 2 14:56
-Yeah, I think I can help do that. I, I can. I'll reach out to Mike sabandy. I don't know if he wants me to do that, but I can. I can no problem. Yeah, we can do that
+15:47
+One also does that, and a lot of the other tools are doing it, so nothing groundbreaking there, but they they are saying that's one of the features that they have. And, and they also require AI tokens, right? It's not some. They are not doing it internally. They are calling AI to actually do all this.
 
-  Speaker 1 15:06
-One who offered you up, right? You're the one, I mean, he, yeah. He added me and asked me to take a look at what this is so. Yeah, but yeah, that's how it starts. So, whereas do you know where the concert thing is installed? Um, I don't know what I don't know.
+16:04
+Yeah, yeah. Okay, so I, I do you have any other topics? No nothing else. Yeah, you can go back to yours.
 
-15:26
-The name of the? The can. If that's what you're thinking, but it's in the lab that Zach managers. No, I see, and it's on an open shift running on open shift there. Okay. We can loop Zach in to say you need to know where it is, or maybe you can get the log on credentials to access it.
+  Speaker 1 16:12
+Yes, I have two items. One is, how are we doing with the training and all with Michael Costello and things like for this for the change of standard change order than any progress.
 
-15:45
-Okay, got it. Yep, I, I can. I think if you could add Zach in and ask him that question, I can, you know, CC, me, and and?
+  Speaker 2 16:21
+Yes, you've set up a meeting so that meeting is in a couple of days, right? So the initial meeting is. I told him he gave me a list of people. So?
 
-  Speaker 2 15:55
-Yeah, we can take it from there. And the actual ground truth itself, right? So, it's basically, it only has the results, right? So? What I'm missing is the you mentioned static analysis scans, so the ground truth is. It's not from a single Source, right? So, we use a combination of deterministic scanners and non-redomistic scanners.
+16:42
+So, we are, we know one person in his team already. So, um, so we have an initial meeting this this week and then. After that, you know, we'll probably have to have a couple of more meetings to get Hands-On on the tools. Yeah,
 
-16:18
-And we shifted through all the findings. And added manual results. All that is the ground truth.
+  Speaker 1 16:53
+Try to try to get that because I don't want to hold any updates for too long. Yes, you
 
-  Speaker 1 16:26
-So, you have several different sources to do this, some scanning, and then some, uh, individual like person time, exactly? Yep, so if I, if I show you an example?
+  Speaker 2 16:57
+Give it
 
-  Speaker 2 16:39
-So, this is what the actual problem won't look like. It will exactly tell you. You know each finding is labeled is given a number. And it's going to tell you whether it's a true false positive or a false positive. And what the, you know, this was. This finding is a false positive, right?
+  Speaker 1 16:58
+To them. Ask them to do a thing. Let's try a couple of changes very minor, and then we build the history. And then we do with templates. Okay, that's it. Do it like, quickly, yeah, right? So? Okay, that was one. Uh, the second piece is this piece. So, this.
 
-16:57
-So we have over 6, 000 findings. And all have in adjudicated as true or false positives. So, I mean, this is just a round arm, but this is the core of the ground truth, right? So, we use this with me. I see it.
+17:16
+And I think you should have that we should come up with a slide, but let me show you here what I'm doing.
 
-17:19
-So? So, this is exactly what what it would have right.
+17:25
+So, it's basically the. Socket is currently in a firewall, right? You know that socket firewall, basically, developer makes a request to artifactory or a factory checks with socket, and then it gives the E and A, so that's broadly what it is, right? So, this is, this is a business case.
 
-17:29
-Okay, it has. I was just one of the things I was thinking it's the file name and the start end lines, so you can identify the exact. Section of code. And. You're using? Um.
+17:43
+They have some other. Uh, you know, they have some other. Uh, capabilities, which which they showed us. So, let me see.
 
-  Speaker 1 17:45
-You said deterministic and non-determinists, so you're using AI to identify this?
+18:02
+Yeah, so this is so. They have different capabilities here. One is they give you the Persian currency, meaning they recommend. What's the, uh? What's the latest end version you should go to?
 
-  Speaker 2 17:50
-It's what? Yeah, it's what it has check marks. As a domestic scanner landed a whole slew of findings. So, every time we measure the ground truth. There is always a subset of novel findings at the ground. Truth doesn't have right, so that is taken in and absorbed to the ground truth, and it is adjudicated independently.
+  Speaker 2 18:14
+Oh, okay,
 
-18:12
-Of all the scanners to determine whether that's true, positive, or false positive. And that's a combination of models plus manual review, right? So that's how the. Ground truth is kept current, and we use this to measure anything new that comes around so. That's the idea. So, how often do you run this scan because you have a commit?
+  Speaker 1 18:15
+Yeah, so they, they have that. Then they have the breachability, which is what you're talking about prioritization based on reachability, so they have that on which, uh, check marks. One would also give and the concert would give right
 
-18:34
-You've pinned a commit, right? So you? The sources that I showed you. These are frozen. Right. Yeah, so the source code does not change. I mean, if so far, we haven't changed it in a couple of months. It's been only up for a couple of months, but if
+  Speaker 2 18:30
+Then. They
 
-  Speaker 1 18:53
-Two months ago right, yeah,
+  Speaker 1 18:30
+Have the f-bomb generation which we already have. We don't have it in Black Duck today, but we'll probably have it right. So. So that's one. And then they have. This is a pike language. So, so what I'm seeing? This is what? Probably, each one goes into goes into this, but the idea is for the proposal.
 
-  Speaker 2 18:55
-So if the source code if there is a new repo added to the ground truth, then you would have to go through the entire rig model of, you know, finding all the vulnerabilities in that source code. And so, for now, it is frozen. And this. This is usually doesn't change that often, right?
+18:56
+And then what they gave me as part of it. And I derived University, I could. I put. I put your same ID shift here. Give me the new PDF. Okay. That's not the slide. It's not my fold. Okay, no second. There's my rescue. Okay, so they gave me.
 
-19:10
-So the goal is to only change it as and when it's needed.
+19:25
+Okay, yeah. So, what they said is, we can do this, this, and this is history. What we have heard, well, who started state so same thing in Persian currency, open source inventory? So you do the S bomb? You do the scoring and policy prioritization, remediation, and enforcement. So, what I'm doing is, I'm taking these three, and we are suggesting that we do basically, uh, enrichment.
 
-  Speaker 1 19:14
-Okay, right?
+19:52
+So, I'm asking for this funding. To do. If he has an enrichment capability in terms of blackjack. So, where it is, basically, it gives the pr it gives in two places, and one is. The GitHub app, which will get the pr level. It will give you Malaysia that will give you the package scoring.
 
-  Speaker 2 19:14
-So the source is not changing only. The findings would change based on sometimes the llm would. Find something completely new that the ground root doesn't have, right? So you'll have to look at that finding and then judge it, whether it's false, positive or not. And then you. Would you know bump up the version of the ground truth, so that's the idea of the crown tool, right?
+20:14
+Also, it could be once it has a PR. It can actually calculate all this, right? But that might be overwhelming. So maybe on the PA at the at the pr level. We basically say this is the malicious package or not, and then we leave it at that. And then these three, we can do it later, which is the?
 
-19:34
-So So, yeah, with this said, we will have to figure out how we can use this to measure concert. And you potentially have to rely on a scanner. Yeah, that's currently in production. Use that and get findings, and then we can. Measure the output of your. We can probably measure the.
+20:36
+Cicd enrichment, right? So okay. This slide is already what blackduck is doing today, right? And then. Uh, what. What the firewall has been saying. So, here's what I'm saying so. On the pr code change, this is the PR, where you will get some feedback on maliciousness,
 
-19:57
-Raw output and the post concert output and see what value. Content ads right in terms of precision and recall. So, the goal is, you know, we measure the Precision and recall the F1 and F2 score. So, yeah, I think that's the best use case for for this. Yeah, yeah, unless you think otherwise, you any other radio, so I'm open to it.
+  Speaker 2 20:52
+Then
 
-20:20
-But that's that's how I see it.
+  Speaker 1 20:53
+You. Then there's a merge decision there,
 
-  Speaker 1 20:22
-I think for because we don't have like a running application, F1 is probably one we've wanted to. Yeah, so yeah, none of these applications are running. So, yeah, if you want to go down that route, that's a whole new exercise. And that's gonna, you know? I think the quickest bang for the buck in the shortest time of, you know?
+  Speaker 2 20:55
+Then black
 
-  Speaker 2 20:42
-That we can spend us to do what what I was thinking, so you know we can just measure the. The pre and the post concert output and see what the variance in FN and F2 scores are. So, that'll give us clearly give us an indication whether concept is valuable or not.
+  Speaker 1 20:57
+That continues, scans all of it, right. And then you do some reconciliation on, you know, ecosystem version. And then you feed that scan. Hopefully you'll get an S mom, and then you feed that. Uh, socket, and then it will enrich it all right. Got it, and then with that, it enters into kamba.
 
-21:00
-And I think that that's a right approach, so? Do you have then?
+21:18
+So, how this happens? So? So right now, black. So here's my question view from. Check marks to. Uh, from check marks to AVR, it is. The the dev teams have an ability to through IDP to get to magentific marks, right? And then, they can do a disposition within check marks correct.
 
-  Speaker 1 21:05
-Uh, SAS scan results, like what he said, check marks for each of these components? Yes, yes, okay. What else do you have? I mean, what? What? What are the scan files? Uh, scan? Uh, I guess, off-the-shelf scan tools you use for these? Uh, off the shelf is.
+  Speaker 2 21:39
+Yeah, all the different teams they can log into check marks, and that's where they do bulk of the work. Default positives and the remediation. All that stuff happens within checkpoint, and then once they click on it, it goes to. Then, it automatically creates a ticket, right? Yeah, well, they have to set us a bunch of settings using IDP and AVR does up every 15 minute pull from check marks.
 
-  Speaker 2 21:25
-Check marks and there is a lot of. Yeah, the deterministic is only check marks.
+22:02
+So every 50 minutes, there is a sink. AVR basically pulls the data from check marks and pulls pushes into AVR. Yeah, the plug it? Okay, how did you know how blackjack works? Is it same?
 
-  Speaker 1 21:31
-Okay,
+  Speaker 1 22:13
+I am not familiar. No, I'm I'm assuming it's similar. Probably, there's a pool, but I, I don't know. Yeah, I think Jr.
 
-  Speaker 2 21:31
-Yeah, and it's not just, uh, out of the box rules, but you know, we have our own custom rules as well within check marks. So, yeah, we have a customized rule set, which I also happen to, you know? Leave the practice on.
+  Speaker 2 22:23
+Uh, the other guy. Yeah, but that is the piece that I need to figure out, but this is broadly what I'm seeing, right? So, I mean, it makes sense to you, right? Yes, Christian. All those guys. And okay, but this would go against, uh, you know, check marks one right for a CA?
 
-  Speaker 1 21:47
-Okay, so it's not like just the out of the box ones that that ship with the product where internal rules as well, so? Okay, this your own requirements. In addition to what check marks might find
+22:47
+And I mean, if you're gonna? Um. But check my form, we let's start with SAS. I mean, you're getting SCA for free.
 
-  Speaker 2 22:00
-Yes, yeah, okay?
+  Speaker 1 22:56
+Comparison. We can do whatever we want, right? Yes,
 
-  Speaker 1 22:06
-Concert has a feature of being able to adjust a repository just by giving the URL and the token okay. About that makes it, you know, a little bit easier? Click, and it does details it. Does the ingestion and creates a profile from that application? It would call it an application, even though we know it's just a repository reflecting a component of that, right.
+  Speaker 2 22:59
+Of course.
 
-22:32
-For let's say, we're going to pick 10 of these or fandom to do, just just. Step one just to run through and see. What happens?
+  Speaker 1 23:00
+When you want to get it for SAS,
 
-  Speaker 2 22:38
-Do
+  Speaker 2 23:02
+The idea, I mean, again, leadership will have a different idea and all. For me, you can't put all your. Get our eggs in the same basket.
 
-  Speaker 1 22:39
-You think we could just? We could work with you to get access to those, you know, get the URLs and the token. That is, maybe create a token that works for all of them all 10, and then we ingest those. Now we have those 10 profiles in concert. Yeah, we can.
+  Speaker 1 23:12
+Just just like we do say everything goes to llm. Check marks becomes obsolete. These things become oscillator. I mean, everything llm is so Advanced that it can do the whole check marks Thing by itself. You run a scan. It will give you everything, right?
 
-22:55
-Then we would adjust the check marks file for each of them, and that's good because I'm just picking 10 and be a manual process, you know, file upload. Here's the check marks file we. Associated with this application, slash repo, and then concert understands that. Then, we hit the analyze button, and it does the work to turn through those and see what?
+23:30
+And it's probably gonna get end there in a year or two, right? So, it's like, a couple of years,
 
-23:19
-Uh, what it can find?
+  Speaker 2 23:34
+Yeah. So,
 
-  Speaker 2 23:20
-Okay, yeah, we could do that. But what exactly are you mentioning so?
+  Speaker 1 23:35
+In fact, does that you still don't want to rely on one? Yes, one
 
-  Speaker 1 23:26
-I mean, what? What exactly are you mentioning? Are you trying to determine how good check marks is? No what we'll do with that that process I just described. We do the analysis and create what we're create, that that one that F1 score. It's going to do the proof of exploitability, and I could show you I don't have it.
+  Speaker 2 23:39
+Tool.
 
-23:45
-Let's see if I can demo you see how quickly you can get my demo going here just to show you what, uh, the counselor would do.
+  Speaker 1 23:39
+You don't want to rely on one tooling, right? So that's, that's the key.
 
-  Speaker 2 23:57
-I'll just show you if I can here. Yeah, sure, yeah, that's okay. A screenshot of what we're talking about. For each vulnerability. If, like, if the system is up and running, it's a it's one that the. The engineers use so?
+  Speaker 2 23:43
+So,
 
-  Speaker 1 24:13
-We'll see what state it's in,
+  Speaker 1 23:43
+Check marks you do. What check marks is doing black duck should do black duck is doing? And then I'm trying. This is the first time, even a joy said, and you, he asked me the question in the email, saying, can you can this replace black duck? I said, no, we have to do a full side by side, yeah.
 
-  Speaker 2 24:14
-Right, right? But
+24:00
+They want to get rid of. For many years, they've been saying we have to get rid of black duck so. I mean.
 
-  Speaker 1 24:15
-The idea is that we're going to put this this particular finding in, uh, one of three or four categories, you know, it's a it's, um. We, we've identified that as not at risk because of those mitigating factors I talked about, or one that requires. Future, like a like a human intervention we get.
+  Speaker 2 24:07
+Everything.
 
-24:37
-We can really go so far. Someone needs to look at this, or we have one. They yell, we, we've identified. This is exploitable, so. It's still, it's the prioritize one. You need to take a look at first, and that's what we're trying to do. Okay. So? My system. We'll see, I'm gonna I'm gonna be watching it here and.
+  Speaker 1 24:37
+Everything. In blackjack, I upgraded. I enable a few more features. It gives me a very reliable, less bomb. Then, we. Then, we basically plug this in. It gives the enrichment everybody wants. That's my case agreed now, but yeah.
 
-25:00
-It doesn't work if it's in the process of being updated, then that's well to set. Uh, postpone this, but? About, so that's that's what we're trying to do. So, not just say how good, uh, the SAS scan is, but to be able to categorize those, and that's that. You know, that's the secret sauce, and the thing that makes concert valuable.
+  Speaker 2 24:51
+So honestly, Rudy. I mean, there is that confusion, right? Are we gonna keep doing? What are you going to stick with Rudy? Sorry, are you going to stick with the black duck? So that decision is what prevents everybody from turning on these new features within black duck or anything like that.
 
-  Speaker 2 25:20
-Okay,
+25:07
+So, I think we, if you have like a commitment saying that, we're going to stay with black duck. I think we should explore all those features. We are, we are in that wave. We just we just renewed it for one year. Yeah.
 
   Speaker 1 25:21
-To be able to be able to do that categorization of those of the vulnerabilities. Okay, so you
+Yeah, and one year, and I should be able to evaluate this. I should be able to evaluate all the best of breed of backed up, I should be able. That's what I'm asking here, right? In one year, I should be able to do this to come back and say, this is what it is, right?
 
-  Speaker 2 25:27
-Would need more data Beyond just the source code, right? You need metadata about the application. Right? Well, again, to get to get a really full orbed view of the application to be. More confident in our. Rating of the exploitability factor. That's when the the Dynamics of a running application are important.
+25:33
+Yeah. That's what I'm thinking. Yeah, absolutely. And they were saying.
 
-25:52
-Okay, so how would that work? I mean,
+  Speaker 2 25:38
+They want us to move to the SAS version of black duck, right, instead of on-prem?
 
-  Speaker 1 25:54
-So let's say we have a running application. So, how would concert get Telemetry from the running application? All of the application's running, let's say, on a kubernetes environment like openshift,
+  Speaker 1 25:44
+Version, which is called Polaris, right.
 
-  Speaker 2 26:06
-We can.
+  Speaker 2 25:49
+And then there's
 
-  Speaker 1 26:07
-We can have a token. That gives read access to that particular namespace, or maybe the whole cluster and point out that that namespace or those namespaces and concert can ingest that information and add to the profile that it gets from GitHub. Oh wow, okay. Okay, so then it has okay.
+  Speaker 1 25:49
+A hosted version where even I got pulled in and that, okay, on-prem, to hosted as is on-prem to post it with reduce instances. Imagine the cost of trying to do this mapping. I mean, ngdc, CC, how complicated is it? Why would I do that exactly? You
 
-26:27
-I know everything there is to know about this application, including, like I talked about a configuration data, what the endpoints are public or private endpoints, and that factors into the exploitability of application and then, um, then it. Does the analysis with with that information creates more robust result? Oh, okay.
+  Speaker 2 26:04
+Should not be really. I mean, I I really hope this has been the case for the last three years, right? So I, I really hope that you can. Turn these things around, I, you know?
 
-26:46
-So, as a runtime component, right?
+  Speaker 1 26:16
+They'll put stuff on me every day. They throw stuff at me, so I'll have to figure out now, which I have to fix always as first, right here. It's a mess. Yeah, can you imagine my head hurts looking at that, right? So? And but, anyway, yeah. So, this is what I'm what I'm trying to do so broadly.
 
-26:52
-And yeah, it uses. The run time. Is that what you're yeah? Yeah, okay. It uses the runtime now. Again, we don't have to. We can create an analysis with just the.
+26:35
+This is great.
 
-27:08
-The get Theta, right? It's you know, it's not. I think it says. As robust as we wanted to, got it okay, so to do. Full-Fledged POC. We would probably have to have a running application somewhere, right, at least for a few of them. Yeah, I get that too. Oh.
+  Speaker 2 26:37
+Yeah, forget, get this, uh, we are already late. I have to get to a separate meeting, but?
 
-27:31
-Yeah, running, that is gonna.
+  Speaker 1 26:43
+Uh, yeah, so those were my my key things. Okay, okay, okay,
 
-27:37
-And again, it would be running inside your environment, so the only thing would be. Have you guys scaned applications with one of these llns, and we picked that application and just rescan it through concert because. The whole the whole thing. When we talked to Christian was?
+  Speaker 2 26:46
+Hold it. And did you? Was there any any talk about the the promotion or anything like that? It
 
-27:55
-Okay, so there's some dupes between what we're doing. But if your mouse trap's going to reduce the amount of false positives? By a number that's obviously important. That's the whole goal of everything we're doing is really focusing on determining what we need to focus on. And. What the business doesn't need to focus on it.
+  Speaker 1 26:54
+Will, I think, yeah, I mean, I can't. I can't share the details of anything, but that discussion is in process.
 
-28:17
-So, we're not wasting time patching things that are not exploitable. Got it okay. And did Christian mention?
+  Speaker 2 27:01
+Okay,
 
-  Speaker 2 28:23
-Talk about how you? Well, that's when you put some chart put us in touch with Tony and Mike. Oh, I see, I said, okay, then we got the repositories and.
+  Speaker 1 27:01
+This question is the process, like the calibration and all happens in October, November. I don't know when they do the decision, whether a certain Milestones which have to be met, so that is happening up to through November. I think the official decision comes in January or something, okay, all right, thanks.
 
-  Speaker 1 28:35
-You know, I think maybe there are some people just now understand what we're doing, except I know you said like this is a niche solution. I'd love to double click on your mind. Why? Why is Niche per se versus? And then, obviously, we're only talking about a part of our platform.
+27:17
+So, when will the final one? So, I think, December, they don't do anything. Uh, but. But yeah, I mean. Discalations would be there. Okay.
 
-28:50
-There's other components to it. Oh, I see, but this is the part that. I think is that you guys are actively trying to solve internally and what I mean by Solomon is know that? There's like your false positive rate is as factual as it can be across, not just your team, but the app owners when they get the data as well.
+  Speaker 2 27:28
+And the one. One last thing is the RFI, right? So, yeah, before you leave, I'll quickly show you the update on the RFI, so they did respond, right? The call? The psycho did respond, but just please see this email from. Crystal, so Christian and chiradeep. They've again sent another 10 plus questions.
 
-29:15
-And that, really, when you're walking forward, these are the things that we need to prioritize to ensure our environment is as secure as possible. And we're not. Spending time on things or going back and forth on things and listen. Got it. This is not something easy, right? Everybody. Working on this in different ways.
+  Speaker 1 27:52
+Huge email, which kind of changes everything, right?
 
-29:37
-All of you think we have a pretty unique switch of how to do this within our platform, leveraging data that you guys already own.
+  Speaker 2 27:55
+So he comes in. Yeah, my request is please, you know, have a joy talk to chiradeep and Christian, saying that, you know, we can chat leave in the chat, right? But I don't know. I, I don't see him participating in the chat, so ask him to please have a conversation with Christian to not do any of this being the RFI.
 
-  Speaker 2 29:43
-Got it. Yep, I mean, I think this is. This is a great solution. I mean, it's good, but I think I think I mean, at the end of our time, but I think we should start with these just the static code to begin with, and then we can look at what we can do in terms of runtime, right?
+28:14
+It's gonna again start the entire process and we'll go all the way to February or March. Nothing will happen meanwhile. I'll bring it
 
-29:58
-So? I don't know how, what, what it would take because the repos that I have are frozen in time and they're probably no longer in production and definitely no longer in production, right? So the vulnerabilities in them are already patched, and uh, you know, that's the you know, that's the whole point of the ground.
+  Speaker 1 28:22
+Up. I'll ask him in my one-on-one. Yeah, that's also. Yeah, it's not a one-off topic where I keep him saying, hey, this is something. Have you watched it, but? Yeah, I should. I should make a list. Uh, the funny thing is Christian and shiadeep.
 
-30:15
-Truth, right? So? You are not. These are not like live production applications anymore. And the production versions are probably several versions ahead, right? So So, yeah, to sum up, I think we should start with the the Statics code portion of it. So, if you could, you know, send an email to Zach and copy me, we?
+  Speaker 2 28:37
+Who are always part of the entire RFI. They were there from the beginning they could have, and I did specifically asked children. If you have any questions, he did send me questions. I did add those questions to the RFI, so it's not like they weren't. Yeah, now. He's like, come back, and he wants to broaden the scope of the RFA.
 
-30:36
-You know, start there and then. See what, how, how this takes us forward? And I'll talk to Mike. Meanwhile, to see what his thoughts are as well. That sounds good. Okay. Yeah, and yeah, if you can, yeah, please get in touch with Ryan. He'll help you with all the.
+28:55
+We cannot keep doing that right, so? Every three months. Yeah, yeah. Yeah, yeah, yeah.
 
-30:55
-To llm stuff. Okay.
+  Speaker 1 29:07
+And, and the other note, I don't know if you saw, but.
 
-  Speaker 1 30:57
-Okay, let's see if I can do that. Um, I'll send not to to you and Zach, saying, we want to access this. I think Zach will say predict it's your job or it's not my job. So before we go from there, all right, sounds good, and um, I'll, uh, I'll.
+  Speaker 2 29:10
+Check marks is also now on the anthropic Marketplace. So they, we get some credit if we use anthropic through check marks something like that, so it's some. They got some weird deal. I don't know how that works, but yeah. Does that give you an interface to?
 
-31:16
-Don't think it's entire unit to walk you through.
+  Speaker 1 29:33
+It means that instead of us being anthropic directly. We pay check marks. And we use check. Mark check marks would call anthropic through us.
 
-  Speaker 2 31:21
-Don't make it like a demo for black and better term, but this is what we're trying to do this. DM gold okay, have you done that with others within Wells Fargo or no? Oh yeah, yeah, this is how it started. Okay, this is what we're doing. In fact, I have just here.
+  Speaker 2 29:49
+So, and the advantages. Whatever anthropic tokens that we consume, that cost would be offset offset by the license cost of check marks product itself. So, if he, yeah, if you consume the tokens through check marks, then we get a. It's not like a complete one-to-one, but there's a discount if.
 
-31:36
-Let me just, this is, this is, uh. Uh, remember, I talked about proof of exploitability, right? That's what we're trying to do. I talked about these categories. Um 3, 000 findings in this one application. Uh, 48 of them.
+30:11
+If you are using anthropic 2 check marks.
 
-31:53
-Uh.
+  Speaker 1 30:14
+Already contracted, so it needs to need it would be a new. It would be a new somebody has to do a cost comparison going directly to anthropic or going through check marks or something like that? Yes.
 
-  Speaker 1 31:55
-2, 900 of them requires investigation, and 10 percent are not exploitable. This is just one component randomly,
+  Speaker 2 30:27
+So, yeah, there's some cost involved. It's not very clear as to how the the numbers would work, but they are saying it will be. Instead of trying to do it on your own. If you do it, you know, check marks and check marks. License will offset the cost of the the Frontier models, especially anthropics.
 
-  Speaker 2 32:00
-So
+30:43
+So that's what that agreement means. And he's, you know, the yeah. They're trying to get everybody's attention and all that stuff. So, I sent you that email, right? So? But that's the one top.
 
-  Speaker 1 32:01
-That's the idea of these categories. So, hey, we're only knocking 10 out. That's, that's not the greatest. Maybe we can do better next time, but here, we're saying that once you really should do is only one percent of the 33, 000 findings you will need to work on these 48 persons.
+  Speaker 1 30:54
+Knows, he's like they are trying to send emails and.
 
-32:15
-That's the idea. Got it okay. And then, for each one of these, you click on them. And it tells you something. I got to stop you how to jump to my next one, but if you could send that email?
+  Speaker 2 31:04
+You know,
 
-32:35
-Um, April, Deep, um,
+  Speaker 1 31:05
+Can you keep me in the loop? So, what is happening there? No, no, they are reaching them. I'm not involved in that they are rarely reaching out to all these people. Anybody that you can reach out to within Wells Fargo, so. But I got that email. What I got.
 
-  Speaker 2 32:37
-Hey,
+31:18
+I followed that to you. So. Which is fine, I mean. If it is important, will mention it, right? I mean, I can't. Uh, so apparently I joined. This was like, a week ago, I did call. The check mark, CEO. This is, I got through the when I was chatting yesterday, so.
 
-  Speaker 4 32:37
-Thank you for joining in or just waiting for, um, David Garcia, to join us. Um, chai reached out. He's um, other Cloud architect, so, um.
+  Speaker 2 31:40
+Put, whom with the CEO he directly called the CEO, Checkmark CEO. I forgot his name. The Indian person. But yeah, he called, uh, directly, and he said, yeah, that's true. That's something new, and he just wanted to confirm that that's accurate information or not, so. I think he sent it to chiradeep and shiradeep forward it to a joy.
 
-  Speaker 1 32:50
-He's tied up with something else, so I already have spoken to Dennis Byrd, David.
+32:05
+I don't know what, how it, but somehow ajai got the wind of it, and he called the CEO, and to find out if this is true or not, so.
 
-  Speaker 4 33:03
-But not this bird, but David right f*** this is Cloud run.
+  Speaker 1 32:17
+X is a very collaborating with one email you forwarded to me, went to children.
 
-  Speaker 1 33:08
-Right, right?
+  Speaker 2 32:22
+Yeah, who told you that a joy called the CEO, who told you that check marks people?
 
-  Speaker 3 33:09
-Yeah, yeah. Dennis Burke, Dennis bird, is a cyber, um Champion, as well. Ajaya, so, yeah, yeah, yeah, so that's fine. Yeah, additionally, uh, pretty, um, I, because um, Cloud run is in limited use, meaning that it needs to be reviewed first by the cloud Architects. Before we could, you know, proceed.
+32:30
+Okay, I'll basically check marks. Don't call me out on it. I'm just giving you whatever I heard Said. Yeah, yeah, yeah, okay, yeah, don't. Please don't mention that, do I? I'll get in trouble otherwise. I'm not going to mention it.
 
-33:30
-I mean, of course, you already got approval from the Champions. Um, it's just that cl.
+  Speaker 1 32:48
+So the email that you found already. I took a look at look at it, and okay, good that he knows, but they are reaching out to everybody, right? Yeah, they're internally. Whatever contacts they have, they are trying to reach out to whoever they can, I said, yeah. Okay, okay.
+
+33:08
+All right. I'm sorry, okay.
+
+33:15
+Okay, yeah, that's I think that's pretty much all I have. Let you know if there's anything?
+
+  Speaker 2 33:21
+Yeah, yeah, let's do this, uh, I need. I'm actually late to a meeting I need to get to all, right? Well, okay, all right. Thanks.
