@@ -1,497 +1,389 @@
-  Speaker 1 00:00
-Uh, no, I mean, put it in a Word document and paste it an email. I mean, you have Rich editor in your Outlook composer, right? So, you could just give an image in the email you follow. What I'm saying, oh, okay.
+00:00
+How are you? How's it going? Going all right?
 
-  Speaker 2 00:11
-So, instead of putting a PDF for a PDF, sending a pptx or pptf put all the images. Put all the images in an email. Okay, that way, it's kind of embedded. I'm just thinking which way attachments. They probably scam embedded images. I don't know if they do. Inline images.
+  Speaker 1 00:06
+Always, always pulling different directions here so.
 
-00:29
-Do they?
+00:13
+Excellent so, uh, yeah. Let's dive into what you have. Yeah, the. I don't know. You probably saw the emails about the the check marks simile thing, right?
 
-  Speaker 1 00:30
-I mean, all emails. They, if it's going to an external domain, they get scanned for you, know it. They check for customer information or SS and anything sensitive. But.
+  Speaker 2 00:23
+Damn! Yeah, so yeah, we're just trying. I mean, one of the goals is to not bring over all the craft from the old instance. There's a lot of scan data. There's a lot of. Um, you know, decisioning data. We don't need all of that. So, and that's actually causing the instance to slow down significantly.
 
-  Speaker 2 00:40
-Yeah, I mean the worst thing if it gets flanked, it will be blocked. That's it, so, and you will get notified saying that, you know, one of your reportees has sent an email, and you, you'd be asked to explain as to what's going on.
+  Speaker 1 00:43
+And one of that is to not bring over all the old. I mean, remember before the abstract scoping we had? Within check marks, right? So? So, we had like different types of queries and all that stuff, so. All that was abandoned and we had, like, only a single. Set of queries, so the old instance still has all that queries right in the database, so we wanted to avoid all that and only bring the ones that we use that we are using.
 
-  Speaker 1 00:52
-I asked him, what did? He said. I know they
+01:14
+Okay, yeah, that's the reason for the, you know, all this back and forth, but anyway, so? It turns out that the the sim ID is sort of predictable. You could just, you know? There's a pattern in which I can quickly show you something if. All right, yeah, just use a rainbow table and crack it.
 
-  Speaker 2 01:00
-Didn't ask me to explain. They just gave me an FYI. Oh, or maybe they did. And I didn't act on it. They didn't come back to me. I'm, like, okay.
+01:33
+Yeah, yeah, something similar, so you know? And surprisingly, checkpoints could have pulled this, right? So, I mean, and when I told them this, and they're like, oh yeah, this works, but? They want, like more data. The problem is, their sim ID is their secret sauce, right? Yeah, but we don't want their entire Secrets, or we just want to know how it shifts when the query array changes.
 
-  Speaker 1 01:09
-But, uh, okay, yeah, this is fine, okay, and you send it to him and just the request to them would be if they can make it official from checkmas as a recommendation. Yeah, we will
+02:00
+And I know, it seems like there is some disconnect within. It's a huge organizational check mark, so
 
-  Speaker 2 01:19
-Know that
+  Speaker 3 02:07
+The r d and the support is like, there's a lot of.
 
-  Speaker 1 01:19
-We did it right, we, that. That is something we know, know, but. We want them to take on the referee of this thing wrong, because if they present it, then Dale's on board. Everybody who's saying they are on board, right? This is what check months gave us. Yes,
+  Speaker 1 02:10
+Well, anyway, to prove it simply. You know, for each digit, the similarly the query already changes? The the actual value in the similar drift? Is constant, so if it's, for example, it's three to nine. So, the difference is six. So, six times, it's a weird number, so I'll show you an example here so.
 
-  Speaker 2 01:34
-And, and okay, yeah, let's. Let's do that. Okay, this is good. Good progress.
+02:34
+If you notice the? Three to nine is? Six times, so this, because it's the second digit, it is 31. Times, and 30 minutes to the power of. So, e-digit is like? So that many times? The position it is on the on the digit. And, and that basically adds to the entire value, right?
 
-  Speaker 1 01:40
-Yeah, what else do we need to talk about? Yes, right?
+03:00
+So the previous email is this one and? Will take into the drift and you get the new sum ID so that that's the entire logic, right? And I was like trying to. I use the the gd50 run. I had like 27, 000 sim IDs, and all of them matched.
 
-  Speaker 2 01:45
-When I did tell him that she's good at coordinating, so that 2 pm meeting will? Pacific meeting will continue. I took you off that, yeah, okay. So, now I'm going to have keep the joy in that one. Okay. Uh,
+03:15
+Okay, well, that's a pretty good sample size, I'd say yeah. And so, take much at this point. And I mentioned this, Rudy, and he said, you know, that, yeah, this? Looks okay, but let's get the vendor to buy in, and that's what we've been trying to do last week.
 
-  Speaker 1 02:01
-So those other important ones, and again for one thing he was starting to. He was on the Raven of his house, right? So we asked Tom Stanley today. Does he need he's a couple more weeks? So that's a couple more weeks, okay? Yeah, yeah.
+03:28
+So there's a meeting tomorrow as well. And, uh, you know if they sort of okay this, then we can probably address the problem that you know the AVR team is raising, and Ed is rising. Which is, you know, they want some auditability? And one of the things that ringing up is old.
 
-02:19
-Um, like, of all Hands-On keyboard 800, right? I mean, you already have. He can return like 45 minutes to one hour a day. It's fine, yeah, price. If it affects any stories and all specifically which we have, which is a time-bound delivery this week or next week, then let me know otherwise.
+03:47
+Issues like, which are open a couple of years ago. If they get reopened. Um, they want that traceability as to. Within area as to why that old issue. Uh, you know, it's real quick, so? We have a path forward, or is there any?
 
-02:37
-I'll just continue to the end of the month. And then we will see.
+  Speaker 2 04:07
+Is there any concerning? Let's say this works right, and everybody agrees. Are there any challenges from AVR or the cdxo team on this?
 
-  Speaker 2 02:40
-Okay, perfect. So he is working on the, so we, I mean, he saw my note, right? So, I'm giving you updates as soon as as and when I get them, rather than waiting for the one-on-one. Yeah, the gcp stuff, they said, that's a no-go, right? I mean, yeah, it is possible.
+  Speaker 1 04:14
+I, I. Nobody knows this solution yet.
 
-02:57
-So, the cloud run is a com. They're still testing out some of the components that would have been nice for us, but?
-
-  Speaker 1 03:04
-They are saying they already are testing it out with a couple of applications, and it will easily be another, you know, several months before it's ready for. Wider use, right? So, they said, try OCB.
-
-  Speaker 2 03:15
-So, ocp is the internal stuff, so if that doesn't work out, you can come back to us, but try that first, so it's on-prem.
-
-  Speaker 1 03:23
-It's not Cloud native, so it's on-prem so. Isn't that open shift container platform, right? That's the one, yeah. But that's not the it's not Cloud openshift as Cloud native, right? Why? Why it is cloud? It's not like a third-party Cloud. It's like internal.
-
-03:43
-On it's it's? Private virtual Cloud, you would say, right, it. It is within the Wells Fargo data centers. I mean, that doesn't make any difference to us. We still have the container deployment. Yeah, right, I mean, he's saying, yeah, it pretty much has everything that you need so. You're not doing anything fancy that would require gcp, so try that.
-
-04:06
-And, and then, if that doesn't work, yes? So, yeah, nagindr is, is working on that. I'm also, it's the problem with Wells Fargo is, you know, all the they have all these fancy tools, but? There are too many tickets to submit and so many people to talk to to get that going so.
-
-04:24
-So, it's yeah. Let him do on the ocp. Yes, I think he can balance it. Yeah, we. Uh, okay, yeah, that's fine. Let's just switch to ocp. Yes, okay. Create and create a story because your gcp has stories gcp. You put a comment on hold advice by this based off this, and now to now track same level of granularity on the ocp.
-
-04:55
-And then just informed either. And those guys they can track it,
-
-  Speaker 2 04:59
-Right? Okay, but that is what we will let product know that that's happening, right? Yeah, okay, and the next one is the the ground truth stuff, right? So there was one meeting with Jeff and Co. The city of people, so I also had. Yeah, so basically, I think he brought in another person from his team.
-
-05:20
-So, they are basically using the ground truth to test newer models, right? So, if, then, they are getting like Astra 6 or anything new. They are testing there. We have a public repo right consumer repo.
-
-  Speaker 1 05:32
-So it
-
-  Speaker 2 05:33
-Has a 1.2 version of the control, so they are using that to test the newer models. And they are also seeing the same gaps that we are seeing, right? So when we test the ground truth, there is a section of vulnerabilities that are not there in the ground truth at all.
-
-  Speaker 1 05:45
-So, the models are finding new stuff.
-
-  Speaker 2 05:49
-Which have either false positives, or which have to have we have to have adjudication on those findings also, right? So that, you know? All everything is accounted for in the ground rule. That's the reason I explained to them. That's why we have versions, you know. There are gaps here within the model.
-
-06:07
-And they said, you know, let us know what we can do to help. He
-
-  Speaker 1 06:10
-Asked me that, so I told him.
-
-  Speaker 2 06:12
-Here. We'll, uh, you know, we are struggling to get the token for the frontier model, I, you know, is there a way you can set us up with me, he said. He is going to take that as an action item. So, he's gonna do that, so he's gonna help us set that up and set.
-
-06:29
-You know, the the vortex AI key? So, you know, we also get the access to the, you know, the frontier. Why shouldn't we?
-
-  Speaker 1 06:38
-Do we have access to vertex AI Keys through ocp, because now it's not on gcp? Yeah, I did ask them that, so they said yes, it is possible so.
-
-  Speaker 2 06:47
-It's just that AI key. So, even from OTP, you can call vertex on gcp, so it does not requirement that you have to be on gcp to call vertex AI. Even from ocp, you can call vertex area.
-
-  Speaker 1 07:00
-So that way we're going to expand. We're going to what version is it now? Gt50 what is 1.1.2 version 1.2? And it's been in 1.2 for couple of. Yep, almost a couple of months now. If we get the vertex here and get the ocp, then we can do. Of 2.0 with multi llm education, right?
-
-07:20
-We could correct, yeah, so
-
-  Speaker 2 07:21
-We have a lot of data from previous scans where there is a section of vulnerabilities which are not rated at all, so which are not there in the ground truth and which are novel, which are new. So usually, a section of these would be duplicate. A section of this would be false, positive, and suction.
-
-07:38
-Obviously, of them would be, you know, legitimate findings. So? We'll have to churn through that. You know, there are like around four or five iterations of previous runs, where we have a subset of findings, right, all those have to be Incorporated, and we have to bump up the version every time something changes.
-
-07:56
-Yeah, and uh. We can bump up the version because? Social help, let's say. These new findings we want to incorporate in the gt50, right? So?
-
-  Speaker 1 08:11
-Uh, what version would that be? So this?
-
-08:21
-So, yeah, depending on the. Sorry, let me open this up.
-
-  Speaker 2 08:30
-So, right now, it's the ground. Truth is version 1.2.0, right? So, when something changes in terms of the findings and stuff? We will change. We will update this to, you know? If it's a minor change, we will do a subversion 1.2.1. If it's a major bump, then 1.2 dot, you know, 1.3 dot?
-
-08:49
-And then, if it's a complete rework, you know, when we are doing the integrator? Then, you know, we can probably bump it to two dot 2 dot X, right? So, that's the thought, yeah. So, we probably should plan a
-
-  Speaker 1 09:01
-1.3 1.4, maybe with some subsets of those findings with the current education process. And then we do the overall correct, which would be the multi-education. And you know, yes, yep. And yeah. Meanwhile, parallely the AAR process is also. And then you know I've given them. But yeah, that's I don't know when that's.
-
-09:26
-Um. That's gonna, you know, take its own course? Uh, yeah, that will take months, but we, if we have vertex, we don't have anything, right? But yeah, he said, he's gonna help out. But, uh, I mean, if you have contact contact with, uh, Ryan Lynn? You know, that might also, yeah, just just talk to Ryland.
-
-09:46
-He's, uh, he talks to. I think he collaborates well with John's team, right, like Garland and those guys? Yes, so I just have a relationship with him. It's good for him. Who to contact environments. They must ask this guy,
-
-  Speaker 2 10:04
-So he, yeah. Jeff is the he he's under Ryanel in Steve Jeff. I forgot his last name core or something. Okay. Yeah, that's fine. Jeff Corbett. And forward, okay?
-
-  Speaker 1 10:21
-Yeah, so can you keep he's probably just C? Okay, so yeah, that's fine. Let us let him be. Then it will serve our purpose. We will get the keys and then the budget and all how they track it right by. C okay, if you type it there, then he gets pinned.
-
-10:39
-You know that right now, you? No, no, it doesn't so. And unless you add the person to chat, then you would. You won't get pinned. Yeah.
-
-  Speaker 2 10:51
-No, that is good. That is good. He said, it's an action item. He's gonna take it back, and he haven't heard from him yet, but.
-
-11:06
-Okay, so then ocp. Yeah, like that. Note here.
-
-  Speaker 1 11:14
-So, should we push for the resource now or no? Not yet. Okay, so.
-
-  Speaker 2 11:26
-That's already there with Catherine too. Okay? Yeah, yeah.
-
-11:36
-Uh, okay, what else was there?
-
-  Speaker 1 11:41
-You tell me I had, I think something. So, yeah, the other one is the IBM concert stuff, right? So, yes, this is where, uh, Ryan Lynn was part of one of the meetings.
-
-  Speaker 2 11:52
-Brian Lin pretty much said he so IBM concert or constantly also needs access to Frontier model access. So I heard from my dream concert team that they got access to the frontier model access through with Ryan Lin's help this morning. Actually, so they already have the model access through vertex AI from Lion Lin, so he, he knows how to set it up so.
-
-12:19
-Hey, just get just work with this guy Jeff Corbett, right? Yeah. And then, if we get it, we use it. For we start with. Whichever project. And then we can use it for. Our own purpose. As long as we get it. That way, you know?
-
-  Speaker 1 12:37
-Yeah, that's good, so consent. What do we have to do? You should probably create a story for that. Yes, yeah,
-
-  Speaker 2 12:42
-I have a story. I have a feature, not a story, but I have created a feature. So, IBM concept is basically it's a it's similar tool, something similar to kogi, what we had. Right, so it can take like static analysis results from check marks. And can also look at SCA findings.
-
-13:00
-And at the same time it will. It has it has to be given access to the source code repository. All right, and then it's going to look at the findings it can. It's going to look at the code, and it will tell you. Based on its own AI llm.
-
-13:16
-The magic that it does. It will tell you how many of them are real vulnerabilities. How many of them are false positives? Are they really exploitable and all that stuff? So, that's all IBM concept is doing so. It is not a scanner. So it can take existing scan results, and it can.
-
-13:33
-You know, look at the source code and the more context you give. It's gonna present you some evidence as to why a vulnerability is more. What remediating an attention given attention to than others, so it's more like a triaging system, you know, using AI llm? Which constantly check marks 1 also has within.
-
-13:57
-Also has this feature, right, all this all this stuff, so nothing new or groundbreaking that IBM console is doing, but?
-
-  Speaker 1 14:06
-On socket. Okay,
-
-  Speaker 2 14:13
-Okay, this is the same thing, and I want to show you this in our meeting today.
-
-  Speaker 1 14:19
-Uh, but let's finish your topics. Okay, yeah, so,
-
-  Speaker 2 14:22
-Yeah, so that's what it's doing, but uh, so as of right now, they only support four languages like Java. Python and JavaScript, so their language support is minimal at this point. And they are planning to expand it to other languages in the future. But as of right now, they only have supported.
-
-14:38
-So, when I looked in gt50, only 12 of the reports in the entire 50 are fully supported by IBM concert. So, if we do a limited POC, which would be very straightforward is to only pick the check mark scans for those 12 repos. And give the check marks cast to a game concert.
-
-14:57
-And IBM concert. Also, get access to the GitHub repos. And then it. Can, you know, do its thing and tell you how many of the check marks findings that were submitted are actually true, positive or not, and we can compare that against the ground truth for only the check marks portion of the findings.
-
-15:15
-So, that's a small test that we can do. And we can, you know, submit our response. And that should be it at that point, so, and they are also telling me come over the POC proposal, like the one pager or something shared to me. Okay, you and I will go through that.
-
-15:29
-Okay, yes. And the other thing is, they also can do SCA findings. So, if you have an open source Library, so it can look at cves and correlate that with source code and find out which library is actually exploitable. All right, yeah, so a lot of the tools do that checkpoint.
-
-15:47
-One also does that, and a lot of the other tools are doing it, so nothing groundbreaking there, but they they are saying that's one of the features that they have. And, and they also require AI tokens, right? It's not some. They are not doing it internally. They are calling AI to actually do all this.
-
-16:04
-Yeah, yeah. Okay, so I, I do you have any other topics? No nothing else. Yeah, you can go back to yours.
-
-  Speaker 1 16:12
-Yes, I have two items. One is, how are we doing with the training and all with Michael Costello and things like for this for the change of standard change order than any progress.
-
-  Speaker 2 16:21
-Yes, you've set up a meeting so that meeting is in a couple of days, right? So the initial meeting is. I told him he gave me a list of people. So?
-
-16:42
-So, we are, we know one person in his team already. So, um, so we have an initial meeting this this week and then. After that, you know, we'll probably have to have a couple of more meetings to get Hands-On on the tools. Yeah,
-
-  Speaker 1 16:53
-Try to try to get that because I don't want to hold any updates for too long. Yes, you
-
-  Speaker 2 16:57
-Give it
-
-  Speaker 1 16:58
-To them. Ask them to do a thing. Let's try a couple of changes very minor, and then we build the history. And then we do with templates. Okay, that's it. Do it like, quickly, yeah, right? So? Okay, that was one. Uh, the second piece is this piece. So, this.
-
-17:16
-And I think you should have that we should come up with a slide, but let me show you here what I'm doing.
-
-17:25
-So, it's basically the. Socket is currently in a firewall, right? You know that socket firewall, basically, developer makes a request to artifactory or a factory checks with socket, and then it gives the E and A, so that's broadly what it is, right? So, this is, this is a business case.
-
-17:43
-They have some other. Uh, you know, they have some other. Uh, capabilities, which which they showed us. So, let me see.
-
-18:02
-Yeah, so this is so. They have different capabilities here. One is they give you the Persian currency, meaning they recommend. What's the, uh? What's the latest end version you should go to?
-
-  Speaker 2 18:14
+  Speaker 2 04:17
 Oh, okay,
 
-  Speaker 1 18:15
-Yeah, so they, they have that. Then they have the breachability, which is what you're talking about prioritization based on reachability, so they have that on which, uh, check marks. One would also give and the concert would give right
+  Speaker 1 04:18
+Yeah, it's just you, I told Rudy, obviously, but it's just you at this point and and the vendor, right? So Rudy wants to. Get there okay before opening this up internally, so I'm just following what he wants to do so.
 
-  Speaker 2 18:30
-Then. They
+  Speaker 2 04:34
+Got it. Okay, yeah, because I, I get pings from, uh, Rajiv, and all the time saying, we gotta fix this. We got to fix this, and I'm like, go to Rudy man, this isn't. I don't own. Check marks, you know, right?
 
-  Speaker 1 18:30
-Have the f-bomb generation which we already have. We don't have it in Black Duck today, but we'll probably have it right. So. So that's one. And then they have. This is a pike language. So, so what I'm seeing? This is what? Probably, each one goes into goes into this, but the idea is for the proposal.
+  Speaker 1 04:48
+Yeah, exactly.
 
-18:56
-And then what they gave me as part of it. And I derived University, I could. I put. I put your same ID shift here. Give me the new PDF. Okay. That's not the slide. It's not my fold. Okay, no second. There's my rescue. Okay, so they gave me.
+  Speaker 2 04:49
+I mean, it sounds like a good idea. I'm very interested to understand how you cracked it.
 
-19:25
-Okay, yeah. So, what they said is, we can do this, this, and this is history. What we have heard, well, who started state so same thing in Persian currency, open source inventory? So you do the S bomb? You do the scoring and policy prioritization, remediation, and enforcement. So, what I'm doing is, I'm taking these three, and we are suggesting that we do basically, uh, enrichment.
+  Speaker 1 04:54
+Okay, so I had a lot of data, right? So I used. Yeah, I threw the data. And, you know, now we have Opus55, right? So?
 
-19:52
-So, I'm asking for this funding. To do. If he has an enrichment capability in terms of blackjack. So, where it is, basically, it gives the pr it gives in two places, and one is. The GitHub app, which will get the pr level. It will give you Malaysia that will give you the package scoring.
+  Speaker 3 05:05
+Yeah,
 
-20:14
-Also, it could be once it has a PR. It can actually calculate all this, right? But that might be overwhelming. So maybe on the PA at the at the pr level. We basically say this is the malicious package or not, and then we leave it at that. And then these three, we can do it later, which is the?
+  Speaker 2 05:05
+I put
 
-20:36
-Cicd enrichment, right? So okay. This slide is already what blackduck is doing today, right? And then. Uh, what. What the firewall has been saying. So, here's what I'm saying so. On the pr code change, this is the PR, where you will get some feedback on maliciousness,
+  Speaker 1 05:06
+It in there, and it basically told me, you know, it looked at Pat and I told me that, you know, this is how, what it's doing so? Yeah, I had, like, lot of data, and I tried to find a pattern. And you know, he just told me, this is.
 
-  Speaker 2 20:52
-Then
+05:19
+It's pretty neat. Yeah, it was actually pretty. Pretty lazy as one of the.
 
-  Speaker 1 20:53
-You. Then there's a merge decision there,
+  Speaker 2 05:24
+Good uses for, you know, AI? I would say. Yeah, for sure. Yeah, if anything, is the window vendor could have told us something like this, right? So, and yeah, that's, uh, it's a little frustrating. Yeah.
 
-  Speaker 2 20:55
-Then black
+  Speaker 1 05:38
+Yeah, they they certainly have to know what the pattern is, right? It's their secret sauce. Yeah, it seems like they're not helping us as much as they could. Yep, absolutely.
 
-  Speaker 1 20:57
-That continues, scans all of it, right. And then you do some reconciliation on, you know, ecosystem version. And then you feed that scan. Hopefully you'll get an S mom, and then you feed that. Uh, socket, and then it will enrich it all right. Got it, and then with that, it enters into kamba.
+  Speaker 2 05:49
+So, um, what about additional requests on the gt50? I know many people have asked. You know when we're going to add more apps? Um, they haven't asked for apps. I mean, there was one meeting with. And and you know?
 
-21:18
-So, how this happens? So? So right now, black. So here's my question view from. Check marks to. Uh, from check marks to AVR, it is. The the dev teams have an ability to through IDP to get to magentific marks, right? And then, they can do a disposition within check marks correct.
+  Speaker 1 06:06
+Um, that came from osrt.
 
-  Speaker 2 21:39
-Yeah, all the different teams they can log into check marks, and that's where they do bulk of the work. Default positives and the remediation. All that stuff happens within checkpoint, and then once they click on it, it goes to. Then, it automatically creates a ticket, right? Yeah, well, they have to set us a bunch of settings using IDP and AVR does up every 15 minute pull from check marks.
+  Speaker 2 06:10
+Yes, yeah,
 
-22:02
-So every 50 minutes, there is a sink. AVR basically pulls the data from check marks and pulls pushes into AVR. Yeah, the plug it? Okay, how did you know how blackjack works? Is it same?
+  Speaker 1 06:10
+Ryan mentioned to me that he wanted to see if we could add 25 more apps, and then he wanted to do some kind of like intra. Ground truth. A, b testing. Something to that effect. Yeah, I haven't heard that one. Um, interesting, like looking looking at data between the components.
 
-  Speaker 1 22:13
-I am not familiar. No, I'm I'm assuming it's similar. Probably, there's a pool, but I, I don't know. Yeah, I think Jr.
+06:32
+Like, um, like he wanted to be able to test and I'm paraphrasing and probably paraphrasing poorly, but I think what he wanted to do, was he's. He was worried that now that we've indexed so much on the ground truth 50, that the llms and the harnesses are really like tuned to be good at the ground truth 50.
 
-  Speaker 2 22:23
-Uh, the other guy. Yeah, but that is the piece that I need to figure out, but this is broadly what I'm seeing, right? So, I mean, it makes sense to you, right? Yes, Christian. All those guys. And okay, but this would go against, uh, you know, check marks one right for a CA?
+06:51
+And
 
-22:47
-And I mean, if you're gonna? Um. But check my form, we let's start with SAS. I mean, you're getting SCA for free.
+  Speaker 2 06:52
+So what
 
-  Speaker 1 22:56
-Comparison. We can do whatever we want, right? Yes,
+  Speaker 1 06:52
+He wants to do is have like a like a control set to, then you know like that they haven't necessarily been trained. Or, um? Improved on the test. That's still like, known good, you know what I mean?
 
-  Speaker 2 22:59
-Of course.
+  Speaker 2 07:04
+Oh, okay. But would the llms actually learn data from these. This is, I mean, as part of the Enterprise agreement that we have with all these Frontier models. They're not supposed to learn anything right from the data that we use. So, why would he say, yeah,
 
-  Speaker 1 23:00
-When you want to get it for SAS,
+  Speaker 1 07:19
+It may not be the models they may be tuning the harnesses based on the findings to try and like, so this is probably on the new harnesses that they're developing.
 
-  Speaker 2 23:02
-The idea, I mean, again, leadership will have a different idea and all. For me, you can't put all your. Get our eggs in the same basket.
-
-  Speaker 1 23:12
-Just just like we do say everything goes to llm. Check marks becomes obsolete. These things become oscillator. I mean, everything llm is so Advanced that it can do the whole check marks Thing by itself. You run a scan. It will give you everything, right?
-
-23:30
-And it's probably gonna get end there in a year or two, right? So, it's like, a couple of years,
-
-  Speaker 2 23:34
-Yeah. So,
-
-  Speaker 1 23:35
-In fact, does that you still don't want to rely on one? Yes, one
-
-  Speaker 2 23:39
-Tool.
-
-  Speaker 1 23:39
-You don't want to rely on one tooling, right? So that's, that's the key.
-
-  Speaker 2 23:43
-So,
-
-  Speaker 1 23:43
-Check marks you do. What check marks is doing black duck should do black duck is doing? And then I'm trying. This is the first time, even a joy said, and you, he asked me the question in the email, saying, can you can this replace black duck? I said, no, we have to do a full side by side, yeah.
-
-24:00
-They want to get rid of. For many years, they've been saying we have to get rid of black duck so. I mean.
-
-  Speaker 2 24:07
-Everything.
-
-  Speaker 1 24:37
-Everything. In blackjack, I upgraded. I enable a few more features. It gives me a very reliable, less bomb. Then, we. Then, we basically plug this in. It gives the enrichment everybody wants. That's my case agreed now, but yeah.
-
-  Speaker 2 24:51
-So honestly, Rudy. I mean, there is that confusion, right? Are we gonna keep doing? What are you going to stick with Rudy? Sorry, are you going to stick with the black duck? So that decision is what prevents everybody from turning on these new features within black duck or anything like that.
-
-25:07
-So, I think we, if you have like a commitment saying that, we're going to stay with black duck. I think we should explore all those features. We are, we are in that wave. We just we just renewed it for one year. Yeah.
-
-  Speaker 1 25:21
-Yeah, and one year, and I should be able to evaluate this. I should be able to evaluate all the best of breed of backed up, I should be able. That's what I'm asking here, right? In one year, I should be able to do this to come back and say, this is what it is, right?
-
-25:33
-Yeah. That's what I'm thinking. Yeah, absolutely. And they were saying.
-
-  Speaker 2 25:38
-They want us to move to the SAS version of black duck, right, instead of on-prem?
-
-  Speaker 1 25:44
-Version, which is called Polaris, right.
-
-  Speaker 2 25:49
-And then there's
-
-  Speaker 1 25:49
-A hosted version where even I got pulled in and that, okay, on-prem, to hosted as is on-prem to post it with reduce instances. Imagine the cost of trying to do this mapping. I mean, ngdc, CC, how complicated is it? Why would I do that exactly? You
-
-  Speaker 2 26:04
-Should not be really. I mean, I I really hope this has been the case for the last three years, right? So I, I really hope that you can. Turn these things around, I, you know?
-
-  Speaker 1 26:16
-They'll put stuff on me every day. They throw stuff at me, so I'll have to figure out now, which I have to fix always as first, right here. It's a mess. Yeah, can you imagine my head hurts looking at that, right? So? And but, anyway, yeah. So, this is what I'm what I'm trying to do so broadly.
-
-26:35
-This is great.
-
-  Speaker 2 26:37
-Yeah, forget, get this, uh, we are already late. I have to get to a separate meeting, but?
-
-  Speaker 1 26:43
-Uh, yeah, so those were my my key things. Okay, okay, okay,
-
-  Speaker 2 26:46
-Hold it. And did you? Was there any any talk about the the promotion or anything like that? It
-
-  Speaker 1 26:54
-Will, I think, yeah, I mean, I can't. I can't share the details of anything, but that discussion is in process.
-
-  Speaker 2 27:01
+  Speaker 2 07:28
 Okay,
 
-  Speaker 1 27:01
-This question is the process, like the calibration and all happens in October, November. I don't know when they do the decision, whether a certain Milestones which have to be met, so that is happening up to through November. I think the official decision comes in January or something, okay, all right, thanks.
+  Speaker 1 07:28
+They're probably they're. They're doing it and testing against the ground truth 50 and trying to improve Precision recall F1 and their concern. Is that their index or that they're they're probably just like over fitting the model for those gt50. Oh, I see, okay. Yeah, that makes sense.
 
-27:17
-So, when will the final one? So, I think, December, they don't do anything. Uh, but. But yeah, I mean. Discalations would be there. Okay.
+  Speaker 2 07:50
+I mean,
 
-  Speaker 2 27:28
-And the one. One last thing is the RFI, right? So, yeah, before you leave, I'll quickly show you the update on the RFI, so they did respond, right? The call? The psycho did respond, but just please see this email from. Crystal, so Christian and chiradeep. They've again sent another 10 plus questions.
+  Speaker 1 07:51
+So I,
 
-  Speaker 1 27:52
-Huge email, which kind of changes everything, right?
+  Speaker 2 07:51
+Yeah,
 
-  Speaker 2 27:55
-So he comes in. Yeah, my request is please, you know, have a joy talk to chiradeep and Christian, saying that, you know, we can chat leave in the chat, right? But I don't know. I, I don't see him participating in the chat, so ask him to please have a conversation with Christian to not do any of this being the RFI.
+  Speaker 1 07:51
+He said he was asking when we were going to add some more apps. And I said, you know, I don't know if we have anything in the pipeline or Rudy. Got any of the additional resources approved yet? Yeah, that's that's a little frustrating as well, so.
 
-28:14
-It's gonna again start the entire process and we'll go all the way to February or March. Nothing will happen meanwhile. I'll bring it
+  Speaker 2 08:05
+As I keep saying that, you know, yeah, we should do it, but I've mentioned the resource stuff and nothing happens after that. You know, it's like, a I don't hear anything back. It's, I think Julie is mentioning this for Joy. There are those talk about contractors, but nothing really materialized after that, so it's.
 
-  Speaker 1 28:22
-Up. I'll ask him in my one-on-one. Yeah, that's also. Yeah, it's not a one-off topic where I keep him saying, hey, this is something. Have you watched it, but? Yeah, I should. I should make a list. Uh, the funny thing is Christian and shiadeep.
+08:27
+It's more of the same since then. So I, I believe, we should get somebody full timer, right? So, we cannot. I have a contact and learn this thing. Just run away. Yeah, that's that's going to be a little challenge. So, yeah, yeah. I mentioned all this to him, so I hopefully.
 
-  Speaker 2 28:37
-Who are always part of the entire RFI. They were there from the beginning they could have, and I did specifically asked children. If you have any questions, he did send me questions. I did add those questions to the RFI, so it's not like they weren't. Yeah, now. He's like, come back, and he wants to broaden the scope of the RFA.
+08:50
+You know, taking this up. But yeah, I, yeah. Yeah, I agree with that idea. I, with 25 apps, is, I mean, but we still have to carefully. Identify those 25 apps, right? So, it cannot be more of the same as to what we have. It would be
 
-28:55
-We cannot keep doing that right, so? Every three months. Yeah, yeah. Yeah, yeah, yeah.
+  Speaker 1 09:11
+Right, right?
 
-  Speaker 1 29:07
-And, and the other note, I don't know if you saw, but.
+  Speaker 2 09:12
+Yeah, it should be slightly different in terms of. So, that'll be an interesting challenge to see, you know, what would be what would add value rather than just blindly selecting 25? From the you know from the population? Yeah, so, yeah, yeah, if he, if he has any insight into that, and you know, open to it, obviously, so?
 
-  Speaker 2 29:10
-Check marks is also now on the anthropic Marketplace. So they, we get some credit if we use anthropic through check marks something like that, so it's some. They got some weird deal. I don't know how that works, but yeah. Does that give you an interface to?
+09:35
+If I, I haven't heard, I mean, only hearing it from you now, so? And maybe if it makes sense, even if you don't have the resources for it. Whatever Cycles you have to develop, like, what at least what the strategy looks like for the gt50. Like it, does it make sense to continue to add more apps?
 
-  Speaker 1 29:33
-It means that instead of us being anthropic directly. We pay check marks. And we use check. Mark check marks would call anthropic through us.
+09:53
+Does it make sense to validate more of the findings to run it against. Additional models, like, it'd be great to kind of have your point of view on what the road map at least looks like, oh yeah, I did put the.
 
-  Speaker 2 29:49
-So, and the advantages. Whatever anthropic tokens that we consume, that cost would be offset offset by the license cost of check marks product itself. So, if he, yeah, if you consume the tokens through check marks, then we get a. It's not like a complete one-to-one, but there's a discount if.
+10:09
+I asked.
 
-30:11
-If you are using anthropic 2 check marks.
+  Speaker 1 10:12
+Khalil and all to create. Let me share the screen again. So? At a level 3, there is a. A ground truth sort of an epic. You know which basically is tracking everything right? So expanding to, so you have talked about IAC, right?
 
-  Speaker 1 30:14
-Already contracted, so it needs to need it would be a new. It would be a new somebody has to do a cost comparison going directly to anthropic or going through check marks or something like that? Yes.
+  Speaker 2 10:34
+Yeah,
 
-  Speaker 2 30:27
-So, yeah, there's some cost involved. It's not very clear as to how the the numbers would work, but they are saying it will be. Instead of trying to do it on your own. If you do it, you know, check marks and check marks. License will offset the cost of the the Frontier models, especially anthropics.
+  Speaker 1 10:34
+So that's something we, I obviously won't have to do and want to do so. That's. And. And the multi-native thing that I talked about. And then, this is the BAU stuff. And then, Rudy also wants to migrate. Right now, we are doing it locally. He wants to put it on gcp or on a cloud platform.
 
-30:43
-So that's what that agreement means. And he's, you know, the yeah. They're trying to get everybody's attention and all that stuff. So, I sent you that email, right? So? But that's the one top.
+10:57
+Um, maybe there is some value to it? And then you know the other stuff is obviously the IBM counter, so anything that's coming around gt50 is, you know, I'm just adding it here. I got you. Yeah, I mean anything else that you think that we need to add there?
 
-  Speaker 1 30:54
-Knows, he's like they are trying to send emails and.
+11:17
+Yep, absolutely. I. Yeah, the idea that you just had mentioned and? Now, I'm I'm right now, I. Don't have anything new, but yeah, I'm open open to changing it to make it better so. I'm thinking, um, you know, my understanding is that the request for additional capacity to support it as part of the 2027 budget?
 
-  Speaker 2 31:04
-You know,
+11:44
+Okay, I don't know if there's been anything put in to be to be incremental this year. I'm not sure. Yeah.
 
-  Speaker 1 31:05
-Can you keep me in the loop? So, what is happening there? No, no, they are reaching them. I'm not involved in that they are rarely reaching out to all these people. Anybody that you can reach out to within Wells Fargo, so. But I got that email. What I got.
+11:55
+So, how's everything else going on the BAU stuff? Yeah. So, yeah, what did that conversation around with Jeff, right? So, I did ask him if he could give us access to Frontier models the way he has, he said. He'll speak to Ryan Lynn and get me access. So, yeah, hopefully that will get us access to all these different.
 
-31:18
-I followed that to you. So. Which is fine, I mean. If it is important, will mention it, right? I mean, I can't. Uh, so apparently I joined. This was like, a week ago, I did call. The check mark, CEO. This is, I got through the when I was chatting yesterday, so.
+12:18
+The new Frontier models and all that stuff so I could use that for.
 
-  Speaker 2 31:40
-Put, whom with the CEO he directly called the CEO, Checkmark CEO. I forgot his name. The Indian person. But yeah, he called, uh, directly, and he said, yeah, that's true. That's something new, and he just wanted to confirm that that's accurate information or not, so. I think he sent it to chiradeep and shiradeep forward it to a joy.
+12:24
+For this one, the multi-rated education. I, I just. I didn't mention this idea to him, and he was, like, yeah, we should, you know, we should do it, and it looks like they are also getting lot and lots and lots of. Evaluation stuff. That's coming in. So, he said, he'll, and I did put in the air request also, but that's gonna looks like it's gonna take a while.
 
-32:05
-I don't know what, how it, but somehow ajai got the wind of it, and he called the CEO, and to find out if this is true or not, so.
+12:47
+To get through.
 
-  Speaker 1 32:17
-X is a very collaborating with one email you forwarded to me, went to children.
+  Speaker 2 12:51
+Yeah, and I mean, how do you envision the architecture for this thing? I mean, is this going to require an app ID?
 
-  Speaker 2 32:22
-Yeah, who told you that a joy called the CEO, who told you that check marks people?
+  Speaker 1 12:57
+Right now, it's all under sitting in vcm. Vcm is the umbrella. App. All things that doesn't fit anywhere else. Yeah, yeah. But if you do an app ID, that's yeah, that's gonna. And have its own admin cycle.
 
-32:30
-Okay, I'll basically check marks. Don't call me out on it. I'm just giving you whatever I heard Said. Yeah, yeah, yeah, okay, yeah, don't. Please don't mention that, do I? I'll get in trouble otherwise. I'm not going to mention it.
+  Speaker 2 13:15
+Yeah, I mean, we we're having to stand up a new app ID for the secure development Playbook work, right, particularly the control plane to manage all of it because it's a it's basically a big data exercise. Yep. And
 
-  Speaker 1 32:48
-So the email that you found already. I took a look at look at it, and okay, good that he knows, but they are reaching out to everybody, right? Yeah, they're internally. Whatever contacts they have, they are trying to reach out to whoever they can, I said, yeah. Okay, okay.
+  Speaker 1 13:31
+So we're doing that with Tony lumpone, but the sunrise process, as you know, is a bear. Oh yeah, okay. So to make that that seem like production, uh? It's being used, right? The the playbook stuff? Yeah, yeah. Maker and Checker are both being used in production on paas and eplx.
 
-33:08
-All right. I'm sorry, okay.
+13:50
+Oh, okay, nice.
 
-33:15
-Okay, yeah, that's I think that's pretty much all I have. Let you know if there's anything?
+13:56
+Yeah, so we're
 
-  Speaker 2 33:21
-Yeah, yeah, let's do this, uh, I need. I'm actually late to a meeting I need to get to all, right? Well, okay, all right. Thanks.
+  Speaker 2 13:57
+It's been a pretty interesting challenge, right? The the checker part is pretty much good to go, but the major part has been really interesting, and you probably appreciate this as a, you know, an AI connoisseury yourself is basically, you know, the we're forcing the llm to to be more deterministic, which it really doesn't like to do.
+
+14:17
+Oh, right, okay. And so, we're we're seeing a lot of struggle with. Effectiveness. In the coding agents using the new skill. Right. Like, at first, we were trying to give them some leeway into deciding when to use the skill and which recipes to pull. And we were finding that, you know, there was a very low.
+
+14:39
+Effectiveness of the llm. Understanding when to turn the skill or when to use the skill when to route the skill to a particular recipe, which recipe to use, and so we were seeing a pretty low Effectiveness, but? You know, we've made some some improvements to it, and some some changes that I think will make a difference.
+
+14:57
+But I still think we have to be very realistic about what we're going to get, you
+
+  Speaker 1 15:02
+Know, I'll
+
+  Speaker 2 15:03
+I'll be honest. We'll, I'll be surprised if we ever get above, on average, 50 prevention from a maker skill enabled in a coding agent. Oh, okay. But the real. The real driver in race production is the Checker that we're running in pre-emerge CI. Okay. So that that's identifying a lot of step one's instead twos.
+
+15:27
+Oh, okay, and are these using?
+
+  Speaker 1 15:30
+Like, at least using, like, or what models are these using? Let me get some stickers. Yeah, so right, right now. It's um, the the maker.
+
+  Speaker 2 15:41
+Is is just an agentic skill set that's being used by whatever coding agent you're using. So, GitHub co-pilot and Devon right now are the primaries. Okay, we're going to be building the plugin for. On code as well, and it's available in devex, but it has to be invoked. So, nobody's really using it?
+
+16:00
+But then the Checker is Devon Beast.
+
+  Speaker 1 16:03
+Oh, I see the problem with the problem with Devin is that it's very expensive. Right here. And so the? So, so we're in parallel. We're building out like a um. A proposed architecture to do. You know, an mCP and llms and all that kind of stuff? Nicely, okay. So,
+
+  Speaker 2 16:24
+I think we could probably do it cheaper that way,
+
+  Speaker 1 16:26
+Right? Yep, yeah, that makes sense. Do you see any scope for adding the deterministic rules like within check marks and stuff? To supplement any of that? Eventually, so I think it creates a feedback loop, right? Like, so, yeah, exactly. Yeah, what we'll be finding is. You know, and you, you probably know this better than I do?
+
+16:49
+But check marks runs as part of the pre-emergency eye process, doesn't it? Yeah, it does. Yep. It's
+
+  Speaker 2 16:54
+Just we don't block on it. Yeah, right.
+
+  Speaker 1 16:56
+Not today.
+
+  Speaker 2 16:57
+So, I think we can deduplicate across those findings, and then anything that the Playbook finds the check marks doesn't find should be part of the rapid process, right? Yeah,
+
+  Speaker 1 17:08
+Exactly. Or it could directly come to us as an intake, right? So? Yeah, I sort of mentioned this in one of the. Around, alongside the ground truth, you know, this could also be something, but? For some reason. Enjoy! I didn't hear it officially, but through Rudy, it looks like he turned it down.
+
+17:27
+He was, like, not very keen on doing something like that, so.
+
+17:33
+Yeah, I mean, I, I think we have to start thinking about how these agentic Loops create self-healing capabilities, right? Yeah, exactly. Yeah. And there has to be because I'm already doing that, but the skills and with the Playbook. And so, that's exactly what the.
+
+  Speaker 2 17:49
+The secure development control plane does is we get all that information, and then we're seeing what we're identifying and where there's opportunity to improve the skill, right? Absolutely! We can trigger the direct PRS to the to the skill and to the um.
+
+  Speaker 1 18:06
+Playbook
+
+  Speaker 2 18:06
+From the from the secure development control plane. Yeah, exactly, and?
+
+  Speaker 1 18:12
+Is there any documentation around the maker and Checker Mike? Is there something I can just? Yeah, there definitely is, um, there's a Confluence. I just have to get a link for it.
+
+  Speaker 2 18:26
+I know Raju and Arielle from the eplx team have been building out pretty robust documentation set on it. Okay? Yeah, I'll take that as a note to share that with you. Okay, sounds good. Okay, yeah, the other stuff is you mentioned.
+
+  Speaker 1 18:44
+Bau, right? So, I mean, I would say the RFI is not BAU, but yeah, the RFI is still. Ongoing. I don't know if you've heard the latest, but.
+
+  Speaker 2 18:53
+Yeah, the latest is, they turns out, Christian Adams realized late in the cycle.
+
+  Speaker 1 19:00
+That psycho, one of the vendors that he is familiar with, was not part of the other. They never responded to the RFI, the initial RFI. Okay, and he wanted them to respond so. And he had his own set of questions, him, and shiradeep again. So he added a bunch of more questions to the RFI and.
+
+19:19
+Yeah, so we basically sent the open of the RFI and resent that additional set of questions that are over like 25 of them. Back to all the vendors, and now they are in the process of answering them. So? So, yeah, that's some additional work there, and the goal is.
+
+19:37
+Yeah, what once? Once all these questions are answered, include the additional ones we will rate them. Uh, and there's a meeting with Amit which, like, obviously, you know, it was supposed to happen like earlier this month, but you know, it has been? It's being delayed. Obviously, it's sometime in November now.
+
+19:58
+Uh, he has requested a bunch of people to rate. A couple of people from cdxo from Christians organization and. From hours couple, I mean, just me and Rudy from outside. And then look at all the results and then make a decision. So I, it seems to be like going on and on, so.
+
+  Speaker 2 20:20
+Do we have any kind of estimated timeline we're going to make a decision? Is it before the end of the year? Yeah,
+
+  Speaker 1 20:25
+It's that meeting with Amit, supposedly the the decision call, right? But that's like delaying that kept it keeps getting more because of all these questions that Christian. You know, he wanted to add a new vendor. There are new questions and. So, due to various reasons, it's like getting delayed.
+
+20:45
+So right now, it's like November, second week. So, that's the tentative. Decision date. Okay, yeah. And and check. Mark and I sent you a note. They want to publicize it to everybody that they know office. They are on the marketplace for anthropic. So it. What that basically means is.
+
+21:14
+If you pay for check marks licenses, you can offset that cost for anthropic cost as well. Got it something to that effect? Yep! Not the entire class, but like, maybe portion of it. I don't know the actual specifics, but yeah. So, if you run to an effective, you run.
+
+21:34
+Frontier scan through check marks using anthropic model. You don't have to pay the model and check market the same way you can, just as we just pay check marks and get that cost detector from your. Androphic token cast. Got it. Yeah, is that factored into the overall price? Yeah, it would be right, so?
+
+21:59
+So, if you were to use, check marks 1 and Frontier models through check marks one. You can still use our harnesses that we build and trigger it through. Check marks one. But the yeah, the price we can. We only have to pay check marks. And we don't have to again pay entropic, so there is some cost savings.
+
+22:20
+Supposedly, I don't know how, yeah. And I think I think you'd want to make sure that that's factored into the deal. Economics, right, yeah, of course. Because I mean that that'll be conversation fodder for a minute for sure. Yeah.
+
+22:38
+Yeah, yeah. For that. Yeah, that seems to be going on and on. At this point, it doesn't matter. It doesn't have to be check mark, so you have to just pick a vendor. Because the on-prem solution is, you know? We have sort of given up on it. They are.
+
+22:59
+You know, they're not making any significant improvements. Right. It's only maintenance at this point. I mean, the bank will miss out on new stuff. We have to switch to some vendor, right? It's not check marks. Whatever it is.
+
+23:20
+And the and the other stuff is the IBM concert piece, right? So, I wanted to mention that as well. So? I know what, but you. I mean, there's been a lot of talk, but I, I was able to get a few couple of meetings with the IBM folk and.
+
+23:36
+The console is, basically, it's not a scanning tool, right? So? It's basically a AI tool. Which can bother look at the existing set of findings from scanners including check marks. And it uses Frontier model access AI. It needs AI Frontier model. You know, keys, and stuff so it can basically take the existing findings, and it'll tell you whether those findings are.
+
+24:01
+Exploitable, not exploitable, or, you know, needs more info. So it's sort of like kogia in a way. Okay, no, I guess that makes sense. Yeah, yeah, so? And then
+
+  Speaker 2 24:15
+It except Corgi didn't identify exploitability, right? Yeah, it
+
+  Speaker 1 24:19
+Does not. Yep. So, yeah, this one, they're saying it can do SCA plus SAST. So it can if there is a third-party library that's vulnerable? It can tell you whether that's actually being used. You know, a lot of the vendors have this right, including check marks so. It's not a.
+
+24:38
+It's not like an original new idea, but yeah, they're saying, you know? You can do that, you know? Just because the third-party library is vulnerable and the application using it doesn't mean you're actually exploitable unless you actually have. You know you're making a call to that? Vulnerable component within that.
+
+24:58
+And within that third body Library, so? And they also support only a limited set of languages. They only support like Java, JavaScript, and a couple of others, but Then, we are planned expand to more so. It looks like a. The product that they want. You know, it's not there yet, but I think.
+
+25:23
+Um. Yeah. Maybe there is some value to it, but yeah. I don't think it's that public yet. They're just trying to test it out with. Large organizations. Yeah, it
+
+  Speaker 2 25:36
+Seems like a Christian Pet Project. Yeah, so I, I mean. Within the gd50, only 12 of them could actually be tested, right? So?
+
+  Speaker 1 25:47
+At this point, they're trying to figure out how we can get internal git repo access. So that the console tool can look at these. Of the gt50. And then they wanted, wanted me to basically give them check mark scans right of those 12 components, which I can. And then.
+
+26:08
+We would basically measure the Precision recall only of those check mark scans in the ground pool in the ground truth output. So, that'll be the limited evaluation that we can do. So they can't look at llm static analysis.
+
+  Speaker 2 26:29
+I didn't mention that, yeah, maybe they could? Because I think that would be probably more interesting. Maybe just as interesting in combination?
+
+  Speaker 1 26:43
+Yeah, but they wanted that raw output from the scanners. So, if you were to use an llm scanner, then? We would have to get that raw output you mean like the the? The the huge set of Json priority. And yeah, we can give it to them, but again, you know?
+
+27:02
+Their scope is limited. They don't scan all languages so. It would be a subset of that.
+
+  Speaker 2 27:07
+Sure, but I mean, for those 12 apps, it'd probably be beneficial to get them all the results that we could, right? Okay, yep, might
+
+  Speaker 1 27:13
+Go. Yeah, I think I could do that here. I mean, at least, you know, when we were early on in glass swing, and we spent a lot of time with the pen testing team. They, they. They found that most of the findings were not actually exploitable, right? Yep, and I wonder if that still holds.
+
+27:31
+Yeah, it probably does. I mean, we probably have a lot of defense in depth in terms of firewalls and all that so. I mean, I'd have to imagine if we had over a million plus open, exploitable vulnerabilities. We would have had an incident. Exactly! Right? Yeah, well, I guess it's good to be cautious.
+
+27:51
+Yeah, of course, yeah. Okay, well, I know, our time for the, I appreciate it, um.
+
+  Speaker 2 27:57
+And then I'll get you that Confluence link. Okay, sounds good. I know Mike one last question, so I know the calibration and stuff is happening, but Do you know if my name was put in for any like promotion and stuff or? I don't know, I don't know, um. I know I gave my perspective to a joy and to Rudy.
+
+28:20
+And, uh, you know they, they were. They were carrying forth with all the promotions on Rudy's team, but I haven't had visibility beyond that. Okay.
+
+  Speaker 1 28:30
+All right. Yep, thank you. Thanks, Mike. Yep, thanks Pete. You have a good day take care, bye!
