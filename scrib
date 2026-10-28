@@ -1,797 +1,461 @@
-  Speaker 1 00:02
-I don't think I mean, he was going. Yeah, he has to, but I, I. Think so! I don't know if. He hasn't responded until now. He here. You should. Probably you should be there in the meeting. But I, I think there was a meeting this morning with the vendor, right?
+00:17
+Big. Hey man. Oh wait, this is getting a lot of people riled up within. Didn't do Wells Fargo so? What'd you say Bob? Hey crazy morning! Good morning.
 
-00:20
-So, I think they got the when we mentioned predicted, predicted, simid. So they went and did some work. Internally. Tracy. And they also were seeing the correlation now. So? I think maybe they got some insight from the vendor. As to, you know, we can, potentially, Tracy's team, right, Sai, and others.
+  Speaker 1 00:39
+Hello, hello.
 
-  Speaker 2 00:50
-In the vendor signing off on that, we have
+01:24
+Okay, so
 
-  Speaker 1 00:52
-To. No, no, the vendor hasn't signed off so, but? Looks like they're also trying to follow the same approach and? So they are basically at where we are right now, like 10 days ago. Where we worked 10 days ago so?
+  Speaker 2 01:24
+Do we need anyone on your side Tracy? Let me see if I can gets.
 
-01:13
-I mean, I showed you the the logic right as to how the C mighty is changing.
+  Speaker 3 01:41
+He wasn't by the grain. Yeah, I see him in the invite, delicious.
 
-  Speaker 2 01:18
-Yeah, but they, you already gave them the logic, right? We gave it to the vendor, the none of the internal teams know, so.
+  Speaker 1 01:57
+Hello, everyone.
 
-  Speaker 1 01:26
-Tracy inside, none of them know.
+  Speaker 4 01:59
+Hey!
 
-  Speaker 2 01:29
-How can I find that out? I,
+02:03
+There, he is okay, perfect. I think we have. A forum here, so I think we can get started. So, how would you check marks? Okay.
 
-  Speaker 1 01:32
-I don't know, they've probably got it through the winter or when we mentioned it could be predicted. They sort of try to do some simulation or whatever, but
+  Speaker 1 02:13
+Uh, it's just a big rhythm from yesterday. Call for the people that were on the meeting, so.
 
-  Speaker 2 01:40
-Oh, but we have to land on energy once it's done by November 15th. Correct, and one and one of the things we should, uh. So two things we need to do? One is. Getting this unblocked? What is the problem with carrying all the queries can? Can we not just pivot and just do that?
+  Speaker 5 02:19
+We did the POC on our side in order to try to understand if we can. Do a small tool small console app. To maintain the previous query IDs from the original installation to the new one. And we did that. So I have here some something to show. I will share my screen.
 
-02:02
-The query ID won't change, right. All the queries remove from their legacy to ngdc, right?
+02:39
+I cannot share. Yeah, I will give you the access one second. Okay, okay.
 
-  Speaker 1 02:09
-That's actually. Yeah, simple. Pretty simple, but the problem is, it will come with all the all the craft in the old. We cannot selectively move the queries you'll have to move everything. Yeah, just move everything and then apply whatever logic you need to apply for purging. It can take three months, whatever time, yeah, yeah.
+  Speaker 2 02:45
+Yeah.
 
-02:25
-That's, I mean, that's a precious conversation, right? So, they have been trying to do that in the current production environment before the injuries immigration event started, right? They were not getting anywhere with that. We are able to. You see, if you don't do that, first of all Rajiv goals, that's why he's.
+  Speaker 3 02:46
+So, while we're getting all that set up, we asked this question months ago, and we were. And most recently, we were told that those tables, there's query ID tables or query tables are protected, and there's no way to carry that data over. So I'm curious why this is coming to light.
 
-02:44
-He's one of his goals is to ngdc migration for us. We will lose control. For us, we will lose. Other stuff will get out. Right? Of course. Yep. I mean, but they are against doing Aziz migration.
+03:05
+Now, when we've been trying to look for a way to do something like this for months?
 
-03:06
-If that's what you're suggesting so, but let them make a decision. So when do we announce this after the vendors meeting tomorrow? Should we set up another call internally and let them know? This is how it works, and you can use this.
+  Speaker 5 03:12
+The yard, the yard, but we are the and our approach now is to use our installation setup. To simulate like a new installation for the query so? We will create if I okay, I can share my my screen. Yeah, go ahead. Yeah. I will share it. Okay, so? In order to achieve, in order to achieve this.
 
-03:22
-Can you repeat that? What? What are we doing? The we have a vendors meeting tomorrow, right? To confirm the the sim ID drift approach. A vendor has to sign vendor if vendor doesn't sign. We cannot do this. A vendor is okay with it then. We get an answer internally.
+03:36
+We need to create two two tools, one of one of the first tool is already almost implemented. So the first tool we will go to the initial database, we will try to extract. All the override queries that even was asked yesterday to practice, and he already sent me. The number of overrides that you have in the database, the number of groups that are associated, the query source that is associated so with square width is true.
 
-03:40
-Correct? Or, do you want the vendor to? Tell everybody how this works.
+04:03
+We will extract this information and we will create the XML files that are the same ones that we are using internally. When we are developing developing the queries, so we will create XML files with the same structure. For the ones that we use internally to maintain the queries to update them quickly one, so we will have the same scope that we have.
 
-  Speaker 2 03:54
-We have given a logic vendor should come back and say. Please follow this logic. We stand behind. Okay. Right, okay?
+04:24
+For instance, for product queries. This tool is responsible for that, so it goes to database extract, create the files, create the same structure by language group and query query and with all all the IDs are the same that are in the database. And above 1000 or 100 000, they will be kept.
 
-  Speaker 1 04:03
-Yeah, let them let them do that.
+04:46
+So, the second tool is an extraction from our setup. That.
 
-04:08
-Yeah, I'm trying to move. Move this forward if this is not accepted, then nothing is going to happen, right? Yes, so we, we don't want to. I don't want to get into, like, our logic or their logic or whatever, so it's not. It's not a race to get to the logic.
+04:55
+That then we don't need here for. For this for this approach, so the second tool will take those XML that are the same. The ones that we use internally. But now, with the queries with the yard overrides. And we will do some change to our setup because our setup is prepared to update queries to delete the deprecated ones to create nodes so, but this we want to we and is not prepared to deal with override, so we need to change that we need to to take the filters for the overright ones.
 
-04:22
-It's a question of vendor trying to see a what is the right logic? Yes. Right? Yep. Yeah, that's the you wanted that meeting on Tuesday, so I set it up for tomorrow and. You know, hopefully, they looks like that. It sounded like it. They are okay with it, so.
+05:27
+We will create a weight for the setup to go over the one 100K IDs. We will take these xmls. It will pass the same way that our product quarant will pass. So, it everything, every, every Ash that is created every query version. That's great. It's the same as the.
 
-04:49
-And I was time for some additional data. On his current scans. And I'll use that to substantiate whatever data that we have.
+05:47
+Of Base installation. And we will populate all the four tables with the same structure that our installation does. That's why we can achieve. And not directed by scripts or. Passing. Where is from one side to another? For this, we have a plank. Yeah, we have a plant that is.
 
-05:06
-Yeah, so my my thing is, we are not moving. We had a meeting we had a plan. Why are we not? When do we we said we will time box it, right? So tomorrow is something we have to decide. Yes, whether vendor vendor approves or not so that that's what I am worried about.
+06:11
+The first part is okay, based on our schema, extract the code, and create the the files. Then we have the the reader. The second tool we have here those files, our our mapping, that we need to do slight decisions it will inserting, like. It was a acquired from product, then the first the.
 
-05:24
-Correct.
+06:35
+First, the other time that we did to test everything to understand and to ensure that insertions are in the in a good way. Uh, and I believe, from the POC that we did yesterday, we can achieve this with success. And for us for us? I believe this is more secure than to try to generate new similarities and try to populate all the tables that we have even on on your side on other tools that are not check marks.
 
-  Speaker 2 05:24
-Yep,
+07:05
+With all similarities Souls. This is our approach. This is our plan, I believe in, in two or three days. We can have a solution for this. The first part is already done. We are already testing it to under to ensure that the XML file is being well for the well generated.
 
-  Speaker 1 05:25
-You have sent three options option. One j9 has to come back to us on that. So, maybe if you? On his approach. I mean, that most likely is not an option. The second approach is ours. We will confirm that with the vendor tomorrow. If the vendor is okay with it, we'll go ahead with that.
+07:23
+And that's the plan from our side. And from the information that we that I have from the files that probably sent yesterday. We have. 40, 000 rows inversion in query version, but only. A thousand of those are active, so you, we, we must deal with a thousand queries to insert.
 
-05:45
-If not, we'll have to do. The third option, which is the as? Yeah, so should I just reply saying, have you made any progress on any of these, and you can reply option two? We have a meeting for the vendor or? How do you want to do this?
+07:47
+And those thousand queries are sharing 995 query sources. Only five credits are sharing the same Source because the same golden we have that implemented in our product. So, we did. We, we must deal with 1, 000 queries from the information from the facet patient yesterday. I don't know if probably if this makes, is it checks with your initial validations or not, but that's what I get from the files then.
 
-06:04
-Yeah, they're all aware that there is a meeting tomorrow because the gun freeze in the call. Earlier, he mentioned that, you know, pradeep has a meeting set up with. When is that meeting tomorrow? Uh, it's at 6 30 a.m. Pacific.
+08:18
+Yeah,
 
-06:27
-6:30 a.m. Pacific. Okay, my friend, because okay. Same ID drift. Okay, okay, so I, I should. I just say you have option two. We have a meeting with the vendor. Do we have we made any progress on option one correct? Yeah, and that's okay. This approach?
+  Speaker 2 08:18
+So it's, it's not a thousand. There are about 445 queries. So, yeah, I do have, like, a couple of questions, right? So, if you go back to your previous couple of slides, yeah, okay?
 
-06:57
-Should I just tag?
+08:34
+Okay, so the when we extract, can we only extract the ones that we have to transfer, or we do the filtering after we extract?
 
-07:02
-J, n. I mean, you already tagged them. So.
+  Speaker 5 08:43
+We, we must attack only the ones that we want to transfer. Okay, perfect,
 
-07:10
-I tag them on Friday, right? Was it Friday Thursday? Uh, yeah. It's asking for an update, I don't know. I don't think the the I want to know.
+  Speaker 2 08:47
+So you
 
-07:27
-What I'm doing. Okay, so. Uh, yeah, one second here.
+  Speaker 5 08:49
+Can extract everything, but I believe it will be garbage for the new right database. Yep, and
 
-  Speaker 2 07:45
-Uh, do you have any options?
+  Speaker 2 08:54
+Then the second question is we already have Target databases with the modified queries right? Already loaded in the new environments? We have two new environments uat and production, which have not been used yet, but they are there, you know. So, would the solution require us to wipe those databases clean or start from scratch, or can we?
 
-  Speaker 1 07:51
-Do you have?
+09:13
+But on the databases you already have, those overrides yes. With different queries.
 
-  Speaker 2 07:54
-Okay on option one?
+  Speaker 5 09:20
+It's best to have a clean insulation with, let's say, do not have any override at all because. The tool that I'm that we are doing. It's not dealing with collisions. We can do that, but it's more more tricky, and it's better to have a clean solution only with. Where is from product?
 
-08:23
-Is there an option? Do we have a meeting with the vendor tomorrow? All right.
+  Speaker 2 09:38
+Okay,
 
-08:33
-Do you have an appear motion wondering before? And then, should I say we should quickly align on?
+  Speaker 5 09:39
+Imagine all the all the players out that are. Overrides must be cleaned from the season. It's very easy because probably you don't have scans or you already have scans on it.
 
-  Speaker 1 08:42
-Let's try to make a decision, right? Yeah, by tomorrow. Yeah, like, I think we can have a decision. Yeah, if you have a decision by tomorrow.
+  Speaker 2 09:49
+Yeah, we only have like test scans. It's not a live in memory, right? So, yeah, okay.
 
-  Speaker 2 08:55
-Your Tracy sent that meeting out, right? I don't know, that is, for Wednesday. Yeah, that's for Wednesday, so we could have the meeting.
+  Speaker 1 09:55
+But when it, it's it's much more secure than approaching more security. We don't have any kind of. Override because we can have collisions in query IDs, and for that we can have. We don't have a solution to to deal with that.
 
-09:04
-Or let's align on the meeting.
+  Speaker 5 10:10
+So any anywhere that is above 100K must be removed and not in the system. If you apply the solution. I mean, we cannot delete the queries, right? You'll have to wipe and rebuild is that, I mean, what's the best way forward? We, if you don't have scans if you don't have scans.
 
-  Speaker 1 09:06
-Uh, ask Tracy to.
+10:30
+If you don't have any hilation from queries to scans, or if you don't, or if losing that relation is not a problem, we can do that. The queries are separated from those four tables query version, query, group query, and query Source. That's that. The main query, the main tables for?
 
-09:12
-Okay, let me just put these two. Yeah, meaning is 100 more, and we will post an update here, right? Okay.
+10:51
+Quality management. And the problem here is if you have scans and the query version is related to the scan the problem. The query version will not be the same, so this can be loose if you do if the scans are only for tests. It's better to to remove those.
 
-  Speaker 2 09:24
-Everybody is on this, right? Who else? Who else is there?
+11:06
+Yeah,
 
-  Speaker 1 09:39
-And we'll post him a bit of an update to this friend. And we will update this slide, right? If they cannot, if they say they need more time, then we should not wait. We should just say, just move it, right? Yeah, I mean, because gone, they've had, like, two weeks to go back.
+  Speaker 2 11:06
+Right,
 
-09:55
-And, yeah, whoever, and they are not getting. And no, no, yeah, no, and whoever right size is. I am tired.
+  Speaker 3 11:07
+We had. We had started pre-loading
 
-10:09
-Yeah, there is like a disconnect between. Miguel and the r d team. Okay, yeah, yeah, the irony team is not in the U.S they are like in Portugal and? Israel and all that. Okay, all right.
+  Speaker 2 11:09
+Tracy one last question, so if I hear that, right? So you're saying we don't have to wipe and rebuild the environment? We can just delete the queries. Is that right?
 
-  Speaker 2 10:33
-Okay, okay, now, same next, uh, send it. It's been three days now. Okay, that's it. All right. So now. That was my first one, my second one. That's why I keep a little longer on these. Meetings. Let me see my list for you.
+  Speaker 4 11:20
+Yeah, okay,
 
-  Speaker 1 10:56
-Oh yeah, I'm looking. I, I started transferring. There is an app called task. Yeah, because my notebook became so big. Yeah, okay. I could not flip through my pages. Okay, because I have like 50 tasks to do, right? So? It was very difficult for me to slip, and I forgot it.
+  Speaker 2 11:21
+Perfect.
 
-11:13
-So now I have a single do I use the tax to use the task fat? Outlook task. There is a tasks app on your phone. It looks like this.
+  Speaker 3 11:22
+I'm not sure I agree with that because we do have scans that PSY has pre-loaded into producers from previous installation. No, not from previous installation. We, so we were given a tool. Um, by Miguel, that to bring over the dispositions and it, that particular tool required that a scan B in the new system in order for us to bring over the dispositions.
 
-11:29
-Okay, yeah, I have it. Yeah, it's called Google. Keep. In the. In the Android world, that's probably something in my phone, right? No,
+11:49
+And so? Um, Psy, has he worked in uat for a long time, and then we were ready to move forward to to go live until we found that there was an issue, but he pre-loaded a bunch of scans into prod.
 
-  Speaker 2 11:38
-This is not an iPhone. This is a corporate app for Wells Fargo.
+  Speaker 4 12:04
+Yeah, that's, that's my question. Those scans are already connected to the new queries or to the old ones.
 
-  Speaker 1 11:42
-Oh, is it okay, you can taste. You can basically flag an email and create a task from it. Oh, I see, yeah, yeah, that comes as part of the Outlook current. Okay, so I'm going to forward you the next one is. I'm going to forward you an email yeah.
+  Speaker 3 12:15
+Well, they're connected to the new queries that pradeep and teams set up in in GDC,
 
-11:54
-I don't know who else to ask, but you should be. On it. Okay. Um, it's a controlled thing, so that will be. The code signing control. Do you know? Heard of it being mentioned?
+  Speaker 2 12:21
+Right. Ngdc is our new environment. So, yeah, Tracy, I mean, we can manually set up a bunch of queries that those new scans are using. Yeah, Tracy. We don't need any of those cats. We can re-run them if we want. So, I think the point, right, the point is, we need to get rid of those scans.
 
-12:18
-Uh, so it's it's a pipeline thing, so it should be okay. Let me show you let me share the screen here.
+12:38
+Yeah.
 
-12:41
-Code signing implementation okay?
+  Speaker 1 12:41
+Data from the tools from those tables, right, uh?
 
-  Speaker 2 12:49
-So, we'll
+  Speaker 4 12:50
+Well, again, is, is there a value to having doing a selective wipe, or would it be cleaner just to do a full rerun?
 
-  Speaker 1 12:50
-Work with you and I can work with. This is basically CIA pipeline. Cosine is the product you are you familiar with it, who was who was managing cosine? You know, it was, not us. That, I know. But this was, I think this is one of those things they are.
+  Speaker 5 12:57
+Because everyone, it's. It's more secure to install the product from the scratch to have a clean installation for us. These are more secure approach. We can go with the the glino, but if you, if you guys are able to do a clean installation, it's it's better. That's right, that's better because we don't have any garbage.
 
-13:06
-The cdxo is implementing it and. Made a comment on this one, so I'm just gonna settle letting you know they are defined. They're designing a control. Okay, so.
+13:18
+We don't have any scans any relation to anything, so only the base products, then it's more clean to do things like that. And also just the other item that I want to make sure is on the table here. Existing dispositions and comments will be carried forward.
 
-  Speaker 2 13:59
-Please work with
+13:37
+Okay, so you are also trying to migrate the old scans and everything that is linked to the whole scans or not.
 
-  Speaker 1 14:00
-Cedar. He asked either to work whatever this should align with from engineering and enjoys recommendation. So, oh wow.
+  Speaker 3 13:45
+We're trying not to necessarily migrate the old scans, but we need the dispositions to come over. So, if a new scan has that same? Coding or whatever the dispositions are there. Shame is the decisions, you know, the state changes and coming? Yeah, but, but that's another tool that you guys will use to do that kind of migration.
 
-14:13
-Let's go, let's see this one. Let's see what it is. Okay, so this meeting was Monday. At 12 1 pm has already happened, right? So No, the next one is November, November 2nd. And there is one here already. Yeah, it says November 2nd. 10, 30 am Central. Okay. But these are all CDX.
+14:11
+Well, that's what we've been working on,
 
-14:40
-So guys right for these? Yeah, everybody is. I'm going to add you here. Okay, okay, I don't have anybody else who can. Handle this sure.
+  Speaker 5 14:12
+Because because those kinds of you that kind of information is related to similarity and to the scans itself, right? Yeah. Right, so we're trying to understand what is the step forward in terms of maintaining dispositions. The reason that we've been trying to do this parallel scan or getting the new scans in the system and then migrating dispositions is to maintain the lineage of what's been dispositioned already.
 
-14:55
-Okay.
+14:37
+So, if this is if the tool that we're proposing here following the query ID, migration does not automatically handle the scans, then we would need to repopulate with new scans and then use the tool that we have to move things across. Alternatively, what I was asking, is, is the migration of the dispositions and the comments already handled with the approach that we're looking at here on screen?
 
-  Speaker 2 15:01
-All right. There's a lot of the cicd integration is done through the. And a lot of religious check marks, right? So
+15:00
+No, no, this. This approach only deals with the queries and maintain the query ID itself. No, not every, not anything else. Okay, so okay, give me also not move the decisions I thought I. Where do you guys say that we can also move the decisions, right? Because the queries are the same.
 
-  Speaker 1 15:12
-Okay, I added you okay, and then I'll ask Fidel. Invite. Of cosine, right?
+  Speaker 2 15:18
+The new similarities that will be generated in the target system will be the same. Yeah, but like, like, like, I'm saying, yeah. You guys or I don't know if it was created by our site by Miguel or anything else.
 
-15:31
-Cosine. Demo, okay?
+  Speaker 5 15:31
+Or anyone else, but you guys must have a tool that collects that information from Google database and populates on on the new one. And must be associated with similarity. I don't know if that two less a transformation already to accommodate the new simultaneous that were generated by the new queries.
 
-  Speaker 2 16:03
-There has to be a control, so they are doing it. We'll just provide inputs. It's not much for us to do. It's their control, right? Yeah, but that you understand. Yeah, but we should. We would still own the tool in terms of process and. Control perspective, so auditing. Artifacts and all that stuff.
+15:48
+If if it's like that, probably we need to change the tool in order to keep the similarities because they will be the same in this new approach. I don't know that to. I can answer that about that because I don't know that, dude, I don't know what it does so.
 
-16:20
-It still be owned by us, right? So similar to what we are doing with all the tools.
+16:02
+Uh, what we are presenting here is just a way to try to keep the same ideas for the queries that are overrides, only that anything else it's not in any approach.
 
-  Speaker 1 16:25
-Yeah, so it will be an extension of SAS, then it will be probably the best. Anyway, because we don't have SCA and I asked Jay because they want to add SCA to the control, right? Okay, SAS control whatever that document is, SAS control. If they're going to create a new document, then we'll have to own it.
+  Speaker 1 16:18
+So what I'm hearing is? This tool has
 
-16:47
-I don't think we'll just add SCA to it, you know. Instead of creating a new cosine will be a net new document, right? So we have an SCA of the scan will be brand new completely new.
+  Speaker 3 16:20
+Just been developed within the last day. Correct. This is not something that you've ever used before and has been tried and true. Tested, the second part is already being used in our installation set. That what the?
 
-17:02
-Just got. I mean, it might not fall under.
+  Speaker 5 16:33
+What are our RM does with those XML files and do everything that you need for database is already its existing part? That part of extracting the information and create those xmls that is completely new. Yeah.
 
-  Speaker 2 17:08
-I don't know where it is falling.
+  Speaker 1 16:52
+Could you also take a look at the?
 
-  Speaker 1 17:10
-It won't. It won't be under Sashed, but you are basically signing code so that you know your integrity of your R code and artifacts are maintained, right? So, it's a completely different stream.
+  Speaker 2 16:54
+The script that brings over the decisions. And you don't see if there's a way to merge both of these instead of trying that separately?
 
-  Speaker 2 17:23
-Yeah, yeah,
+  Speaker 5 17:08
+If I can have access to that, I can try to understand if it's easy or not.
 
-  Speaker 1 17:23
-It'll be sort of like a practice within us, so we should ask for some resources or headcon right for something new. I, I just. I just refused the llm controls because I don't have resources, which I said my expanding can own it. My problem is that, so it's it's not really.
+  Speaker 2 17:11
+Yeah,
 
-17:45
-Uh, saved there, and they're not giving us resources. Yes, the same. I mean, we should get that right? I know we should get that, but there they with the with what's happening across the organization. Use AI. Use AI. I have one wreck. Okay, so chitra refused. As she declined the offer.
+  Speaker 5 17:12
+Like, I, I don't know that script. I don't know what it does, so I can say anything about it. Yeah, the general goal is to accommodate both, so make sure that we have the new queries. They're the the existing queries that are moved over with the same IDs and also the disposition, so if it makes more sense to do that as one process, that would probably be preferred.
 
-18:07
-Oh, is it right? I think she had something competing, she said, she. Uh, she wants. A lead position leader, staff engineer position, and then second is she wants 100 remote, which the job wasn't. Oh, it's the jawbreak doesn't exist right today with? I think you were grandfathered and somehow, but the there is no remote job which they are posting correctly.
+17:33
+But the other option is we can fall back on the existing script, but we would like to get your ear. Put on on that approach. If there's a better way to do it as a similar transfer mechanism to what we're seeing on the screen here. Including the dispositions. With that, that would be preferred, at least from my perspective, but everyone on the golf feel free to argument,
 
-18:38
-Yeah, so, so that's that's what we can't say yes to any of that, right? So, okay, oh, that's, that's a shame. But, yeah. Okay, so the Rook is back to open thread now. I have to talk to the recruiter, but yeah, it is back to opencet, so I'm thinking, can we not get Tanner
+  Speaker 3 17:52
+Right? I, I agree wholeheartedly, and, and this group that we were given by Miguel. It requires that a scan exists in the new system before the dispositions can be brought over, but if there are tables that contain these dispositions that can come over without having the scans there yet, then that would be preferable because it takes us a lot of time to.
 
-  Speaker 2 18:55
-Or how your experience with Tanner? Yeah, I mean, he's he's open. I don't know.
+18:14
+Pre-Scan everything.
 
-  Speaker 1 19:03
-And oh, you're poaching people from.
+  Speaker 5 18:17
+But without knowing the script, I probably is not possible, because without scans, we can relate to anything we can relate to any similarity. So, probably the the? The need for the scan. It's, I think, is mandatory.
 
-  Speaker 2 19:11
-If they don't give me from anybody, help people anybody who is good from any other organization. So that's, I'm just thinking about, I don't know. Have you have you talked to him? Yeah, it's. Yeah, I think you're good. Okay, I mean, he's open to. I don't know.
+  Speaker 2 18:31
+So, no, no, Simon, I might need your help. So, no, no, can you talk to Miguel and understand the script. And, you know, get back to us. I mean, that, will, you know, make the center. Guys, yeah, and your guys are talking about the script. It's completely a SQL script, not, not nothing else.
 
-  Speaker 1 19:33
-Okay, so I mean the few conversations that I've had. I think he's he's reasonably. He's very technical. Also, he's not like a product person, so. Okay, that's my understanding. I don't think he's a good product manager. I think he'll be a good engineering guy correct.
+  Speaker 4 18:51
+Oh, it's a python program.
 
-  Speaker 2 19:53
-If I can get people to convince, Khalil has to be convinced a joy has to be convinced.
+  Speaker 2 18:53
+Yeah, the one, yeah, the one that Miguel gave us is a python. Uh, probably. So I think it gives us. Yeah, okay, okay, yeah, he's odia calls this open our data calls to just change their margin States based off. What, like comparison between the two?
 
-  Speaker 1 19:59
-And then we'll see. So, yeah, previously, uh Khalil had another project manager who recently left, right? So right before you join, he left. So he was standard spear. He was doing a decent job of product, but he he could not sustain it. So he left. Right. So, yeah, I had a meeting with Gita, you know, Gita from CDX?
+  Speaker 5 19:10
+Okay, I need to talk with me to understand what it does, and only after that I can say anything about it. Yeah,
 
-20:24
-She's the one who says, yeah, yeah, she's trying to organize this, uh, Kali's product organization. So, one of the questions did we move to, uh, did we move to? Scrum. Or prints on. And who's driving that? When is that you know what is happening with Harish just joined right joined correct?
+  Speaker 2 19:16
+Okay,
 
-  Speaker 2 20:48
-And it was discussed in the in the when are we moving hours? Is Wallace right? So Keith finished. Keith had two boards. For FAM Secrets, so he already moved them to. Uh, he already moved them to scrum. Okay, yeah, yeah, starting now. Like, right now. So the can you check with can you?
+  Speaker 5 19:17
+Um, there's like two stages. The first stage is to generate a mapping between the query IDs, and then it uses that to match the actual SIM IDs together in the second portion to try to copy over the states in the comments and where else is needed. Okay, so
 
-21:14
-Can you check with?
+  Speaker 3 19:36
+If the sim IDs are going to be the same, you know, once we get the queries over with the right with the same period. If the sim IDs of new scans will be the same as what they were in the old, then the tables that have those dispositions in them if they've got the Sim.
 
-  Speaker 1 21:17
-Wallace, if that's happening. So, yeah, you check with it, but he's not doing any scrum Master duties. Rudy, so? Wallace is not like heat. He's completely hands off, you know? He is not. He rarely participates. Uh, you know, to give you the? I mean, it's. It's basically our team running the entire show, right?
+19:50
+ID in there. Shouldn't that marry up once a new skin comes in with that new Sim ID or with that same Sim ID. It can simplify that that script that Miguel did, probably because that transformation don't exist, but
 
-21:39
-So, yeah, that's why I'm just asking so. Now, you have Harish, right. You have rishna Harish is L2, apparently. He's not L1. So he'll have some of L2.
+  Speaker 5 20:06
+The needle for the scan, I believe. It's like I said, it's mandatory, so I don't. Probably, you need to have a scan before to then to to merge all the the things that are related to that scan, uh. But like, I'm, that's one thing that I don't know about it, so I need to really to to understand what the, the query or the scripture does.
 
-  Speaker 2 21:54
-So, you want
+20:25
+Okay, perfect.
 
-  Speaker 1 21:54
-Relish to do the scrum Master role as well as the? No, somebody has to so. I'll have to figure out. Does it? Does it for this team? Also, I don't know about that. Right? I'm just saying. Also, when is the move?
+  Speaker 1 20:32
+Okay, so sounds like we have a path forward, right? So I mean.
 
-22:16
-App scanning. Fast rate. When is the move for rack scanning says?
+  Speaker 2 20:38
+Illiterating what was talked about here, so we have to wipe the two environments clean to start with.
 
-22:30
-All flap scanning fast from. And then.
+  Speaker 3 20:45
+I'm hang on. I'm a little nervous about this because it hasn't been done yet, and it's not tried and true, and we've spent literally months trying to figure this out. So, if we wipe the database clean and this doesn't work, are we adding more money because
 
-22:39
-Okay.
+  Speaker 5 21:03
+Even even without talk with Miguel, I don't believe it should be a starting point, probably the first. The first thing is to talk with Miguel to understand if it. Can be matched with everything that you already did. Before wiping the the tables. Okay,
 
-22:43
-Lot of the other teams are still in.
+  Speaker 2 21:18
+Once we have
 
-22:48
-This guy.
+  Speaker 5 21:19
+The information that this approach can match with approach from from Miguel and from your side. I believe we can go with the the clean.
 
-22:55
-John John Steam.
+  Speaker 3 21:28
+I, I would be okay if we do this with prod fix. We've been doing a lot of testing with uit if I'm not mistaken. Pradeep, you guys have not really set up the queries yet in profix environment. And if we have not? You have or have not.
 
-  Speaker 2 22:57
-They are all full under Gamban, but yeah, we have to have a proper structure like the scrum. The ceremonies and stuff he has to do it, and there's new guy called Emma. Maybe he's the guy? Yeah, he's been joining.
+  Speaker 2 21:46
+I don't. No, yeah, we are not. Okay, so is so. Andy is prodfix clean. Randy Madu, this perfect's clean. Yes, fancy broadfix is ready for use. Yeah, but it has nothing in it, right?
 
-  Speaker 1 23:12
-Uh, standups for a couple of years, both both are joining. Ms might be the right guy for it. Okay, but he, I asked him, you know what you, you were? A you want to participate. He's, like, no, I'm just listening in. So, he hasn't said one word. So, so he?
+  Speaker 3 22:04
+Uh, no, it doesn't have anything on it. Just the installation that we completed? Okay,
 
-23:31
-Here's the scrum Master for the compliance service, which is which they call it an svm, right? Very vulnerability management, yeah? So, so maybe he's the guy? Okay,
+  Speaker 1 22:10
+So if
 
-  Speaker 2 23:42
-Uh,
+  Speaker 3 22:10
+We can use prod fix for this test? To for bringing the queries over and. Seeing if everything works. And that way, we don't have to wipe anything. At least, we we've got an environment. We can check this out in before we. Decide this is going to work. Yeah, that's a legal approach.
 
-  Speaker 1 23:42
-I mean, let me find out before you change it to scrum. Can we please finalize those people who are those and communities, so scrum scrum needs a scrum Master, right, correct. Yeah, so Keith burrow is a scrum Master for SCA and SCA and secrets. So, who is?
+22:31
+Does anybody disagree with me from Wells Fargo? Yeah. Okay, that's fine. Tracy, yeah, yeah, that's good. And I just want to get some clarification here, um? I keep hearing Simon say clearing, you know, tables?
 
-24:03
-L1 is C that, for those two well, Cedar is doing L1 work. Okay, good. Oh well, he's L2, but. Yeah, so we'll have to figure out L1. I think the J himself is doing some stories and stuff like that. So, so, so the general guidance is L1 piece? Engineering team will help with L2, so there's some overlap there.
+  Speaker 5 22:46
+Um, but then I also keep hearing like doing a full clean reinstallation of check marks, so. Which are we talking about? Is it just cleaning out tables if we do go that route? Are we being asked to? Why parenting and install from? Very scratch and get rid of all our custom.
 
-24:27
-Okay, so we'll still be doing L1 work. Yeah, but that's not. Yeah, okay, that's why, while you have cheesecake, I just haven't. I don't think she has a full even on the OSS side, which I'm doing with Asan. I don't think she has a full day's work. Okay, you know, so you won't have to be the other one.
+23:06
+Configurations that we already configured from RN, not not the presets, but from all.
 
-24:46
-No, no, you can ask, you can Define it and ask her to create something for you in the scrum. If you see, you're already doing it for kanban, right? Yeah, all the stories somebody is creating? Now, on the L1 you are already doing it. If you think to the scrum, there will be some Delta additional work.
+23:18
+That's the most, the most secure approach. And what taking one on what what tracing was saying about? Let me mention this. The test on Broad will will be like that and try to test it there to just clean the tables. If you guys don't have skins, if you guys don't have any skins I believe it's do.
 
-25:02
-You can ask her to do it in alignment with the product owner and the scrum Master, so think about that. Okay, it's a couple of meetings, a couple of follow-ups. You can do that, or we can have miragi. Also, I mean. There are resources I cannot go, and miraji is not filming.
+23:40
+We can test you guys can test them in your site because any relation. It's not an issue because? And he and he's translated to the current person that already exists. It will be also. If you guys have already scans and want to maintain those scans, that can be an issue.
 
-25:23
-Miraji is not doing his stuff. He should be more productive, right? He didn't join the stand-up today. I don't know why. Yeah, ask him to join. Ask him, yeah, you are. You are loan to OSS, which is fine. Okay, but he should. He should. Are? Under you, right? Yeah, or in the in the app scanning, so that has to be there.
+24:00
+But Tracy, wouldn't it be a good approach to test each one? Before we get to the full white, then so clean out the tables. If uat already has everything that production has, can we see if that works, or do we just want to automatically get rid of all our?
 
-25:51
-Will have his own replacement. So, what I told Hassan is your replacement, and Saeed would be with you. Right. So that doesn't mean, and then we'll have to figure out. Uh, we'll see. We have a resource issue there so.
+24:17
+Um. Configurations and start from scratch. Like, that's a lot of work, so that's always candy. I mean, we need to do for the four DC's. Would
 
-  Speaker 2 26:08
-Okay, so ngdc migration we talked about. We talked about code signing, right? The other thing?
+  Speaker 4 24:30
+Be a lot faster. We are to reinstall, that's going to take time. A lot of time. Yeah, so let's just fit in product fix first. And then, you know, let's make the decision then.
 
-26:23
-Uh, the other thing was remember the power queries, which I talked about correct? So, do you have a plan or something like that? Yeah, I have a high level. Overview, not a plan, but overview as to how to achieve that so? Let's, let's bring it up in the SAST meeting.
+24:45
+Yeah, I mean, we.
+
+  Speaker 3 24:47
+We're still going to have to figure that answer out because project is empty right now, so we tested projects is, is just will this work? Will it bring over so? Will some ideas match well? The queries come over with somebody's match with the new scan, so that's number one.
+
+25:01
+And then, if that answer is yes, then we have to backtrack and figure out how we do this. Can we clean tables which tables would need to be cleaned, or do we need to do a fresh install? Yeah, I think the fresh install is a bit of sounds like a better approach.
+
+25:26
+In broadfix, otherwise, yeah, good.
+
+  Speaker 5 25:29
+But if your environments are not in use, you can do a backup for the database. You can do any test that you want, and if they go wrong just to restore it, and you have the same. The same state.
+
+  Speaker 2 25:40
+Okay,
+
+  Speaker 5 25:41
+So if you guys, if you guys want to go with the first, the first with only deleting the queries, the related tables, and all the is, is this new kind of installation can be the first step?
+
+  Speaker 1 26:01
+So, I heard that we are going to start fresh, right, take that empty database and start fresh. Is that what the recommendation is?
+
+  Speaker 6 26:09
+Because we have done all the install. Does that mean do we have to reinstall everything? Where do we start over? Oh now, yeah, I will say a different approach is to go to the one that is already installed.
+
+  Speaker 5 26:24
+Uh, wipe just the table that are related to query okay doing before doing a backup from the database. Try to get the the queries from the old installation to the new one with this new approach. See, do some scans if the scans go. Are good and go without problems.
 
 26:43
-We'll go through that. Okay, I okay, you want like a deck or something.
+It's like it's a. It's a test that everything can go about the right way.
 
-  Speaker 1 26:48
-No, no, whatever your plan is a scratch Pad. Notes, what do you want to do explain to me how you want to do it. Do you have anything written down? I mean, we should have something written down as as a plan, the rough notes. And then, and then we'll execute on it.
+  Speaker 6 26:50
+Could we by chance? And I don't know
 
-27:03
-We can create a slide that you create. Slide deck takes five minutes, right open. It
+  Speaker 3 26:53
+If we can because the configurations might be different in sizes of things, but could we potentially if we get this? Set up in prod fix, and it seems to be good. Could we copy that database and put it in uat and then put it in Broad? In
 
-  Speaker 2 27:06
-Will
+  Speaker 5 27:08
+Terms of IPS addresses, and so on. I don't know, it's a solution. In terms of installation that that's not
 
-  Speaker 1 27:06
-Throw your rough notes. I mean, my only concern is, we should not be Reinventing the wheel. There are already tools and processes within the bank, which actually have provided the data, right? So, we should not invent what's already there. And we should. I mean, the bank does to tend to do a lot of that.
+  Speaker 3 27:15
+Like, do a backup of. Yeah, do a backup of that database and then restore to the new. In
 
-27:22
-Many people don't know what else is already out there, and they try to create it from scratch. Right, and it's a waste of effort. And at the end, they'll realize that there are two tools doing the same exact thing, right? So? Um, yeah. So, this, this check marks this black duck.
+  Speaker 5 27:20
+That point, I am not so helpful because I, in terms of style, yeah, yeah, IPS, and everything has to be configured. Okay, yeah.
 
-27:40
-What is this IDP? There is, what is, what is the API from GitHub? Linguist. Yes, check marks. And we can write this here.
+  Speaker 2 27:31
+I mean, do we have backups of uat and ngdc fraud taken before the queries were written?
 
-27:55
-Black dark and there's linguist.
+  Speaker 4 27:40
+Uh, nobody but we do have Daily backup. We need to raise a ticket to the DB team, and they do have the backups every day, but that can be stay, uh. Only 30 days of data. Oh, okay, you can restore. Yeah, okay, yeah.
 
-28:02
-Uh, five.
+  Speaker 2 27:58
+Okay, so sounds good, so check mark. So when do we? What are the next steps when? When do we Circle back?
 
-  Speaker 2 28:11
-Github, and then whatever we can get it from doing. Do we get any reports from artifactory? Uh, no, not currently no. What was the list they were putting in that outage body pod B stuff like that?
+  Speaker 5 28:05
+If you guys accept this plan from our side, we have a plan. Imagine if we started, and we already started today until the end of the week. We have a full solution to to send it to you guys. On Friday on now, one afternoon, we will have this to to send you.
 
-28:32
-That data came from. Uh, there's a guy called bmesh. Was getting his data from. Factory, right? So? And you make these notes, and then we'll figure out. Yeah, and we should create a story for it. Okay, right?
+28:23
+This part is already. It's almost done, so we need to, only to change that our interval, our M, to deal with this new kind of XML, because that IDs are different. Uh, but also I need to discuss with Miguel the the second part to understand squares possible disposition. Yeah, yeah, stuff.
 
-28:52
-Uh, and then eplx probably plx pipeline, right? So if we wish is local local meaning San Francisco area, okay?
+28:40
+Yeah. So, Tracy is the timeline. Okay, the timeline is never okay. The timeline is being October. Yeah, I know you want to pipe in.
 
-29:09
-I have. Okay, so off the record.
+  Speaker 4 29:02
+Are we gonna do it in the low environment, or how are your planning is going to be doing the database initializing starts again?
 
-29:17
-I learned about provision. Saying, you could ask for. Accommodation also. So that you can continue to be removed. Do you know about any of that? No? Okay, so if if your thing remote thing and all becomes that off the Record, right?
+  Speaker 3 29:19
+And my question is about the timeline for? Dcms. Request for us to be in ngdc. That's the timeline I'm concerned about.
 
-29:39
-I believe there are some people who are doing it, so just remember that I learned about that through manager form. Okay, accommodation. Okay. It's a medical accommodation, right?
+29:34
+But
 
-29:55
-Yeah, I think it's some some. Your fatherhood pregnancy dependency care? Things like that? Should we kind of help you with that? Okay, I don't know what the provision is, but they can. You can apply for something and extend.
+  Speaker 7 29:35
+That, I mean, we need the lower environment testing working before we can talk.
 
-30:17
-All right. Got it okay? I mean, I know, a lot of people recently have moved to fully remote under my salt. So, I don't know how effect from it after. Ask them what they did. I
+  Speaker 3 29:38
+I know, I know, but they're just saying their owner backs. We're supposed to be there by the end of the year, right? So, we were supposed to be there back
 
-  Speaker 1 30:31
-Mean, I did sort of ask him a couple of months ago. He mentioned that the organization. A little more flexible now than how it used to be a year ago. That's what he said.
+  Speaker 5 29:44
+In October yesterday.
 
-  Speaker 2 30:42
-I don't think so. I mean, that's why I haven't seen any paperwork around. Yeah, but they are. Yeah, you got the feeling that they are. That's that, I don't know, that's his feeling. But Uh, this just to keep something in mind, right? Yeah, if the push comes to shove?
+  Speaker 7 29:49
+Okay, yeah, all right. Okay, so check mark. Can we meet again Friday morning around the same time? Yeah, which would be Friday afternoon for you guys, right? Yeah, this time is the right. This time is already afternoon, right here, right? Yeah.
 
-  Speaker 3 31:02
-You can have
+  Speaker 2 30:10
+Okay, perfect!
 
-  Speaker 2 31:03
-A location which is like a valid location, right? And you can have some Arrangement there. We will work on that we see, or what happens. Okay, nothing. Nothing on the horizon, nothing. Because I'm getting all these videos, you know, all these? All these kind of? Some of them are, like, useless, not not useless.
+  Speaker 8 30:10
+So pretty! Is this all going to be attempted from your end? What do you need? I want to make sure our guys understand anything expected on this. Is that only the DPE refresh or who say who exactly have the game? We're
 
-31:23
-I have so much to work. Some of them are, like, so many policy trainings,
+  Speaker 3 30:22
+Going to make sure that everybody is included Kappana everybody's gonna be right. At one point, I mean, because Eddie and them will probably have to do some of this stuff. Good idea, but the query spot you know will ensure that you will handle it.
 
-  Speaker 1 31:27
-Right? So, I'm trying
+  Speaker 2 30:36
+Unless if requires database writes and stuff, then we'll work with Andy to get that done. But we will just make this as simple as possible, so?
 
-  Speaker 2 31:29
-To connect the dots. Okay, okay, this is this. This is that this is that? So, that's why I'm saying off the record, right? Uh, thank you for the I got the mouse. Are you doing okay, finally? So
+30:47
+Okay, keep the team tightly and look because we don't want to miss any. In all orders and such, and then encounter into again restoring. Start fresh or anything, of course.
 
-  Speaker 1 31:40
-It's an ergonomic Mouse. I don't have to put my hand on the floor, so this, this position hurts a lot, you know, if you the most a lot. So with this,
+  Speaker 8 31:01
+Oh, but before that, I will take attack of the DB and we'll do the attempt. Yeah, can you go ahead and get the backup of the prod fix right now, ladoo? Yeah, sure, Tracy, I'll raise the ticket. Yeah. Before we do anything there. Yeah, yeah, okay, thank you.
 
-  Speaker 2 31:50
-I use this one. I, I use my. This is my personal Mac Mouse, but for that, you still have to put your wrist on the.
+  Speaker 3 31:26
+Okay, all right, so sounds good, okay, right? On our side, we can go with this plan. Yeah, but I think PSI raised his hand. Does he have a question?
 
-  Speaker 1 31:57
-On the floor and on the no, no. So, what I do is, I have my
+  Speaker 5 31:40
+Yeah,
 
-  Speaker 2 32:00
-Table, I, when I have. So, basically, my wrist is outside the outside the table. Oh, okay. Okay, got it. Okay, so you don't even.
+  Speaker 4 31:41
+If we're gonna clear, uh, project, anyways, is it worth just,
 
-  Speaker 1 32:13
-Yeah, you must have long fingers then. My wrist here right is at the edge of the table.
+  Speaker 9 31:47
+Uh, trying this script I made just to see if it works before deleting and refreshing all of it. As soon as it's gonna be a while before, we clear prod so you can play until we White.
 
-  Speaker 2 32:21
-And then I just do. Then I just move the mouse, you know, my my, this part? Is that the edge of the table? Oh, can I use this mouse like this? Okay? Yeah, I know I don't do that. I don't do that even at home. I don't do that.
+  Speaker 3 32:04
+All right. So, are there any other questions before we?
 
-32:35
-Okay,
+32:11
+So, you're going to schedule the call. Pretty right, I'll
 
-  Speaker 1 32:35
-So I
+  Speaker 2 32:15
+Do that Friday. Yeah, with the same group, include
 
-  Speaker 2 32:36
-Said, I sat at the edge. Like, right here, because my Edge. And then I have it here. Okay, okay. And then I use my, uh. Then I used my. I can show you. So, this is, I don't know if you can see it. Right, I am right here. Yeah, and then I use these hands follow.
+  Speaker 3 32:18
+All the people. Yes,
 
-32:55
-Okay, yep. I try to do that, but let's see. Okay, so that was one, so code signing is. The power queries you come up with a plan. Okay, so create a story. And we should have a kind of a report. You can generate a report, a spreadsheet, or whatever running those set of queries.
-
-33:14
-Do some reconciliation, right? So? Okay, so.
-
-  Speaker 1 33:20
-But all this has to sit on a store somewhere, so that's the. That's what I was trying to. Get to. I mean, it's not like.
-
-33:31
-Okay, that something?
-
-  Speaker 2 33:37
-And package the CC what it is, and we can have Ramesh and other things, so we actually another thing came up into my.
-
-33:47
-Another thing came up in. In this piece.
-
-33:55
-This is one of my glass swing action. I don't try to chase this down. Okay.
-
-34:04
-But this is purely as bomb data, so this is package and s-bomb. Transitive dependencies are already being able to render process okay.
-
-  Speaker 1 34:15
-I need to figure out what that is.
-
-  Speaker 3 34:18
-Dependency. This is falls into state into SCA, right?
-
-  Speaker 1 34:21
-Yes, this will follow. Let's see, I send it to the scl team. Somebody should come back and say what this is, right? So? Right? Yep. So? On the now that you mentioned SCA, so the RFI, I'm still holding off of. Him responding to these questions. He still has responded to the clarification question,
-
-  Speaker 2 34:44
-But he hasn't responded. But, uh, let's, let's do our mapping. Let's do the mapping please. Tomorrow, supposedly the end date for the RFI. Maybe they've extended by a few days, but, uh, but I already have the mapping.
-
-  Speaker 3 34:57
-But uh, shouldn't we wait on him to respond and clarify because his responses?
-
-  Speaker 2 35:10
-This is not an sc8. That's where the mapping is. So you and I should set up a meeting tomorrow or something. Just set up a meeting with me, and then we should go go over that. I will do that, yeah.
-
-  Speaker 1 35:23
-But they tend to be. If you looked at the supplemental questions, they are heavily focused on the exploitability, right? So they don't want to do just SAS and Asia and Silo. They want to see SCA and see what the ACA findings are actually exploitable or not. And they are specifically coming repeatedly, asking the same question, you know?
-
-35:44
-How do you track exploitability of a third-party SCF finding right? So, just because the library is exploitable, doesn't mean it's actually being used in zest, like in your code, so. So that might be low priority for you to. You still have to remediate, but it's not like imminent threat.
-
-36:01
-So, yeah, exactly. Reachability and exploitability. Those are the two things, right? So, yeah, no, absolutely. So, that's why.
-
-  Speaker 2 36:09
-A combination of that, and if nobody can provide it, then check marks. One would probably have good answers there, right? So, yeah, it does do. That checkpoint won't do doesn't do that. Yeah.
-
-  Speaker 1 36:20
-If it is the highest on SAS, and it also has
-
-  Speaker 2 36:23
-Sca reachability, then then. That is a solution for us, but we will not put all our buckets into
-
-  Speaker 3 36:29
-One, so we'll all we probably like all our eggs in one basket. Yeah, we will probably have black duck the latest for SCA.
-
-  Speaker 2 36:37
-And then I showed you the proposal for socket, right? Yeah, I saw that, yeah, but I mean, it is a. Yeah, I think he is slightly. He wants everything in. In one, he wants to get rid of black duck.
-
-  Speaker 1 36:53
-I said, I couldn't give you that answer, right? So that's that. Yeah, he, he has always said repeatedly to get rid of Baghdad somehow. But yeah, I mean, if you're able to convince him to stay separate, you know, I think that the route should work? Okay, and give me one second.
-
-  Speaker 2 37:15
-And those were the three main guy had. One more thing?
-
-37:22
-Let me go back to Apple.
-
-  Speaker 3 37:34
-I move the SAS because the G is out, so I use that same. Same time slot for this. Okay, right after this. Okay, anything.
-
-  Speaker 1 37:44
-Okay, so that was Brazil. So what else do I have for you?
-
-  Speaker 2 37:54
-Okay, so.
-
-  Speaker 3 37:58
-I already asked about and, and yeah, if you could let a joy know to?
-
-  Speaker 1 38:06
-Arguide change for scrum. I think that will help all the teams. And
-
-  Speaker 2 38:12
-If he, I mean, I have put it. Yes, he has seen it. Khalil gave the go ahead, so it's, I have, let us know verbally, so he he won't get into these. I mean. She's talking at Munich and Bridget level, and how are you doing the work? That's Downstream, right?
-
-38:28
-One of the one of the people he assigned was Gita, and I said, hey, two of my teams are already in scrum, three of them.
-
-  Speaker 3 38:36
-Fbm was already always in scrambling Lawrence, who his team was always unscramble, okay, and then secrets. And so this is the last thing, so? Um, I'm trying to figure out.
-
-38:51
-Uh, full, okay. All right, so those those were my my icon. Let me see if there are any others.
-
-  Speaker 2 39:20
-Yeah, well, yeah, the standard change or check mark standard change order. What's going on with that? We had a meeting with them, and they have, like, around 10 people in their team. And yeah, we said, we cannot provide licenses for all 10 people.
-
-  Speaker 1 39:33
-There.
-
-39:42
-The machines, HIDs, and get the licenses issued from the vendor. Get the cxr2 installed on the machines. So?
-
-  Speaker 2 39:57
-Involved in anything. Should we update the control document? This is just operational, right? Yeah, it's very operational, and it's just, yeah, it's just a paperwork. You know, just doing things for the sake of doing it. But yeah. We had ML to I brought in the mall, but she she probably wouldn't have any any input there.
-
-40:20
-Nothing, even karnish, did not say anything, so she's like, you know, whatever, do what you want so?
-
-  Speaker 1 40:28
-I think so.
-
-  Speaker 2 40:30
-Oh, okay. So then, that is, that is something that was one of the things right. So? Yeah, those were the five main things. Now, let's talk about your topics. Before we get to the next meeting,
-
-  Speaker 1 40:42
-Right? I so IBM concert, right? So, uh, they had issues figuring out how to connect to the git report so they cannot connect directly to. The concert application needs context of the application. So, we have to connect to a GitHub repository within Wells Fargo. And basically, I have to create GitHub repos for those 12 of the 50 gt50 repos.
-
-41:09
-So that Nigerian concert can connect to it. And then,
-
-  Speaker 2 41:12
-Okay, only
-
-  Speaker 1 41:14
-If it has that data. It can generate anything meaningful outside of it, so. So, I
-
-  Speaker 2 41:19
-Have a meeting. Do we need permission for that? Is somebody driving it? Is anything happening? Or, yeah, I am actually. I'm the one work as I have a meeting with them at 12, like right after this.
-
-  Speaker 1 41:31
-So,
-
-  Speaker 3 41:31
-Choose them you and you are representing all the Wells Fargo. There are other people there in there. Yeah, there is one other person Zach. So, IBM concert also does. Patch management. Ready for servers and stuff. So there is a person from that team.
-
-  Speaker 1 41:48
-So and me, that's it. So nobody else from our team, so no, Mike. Anybody else? I can add it to the meeting, but it's let's try mainly operational, so they gave me access to the concept that's installed within those folder. It is in a lab environment somewhere. I'm going to run a test, right?
-
-42:10
-Okay, you have the report. Yes, just fine. Yeah, that's pretty much it so, but
-
-  Speaker 2 42:16
-Who is somebody from Randlins team? Was there the other areas, right? Other people who were doing it. They were contacted to get the Maxes to the frontier models through. For IBM concert, and that's it. They haven't.
-
-  Speaker 1 42:31
-Yeah, once this access thing is set up, I should be able to do a quick test. And, you know, generate a report and have some initial findings, and that should be it I don't want to. Who are we? Who are we present? Who is the executive sponsor for this, you, and uh?
-
-42:44
-I obviously I will presented to you and Mike. Mike was the one who looked me in and. He mentioned that this is Christian Adams pet project, so it's coming from Christian.
-
-  Speaker 3 42:57
-So, okay, so
-
-  Speaker 2 42:58
-Once you have a test, then you and I should align, and we can just present it to Mike saying, please forward to whoever correct because Mike is kind of our intake, right, which we wanted to have him an intake to gd50. Yes, if
-
-  Speaker 3 43:10
-Anything.
-
-  Speaker 2 43:10
-Gt I put gd50 IBM console evaluation Mythos evaluation. All of that there? Yes. Absolutely! Yeah, everything is there in jira and. That's all there, but this is this is what I, I kind of put for gt50, say one second. I wrote up something very quickly yesterday.
-
-  Speaker 3 44:11
-Oh yeah, yeah, well, man.
-
-44:18
-Do
-
-  Speaker 2 44:19
-You think so? Okay, I'll send it to you. What I would? It's basically as an excerpt from what it is, so we're doing like Mythos 5.1. We're doing IBM concert, and then we're also doing internal security. Evaluate security tooling evaluation, which is. Um, Def Prime and deep Wiki. So that's what I put differently.
-
-44:40
-It's used for all these different threads, right? Right? Also, yeah, Mike also mentioned. I mean, not now, but not so. Is IAC stuff?
-
-  Speaker 1 44:49
-Right, so
-
-  Speaker 2 44:50
-I guess I kind of left out because I know when I when I sent a note to a joy last time. Uh, it was. He had questioned that saying, are we starting on this project or not? I said, no, it was just mentioned at one point, but these are real work, right?
-
-  Speaker 1 45:05
-Okay,
-
-  Speaker 2 45:05
-That's Prime. You've evaluated with those 5.1. You've evaluated beep Wiki. You have evaluated right context awareness so quickly. Then, you are actually doing IBM Concepts, right? Outside of this Constantine scanning and Lakshman scanning, and all IBM console would be a first kind of. Like, God's kind of evaluated, which you, which which you will run through gt50, correct.
-
-  Speaker 1 45:34
-Uh, yeah, partially not the entire Suite, but just the portion of it because it doesn't support all languages. Yeah, yeah, so it's only like 12 of the 50, so yeah, but you still still evaluated, correct? Yes. Okay, so yeah, let's do so. IBM console has it can look for exploitability, so if it does, ACS scans if you give it black duck scans.
-
-45:57
-It can look at the source code repo and tell you which of the actual ACA findings are actually vulnerable. So, it can do that. Explain reachability and explorability stuff, so that is something that I've told them I cannot do. I am not doing as part of this exercise, but they are saying that's one of the.
-
-46:14
-Features of the platform. Let Jay come back. Maybe we can try that also? Okay. Oh, he's involved, he's out. Is it okay? And he's out today. He's only out today. Okay, and we can have that because? Give me one second, of course, signing secrets. I should add that.
-
-  Speaker 2 46:38
-And the concert can also talk to a
-
-  Speaker 1 46:40
-Runtime instance of an application. And then get some Telemetry data from there and make a determination of the explorability of finding. So, I mean, they're claiming a lot of stuff. I, you know, it remains to be seen as to how effective it is. Let's start with this, and then we have the option to do it.
-
-47:01
-So that's one thing, okay?
-
-  Speaker 3 47:04
-Uh, let's start with the gt50. That's what they got. Yep, because?
-
-  Speaker 2 47:17
-Right now, I mean, J is already. Kind of overloaded. In the sense, there is this hugging phase going on. There is this other piece going on, so there's a lot going on.
-
-47:33
-Uh, all right, what else? Let me see. Let me have a list here. I think we pretty much talked about everything, uh? Concert.
-
-  Speaker 1 47:46
-So, you send me an email about the CRA observations, right? Yeah, what do we do? We have any feedback or it's all good. I think it's for something. Yeah, it's mostly, it's mostly okay, so.
-
-  Speaker 2 48:04
-Mike Spandy has to provide a document for the CRI evaluation. Some other party is doing it right. We are just collecting information for that correct. Yeah, it's
-
-  Speaker 3 48:14
-A
-
-  Speaker 1 48:14
-Basically a third party doing the audit, so it's sort of like an audit they're looking at the processes and identifying gaps. And if we accept that Gap, then they'll be like a finding, right. So, and the finding would be tracked to completion. And that's all the secrets. One of the secrets item actually happened.
-
-48:33
-Well, they. If you notice the first item, it's basically Secrets, right? So Secrets is there for only for some angles. Not all of them. And the question was, how do we expand it to all the languages, which actually ties into the P SQL SQL thing? The emulators and also.
-
-48:49
-So that actually come from a CIA observation. So, and yeah, it's a third party, but they're looking at all the process and looking for gaps so. And one of the fine, yeah, one of the audio items that I was pulled into, like three, I, I mentioned that to you around was around the secrets.
-
-49:04
-Sorry, it was around the SSL TLS. In insecure cryptography, right? They wanted to know if if we are doing a good job of identifying them? And SAS. Does that? You know, it does. It's not very comprehensive, but it does have checks. But they were curious about how it standard at the IAC level.
-
-49:26
-The AC level. They wanted to know how it's done. I told them that, you know, that's not my practice, and they'll have to find out
-
-  Speaker 3 49:32
-Who who is owning that right now, IAC.
-
-  Speaker 1 49:37
-Yeah, so this was, uh, how long ago was that? Was there an email around that or? Yeah, this came from karnesh. Yeah, yeah, okay. There was an email around it. I don't know about that. Okay.
-
-  Speaker 2 50:00
-It was just a single meeting that's. Perfect, perfect, okay! And we can.
-
-50:12
-So, so do I have to do anything or not,
-
-  Speaker 1 50:14
-Not on this one? Nothing specific on this one.
-
-  Speaker 2 50:18
-I mean, he hasn't asked for any, any. He hasn't asked for any, uh, you know? I don't think anybody replied to it. So great. Okay. What else do we have?
-
-50:43
-It's basically
-
-  Speaker 1 50:44
-Maturity assessment, right, cris. They are saying how, how mature we are in terms of? Yeah, yeah. They do happen every now and then. And then, and they get all the findings they presented to Munich, saying these are all the things that we
-
-  Speaker 3 51:01
-Did. And these are all the gaps.
-
-  Speaker 1 51:04
-And your team has acknowledged these gaps. And you know, these are findings that you have to work on so? Definitely! Or T SQL has become a pain in the butt, right? This has become.
-
-  Speaker 2 51:19
-It's, this is not sustainable, uh, I mean, you would have seen this by now already, so we cannot rely on platform team to make updates.
-
-  Speaker 1 51:27
-Every time, there is a engine pack or a new feature coming. We have to go through this old. Back and forth of requesting them to upgrade, and they coming back and saying they don't have bandwidth or something else is going on. And it's, it's a pain. And that's exactly why we need a centralized SAS platform, you know, which, where the vendor will do the updates.
-
-51:47
-If we don't, we don't do all this. This is this was never sustainable. In order to begin with so?
-
-51:57
-That's why Black Dog. Also, we should move it to hosted. Yeah, and they do. They can do all the patching, right, correct? Yeah. He shouldn't be in this business at all. So,
-
-  Speaker 2 52:08
-Speaking of one last thing before I break, uh, the engine pack and the hot fixes, yeah, can? You can you ask, can you ask? 3c to put it up. Since we are not doing this change in Heritage, right? Say not doing that. Yeah, yeah,
-
-  Speaker 1 52:27
-If you confirm this morning that they're not doing any engine pack or hotfix this morning, so that's awesome. Can they start? Can this? Can they just apply it in ngtc uat? Can they just apply it in advance? Can we ask them to do that?
-
-  Speaker 2 52:43
-Oh, sure, it happened right after
-
-  Speaker 1 52:44
-If they're still doing the testing, right? So size, the migration testing is still happening in u80.
-
-52:53
-But tomorrow, we should decide. Yeah, that will go with all queries. Okay, yes, then we move it. Hopefully, we can do it, and then quickly do the engine back. Yeah, that is, that is the agreement. That is something we will have to do with. That is something we'll have to do with.
-
-  Speaker 2 53:13
-So, I'll talk to Rajiv again for that because we need to make sure that happens. Yes, absolutely. Yeah. If you make a decision, then how long do you think this whole process will take if you migrate all the queries they do one weekend test and next weekend. They can just move it, right?
-
-53:29
-Yeah, it's. It's
-
-  Speaker 1 53:29
-There has to be a CR to create it to take the database backup and move everything to the new instance. And, uh, it's sort of like a cut over kind of a thing, so? I think it's more to be very good. You don't have to go through the whole, like, uat, or anything like that, right again.
-
-53:45
-Uh, they'll have to do it in u80 and then production. But in terms of, they still have to. Once everything is done, they'll still have to do some regression testing to make sure everything is working okay. But yeah, it should work. It's basically lift and shift sort of a deal, right?
-
-54:00
-So? Yeah, so we need a plan from Tracy and Rajiv to to do that, and then do the upgrade correct. Or just the engine pack. Forget the HP HP. Also, if they are going to do it at that time.
-
-  Speaker 3 54:15
-Then they are also motivated, right? HF yeah, they'll more likely do both.
-
-  Speaker 2 54:20
-Yeah, so that's what we should come up with a plan saying we do the migration and then do immediately. The engine pack and the HF, everything in ngdc, yes, straight. Yep, that way, that way we can. We can finish our. Will have a control. Approved and will also have the secrets piece.
-
-54:39
-Yes, taken
-
-  Speaker 3 54:40
-Care of. Hopefully it's going to be tricky to do it by this year because.
-
-  Speaker 1 54:45
-In Thanksgiving and all will completely freeze all changes. During the holidays, the unless it's emergency, they're not going to let you make changes.
-
-54:58
-So, it's okay, you have to be proactive about it otherwise.
-
-  Speaker 2 55:03
-No, no, we will discuss something that we see meeting. We said that was the agreement with Rajiv and Pawan. You have to do it. Right. We said we will not do the HF. We do the engine and HF right after the migration. So let's, let's slot it out. So it doesn't have to be that complicated, right?
-
-55:19
-Yeah, so you did respond after that email, right, that I had that he had responded? No. After that email, I had a discussion with Rajiv. That's why we hacked the meeting. Yeah. I responded to that email. I think I respond to that email. Pawan came back, saying. Let's not spend time on Legacy when I call Rajiv, Rajiv said.
-
-55:40
-Okay, I agree. Let's not spend time on Legacy. Let's get to it. Yeah, and then we'll do it. That's where it happened good. Thank you. Thanks for that. I don't know if anything would happen or not, but
-
-55:55
-This is Nadine Hill, sent some email to us okay. Yeah, this is another thing. Rudy, so check marks one is an app ID, right? Yeah, so that has been sitting in being a symboled state for quite some time now. And so we cannot unless we actually have check marks one.
-
-56:16
-And stand it up.
-
-  Speaker 1 56:18
-This will never go away because we don't even have the product here, right? So either, we have to decommission the entire thing. The problem. May we ask for an extension, just say, yeah. They have been giving us extensions. Yeah, that's that's going to be the key to get. It's been already been like more than a year now, so they are like, no, we don't want to do it.
-
-56:47
-Yeah, yeah, yeah. Okay, all right.
-
-56:54
-I'll see you next one, bye. Yeah, I'll see you. Yeah, you have the IBM one, right? Yeah, yes.
-
-  Speaker 3 57:13
-Okay, so.
-
-  Speaker 2 57:15
-Hey, pretty! Thanks for joining! We're trying to look at this llm access for a second, so proxy.whillsfargo.com requires a certain kind of service account. To access that particular endpoint, right? So, think about it like, this is, it would be service account. Uh, in the proxy domain.
+  Speaker 2 32:18
+Yes, ma'am, I'll do that on Friday morning, same time, so that everybody's included. So, if anybody is missing here, please forward them the invite. Thank you, yeah, thanks. All. Thank you all. Thank you.
