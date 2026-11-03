@@ -1,632 +1,515 @@
-00:00
-All summer heavy blue legs portal side?
+00:27
+We need and.
 
-  Speaker 1 00:02
-To not have collisions on. Exported the queries, because when we have teams and Corbin or project the, the name is the same. So we put the suffix on the name, so we have the. If it is the project or the team on the the project, so if any, if any Collision occurs, it will create a new a new file for for.
+  Speaker 1 00:29
+Madu, right? Or coconut.
 
-00:25
-To insert it in. The receptor tool, so I will show you here some, so I will need. I will need to to just do this on this side because I did those revisions this morning. So, in terms of the insert, I also need to ensure that everything is okay, but I can show what we have right now.
-
-00:45
-So, let me share the screen okay. So this is. This is an example that I did. I know that you guys. I talked with the concrete yesterday and Miguel. I know that you guys are on 974. I did hear the test that I did. Was based on 967 on our side to 98x.
-
-01:05
-That is the the one that we have currently under development, but it's the same for this purpose. So, what I did to to ensure that? These words. So I only deal with the card queries the corporate, but now I need to test with the team level of rights and.
-
-01:24
-Just make sure that everything okay, but I can show you here. The the main purpose of the the tool, so? These were those for all these scans. It's the same project to use. I have here. One scan that was done with the queries without overrides. Then I did an overrides of the queries, and I did another scan.
-
-01:45
-We can see here that the query version changed from. Ones can do another, but similarity ID is the same, so it's the main functionality for the product. And I did the same on the new installation that is 998 hex that I use the same. The project and I did scans with normal queries.
-
-02:05
-And we see that similarity is still the same from the original scan and the override one. And the last one is already with the use of the exporter and importer tool, so. This is a scan for the same project with overrides, but those overrides were already exported and imported from one server to another, so, and we can see here that the.
-
-02:30
-The query version is the same that very version from the right one on the previous installation and the similarity is kept from all the the occurrences from all the results that we have so. Uh, we ensure that for in this case for court court level queries? The override that is extra or the yes, the override that are extracted from an old server.
-
-02:55
-Are inserted on the new one, and the result is kept. The similarity is kept so, and from the top that I had yesterday, we can pretty Miguel the. In terms of the script that? We'll import the. The proper the the? The the comments and the results from the previous installation.
-
-03:16
-It's only need to to not transform the smart ID, only to keep the the same one that is used on the the last server. And the results will be matched from the. With these, you guys don't need to go to service. Now to go to other tools and change the smart TV.
-
-03:34
-For the the last or the previous results that were from? So, in terms of work, then this is was done for the code queries. I only need to test with the team level queries. And the the mail that you send. Pradip was good for this for these tests because we have a lot of.
-
-03:51
-We have some query query level queries so. From our side, we only need to ensure that those insertions and those. Those extracts will not Collision and will not. Substitute the the queries from Corp to team, will not? They will not be the same, so we we are generating. Name files for each, but now I need to ensure that the import or the yes, the import on the new service is also maintained the team level and the clock level for the queries and the scans are done with without errors without compiling errors.
-
-04:30
-Because if we have some? Difference here in the the group that is owner of the query or the team. That is, under that, we can have comparing errors, but we need to ensure that the end. In terms of work from our side, we only need that to to have a full solution to send to you guys.
-
-04:47
+00:44
 Okay.
 
-  Speaker 2 04:49
-Okay, sounds good. So the you mentioned the team overrides, right? So the team IDs would change from the source environment and the destination, so that should not be a problem, right? What,
+  Speaker 2 00:51
+Yeah, I would want Andy to join because he would have to run the. The script. Uh, you know? So, did we get everything worked out? No, not yet. I mean, Nuno said, that he's gonna demo. Something today. Okay, yeah, I will try to demo what what we have?
 
-  Speaker 1 04:59
-What happens? It's the the file name is the same. So, when we have a card level or an override. The file will be the same if you use only the name of the the query. Now, we are using the name and the theme the the theme with the suffix for for them, so.
+01:16
+We send already apart, I send it. I sent it yes to the our money to ready to do some tests in Export. We, I also had.
 
-05:16
-If you, if you have a team that is Corp and team, we will have two files to import one for the team, one for the core. So that was already changed on the extracting tool, and I can send you for you to test. Uh, but but then we need to ensure that the insertion is also good for for this for this net.
+  Speaker 3 01:25
+The categories part that was not in the last thing that I sent to Pradim. So I will, I will show it right now in this demo. And then I will send everything.
+
+  Speaker 4 01:35
+Yep, so
+
+  Speaker 5 01:35
+I see the value and Jagadish have joined. And I think, um, that's a good representation. And there's Andy as well. So, yeah, I think we can go. Yeah, we can go. Yeah, go ahead. Okay. Yep, so I will share my screen.
+
+  Speaker 3 01:48
+I will do this slightly different. I have here. A small resume on what we need to do. From one server to another. So we needed that. We have here six steps one did that is exposed copy. Zip folder, then check the previous part is link categories. And do a scan for us to to ensure that everything is okay, so.
+
+02:13
+I will start. In the destination in the source server or the the? The one that we that is in use right now, so I'm I'm having here server that is in personality. It's about yours, but it's just for test. It's good for us. So, I have here the export.
+
+02:34
+Uh, folder. I will delete everything that is there. I will run the exporter and I need just only. Access the device, Define the database that I want, and then the output folder. I'll go one with this.
+
+02:59
+Not running?
+
+03:03
+I don't know if it's for shooting or not, but I. I can do the enter here.
+
+  Speaker 6 03:10
+The servers. Okay, now it's gone. So it exported the.
+
+  Speaker 5 03:17
+The queries. Now we have, and I can show you here. If you have got the injection for the number of vocal injection, because the injections are not right for the team cx1 and override. Team CX1, so we have all the overrides from per team or per project. They have suffix with the name so that we we don't have collisions.
+
+03:41
+Then, we have a manifest that. It says to. But where it were exported. And then probably black, as like I said you before. We have here. Csv with all the relations. Okay, awesome. Yep, so sorry, there's a little bit water. But the relation between all the queries and all the categories that they build on.
+
+04:09
+Good. Yeah.
+
+  Speaker 3 04:15
+And transmute your case. I created here in my side, the security bug bar category,
+
+  Speaker 1 04:21
+Right?
+
+  Speaker 3 04:21
+I can show you here. We have here. I created this. With five categories and some. Relations between code injection and these categories.
+
+04:43
+What will it now? I will pick up this overrides. I will go to my local machine. I will put it here.
+
+04:58
+If I, if I go to my database, I see, that's okay. I don't have any uprights. I have the the the teams created. And the categories already created here so but no associations. No associations here, right? And in terms of scans, I have two scans for one project that is a normal project and one process that belongs to a team.
+
+05:25
+And we can see here.
 
 05:36
-Yeah.
+We have two scans for each. Track and go to projects I have to scans for it, so that's the information that we have here. And so, we have. This my cash for? For this query, and those queries are not override. We are seeing here the product ID. I have my queries already in the my PC, so I will run the insert part, so I will call.
 
-  Speaker 2 05:37
-Okay, so you're saying the team ID, even though it changes that should not have an implication on? The movement, right? But
+06:06
+Yeah, the inserter with the access to the database and. The folder where the the queries are okay. I will insert those. And I hear some some difference so. When I have, for instance, I
 
-  Speaker 1 05:46
-You are, you are saying that the team will change. Yeah, I
+  Speaker 5 06:24
+Create this just to show that if the team is not created, the the queries will be left out,
 
-  Speaker 2 05:51
-Mean, the team name would be the same, but the team ID assigned for that team would be different. Yeah, okay. But
+  Speaker 2 06:30
+Right? So team override
 
-  Speaker 1 05:56
-Yeah, but but these these names will be the same, right, correct? Yeah,
+  Speaker 5 06:32
+Without the impact. This means that there is no theme for this query. In the the new server, so? We have to. We need to have all the old if we have 10 teams in the. The Source server. We need to have tempt in the destination one. So, for the ones, if you go now to the database.
 
-  Speaker 2 05:59
-Those will be the same.
+06:54
+We can see that we have already the overrides here. Uh, the ones that are created that are not going to the project, the ones that are override by by. I hear several rides Corporal rights, team of Rights, normal overrides, empty queries so. And if if we can see to the old server?
 
-  Speaker 1 06:00
-Okay, okay, okay, but that that is the the main. The main part is to to match the team with the the correct names, and if the ideas will change the it will, it will do that that match for us if if. You if you want. I also prepare the tool to read this kind of file.
+  Speaker 2 07:16
+Those ideas start the.
 
-06:19
-So, this kind of file can be used to. To do like a filter that that I, I also sent yesterday, so this can be a filter file. And everything that is here. Everything every everything that is here. Every query that is here can be filtered like that, and the export will only deal with these queries for the important.
+  Speaker 5 07:22
+From 400k. From 1 to 31. But this is are? And then that's the same. If I go to my server? Ladies are from. Foreign from 1 to 31. So here. I don't have yet any categories Associated. I can run again. I can run again. The inserter with another comma?
 
-06:40
-Then, after that, the important part? Okay, like anything like I'm saying to you guys, I need to test this because this is new. Was done this morning tomorrow morning, so we need to ensure that everything you go goes goes okay.
+07:54
+And the common. Categories. To the same folder to the CSV. Where is the categories? And if I do this? It will import again with the also and then. The relation that I have in the sources they are here. So, now, the I, I have this great ID Associated to these categories.
 
-  Speaker 2 06:56
-Okay, and could you repeat the conversation with Miguel about the decisions carrying over? Is that also going to bring over the decisions?
+08:19
+That are the ones that weren't the SRS server so? What the, what can then? Can I do next? Now, I have the overrides. I have associations. But I'm missing. Uh, final test. That is to do some scans, so I go to the server. Harold was kind of here.
 
-  Speaker 1 07:04
-Probably Miguel has more information than than I do, but from what I understand yesterday, Miguel, correct me if I'm wrong. Is that all the script will be the same unless? Less departed, transforms the similarity.
-
-07:21
-Yeah, so the script is not going to change, um. It. It's going to do the same thing. Uh, and we still need a mapping of the query IDs.
-
-  Speaker 3 07:33
-To make sure that we we're doing one-to-one, so no changes there. I think the main change here is going to affect your Downstream, like reporting, right? Because the similarity IDs are going to stay the same? Um, but we don't have to modify the script at all to make sure that dispositions are carried over.
-
-  Speaker 1 07:54
-So, we still need scan on the new instance. Yes. Yeah, that's to put the the like actual triage information in the target environment without the.
-
-  Speaker 3 08:06
-Without the entry in the target environment. When you try and make the API calls to like, update, result, States, or add comments, it'll fail without it.
-
-  Speaker 2 08:16
-Okay, so no, no. Is there no backend way to just bring over all the dispositions and comments without the scans?
-
-  Speaker 1 08:26
-So can. Can you detail more that that part?
-
-  Speaker 2 08:29
-Yeah, since the query IDs are not changing and the same IDs are the same, right. So, can we not bring over the the dispositions in the you know from the old database directly to the new database instead of having to run rerun the scans?
-
-  Speaker 1 08:44
-I can't answer that. I can't answer that, but like if Miguel is saying that is needed, I will trust it on on this part because he knows the script better than I do. Yeah, yeah,
-
-  Speaker 2 08:57
-The script works, right? The script, I mean, the script basically requires you to do a rescan correct. My question is, can we not bring it over directly from the back end instead of having to do a new scan so that when a news can happens in the future, it'll automatically bring in the?
+08:44
+That one looks kind of cute. Then I go to the other one. That is the team one. Down to another scan. The sensor school. So, these scans will take two minutes, I believe, or two or three minutes so I can go here. So, the resuming the everything that I did until now?
 
 09:13
-The decisions made for that simadi.
+Running the export, we have severals. We have several steps in the export. We have several properties to to call the export, but the main the main ones are.
 
-  Speaker 1 09:19
-Uh, I can't answer you because seem like in terms of scan is related to more Fields that are the path results and the not results. And, uh, I don't know if it's possible to do. Like, you are saying, I really can can tell you that. Okay.
+  Speaker 2 09:24
+Just the server.
 
-09:41
-So, in terms of, yeah, go ahead, sorry. I'm just asking so, the the initial the query transfer was something that we'd asked about a few months ago, and at the time the response was that's not not feasible, but it seems like that was just not having, uh, full contact with all the groups that would be involved.
+  Speaker 5 09:26
+Output folder. Then we have. A choice to have a filter CSV file just to export all that if we, if you want to export. In batch is to. Uh, one file for each, but we can do that. After that. Export destination folder will be like this. The the language, then all the overrides with the information on the team on the project and Manifest and category CSV will be also created.
 
-10:01
-Are there additional groups that focus on how that data is handled within the back end? Who would be maybe able to opine in on here if that is feasible?
+  Speaker 4 10:01
+Copy. The folder example is the process tool just from one server to the to the other.
 
-10:14
-We need to test it. We need to test it, you you are asking for us to test if it's possible or not, right? So again, if we can go through and do a back end transfer, move
+  Speaker 5 10:06
+To check that this is a manual process, or if we have a script for that. To import this, the teams just to make sure that all the teams that are in the. The first server that they must be on the second one.
 
-  Speaker 3 10:26
-Everything into the new database so that the the vulnerability dispositions States.
+  Speaker 4 10:20
+Insert the query that we did right now. We have several efforts that you inserted skip. This already exists the code like that conflict if it has. The same ID, but the different. Different source code, but if you are doing in, like, Main State, you will not have this kind of cases.
 
-  Speaker 1 10:32
-Comments. All of that is transferred over in the back end, then that removes the requirement to do a full rescan and and transfer as we part as we move the. They'll roll out of the new system. But what what you're asking, for instance, is to preserve all the project IDs all the?
+10:40
+Then link the categories the standard I did before just called the inserted. Categories and? The file where the categories are. And after that we are doing the scan and after the scan is. Okay, they are still working. So what? That what I pretend right now is then to just?
 
-10:51
-No, so, so that the question is just to remove for a given similarity ID that is calculated? Yeah, the association of that similarity ID to known? So, disposition state in a comment. So any, any vulnerability ID that is there similarity? ID, that's there, and created in the existing system has a connection to a disposition State, as well as a a list of comments, and so that's those are the key items that we want to transfer over, and so.
+  Speaker 5 11:01
+Prove that we take the queries. We took the queries from the the source server we inserted we preserved. Quite any. And then we preserve this entity. So if we are doing new scans on those on those same source codes, we'll should have the same similarity for the same results.
 
-11:25
-If that requires a scan to be present, then we can go with the existing route, but we're looking for. Is it possible to move those over and then that way. The first scan that runs on the system once it calculates the similarity IDs they should match up and link up the the new scan that runs.
+11:22
+So, we are seeing here six results. The they are the old ones if you see from the they are from yesterday. If I press F5 now? Some from today. Already, those ones have been created right now. We see now that we have. We have results from override queries. The one from the team and the one from the normal overrides.
 
-  Speaker 4 11:43
-So essentially, can we bring over the tables that carry? I don't know, I don't know. Imagining stuff, I'm showing you here at the table. For instance, this is the table that has the path results in this case, so.
+11:48
+The similarity is the same. Enter the same for the other query that we have the product queries, the overrides, and the similarity is still the same. Because the result is completely the same. So similarities get? And this is the short reason from one to two does so. Now, you guys need to test on your side and to see if it runs good against your your data just to.
 
-  Speaker 1 11:54
-The similarity is not the one thing that matches because we have the query version that we we are maintaining. We are maintaining this and this, but the path ID. The result ID will not be the same, so we really need.
+12:14
+I can show another thing if if I want to do. For instance approach. If I can do a punch? Everything is doing. If I go to Great? Oh, greatness here. So, is that something we can do? Yeah, to get rid of what we have in there today. Yeah, yeah, okay,
 
-12:15
-Project IDs, so I don't know if you can keep those those IDs. If we do a migration and?
+  Speaker 4 12:34
+Can we do the same with the scans too that are out there?
 
-12:28
-Before these ones, I can ensure that it will be the same.
+  Speaker 5 12:38
+Uh, the scans let me check, but I believe so, because the scans are also here. Yeah, they they actually. We can see here the tables that are clean. We have the table from presets, preset details, path results. This, this one's bad results scan statistics. Uh, result in tildar, all from the the scans execution.
 
-12:36
-Because they are related to project ID the project that this will be must be the same or not. For me, it's very, very tricky and complicated. To answer if it's possible or not, we can do some tests to understand that, but I can ask you right now. Yeah, and I think that.
+13:02
+So, everything okay, and, uh, just just to be sure that that would also kill any dispositions that we've added in there already. Uh, Miguel, just confirm, but I believe. So, because the query is that this one that is? If I select here, the select. From path results.
 
-12:53
-Idea would be. Are those values required on go forward if we transfer the existing records? Are the result IDs in the path IDs actually needed for future scans, or are they just back references to the previous scans? They are like, like, they are kind of the back conference. But again, I can't ensure that there will be will work if we'll export and import directly.
+  Speaker 4 13:29
+Yo, correct me if I'm wrong, but the dispositions, not, not here, not this one, not the result. I think it's in the labels, right? Yeah, but they are certain sensitive to these.
 
-13:20
-Yeah, in the in our instance, the simile is set to be.
+13:41
+The results labels, right? Yeah, but I don't know so well, so.
 
-  Speaker 2 13:26
-You know, valid for all the projects within a team, right? So? If scan a under project a has the same idea and has a decision, it will actually carry over to a different project as long as it is within the same team. So?
+  Speaker 2 13:48
+Yeah, but they are associated to the project ideas that we have here the all the information. Okay, so. Uh, that would not kill any teams that you have, right?
 
-  Speaker 1 13:45
-Yeah, we have. We have a lot of related columns here, and to preserve all the full IDs. I don't have an answer for this. Yeah, okay. We can test it. We can test it, but probably hit me here. Also have more information than I do here on this part, but I can assume if it's possible or not this at this time at least.
+  Speaker 5 14:02
+We should not kill any teams. Yeah, because the games are inserted by you guys, so we, which the case the teams must be there before the if you?
 
-  Speaker 4 14:11
-And back to Dale's question. Are there others that we should engage or get on this call? Who could answer those questions? If Miguel doesn't have the answer, and you guys don't have the answer? You go. What are your thoughts in? I mean, my answer is no, because?
+  Speaker 4 14:12
+We must assume that the teams are the same that are on the the ones on the destination server must be. The ones on the source server. So, to everything, this everything to go as we plan, but the teams must be there. Yeah,
 
-  Speaker 3 14:32
-Once you start doing this, essentially, you're kind of putting.
+  Speaker 2 14:25
+Right,
 
-  Speaker 1 14:36
-Oh, fake entry for a skin.
+  Speaker 7 14:26
+And Andy, we've set up the teams right already. Yeah, the teams are set up. They can have. They can have, uh, they can have different ideas, but the path. The team path and the full name should be the same.
 
-  Speaker 3 14:39
-Um.
+  Speaker 5 14:45
+I do have a couple of questions, right? So
 
-14:45
-That seems complicated. You can ask the team in r d, um, like you said, I don't have the full answer if it's actually possible, but it does seem like you're adding a lot of complexity and a lot of room for air. We're just not running the skin. Um, and what would the benefit be of having the disposition there, but no skin?
+  Speaker 1 14:49
+So the, when you did the import, it was a full full export, right, the initial exporter so? I still have to test the filtered export because we don't want the entire thing coming out.
 
-  Speaker 1 15:07
-So it removes the need to do a batch scan across all several thousand components, right? Um and then Landings. Eventually, you do need to have the scan area, otherwise
+  Speaker 4 15:02
+If you ensure that you don't have collisions, you don't have the same ID on the several batches. Probably, it will work as good as the. Uh, full one. Okay,
 
-  Speaker 3 15:18
-The vulnerability or the report or whatever is not there, but it kind of is right. Yeah, it does not matter if it's not there until they run
+  Speaker 1 15:17
+Okay, the other question is, I'll test that the other one is, yeah. What if some query IDs are missed out of the first run, can we? If you do a subsequent run. Would
 
-  Speaker 1 15:27
-This man. So, we have apps that go through, uh, release processes, sometimes quarterly, and sometimes every year. And so? For those apps that are not actively running builds in and deployments, they may not. They may not scan for another few months, and so we would like for them to be able to run that scan later on.
+  Speaker 4 15:28
+That cause a conflict, or would it because they will not be in the database? They will be inserted almost as new. Okay,
 
-15:50
-Than when they do all their dispositions. Carry forward the if we don't have this option to carry everything forward in the back end. That means we have to upfront the scan. Everything is part of the transition, and if it doesn't have a scan, then we can't carry those dispositions across.
+  Speaker 2 15:35
+Yeah, but don't do that. Test brother, yeah, I'll do that, and the other one is.
 
-16:08
-Correct.
+  Speaker 1 15:40
+Let's, I mean, I see an instance where some of the team overrides did not import, right? I mean, I don't think that will happen. In our instance, it was not
 
-  Speaker 3 16:09
-And just to
+  Speaker 4 15:46
+Important. Yeah,
 
-  Speaker 4 16:10
-Add to that, we we have some apps that have 12, 000 dispositions.
+  Speaker 1 15:47
+Yeah, I get that.
 
-  Speaker 1 16:17
-So we need them to come over. But just just for you guys to have some some Russian here. For instance, this is the main table. The results levels we have, where you have the updating user update, stream data, numeric data. But yeah, then we have similar daily. That is the one thing that we are capping here, but the project is all path ID.
+  Speaker 4 15:48
+So, because the team was not on the server, yeah, yeah,
 
-16:38
-We are not preserving, so it's very tricky to have this information to be the same or, or to have any kind of match. Because these three columns, we are not preserving them, got it.
+  Speaker 1 15:52
+My question is, what if that happens? And can we rerun again after? Yeah, okay, you can create. You can create the theme, and then we run just for this queries, for instance. Yeah, okay, so it's not gonna. If it's already there, it's not going to overwrite right. No one.
 
-16:53
-And mostly the project. I think the result I didn't pattern. They could change a little bit, but the project ID will not be the same for from all the brushes. And getting in the project ID. We use a lot of different projects within a given team, and so you can have a bunch of different project IDs, and if that that variance in the project ID is not an issue now.
+16:10
+Let me try to.
 
-17:15
-If we were to put in a zero or a placeholder value, that is, is just there so that there's something present. Is that something that's feasible, because if we've got the variance now? The is the absence an issue, or can we put in a placeholder value that just has it there so that it doesn't mellow causing error because of a null, but?
+  Speaker 4 16:17
+And try to insert it again. Skipped exists. Also, don't please skip exit, skip those keys. Yeah, okay, perfect.
 
-17:38
-Is that an, is that an approach that could work? From my side, you only hear an yes or no after doing some testing from those tests. I don't have it right now, so. Really can't answer that with one other position already, but 90 or 80 percent. So, so, don't
+  Speaker 1 16:28
+Yeah, the conflict is, it doesn't exist, right? And the state exists okay, perfect? Yeah, this is great. Okay. Ah, what? Is the conflict gonna um give you a list of the teams that are missing? It's here, but let me check. Probably the log files. Yeah.
 
-  Speaker 2 17:57
-You do this?
+  Speaker 4 16:51
+Team does not exist on. Yeah. Pattern of this conflict, and it tells you the team that is missing.
 
-  Speaker 1 17:58
-We can. Yeah, we can test that, but I don't know if it will work. Okay, so don't you do this seamlessly for check marks one migration?
+17:08
+And what tables we need to clear before running this one?
 
-  Speaker 3 18:06
-Yeah, but that's different because check marks. One has a different database. It's a good, completely different product, right? But it does. It doesn't reference any project ID or path ID or anything like that. I mean, it just sped up differently, right? Because all we're doing with the migration of the check marks one is, we're just pulling this data.
+  Speaker 5 17:12
+This group actually has a yeah, it was The Purge. Yeah, what did that? Okay, yeah. And the tables are here.
 
-18:27
-Um, extracting it out of SAS. Okay.
+  Speaker 1 17:19
+And there were two delete options, right, you know? So, can you demonstrate both? One one is, and the other one is delete. Yeah, the government parts if I do only the the drop? Another perch. It only goes to those that I was related to queries. Okay.
 
-  Speaker 2 18:37
-Okay, so I guess we'll have to take your word for it, right? And unless you can? Do some tests. So, in terms of timeline, right? So, how close are we to actually? Testing the query movement part. In in the? You know, in one of our environments?
+  Speaker 4 17:39
+Yeah, and the parts removes the like, you said the semi. So right, the scans, the scans information? Yeah, okay. Another tangential question there is, can we selectively remove? Like older dispositions and not the entire thing.
 
-  Speaker 1 18:57
-The great moving part from our side. That, and from the the work that we did for the last three days, it was working for the Corporal of Port the court level, so I need to test it for the team in court, and after that we have a solution for this.
+  Speaker 1 17:55
+Um, he's not prepared for that. Okay, I mean, that's something that we have struggled with right in the past. Yeah, but
 
-19:08
-Okay.
+  Speaker 4 18:01
+You can, you can do by SQL script in the server. If you want just to delete some of the data, you can do it this, this, what is done, been done here, is normally leads from from tables.
 
-  Speaker 2 19:10
-All right, and I'm assuming you have the in the tool you have the exporter, right? I'm assuming there will also be some something like an importer, and that also is going to do rights to the database, or is it going to make API calls? Yeah,
+  Speaker 7 18:13
+So, it? It sounds like this is, it may not be actually deleting the scans, but it's deleting the connection to the scans that are there or the and the dispositions like it's losing the traceability for it?
 
-  Speaker 1 19:23
-We have a an exporter that was sent yesterday, so we already found an issue about the team level query. So, so that was already fixed, and then we have an importer that will take the the. Like, I can show you here. The generated files, like I believe, was running this.
+  Speaker 4 18:27
+Uh, if you remove the buff result, for instance, you will remove the the connection to the the
 
-  Speaker 2 19:42
-Yeah, for
+  Speaker 7 18:32
+Right the connection. But if the data is still in the tables.
 
-  Speaker 1 19:42
-Instance, to take these files and insert those files in the database, but the issue that we'll find is that if we ever find personal info for the core playable and 14 level, right? It will be overright because the name is the same, so we did something like this that was.
+  Speaker 4 18:36
+Yeah, results level will be there because results levels are not being deleted here. Yeah, okay. Can we kill that too?
 
-19:57
-To put here.
+  Speaker 7 18:46
+Ice cream, you go. What did you have to say here?
 
-  Speaker 3 19:58
-Dmx got it. Yep, yep. So, yeah, yeah, we'll have two files, for instance and and B, yeah. The input also requires.
+  Speaker 4 18:52
+To kill.
 
-  Speaker 2 20:06
-A database write access, right?
+  Speaker 7 18:55
+So we've, we've taken, you know, as as done all his testing, he has performed scans in both EPL and now prod because we thought we were going live. Um, but he's performed scans and prod. And, uh, u18. And he's also brought over dispositions as part of his testing stuff.
 
-  Speaker 1 20:09
-Yeah, okay, perfectly on the server. Yeah, got it. Okay, so I, I will need Andy. Madu mothers have to run that I, I don't, obviously, don't have right access, right? So?
+19:14
+So, there's a bunch of stuff out there. Of actual data that's been brought in that we're not going to need anymore because we're going to start from scratch. So, without having to do a full installation of check my skin and do the reset up of all the teens and all the etc, etc can.
 
-  Speaker 2 20:22
-It has to be through a previous account. The work, the work for important expert, is it's the same in terms of accessing databases. It's the same. No, but I, I don't have right on the. Yeah, okay. Okay, I only have read okay.
+19:33
+Is there a way that we can perch that data? Purge the scan data. Yeah, purchase skin and disposition data. So it's clean before we go again.
 
-  Speaker 1 20:40
-So, hey, pretty. That is one thing that our team is trying to understand, like, how this is be executed, so we could also. For when it does come to production. So, if you could include us on on more of the products? Um, yeah, but we kind of need to know.
+  Speaker 5 19:49
+Uh, that one stuff because I think never part of the reason why you're doing this is because we couldn't find a way to delete everything from like your current environment. Um.
 
-20:55
-Yeah, absolutely. Yeah,
+  Speaker 2 20:04
+And, and Miguel, I mean, that's the one which closes the bloat in the database, right. All the old scan data, which we don't need.
 
-  Speaker 2 20:56
-It's a, it's an executable which actually takes in the database name credentials.
+  Speaker 1 20:11
+Yeah, so is there a way to just Purge?
 
-21:04
-If you guys want, I can. I can tell you that the the tables that need the right access on the on this equation? Yeah. So, no, no, I mean, know that everybody's here, if you don't mind, can you do a quick? A small demo of how the tool works so that Andy and team are aware of how it works and so that they can do the import.
+  Speaker 5 20:15
+I think that, yeah, the best way is just going to be just wiping the GB and re-running the installing. Um, yeah, but that's a
+
+  Speaker 7 20:22
+Lot of setup again,
+
+  Speaker 1 20:23
+Right?
+
+  Speaker 7 20:23
+You got to set up all the teams we've gotta there's lots of changes that we made in the background to, and we've got to make sure that they're all set the same again and. If we could get around that, that's our preference. If we have to do it, we have to do it.
+
+20:38
+But our perfect is to not. What about the retention, uh cleanup in the UI?
+
+  Speaker 4 20:44
+Since these are now, like, um, broken paths, and they're still going to be like Nas files. I guess, uh, the the NASA is still going to have those those files, um. Does any of that cleanup? Uh, what Tracy's? Bank, it'll it'll clean up a geese in amount, uh, so it'll clean up.
+
+21:03
+I think we can get the list of tables so it will clean up like the.
+
+  Speaker 5 21:08
+The older skins, um, and some of that know the results in there, but Like the dispositions and stuff those will stay. Those two not get affected by the data retention. Right, but if necessary, if necessary. And if you guys can see that, the first did not affect any previous scans.
 
 21:29
-I can do. Let me see if I have here the right. Environment.
+Cycle here.
 
-  Speaker 4 21:34
-And by the way, we we need to wait to do this in our projects until. Uh Nunu, and others they've done their testing, right? We're not ready to go yet in our projects, because, um, we get one shot in our projects and then. Then the queries are in there, and we would take a reset for us to do another test that, you know, to get those out and do another test.
+  Speaker 4 21:31
+The previous scans are mounted because the perch only affects the the thing that is related to the queries that were installed and overrides, but We can set up a set of SQL scripts to do this on the right. Okay, I'm gonna say the right position, for instance, because we have to remove the child data first and then the parents, but?
 
-21:59
-And that takes a lot of time. So, we need to make sure that we're truly ready to do the test and project like, we've gone through all those scenarios and called out the things.
+21:53
+I can, I can. I can check with Miguel and try to to reach here. A clean solution for the SQL script to delete all the data or play about the data that is connected to scans. Yeah. It's almost. It's almost the one that we did here, but without the filtering on the queries and the overrides.
 
-  Speaker 1 22:10
-And from what I said that we we need to test this part, that recipe yesterday that is related to teams team quite level. Yeah, yeah. And one thing for Martin that we still want to validate or verify is. The environments that we already have for uat and prod and ngdc.
+22:09
+Yeah, right.
 
-22:29
-They've already been built out, and there's a lot of customization that's been implemented in there to match our current Heritage environment. So, are we? But we want to see that. Can we run this against what's already in there or clean out those tables? Um, that already have the old queries and see if this works as well.
+  Speaker 5 22:11
+And keep in mind what we're really trying to do is make sure that we don't leave orphans out there that we can never clean up, because that's what we have in the old database. We've got all these orphans and nobody knows how to clean them up.
 
-22:51
-Before we go ahead and have to build out the four data center environment again, yeah, that'll
+  Speaker 4 22:21
+Yeah, that's why they must be removed from from the correct position because the shell ones must be first and everything that is parent from any shelf, uh, but we can get the sort of the list of tables and the. That are all related to a scan. Yeah. Yeah, and dispositions.
 
-  Speaker 5 22:57
-Be the next step. I think we get it right. Tested and product fixed. Just just make sure the queries are coming over properly. When we run scans, you know hopefully we'll have an answer on whether or not we can get the dispositions over too without running scans, but we'll do some testing of running scans just to make sure some IDs are matching and.
+22:41
+Yeah, and those positions. Yeah.
 
-23:17
-You know, all the stuff is carried over as we think. Do all that in projects before we touch uat. And I thought the first step is, we'll see if we can kill the tables in uat.
+  Speaker 2 22:46
+I'm assuming when, when I'm talking about scans, I'm everything that is cleared because of this position is also associated to the scan. So we?
 
-  Speaker 3 23:28
-First, without having to do a full reset, right? So, Nuna, is that even? Is that even possible?
+  Speaker 4 22:55
+Probably the results label that out of the position are the the most child item that we have there. And then we have the the note results. The buff results that are associated to the vulnerability flow, and then we have the scan itself. Yeah. And, and how much time is that going to add to this process?
 
-  Speaker 1 23:34
-Yeah, prices. For instance, for the inserted part for the the one that will import the new queries for or the old queries for the new installation, we have a drop option that will remove only the overrides and the queries that are inflated. Overrides we are talking about query query version query groups.
+23:12
+To have those scripts. I believe. If not today, tomorrow I can send to you guys. Okay, perfect. Thank you. Yeah, that that can be a separate activity, right? I mean, meanwhile, we can test the.
 
-23:52
-And we have a completely purge that is goes directed to all the teams. All the tables that are related to a scan that is involved. The queries for presets category, so if you guys want, we can do this only drop the the. The tables are targeted to the queries, a complete purse that if you have scans that are using those queries, we can remove those.
+  Speaker 7 23:26
+We can do it on the we can test on the clean
 
-24:15
-Or, if you can do a just a clean installation, a clean insert on a clean installation?
+  Speaker 1 23:32
+In perfect. Yeah,
 
-  Speaker 2 24:21
-Oh yeah,
+  Speaker 7 23:34
+Yeah, but I'm talking about for when we're ready to test on uat and get it, get it going. Like, we're gonna do it broad
 
-  Speaker 1 24:22
-I definitely wanted to clean.
+  Speaker 4 23:40
+And my tests are not so broadened from the information that you have, you have a lot of queries. You have a lot of uh teams, so probably if you find something that is not doing the right way you should send to me right away, and I try to have a quick fix.
 
-  Speaker 4 24:24
-Install is painful.
+23:55
+And because metas are more limited than yours, okay? So pretty! Do you have a database that you'll be testing this on?
 
-  Speaker 5 24:25
-Yeah, let's drop if we can.
+  Speaker 1 24:04
+Uh, I can see. Like, I said, I only have read access. I don't have right, obviously, for good reason. So I can do the export, but you'll have to help me with the import, right? So it says, and
 
-  Speaker 1 24:27
-Okay, so you guys, you guys, all right, already? Yeah, but yeah,
+  Speaker 4 24:18
+Yeah, because yeah, I was asking is because sometimes we have servers that come up on our list that you guys. Also have, like your own check marks environment.
 
-  Speaker 2 24:32
-But Purgeon,
+  Speaker 1 24:28
+No, yeah, our experience. I'm asking if you guys, yeah, we don't have a we don't have a source, and we only have a single one, and that's very small. And that's used for just internal testing, right? So, we don't have a source and a Target to test, so this needs two instances.
 
-  Speaker 1 24:33
-You have
+24:44
+Yeah, okay, no, I just wanted to understand, like, what the next step was, if you were actually gonna?
 
-  Speaker 6 24:34
-A lot of stains in there already.
+  Speaker 4 24:49
+Uh, work on your own environment tested, then come to us. And then we do the big test, or we just go straight to the our lower environment testing. Yeah, but
 
-  Speaker 2 24:35
-Yes,
+  Speaker 1 24:58
+I'll take the data from the Heritage prod. And I'll give you that data, and you will in do the insert on the.
 
-  Speaker 1 24:37
-In the birds, if you guys call this dry run. You can see what will what the application will touch so we can see all the tables that will touch. It will tell you all the the number of files, the number of registers that are on those tables. You can check if those if you have something that you don't want to delete or not, probably if you are just doing tests, you can remove everything.
+25:10
+Projects. Yeah, and then once. Nuno has the new version of the utility, which also purchases the the node results. I mean, the scan data. We will use that in uid. Right, so we can probably meet. A couple of days, so you need to clone the data. But if we need to close the data from Legacy prod to ngdc profix?
 
-25:01
-Uh, and then after that after reports, you can do a clean installation. It's like a clean installation.
+  Speaker 4 25:39
+We already have all the data in there.
 
-  Speaker 4 25:08
-So, if we do that, and then we bring the queries in, what will they be able to use to set those right IDs as it needs to, so it's? And where I'm going with that is, I know, query IDs are incremental. Um, but your script of bringing in those queries is is able to set them to what we want it to be, right?
+  Speaker 1 25:49
+So, from Heritage Pro to? All the environments, starting with projects and then u80, and then prod.
 
-25:31
-Yeah, it's preserving them, so it doesn't have that constraint of it's got to be incremental. No, okay.
+  Speaker 7 26:01
+Before we. Before we touch uat, we've got to figure out how to clear it out first, clear out all the what's in there. Yep, I think that has a question. Please go ahead.
 
-  Speaker 1 25:40
-Every, every idea that you have in the old installation will be will be preserved for the new one. Okay.
+  Speaker 5 26:13
+Yeah, I'm sorry. I think it might have, oh, we already touched on the query descriptions, right? Yeah, so can you? Yeah, things looks like it's bringing in the custom description size. Well, can we double check on the UI side? Just make sure it ties out. But yeah, but I talked yesterday with project.
 
-  Speaker 4 25:47
-And when we do The Purge, it will allow us to reuse some of those numbers again.
+26:30
+Yeah, okay.
 
-  Speaker 1 25:52
-Yes, because all the parts what it does. It goes to all the queries that are above 100K, and we'll remove those and all the the tables that are accelerating to those queries. Okay, yeah.
+  Speaker 4 26:32
+Because here in the XML file, we have the. Description IV. Kevin, this is not important. Description they must be already in the database if not with this if not with. Idea, they must be mentioned. Afterwards, I don't know. But it was not preparing for that right.
 
-  Speaker 2 26:06
-And, and no, no. One thing I know, one, yeah, sorry. Once again, another. So, one thing I noticed is the the tool is not bringing in metadata. Aligned with the queries. So, what do you
+  Speaker 1 26:56
+Got it. Yep. So again, I mean, we'll have to. The custom description description is manual, so if it's if it's the if it's retaining the vendor description, then that will come through. Okay, but for the custom description, we will have to do that manually. So that's that, the script won't handle it.
 
-  Speaker 1 26:17
-Mean about metadata?
+27:13
+Because the product ones the
 
-  Speaker 2 26:22
-Anything like that. So, is that? Yes, it brings that, because everything that is related to a query and I can show you the the file that you sent. If you go here, the file that you sent. On the XML that is created.
+  Speaker 4 27:15
+Product ones will be there. If you have some custom description that must be set by hand, right? Yeah, thanks. Thanks.
 
-  Speaker 1 26:40
-Ultimately, it is there.
+27:28
+So, I was just looking at the the way that you're running. Um, you know, SQL, you're obviously running it locally. Here, we're at me, running it, um, you know, to our listener? Yeah, probably the server. You must. It's a network one, and then you must. You must, yeah, yeah.
 
-  Speaker 2 26:42
-Okay, can you open one of the
+27:45
+Where can we get taken to get this CH incentive.exe, uh, I will send right now. I will put in the Salesforce ticket that we have open, and
 
-  Speaker 1 26:43
-We have we have the cwe, the severity, the description, the packets, the query ID. Everything is here, and the the source code is also here. Okay,
+  Speaker 1 27:57
+I will update it, right? Yeah, I have that, uh, mobile, so I'll verify that at least the export, and then I'll give the the command line and all that stuff so you can. And it, each in everyone. We have a readme file.
 
-  Speaker 2 26:52
-Can you everything that is
+  Speaker 2 28:17
+We need to scan the dxc right before running running calculus. Scan it for.
 
-  Speaker 1 26:53
-Written to the query? Every metadata is being imported. Yeah, okay. Can you go back to the the batch one, which has the ESP ones? Okay.
+28:29
+I mean, I.
 
-27:08
-Uh, can you open one of these one, which says?
+  Speaker 1 28:32
+Yeah, don't quote me on this, but this is like a one-time thing, right? I mean, if you were to operationalize this, then potentially you'll have to, you know, do the paperwork, but this is a. I would call it a one-time activity so. Okay, yeah. And then, yeah, we will have to.
 
-  Speaker 2 27:12
-And anyone, any anyone? Any query which has the prefix EASP? Yeah, you open one of them, please.
+28:48
+Operationalize this, I guess. Potentially, if you are going to reuse this later on, so?
 
-  Speaker 6 27:24
-So, what are you missing we
+  Speaker 4 28:58
+So, from my side, I will send the the tools that exported it already sent to probably the way the update to to create the mappings for the galleries, and then also the inserter, and I will start drafting the the queries to wipeout the tables.
 
-  Speaker 1 27:25
-Missing here? Yeah, we have
+  Speaker 2 29:18
+Okay, sounds good.
 
-  Speaker 2 27:26
-A custom severity called bug bar. Um, you know that we add? And, uh, this is not the this Verity. Yeah, that's the default one. But yeah, looks like we have to manually go in and add that. I mean, it's there in the current system.
+  Speaker 1 29:22
+Tracy, I mean, there was that question that Dale had raised about the moving of the disposition so? Should be. I mean, is that subtle that we are not going to do it or? I'm sorry, said that again. Uh, if there is a way to move the dispositions? Through the back end.
 
-  Speaker 1 27:42
-Okay, okay, so you are telling me that okay, but I can get you that because the okay, when do when you change the severity you are curating over right, but this is over, right? This is not the right to do severity. No, the severity is correct, but we have additional metadata.
+29:41
+Right? So, the I think the answer yesterday was countries is going to check internally again. I'll be pursuing that, or are we okay with just using the script that Miguel has? I would love it if it that could happen. So, yes, we're pursuing.
 
-27:59
-On top of the severity, right? So?
+  Speaker 4 30:04
+Can bring you
 
-  Speaker 2 28:06
-But where are you saving those that data we do that in CX audit? So, it's a custom field.
+  Speaker 7 30:04
+Yep, the
 
-28:15
-And do you know the custom field? Yeah. It's called security bug bar.
+  Speaker 4 30:06
+Thing that we potentially Miss. If we go with the current model, is that we do have the the non-epl ones, the manual scan it's? On the radio side, and so there will be cases there. I'm expecting that teams will go through, and they may not catch up or anything you might have some scans to get dropped so it can go through the back end and just take everything.
 
-  Speaker 1 28:21
-Do you want to import that field also? I mean, we can do it manually, but if it can be done through the script, that will make it simple, but we can always go. Just send me the just send me the the right custom field. We can. We can include it here in this metadata.
+30:28
+That would be great, but if we do need to go and use the current route, then we can also do that. It would be good to have more information about specifically what's not peaceful about the the back end route. If that is is not an option. Yep, okay, I don't see his Mega still on.
 
-28:40
-Then we can insert it, but that that custom field is only at the query version level. Antiquity level. But it's on the query table or the query version, but I don't know because there is a difference because the query version is where we have all the changes to the query.
+30:45
+I don't see him on here.
 
-28:58
-And the query table is only to have the. A full picture for, for instance, for the for the guy. It only has the the last version of the query. It is at the same level as the severity. Okay, so I will send you. By mail, for instance, because we have this table.
+  Speaker 1 30:48
+Um, no, and was gone. Preet invited. Yeah, he used it either. Yeah, okay. So, yeah, everything dropped. Yeah. Yeah, but yesterday needed to drop he's in the town, they said in the truck. Okay. So, I mean, it probably shot on. Yeah, probably don't have enough time to have that as well, right?
 
-29:19
-I don't know because we have this table here. We have the query table where we have, for instance. Severities here. But we also have the query version that where the overrides are kept. Or they eat one. I don't need. And, for instance, we have. Um, design. What is designed here?
+31:09
+So, I don't know. We'll have to push for it. So, so Nuna, who will be the contact, who, who can answer country then? Miguel award, that
 
-29:50
-We have disappeared, but this ability can be different from this one, because at the query level, this is the last verb that was defined for the query. In here, we can have several rows with different variables. For instance, if you guys change the square D6 solid, we'll have. Uh, let me try to show you if I can show you.
+  Speaker 2 31:20
+Schultz
 
-30:10
-Just me. Look at these ones. Select. Hungary versions. Shear, for instance.
+  Speaker 1 31:21
+I mean, is that somebody else within Jack Mart? So, who would assist them, or how does that work? Simon is here. I don't know Simon if you have any information on this or not.
 
-30:34
-For instance, we can see, for instance, this query here, the query. 1k. We have two versions version one and two. The two probably will be the one that is hectic. Yes, and for instance, if that, this ferret can be changed. When you do a change in sex, all it will create a new range just like this, and this vert will be here.
+  Speaker 4 31:37
+I, I do not. I do not. I was just fumbling there with the microphone. I apologize. No, but I, uh. If if someone needs to chase people down? Relatively good at that. Okay.
 
-30:54
-But you are saying that we have a new column here. The custom field, right?
+  Speaker 2 31:52
+Do you want to chase them down, or do you want they? Should we need to chase down?
 
-  Speaker 2 30:59
-Yeah, I'm just trying to find out where it is on the database, but I.
+  Speaker 7 32:00
+Or get to follow up with Guthrie. And if you send, uh, if you send, uh, gum free, uh, an email copy me? Yeah, I'll do that. I'll I'll put that.
 
-  Speaker 1 31:04
-I, just I, I just need the table and the name of the the field. If you can give me that, I can try to add it to the import or exporter. Okay, let's, uh, we need to be sure of the table and the the the. The field name. Yes, I will find that out and unless okay, yeah, anyone knows nugget, you have?
+  Speaker 2 32:13
+Uh, what. What we need. We just need a definitive answer whether what we're asking is possible or not.
 
-31:27
-You might. Recollect. If you know others, I'll go back and look it up.
+32:24
+I'll follow up all right. Yeah, sounds good. Thank you. I love that.
 
-  Speaker 2 31:39
-Okay, all right, I'll I'll check. It feels like if you send me that information I can try to to add it to the export and important. Yes, okay. So, uh, so in terms of timeline, right? So you, you will have this, like, really later today or? Probably Monday. We are already in our afternoon, but.
+  Speaker 4 32:27
+Yep,
 
-  Speaker 1 32:04
-To be to be fully tested with the the probably I will do this afternoon. Okay.
+  Speaker 7 32:27
+Because it seems I don't know the back end of the software, but if it seems that the dispositions are tied to a sem ID. So, if the table slash tables that has those dispositions in it if they, if it's the sem ID, is there, and by carrying over these queries, the semis are going to be the same once the scans happen.
 
-32:14
-If it was not for that, it would be ready.
+32:49
+You know, why wouldn't it just make those connections and go? But again, I don't know the back end. Yeah, but
 
-32:23
-So, this is the
+  Speaker 4 32:54
+Imagine this race if you can have the same source code, for instance, in two projects that are different in the the portal. And this money will be the same for the symbol and the village, but you, you can have one disposition for one project in another position for another one, so that's the relation between similarity the project and result.
 
-  Speaker 2 32:24
-Query I have for the the bug bar. I put it in the chat. Yeah. So, it's not. So, you are directed to you. Go directly to Catholic, but category 4 query, yeah. Why are you going to Gathering for query?
+33:12
+I believe it's necessary. Okay, right, okay,
 
-  Speaker 1 32:48
-You know, this is the script I have for exporting the bug bar.
+  Speaker 2 33:14
+And
 
-  Speaker 2 32:53
-Yeah, but the query that you
+  Speaker 7 33:15
+Maybe that's the answer. But yeah, we just want to make sure that someone has thoroughly looked at that before they give us that answer. Yeah. And that separation is there, even though that the. The collection level is at the team and not the project.
 
-  Speaker 1 32:55
-Are. So here is the query that is used to associate the query for a preset, for instance. We have several presents. And this category for queries to associate the query to a specific category on the inside preset. I don't know why you are using this. Yeah, this is at the same level as the.
+  Speaker 1 33:31
+I, I think
 
-  Speaker 2 33:22
-Uh, the OS top 10, and, uh
+  Speaker 5 33:32
+I can. I, I try, I can try to to get the information, I don't know,
 
-  Speaker 3 33:25
+  Speaker 1 33:36
+Yeah, right now. But
+
+  Speaker 5 33:37
 Yeah,
 
-  Speaker 2 33:25
-All that. So that's where this is, so this is like metadata. Yeah, this. This critical bar is the preset that you are using, right? Yeah. Yeah, yeah, all the the preset, the queries that we want to move over, are in the preset that that does live and. Okay. But the the column that you are talking about.
+  Speaker 1 33:38
+So internally, I think it maps to the project and the project maps to the team, and there's a flank which controls whether it's at a project level at the team level. That's how that mapping works. So, the project has to be there for that to and tied to that team.
 
-33:48
-For instance, the this. To preserve the spread. This is in this. The table or not? Uh, say that one more time. It doesn't make sense to have to be squared this table. I mean, this was how it was. Okay, this query word was used to extract the queries that you are using, right?
+33:54
+But anyway, I mean, I think yeah. For some reason, they have made it. Simpler than check marks one, and we don't know how that works, but Yeah, I guess we just need to have a definitive answer, right? So? Yeah, yeah. Okay. Sounds good. All right, I'll wait for that.
 
-  Speaker 1 34:19
-But what you were talking about will have a custom field, but from that, custom field is in another table that is not here correct? You're always inquiry or query version, right? I need I need that. I need that. What's the table and what? What is the name of the custom field?
+34:13
+No, no, anything else here on this call?
 
-34:36
-If you guys want to preserve that data, also, if not, we can go with what we have right now.
+  Speaker 4 34:16
+No, I believe on our side is everything. Sarah, you're providing this to pradeeper. I'm assuming it's getting put in a ticket and pretty soon start working with, um.
 
-34:46
-Okay, I thought I put all the tables in there, but I can.
+  Speaker 7 34:26
+And 18 to to do the testing. Yes, right,
 
-  Speaker 2 34:50
-I, I can show you, you know, a full export of what the data is of all the queries. And then, I'll send that over to you. Okay, okay.
+  Speaker 1 34:29
+And,
 
-35:05
-From
+  Speaker 7 34:30
+But, if any, anything that you encounter, you can send me directly by mail or buy the ticket. Yes, absolutely. Yeah.
 
-  Speaker 1 35:06
-My side, I can try to do my best for this afternoon, but I believe it will be impossible to have a fully solution to send it to you guys. Monday is the the? The best date for me to have forgive. You want to step another call on Monday to go over whatever they have.
+  Speaker 5 34:37
+Okay, thank
 
-35:21
-Yeah, I can do that. But are we okay, in terms of timeline?
-
-  Speaker 4 35:28
-Yeah, I. It's great if we can get it as soon as possible, but it is their end of day so. Yeah. Okay, yeah, it'd be great to get this.
-
-  Speaker 1 35:40
-I can send you if I have some some solution. I can send it for you to test. You can do tests on your side and send me the feedback. And if I want, if I need to to work on that on our Sunday morning, it will be, I believe, five hours before your your time.
-
-35:54
-I can have some some more information if we spell this medal for for the same hour.
-
-  Speaker 6 36:04
-There is actually lot of details felt, and I asked is sorry if it is a silly question. So, you guys do all this in Projects. This is primarily for deep and vendor, right? So we have product fix is totally empty. Is what I heard we don't have much, but our u80 is different.
-
-  Speaker 3 36:21
-Correct.
-
-  Speaker 2 36:22
-So will
-
-  Speaker 6 36:22
-Be here. Any surprises process when we do this immunity because we're gonna do this. We're gonna do this in project first and then do the same in uat so that we can.
-
-  Speaker 4 36:34
-Figure out what the surprises are because you since uat matches prod. And we know we've got data in there that we're going to have to clean out first, we need to figure out what that clean out is going to be. So, the step one is to just make sure we can get these queries imported over and that.
-
-36:51
-The Sim IDs are matching and that you know everything is there that we. Hope to be there, and then we'll deal with. Testing this in uat with how do we do this for real in prod based on where we are with uat and Prime today?
-
-  Speaker 6 37:07
-Okay, so to me, this is the first step one of the test. The actual test is when we do this again in uat, because that's how. Yes. And what is that timeline will look? Like to know Tracy, any estimates like, we can't tell until we get the? We get it working in projects.
-
-37:27
-I'm stroking, so I'll tie it with this one first. Yeah, yeah.
-
-  Speaker 4 37:31
-We gotta work out the Kinks and profits first for as much of the Kinks as we can. And then we do the same, but hopefully less Kinks. I mean, you know, we will have dealt with the first set of Kinks. Before we hit uat, and then we'll figure out what other Kinks there are that have to be worked through.
-
-37:49
-Till Monday, when they come back, would we know whether broad fix is good? Because no, because so we can't even test in projects yet until? Um, the check marks team. Does their testing? And tweaks and things. So, we're still waiting for for what we need from the techworks team.
-
-38:10
-Before we can start prefix testing. Right, pretty? Uh, this audio is looking at the bug bar. So, can you password question again? Yeah, we're, we can't do any testing and projects until we get something else from the check Wars game. Of course, we're still doing their testing. Yeah, we don't have that insert over yet, so once Nuno sends it over, we'll have to try that out in broadcast.
-
-  Speaker 2 38:39
-Okay so, uh, no, no, we'll wait for you. And is there an action item for check marks to look at the the decision data over, or are we settling on? The script that we already have. The request is that they look at ask. Find out whoever from their team can help answer the question of.
-
-38:59
-Whether or not you know we could bring over that data in a way that's not going to be? Destructive.
-
-  Speaker 4 39:07
-With the in a different way so that we don't have to do the scanning beforehand. Yeah, I, I see, can print on here. So complete. Is that something?
-
-  Speaker 2 39:16
-Practically possible. From check marks. Um, I can check with the teams. I should have an answer Monday at the earliest. We might have to talk to a few r d folks based on Israel. I'll check with the team. Okay, so that's an action item. Tracy, so I think we'll wait till Monday and then decide.
-
-39:40
-You know, we may have to go with the script or agree, agree. Yeah,
-
-  Speaker 1 39:44
-And the risk there is that we will have, uh, rework that will have to be done if we have a team that comes back and doesn't scan immediately, or if we cannot initiate a scan for them somehow. Um, I'm just expecting that we'll have. We'll have more noise if it's not able to do that back-end transfer.
-
-  Speaker 2 40:14
-Okay, since this is good, I have another topic since I heard gun breath on quickly. It's not. Plenty one. Can I run that? Yep, go ahead.
-
-  Speaker 4 40:26
-Okay,
-
-  Speaker 6 40:27
-Because I don't know if that involves rntt improve complete yesterday. I looked even right this. There is another parallel. We want to expand our managers. I, we want that infraspec. I don't know which team you want to involve. So, to get that info back to us so we can start that in parallel.
-
-  Speaker 3 40:43
-Okay, let me follow up with Andrew to confirm. I know Andrew was working on it. Um, so let me follow up with Andrew to confirm on that one. Okay.
-
-  Speaker 6 40:54
-So, I mean, this time, let's include all the right people to look at the data and give us so that we can get that started. Yeah, Andrew is the point on that. Um, he's already got the information, so let me see. Um, he is, and putting them together and getting back to you.
-
-41:09
-So, I'll confront with that with him today.
-
-  Speaker 1 41:12
-You compree with that. Can you make sure that Andrew did or was able to connect with Peter because we showed Peter all the same stuff that we went through? Um, and he had some questions.
-
-  Speaker 3 41:25
-Angels, our environment a lot more, and he wanted to put in his input, so you just make sure that they connect.
-
-41:37
-Thank you.
-
-  Speaker 6 41:48
-They? No, no, I put in more data on the tables.
-
-  Speaker 2 41:52
-And I will also send you the entire dump of the metadata for the queries, but that's where it's. It's getting the data from.
-
-  Speaker 6 42:06
-I don't know
-
-  Speaker 2 42:06
-If you heard me, or if you're a nude, but it's in the in the chat.
-
-  Speaker 1 42:08
-Sorry, sorry I was. I was talking. You put that information on sale for ticket, or just think that area in the shot, it's only in the chat. But yeah, I will. I will get the entire list and I'll add to that ticket. Okay, thank you. Thank you.
-
-  Speaker 2 42:24
-Okay, sounds good, and one other point I want to just mention is that we could potentially use if this utility works. We can use this to move queries from. Non-Production to production. And have the, you know, have Andy do the query moves to production. And, you know, retain the query IDs and everything so that that's something we can look at.
-
-  Speaker 4 42:48
-You
-
-  Speaker 1 42:50
-Mean,
-
-  Speaker 4 42:50
-Like when you guys add new queries? Yes, yeah. Can you test them in UIT and then you want to move on? Yeah, sure, you could. Yeah, you could do this instead of. Yeah, it'll be good. Yep.
-
-  Speaker 6 43:07
-Okay, do
-
-  Speaker 2 43:08
-We have anything else I'll set up a call again for Monday, same time and? You know and feel free to? You know if you have to talk separately about anything
-
-  Speaker 1 43:18
-And in the if I have anything in the mess I will send to you or in the ticket or by mail. I can send you that feedback. Yeah, yes. Okay.
-
-  Speaker 2 43:31
-Thank you very much for your all your help on this. We appreciate the urgency. Yeah, hello. All right, so we don't have anything else right.
-
-  Speaker 6 43:46
-I'm kind of Jordan. Okay, all right. Yeah, thanks. Thank you. Yeah, thanks. Well, thanks.
+  Speaker 7 34:38
+You for this. If this works, this is going to save us. Yeah, right. Thank you, thank you. Thank you, thank you. Thank you, bye.
