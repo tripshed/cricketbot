@@ -1,458 +1,824 @@
-  Speaker 1 00:00
-Some issues even before adding the false positive and to do, like those features, do need to be added into scarpy to use that new data. But the recall number is the pretty sent out yesterday. Awful, um post scarpie, um, and it folks. I can say that way since late August.
+00:00
+Apparently, there was no upside earlier this year, right? It was canceled because it was a glass wine. Oh yeah, I think. Scheduled one, and they canceled it last minute. Yeah. Let me put on my headphones.
 
-00:21
-Um. So, I feel like that may be like issue number one. And if anybody has any thoughts on that or an understanding of what's going on?
+  Speaker 1 00:35
+Feedback is cyber, as an organization has changed. Um, in the sense. It has a glass wing, obviously. Can you hear me all right? Yeah, okay. Yep. Okay, the glassware has put.
 
-  Speaker 2 00:33
-Oh, Jeff, what do you mean by late since late August?
+  Speaker 2 00:53
+Uh, kind of everybody on like 24, 7. Kind of, not all teams, but a lot of those teams, right, right? So that was the thing?
 
-  Speaker 3 00:38
-Also. Okay, let me, um.
+01:09
+Uh, things like that.
 
-  Speaker 1 00:42
-Paste in this table that you would put right, right? So? If we look at this table? Um, if you look at like? I mean, basically, maybe it's been all time, but if you look at the recall number? It's like the original scanner if I remember, right? Um, we're getting raw out of the scanner.
+  Speaker 3 01:14
+Oh yeah, you're breaking up pretty.
 
-01:04
-We're in the like mid 30s, at least, if not close to 40 percent,
+01:20
+Hello, yes. So, yeah, like, I mean, a lot of things happened, leading to the meeting, like the FAA. The Java.
 
-  Speaker 2 01:08
-Right
+  Speaker 2 01:31
+So, yeah, that became kind of a team like.
 
-  Speaker 1 01:09
-Recall on the ground truth, but coming out of scarpie. I'm seeing recall listed as 18, 16, 10, yep. And for losing half to two-thirds of our findings. True findings that's not good.
+01:39
+Uh, the general idea was to speed things up for all teams, not only our team, but that's why I was asking you those questions, you know? Um, one thing for for this team really is. We need to finish all the migration activities it needs to be completed and what will not extended to q1, right?
 
-  Speaker 2 01:26
-Yep, agreed. I mean, with this saturation, it's even it's even trending downwards, so we have to.
+02:00
+I said I'll follow up. That's why I'd asked you about the recipe. Exposition. Oh, what's the stat? I mean, we we should be done with that at December, correct? Yeah, it'll mostly be done. There might be some.
 
-  Speaker 3 01:32
-You know, it cannot go even worse, right? At least we have to maintain what we have or make it better. So, am I understanding it correctly that this is, like, we're looking at numbers after, like, this is happening in scarpie somehow, right? Yeah, this is pretty clear. Jeff, like, uh, sorry, brother, we are not filtering any data out, right.
+  Speaker 3 02:18
+Some leftover activity. But yeah, most of it should be then.
 
-01:54
-All we are doing here is, like, right here, that we are getting in draw.
+  Speaker 2 02:21
+Yeah, the left door activity. He doesn't want any that. That's a joyous thing. That's one of the action items for me to make, sure. But really, I mean, we still see. We still have the old environment, right? So that has to be like, shut down. And, uh, there is.
 
-  Speaker 4 01:58
-We are putting indicators on top of it if the if it is matching with some duplicates and stuff like that. So, just to be very clear, there's nothing at filtering out in Scorpio as an output standpoint. Hey, let me let me add on to that. So what, what we're calling, scarpy filtering are the the query filters that that we apply right when we pull the data out of scarby?
+  Speaker 3 02:35
+There will be something or the other that will come up with the plan correct. We are coming out with a plan, right? Yeah.
 
-02:21
-Um. You know, as part of our bulk load process, that's a manual query that we run right today. The pipeline scanner basically has that exact same query, but it's sort of it's called as part of the process by scarcy, but it's completely absec bold.
+  Speaker 2 02:42
+When is that shut down? I know it won't be shut down. It won't be shut down in December. So, that's for sure.
 
-  Speaker 1 02:39
-Right, and it's doing things like, you know, filtering based on on, you know, data quality or filtering based on whether it's an LLN or whether it's got the it's got the triager, um? You know, verdicts, and? Reason codes filtering. It's got known false positive pattern, matching filtering that it does.
+  Speaker 3 02:51
+So there will be some research. I mean, during freeze time, they're not going to shut it down. They'll leave it running for at least three, three or four weeks. So, and December is freeze, right? So only January. They will start decommissioning those servers and stuff, so there might be some residual work, but most of it will be done this year here.
 
-03:01
-So that's that's what we're talking about here, so I don't know whether it's a question of maybe we don't do some of those things as part of the the gt50 testing. Um, and maybe that's why it looks like the way it does. Going back to August, you know, we have added, um.
+  Speaker 2 03:11
+Okay, but those the cut over is cut over correct. Everything points all the all the queries, all the dispositions, the AC access, every app team accessor, everything is checkbox ftg, crediting next week. Correct? Yes. Okay, okay, then the shutdown. They just want to extend that shutdown because it a joystick was when you're doing a migration you're switching over, so there should not be anything trailing.
 
-03:18
-Some filters to improve, you know what? We ship to AVR, and then maybe that's our issues. Maybe we need something less, you know, to do, doing less filtering for our ground truth testing than what we typically do, for, you know, shipping to AVR. But so I put in the other table that pretty provided, which is sort of what started.
+03:39
+Like, I said, I'll check, so
 
-03:40
-This, so we've got the raw recall of the ground truths. And then there's the post-processing, and we see that it went from 34 in the raw findings to 16 percent. After post-processing, so I didn't know if pardeep if you can. Like, just make sure I'm not misunderstanding it. Um and.
+  Speaker 3 03:42
+It's really funny. Understand what is really funny coming from him. I mean, he he has to. I mean, there's a lot of. Paperwork that has to follow and close out, right. All the metrics still point to the world. Instance. Yeah, all that has to get switched over. There will be.
 
-04:03
-And maybe there's a reason why maybe we don't care about those findings even though they're in the ground truth? I hope that's not the case, because that's what I've been designing testing around, but I think we just really need to understand what that means.
+04:00
+Yeah, there'll be some active, you know, but it'll be a little trail off. But yeah.
 
-  Speaker 3 04:17
-Yeah, it's a yeah. The scarpie filter is sort of taking out a bunch of those findings, which have to be there right in the final set, so we have to find that balance of trying to maintain that recall. Or improving the previous numbers, right? So?
+  Speaker 2 04:05
+Okay, so, yeah, so that that came came up. The second thing that came up is, let's do the engine pack. So, he asked me. I think he asked me before that, but he repeated that at the upside also, and we should still push for the engine back. So okay.
 
-04:37
-But this, I mean, there was a question as to whether we can just directly use the raw output. We cannot because the raw output has a lot of other issues. It has a lot of duplicates and. It has to go through that scarpey processing so. But the scarpie processing has to be, you know, intelligent enough to not?
+04:23
+I mean, with Rajiv and Raj, and then he said, schedule a meeting with Krishna saying, if you need to. Try to try to get that done this year because they were very motivated for. The LG DC migration. But that, but they're. Helping us with the injured power. Complete, correct.
 
-  Speaker 2 04:55
-Get get rid of the actual valid findings.
+04:43
+Yes, they are not yet. And they will. Yeah.
 
-  Speaker 3 04:59
-Again, we are not getting rid of anything value, right? So, yeah, it should be very clear right from a Skype process standpoint. We get the raw, right? All I am doing is. I'm adding new fields to the raw.
+  Speaker 3 04:49
+We can have. I can set one meeting up. For the week after, but when we reach out to Rajiv today, because I need to talk to them about something else, also, yes, I'm going to reach out to him, I think. Uh, if he cannot talk.
 
-  Speaker 1 05:13
-And I'm adding some indicators, which are like things like that which I'm creating about. The data in the row and the count of the data in the refined, which is the output that's copy produces is the same. Going back to chase point, we are consuming the data after it is refined, right?
+  Speaker 2 05:04
+Uh, we should set off something and what I want to do is, I want to get this their feedback. And then, I want to schedule something in Krishna, saying at least. I can go back to a joy and say, I've tried all levels to try to get this done.
 
-05:33
-What kind of filters that you are applying on top of the data? To determine which findings are valid from the output standpoint. I think that's where the filtering is happening, right? So, just wondering, like, you know, because it's very important to know where the filtering is happening right to know the right ownership of it?
+05:19
+In the freeze, true that there's nothing happening after November, December 15th, or what is the freeze,
 
-  Speaker 2 05:55
-Um,
+  Speaker 3 05:26
+The freezes, the holiday time, right? So holiday time the bank does not allow changes.
 
-  Speaker 1 05:56
-So can you talk about like what that, like, what that data set is that you've got from post-processing? It's like, is that what would be the equivalent of what gets fed in as aphids? Yeah, like,
+  Speaker 2 05:33
+Nothing like that, right? Oh
 
-  Speaker 2 06:09
-Where
+  Speaker 3 05:37
+No, those might still happen, but the the BAU, the regular stuff that usually on hold, unless it's emergencies with their emergency changes, then? I mean, the freezes from a service now. Change request standpoint. So the bank will not try to make major changes around the holiday season. Yeah, that will definitely take that.
 
-  Speaker 1 06:09
-Are we tapping this?
+06:05
+Yeah. If that happens, then everything is
 
-  Speaker 3 06:10
-Yeah, that's my understanding there, so it goes through Scarpey filtering and then whatever comes out of the filtering gets fed to AVR. So I, yeah, I, me and Jay were talking yesterday, and I shared him the. Share within a bunch of findings, which are filter out. Um, so?
+  Speaker 2 06:08
+Hard to freeze or stuff like that, right? Okay, so, yeah, so it engine back? We need to do the other thing came up in gt50. Uh, so I said by short. More where we have the slide. I showed that we are struggling with this, so his question was. Why are we taking on additional maintenance?
 
-  Speaker 2 06:29
-Yeah,
-
-  Speaker 1 06:29
-And I want to make sure that I'm not. This isn't, like, I'm not blaming Scorpity. Molly, like we've got, I think what we're seeing is like control systems that we need to do is start the absolutely right. But what I'm trying to differentiate here is. The data is getting filtered out, at least the data that is presented here are like duplicates that we found in check marks right.
+06:29
+And holding off the rollout of new features because of that, right? So, I said we've all. It's already an airr, he said. You don't. You don't really need that. And I expect. He also said, yeah, we don't really need that. But then, I talked to John. Uh, Chad was also in that same, the same discussion I said.
 
 06:52
-Or, like, there is some identification that we have done on top of the data based from the logic that appsec is provided. So just want to differentiate a few things here, right, because from a processing standpoint, we are not like dropping any data of the input is equal to output right, and the logic that is applied over there is saying that, you know, okay, for this particular finding ID it?
+If you believe that we need it is, we need access to flirtier models, right, right? We already have an app ID. We are tagging along
 
-07:15
-Maybe, like, it's a possible duplicate. That's what we are trying to highlight. Wouldn't these potentially drop over time with the with the GT set? Right, so if if they're duplicates from other systems right and and we've processed them before? What I think we need some kind of don't. Don't look at the other Yellowstones kind of exactly, and those are they are like very valid filters, right, that you have applied for a reason, right?
+  Speaker 3 07:04
+Okay and the local
 
-07:45
-Again, these are like, you know, some of the duplicates that are getting filtered out, are like from previous findings, check marks, and those kind of things right. That might tell you the trend right. Is that, like, it's picking up stuff that it's processed? Is not.
+  Speaker 2 07:05
+Execution versus the gcp execution, but local execution nobody is going to give you access to fertility models, right? So, yeah, the Frontier was really. Yeah, the frontier model is for the the multi, you know, the tier mult?
 
-08:28
-Not a.
+  Speaker 3 07:23
+Multi-Rater adjudication. That's the main reason for the frontier models.
 
-  Speaker 2 08:31
-Yeah, one day, but the cash pattern thing, right, like this? Yeah, thinking out loud is like, you know, here, after YouTube, there is a certain set of data that you want to load into area, but is also like, you know, the complete data set or the duplicated. What we identified as a duplicated data set, right?
+  Speaker 2 07:26
+Yeah, I said that. I said that we need that as part of that. We are going through the ARL process. And they are not giving us you will not. On your personal account, you will not get a tier borderlands. Yes, absolutely. Nobody has here they don't. Yeah, so then the whole idea of is kind of killing two birds in one stone.
 
-08:47
-Something like, you know, maybe there are multiple questions because that's
+07:49
+We get our app a gcp at the same time. We go through the process exactly. Yeah, right? That's yeah. Yeah, so. My question to you if we are already in the process, so we are not actively spending time on evaluate or actively spending time on. Which is already sunrised?
 
-  Speaker 1 08:50
-The normal duplicate logic that you guys are doing is valid for any regular scan but not always valid for the ground truth, right? Because Because you, you're aggregate more and more stuff over time. You're going to find more and more duplicates potentially, and you don't want those Downstream that that's.
+08:10
+Uh, once we once we use a gt50 there. So, are we going to gain anything gain back time? Based topic, their process, no right, we're drawing. It is not going to help us in any way correct. Not really. Yeah, I mean, if you get gcp.
+
+  Speaker 3 08:28
+Uh, enabled on vcm, then it will benefit us not just for gd50, but but anything else that you want to try to do, right? So?
+
+  Speaker 2 08:43
+He, he's he said. You don't need that for ground truth announcements you. You start doing the enhancement through. Either the sandbox or through jaw, so John is out next week, but the following week, whatever information we have given for. The eirr. We should collect that. We should give a projection of how much it will be and that we'll ask him.
 
 09:09
-That's a total valid thing, but with the ground truth you do actually want. To like to limit the the scope of what it's actually tagging or deduping anything? Because you want the honest like that
+To tag on our work with his access, you follow it and say, is it? Okay, yeah, now he wants to. He's willing to help. He wasn't, and I, it wasn't the meeting. And then I took the action item. I'm going to talk to John. And if John says no, because I after the meeting, also, I said, can you, can you modify?
 
-  Speaker 2 09:24
-Sad point. I think I like to comment on it. Yeah, I mean, this is basically what I was saying. You know, a moment ago, there are things I think that we need to not filter for for ground truth testing, right? They're things that are that are coming out because, you know.
+09:35
+Whatever you went through, your air, right? Just can you modify the purpose so that we can? We get pile or not. You know, we can use our gt50. We over all we need is the keys, right? So, guys, if the meeting he looked at Mike's family, and he looked at John and said, you can use your keys.
 
-09:43
-Logic is detecting it. As you know, a previous llm duplicate,
+09:56
+Okay, take the keys and start developing it. What is, I think, what is happening, is he has heard about it for three plus months? Multi-Model education, right, at least. Yeah, once I have been here, right? And I, because if the first month we proposed that driver our A? That here is flight, like which we did.
 
-  Speaker 1 09:47
-Then. No, we don't want to take that out as part of our gt50 testing that's going to skew the numbers, right? We're expecting it to come through, and when it doesn't, then you know, then we're going to think there's an issue. Um. But I think ultimately what it's going to come down to is, um, pretty.
+10:18
+Yes, at the beginning, yeah. Uh, he is he questioning. Why haven't we paid any progress on this? So, that's. That is very important.
 
-10:04
-If you mentioned that, there are some duplicates I think. In the answer key. So? Um, we just need to make sure that the filters that we are applying. Are in sync with with what our expectations are. From the enter key perspective, so maybe we're not supposed to be removing llm duplicates, but maybe there's another type.
+  Speaker 3 10:34
+Yeah, Mike is aware. I yeah, I asked. John and John was, like, yeah, just do air. He just put a he just set us a single comment, saying that, you know, yeah, let's go through AR and otherwise. The problem is, if you do it through ARR, then you'll have to use tacky on, and it won't even work.
 
-10:28
-Maybe there's like same scan duplicates? You know, I think certainly the? The the false positive cases we need to make sure that we're filtering those. You know, according to the answer key, so? Um, I think we just need to to make sure that we. It sounds to me like, we just need to synchronize the the answer key, um, with with what we're, you know, filtering for each one of these rods.
+10:52
+And that process is so cumbersome, I don't. I don't know who set that up, but yeah.
 
-10:53
-I think we've kind of gotten away, you know. From what we were doing originally just because of some of the additional filters that we've been adding, right, um? To improve what we ship to AVR, and we've just been kind of using that same query. And I think we've, you know, we've drifted because of that.
+  Speaker 2 10:58
+And the processes comparison and the pro. That's why a joy was trying to. I think he was trying to help, he said. For you to show progress, you really don't need it. I said, okay, yeah, let's go rather capabilities, right? And did you mention David Baldwin? He is the guy who sets up all these keys and stuff.
 
-11:11
-You got it. Yep, that makes sense. So, the answer key doesn't have duplicates, but?
+11:20
+Uh, you know? Okay, David Bowman is kind of head of cloud or something, right? So and, but he's
 
-  Speaker 2 11:17
-When I do The Benchmark run, it tries to detect duplicates, right? So if, if there is the same type of vulnerability being reported in various scanners, I've actually seen that in The Benchmark Channel, right? Gpt6 and Methos finds the same vulnerability. But they are slightly different, but they're like almost exactly the same variability, so you, you see, those duplicates in the Aurora, right, so that that is something that scarfy has to filter out?
+  Speaker 3 11:27
+The guy in charge of. He's the guy giving out handing out these Keys to, you know? CTM Ryan Lin's team, and even for IBM concert. They wanted the frontier model, so they were working with Ryan Lim, who was in turn working with David Baldwin. He mentioned that in a meeting.
 
 11:42
-And also what Aaron said earlier. You know, we cannot like, so we talked about this, right? So the check marks reduping that cannot happen for the benchmarking? And so does the the active filtering repo, right, so that that's something that's very valid for the BAU scanning, but not for benchmarking, right?
+So, that's why did they get it? Uh, that's yeah. The IBM concert? Hey, yeah, I know. I copied in one of the emails, but? They're having challenges to upgrade to a newer version of album concert. So, that's currently on. I mean, the the daily sync up calls have stopped.
 
-11:59
-So, because the the repos that we have in the ground truth? They are old, you know? They are at least like three months old now, so, and they are probably obsolete at this point, so we cannot remove those from. So, like I noticed that?
+12:01
+So, he said, once there is more progress, he's going to resume it. But, Yeah, it's this is the this time of the year, then it's gonna, you know, it'll be hard to get anything done. Unless it's already in progress, right? So Um. But yeah. But yeah, they haven't yet.
 
-  Speaker 1 12:13
-In this
+12:19
+The last time I spoke, they were still trying to get that enabled. They were issued the keys. But those keys were not. Accessible from the lab environment. That concert was so. I think they did get the keys, but they were not. They could not. They had to figure out they're trying to figure out how to.
 
-  Speaker 2 12:13
-Run, that active fitter filter. Um, that one actually has removed five repos because it thought it was obsolete. But they probably are obsolete, but not for the The Benchmark, so.
+12:39
+Have IBM console access to those keys so that you know the concert can? The concert is installed in a lab environment, right? So? The sandbox that you have?
 
-12:31
-Um. So, I have a one is, we're talking out loud, um? One thing I'm thinking of is.
+  Speaker 2 12:52
+And we can? We build our gt50 based on that, and we can we do the multi-modal education in the sandbox, so that every request we get is run it in the sandbox, which sandbox? At the the one here, the one you have the ct80 sandbox. You, you have that on the slide, right?
 
-  Speaker 1 12:37
-I'm wondering if I need to add an additional view to the scanner that is specific. It's like, I don't want to hand things to scarpy and and purposely remove. Duplicates. Like, because right now you know what. What we've got for the new duplicate tooling and the grading is that it's it's flagging things that are duplicated.
+13:14
+We have a Sandbox.
 
-12:59
-It's providing a like key to group them together on, but I'm not collapsing those and removing them from The View that's provided the scarf fee, but I could add in another view that does Implement that, and I don't know if maybe I should do that specifically for model grading, so that like, for deep, like, I, I?
+  Speaker 4 13:19
+This. Okay, um, okay, I'm blanking. Okay, let me open that once again. Yeah, pull up this slide, which I sent you. Yep.
 
-13:18
-Know that with like this test set with Mythos 5.1 and Soul 6, we're getting about an 18 collapse, so that dedupe if you if I gave you that view should be 18 less. Um. Then you're seeing for the 27. I don't know. I'm just wondering if I need one question.
+13:32
+I assume we have a sad love to work with?
 
-13:41
-For the evaluation of the scanner and the output right, right? For the ground evaluation, does the data really need to go through scoping? I mean, I think it's important for us to be looking at this as to how it is presented in the final. Review, but there also does need to be grading at the individual stages as well.
+  Speaker 1 13:35
+That little gave you some some access. No, he, yeah, that is still in progress that the sandbox thing. They said.
 
-14:03
-Um. I think it's important to have both. Yeah, if that is the case, Jeff, like, you know, when you provide that one view, right, you don't have to create a new view, right? I think we have both the versions captured, right, because when it ingest the data from The View that you are already providing.
+  Speaker 3 13:45
+We have to set up something on their side on on. On their instance, and they are like dragging their feet honestly so.
 
-14:18
-I ingest the data in wrong right, which contains the all the data, and then it goes to the processing and creates a refine, which is like another data set, which is the completely a different table, right? If we have both the versions, then you know, then, like the data is available to?
+13:55
+Yeah, so let's, uh, let's follow for that, and I'm going to follow with John. So, let's, let's put that as an action item. Yeah. Let's put that as an action item for us, and let's follow up next week. Let's figure out all days, right? I, I? Can kind of moved to December 14th, so that's.
 
-14:33
-In terms of, you know what filters they cannot play on top of it or how they want to use it because raw contains? Exactly. The data as present in your postgres table and defined countries like the post copy version right of the processing. So, then you know, we have flexibility to use, however we want.
+14:15
+Yeah,
 
-14:52
-But it sounds like we have some work on like how and where we need to tap for model evaluation, um. Because, yeah, that the number like, we don't want to be presenting those numbers we have in the right column. And now, we kind of understand why. Um, but we need to figure out how we're going to adjust this moving forward, so we have a standard reporting that's going to work consistently over time, right?
+  Speaker 2 14:15
+That's not a risk. I
 
-15:14
-So, yeah, one question is the only thought.
+  Speaker 3 14:18
+Mean, on Monday, you would have attended. Yeah, I would have attended it. That's not a problem. So, if it's an emergency, I'll definitely be there, but? And you then moved it. I mean, everybody is like. It's kind of hard to. I know, I, I don't know how they're gonna get everybody.
 
-  Speaker 2 15:18
-Is there a way you can tag The Benchmark runs as different from the the BAU runs? Maybe an indicator so that scarpie can? Not do certainly do Dynamic dedupe, right? For example, some of the llmd roofs.
+14:34
+Do that. The scoring, but yeah. Yeah, but most of them.
 
-  Speaker 1 15:36
-If we kind of separate that out using a campaign ID, then you know, right, which one it is, which is which one is a stock.
+  Speaker 2 14:43
+And the joyous convert. Was they just doing arbitrary scoring based on the answers? They, like, I said, yeah, of course, but we have tried to evaluate the weightage so that it kind of Falls heavier on SAS. Yeah, that's what I left it and you and I are waiting. Check marks higher, right, at least correct.
 
-  Speaker 2 15:44
-Yeah, so I
+15:02
+Actually, this time it did because of the supplemental questions. Did comma 5 so?
 
-  Speaker 1 15:45
-Can give you the campaign ID, but I also could prefix the first segment of the campaign ID to be, like, hey, so that you always know that. Those are model testing and not real scanning or something like that. Yeah, something unique that identify that it's a, it's a benchmark brand, not a BAU.
+  Speaker 3 15:09
+Compared to the last time when it was endored indoor Labs, which came came up high so. Uh, yeah. But then, overall integration cost is going to be much higher.
 
-16:04
-Let's cancel the thoughts on that J.
+  Speaker 2 15:22
+Thanks! So, even though we put integration costs based on every other system is going to be higher, because check marks is already there, you're just talking about. Uh, AVR integration, right? It's a whole new system. You're going to integrate with Xavier, correct? Yeah. I mean, yeah.
 
-16:12
-Um.
+15:47
+Low percentage. You put it high, but I was going to just say integration cost till high. Yeah, it is. It's going to be high. I mean, even checkpoint one is the net new system in service now, right? So? It will have its own AVR check, marks one plugin, and.
 
-  Speaker 2 16:15
-I'm not. I guess I'm not really sure.
+16:03
+Yeah, it has to go through that. Integration process and all that all that.
 
-  Speaker 1 16:20
-What we're solving for there. I'm sorry, I'm going on a little bit of sleep here, so it's just not clicking for me, but I, I, you know, I mean, we, we know what the? What the test runs are by by campaign. So, um. Ah, I'm not sure why.
+  Speaker 3 16:11
+Yeah, I mean you'll have to deal with that for any of the tools out out there. Except maybe whiz whiz? I'm told it's already there. Container scanning. So, if you were to choose risk, then it's probably relatively simpler compared to the other tools.
 
-  Speaker 2 16:36
-Okay,
+  Speaker 2 16:34
+And this is already in there, right? This is for a container, right? Yes, was for IAC correct infrastructural code, which which one? Wallace will be used for something, but koalas is vulnerability management, so that's not in the you know tool list. Yeah, but what is it being used?
 
-  Speaker 1 16:37
-Why can't we just look at the raw thing because there is some kind of logic in scarpie? To get these numbers from the raw, right? Some kind of aggregation or some kind of checking. So, yeah, when I, when I generate the?
+  Speaker 3 16:54
+Callus is primarily, for they have some abstract stuff, but it's primarily for, you know, finding OS level. One level T's and patches.
 
-16:56
-I just pulled my campaign ID and don't apply any of the filters. That's, that's quote unquote raw. It's, it's the refine. And Scarby. So I basically refined use. After all the, you know, enrichment has run and all that kind of stuff. Bug bar processing all that kind of stuff, right?
+  Speaker 2 17:06
+Yeah, infrastructure. Yeah, but not IAC. It's like pure infrastructure. Uh, things operating systems and servers, and it tells you what's if if it's vulnerable to? Set an open TVs and stuff.
 
-17:12
-But it's pulling it based on campaign that campaign ID without any other filters. That's what we call the raw data set, but in our terms, right, when we're we're looking at it, um, from like a benchmarking standpoint, and then the the final is once it's gone through all the additional filters.
+  Speaker 3 17:24
+Open disclosure was
 
-17:30
-Yeah, so like, maybe it's just that we need to understand what the chart is supposed to be like, raw, you want? High higher, right? Like, you want better Precision. You want better recall. I assume you want better sub one because these are like, these are matching percentages, right, like?
+  Speaker 2 17:27
+Purely container, or was it more than that? I think Pismo's purely container, and now that is transition to with, it's not Prisma anymore. And then it was, or what? What is that? I mean, it's still just the container, because there are other things also right now, which is, yeah, we're evaluating it for fast and everything.
 
-17:53
-So I found 61 of all seven ones. And, yeah, right. So, the in, in the raw, we want that higher. But maybe in the post-processing. I guess I, I don't know what the post process seemed like, how to read that, but like the fact that it is different is not necessarily a problem.
+17:47
+Although license is already there, no, we don't have the licenses for SAST, but with this, uh, it's sort of like a. All these platforms, they they are trying to do everything.
 
-18:11
-We just have to understand what it's saying. So the only number that I have concerns with purely grading on Raw is that we're not getting the benefit, so the Duke percentages should go down once we apply the. The duping rules, but we also want to make sure that those deduping rules aren't impacting our recall or set one percentages.
+  Speaker 3 17:58
+So, yeah, just like check marks, one check. Mark one has all the, you know, SAS tests SCA, anything that you can think of. And similarly, wiz also is doing. They don't. Their native SAS scanning capabilities are not very good. But their argument is, they can. Uh, you know, integrate with any other scanner.
 
-18:34
-Um. And so I would want to see wouldn't have you at least applied. Wouldn't that be in this raw because? Jay is, there are no filters. Applied to this raw because this is the that's right, okay? That's right, I don't want to penalize the fact that if both Mythos and and Seoul are finding the same findings.
+18:18
+So, if you use check marks, you can import check marks, findings, tools, and which can act like a.
 
-18:56
-Like, I don't wanna I don't want to develop a scanner that's going to suppress itself. Um, if that makes sense. Okay, so
+  Speaker 2 18:26
+You know, interface for all your findings.
 
-  Speaker 2 19:03
-You're saying, and we're able to identify the duplicates and easily filter them out. Um, they should be rewarded for that. Okay, so you're saying that? You're gonna let the dupes come through or remove the dupes. Well, so right now, the dupes come through, but they are tagged with keys that allow the system to collapse them.
+  Speaker 3 18:29
+If it's not native,
 
-  Speaker 1 19:27
-So, that's where I was saying, do I need to provide a view that's dedicated for model grading that applies those? That deduplication. Um, so there's a there's a view that can be pulled and graded straight off the bat. Otherwise, let me just add those rules. Sorry, go for it.
+  Speaker 2 18:30
+Okay, so they want to play that game.
 
-19:48
-No, sorry. Jeff, um, I was just going to say we have not yet added the the logic, so the filters that we're applying. Today are our pre-existing filter, so llm dedupe is the, you know, pre-existing, where it's just matching against, you know, old Mythos only? Findings and old. You know gbt only?
+  Speaker 3 18:33
+Uh, they were saying, you know, we are not. You know, we don't claim to be the best, but we can integrate with anybody out there so. I see, I.
 
-20:13
-Um, it does not have logic to use the new grouping Keys yet, so I just kind of want to throw that out there. That is the the next thing we need to do. Um, it won't take long. It's pretty easy to do, but it's it's not there for this at the moment, so we can add it if we we think we need it.
+  Speaker 2 18:42
+Okay, the scoring will do so. Our immediate action items, and let's try to make some progress at least. So here's the deal if you get the keys. Yep, your logic would be. You can. You can build it with help of Claude, like in a couple of days, right? Basically, it's a multi-modal education, because all you're doing is adding a couple of more functions correct.
 
-20:29
-As part of like the, you know, the final view? Um, if we want to run those numbers through, but? It's not there currently, and I did have a question about that. Jeff, I mean, I guess I can go and bring it up now, but like, when, when these findings, um, when the exact?
+  Speaker 3 19:05
+Not a couple of days, but yeah. A week or couple of weeks. Yeah, and then a week which to test it and all that. That's fine, I mean, but?
 
-20:44
-Uh, like Fame scan findings are identified is. Um, an indicator that says, you know, this is, like, the preferred or primary, or recommended one to keep. Or is, it is that logic sort of left up to scarby to decide and Implement. No, there is a there is a logic provided for, um.
+  Speaker 2 19:14
+Particularly, you should be able to do that, so that's why I'm trying to say if we have that feature. And if we can use our keys, either through Ryan or through this, I think ajoy had a good point, right? Why don't you get this done already, right? That's, that's the.
 
-21:07
-Um, which finding is the representative for the native group.
+19:32
+Oh, what does he mean by that he wants to?
+
+19:39
+The multi-modal education teach the gt50 enhancements, which we are talking about. IAC is gone, right? I forget, I see, because that is. That was a one time discussion once ago. Nobody has followed up correct, so the key, I mean, he still,
+
+  Speaker 3 19:58
+Yeah. Mike said he still wants to do that at some point. He did mention that,
+
+  Speaker 2 20:03
+So I mean, if they don't want to do it, and we can drop that. But yeah. I don't know if you keep it in the list, but it's not something we can show if I have to show something for December if I have to show something. Uh, for the January, when what I would really do is?
+
+20:20
+First, do the get the key somehow through John. Just do the multi-model education, right? Just test it. Get that?
+
+  Speaker 3 20:30
+Yeah, we need like three classes of models, right? So, one is Claude.
+
+  Speaker 2 20:35
+Yeah, and then the other
+
+  Speaker 3 20:36
+One is, you know, open, Ai, and the other one would be Google. So, Google is not there yet, but? Jeff and team. Are they trying to get access to Google argon? Do they have access to Kimmy? They have access to Kimmy, the Chinese one. Oh, is it? Yeah. Okay,
+
+  Speaker 2 20:55
+Yeah, John has that. So, John is the guy who can help in our success, and he's the guy who's saying, yeah, don't. So he was there. And I said I'll connect with John. Okay, why was he not? He could have been helpful earlier. I don't know why he isn't.
 
 21:15
-Um, I'd have to go look at those docks. Honestly, that I have provided, but uh, E, I believe, so, um, but I can. I can get you that clear answer here shortly. Okay, because I didn't see anything. Um, in what? Scarf be added to the raw tables that would look like, you know, this is the indicator of the primary.
+What? Yeah, it is what it is. Yeah, it could have been helpful earlier, and I brought it up to a joy in the offsite. And he basically said, don't wait for it, curator. So I said, okay, I'll connect with John. Okay. And my account. Mike, does he have Mike everything is through whatever, right?
 
-21:37
-Um, so that's kind of why I was asking. I thought maybe it was just going to be left up to scarpie to pick. Um, so, but yet, there is a. A recommended one just. Uh, yeah, let me know. We'll put it that way. Oh, oh, the other thing I was going to say is to your suggestion about the?
+21:36
+He's not using Frontier mode.
 
-21:57
-They altered it view of collapsing. Um, I think that could be useful. The only question I have or concern, maybe is. Well, maybe to the last point. Maybe it's not an issue if there's a record. I just want to make sure that if you have a view. Like, however, you're collapsing for that view needs to match whatever we're doing in scarpie.
+  Speaker 3 21:37
+Yeah, he doesn't. So, I think even for any of the Checker and some other stuff. Yeah, Checker is fully 11. And wherever he is using. Clawed, or anything. I think he's relying on John's team for help. He's my assumption, I. I heard it through, you know, channels, but? He's, yeah, when I asked him for, you know, access to the keys, and he said, you know, reach out to.
 
-22:17
-Yeah, otherwise, yeah. It could be a good cross check, right? So if I create the view, it should be. Fight identical to what scarpie generates by implementing the same rules, and if they don't match, then we know we've got some sort of issue, and it could even be just useful for.
+22:03
+Uh, Garland. And then,
 
-22:36
-While we do like develop it just to double check so? Um, I might look at creating that. Hopefully, it's not a lot of work. I don't think it should be.
+  Speaker 2 22:07
+Okay, Garland has access. If he's not sharing it then, uh, yeah, he's not
 
-  Speaker 2 22:52
-So, Dave. One other question that I had was the llmd loop, right?
+  Speaker 3 22:11
+Here. He didn't say it directly, but indirectly, he said. Yeah, I, uh, you know, please check with Mike, so he's giving me the runaround. Yeah, he's like. He said, you know, yeah? It's, it's hard to get that access. It's better that it comes through an upload Channel. Or some some BS like that.
 
-  Speaker 1 22:57
-Is that,
+22:34
+So, he said, yeah.
 
-  Speaker 2 22:58
-Like, Dynamic? Does that vary from scan to scan? Is it learning from the previous scans and? Using that as a filter, or is it a static list? It should be pretty static at this point. I think for the gt50 because?
+  Speaker 2 22:36
+Laura, I'll talk to a guy. I'll talk to John directly. John is interviewing for me. He's helping he did not want us to help, which is fine. But now it came up in the offside, so he'll fall. I'll follow with John. About that, but you follow up with. Ryan.
 
-  Speaker 1 23:13
-All it's doing is it's checking to see if any of the findings. Are deterministic matches to? Um. Any of the findings from the the early Mythos campaigns where it was just the Mythos only scanner. Um, and then it also looks at the. The the first GPT campaign when it was just the gbt only scanner.
+22:54
+If they can give you some access in that sandbox. Then you get three models, right? Yeah, I,
 
-23:38
-Those are the only two data sets that scarpie. Comparing against? So, at this point, I would think that. Um, what is being deduped from that filter should be pretty constant?
+  Speaker 3 23:00
+I
 
-  Speaker 2 23:55
+  Speaker 2 23:00
+Already have it. It's a matter of just giving you access exactly, and if they are worried about the cost. Our cost is not that high correct it. Should we only do the education when we are trying to evaluate something. Yeah, yeah, it will be like a burst like a single couple of week of, uh.
+
+  Speaker 3 23:16
+Usage, and then it should drop off. It's not like a continuous thing, where we'll keep doing every now and then, so. And the couple of usage will be driven by when we are trying to evaluate something correct. Yeah, when we do that adjudication. And the responses come, so that's when we will use it.
+
+23:34
+Then we can run it in batch mode. We don't need it real time. So our cost will still be even lower. So these frontier models. If you want real-time answers, they charge you high cost higher cost. And if you want to use the batch if you use the batch, then it is like half the cost.
+
+23:51
+That means. They'll basically cue your. Prompts. And wait for the for the load to come down, and they'll use it on during off time, so they'll charge you less money if you do that. I see. Yeah, okay, so yeah, we can do that as well. So, yeah, the cost will be there.
+
+24:12
+It'll be like a spike, and and that's pretty much it.
+
+  Speaker 2 24:16
+The spike will be there, but it will be a repeatable Spike every few months. When we do the evaluation, correct, yes, and so if a joy is like set on making it like gd50 to 100?
+
+  Speaker 3 24:32
+Yeah, yeah, that was the other thing. So, first, is this multi-modal education, and the second one was the gt50? That's what I put in the slide, correct, right? So, the gd50 to 100, he sent Q2, is too late.
+
+  Speaker 2 24:47
+Let's start building, and we don't. You can have a Target 200, but you can get additional. Uh, you can get additional information like. Whatever people is, you can get. Yeah, start building it slowly. Yeah, yeah, that's actually a bit of approach than. Trying to jump directly.
+
+  Speaker 3 25:08
+We can still keep the same name, you know, irrespective of how many repos we have, we can still call it g350 because. Everybody now knows it as gt50, right?
+
+25:21
+And the other thing more than 50. It's close to 100 so, but we will call it when it gets to 100. We'll call it GT hundred, but till it gets to 100. We get call it gt50, right?
+
+  Speaker 2 25:33
+It was just fine. I mean, if gd50 was a theme of 2026 at 2027 was GT 100, which is fine, you should get there,
+
+  Speaker 3 25:40
+Yep.
+
+  Speaker 2 25:41
+But, but that is what he wants us to explore. So, it's the multi model. Let's try to do it very quickly. And then let's try to get the gt00 in the gt100. Also, you keep it as action item, like one. To figure out the sandbox. Second, is to figure get the API keys from John's team.
+
+26:03
+The third is gt50 to GT100 gradual, right, and a joy actually looked at John and said, you have built applications. Which are using it for back testing. God can give us access to those repos also, which which have kind of true positive false positive, which have kind of code with findings already.
+
+  Speaker 3 26:27
+But that that becomes a gt51, right? That becomes what repo which we can use because they use it for? Uh, they used for their pet testing. We can use the same repo. Right or our?
+
+  Speaker 2 26:43
+For our evaluations, all right, that gives us maybe four or five apps, and then we already. We are already Beyond 50, yes. If we get those apps, yeah, yeah, right. We can do that, yes. So, if I write that out, so I mean, he was engaged in the gt50 conversation, but he also showed some frustration that three months we are talking about it, and we haven't done it.
+
+27:09
+Yeah. I mean.
+
+  Speaker 3 27:13
+He's looking at me, saying sure, you know, show some results. So let's, let's, let's try that. Let's get. Multimodal education. Let's try to build it, get like a few more repos.
+
+  Speaker 2 27:25
+John is out next week. So, so when he, when we come back in December, I'll try to get that access. Yeah, I'll meanwhile, I'll this these guys have already. They were okay with giving us our own key.
+
+  Speaker 3 27:40
+So, Jeff and Jeff and Co right and looks like they already have the key. It's just that they they want us to. You know, get that access. So, they said, either get your research laptop or get a Linux VM setup, right? So the research laptop is a long process.
+
+27:57
+I mean, it has to go to what I didn't want another laptop here. That's another pain, so I, I requested for a Linux manner. Now, the Linux VM is now built under vcm, so it's a lab. Sort of like a non-prod VM. Yeah, and it's there. So it was like provisioned yesterday.
+
+28:16
+And to access that to SSH. So, so what they want is they want us to not directly have access to the models from our the laptop, but it has to go through a hop. So the Linux VM can be a half so I can log into the Linux VM.
+
+28:30
+And from the Linux, you have all your code
+
+  Speaker 2 28:32
+Hosted there. You can run from there, right? Exactly, yeah. So the Linux VMware will act as the hop, and from there, I can call the the frontier models. We come up with a white paper gt50 enhancement. Now, it has the, you know, the trimmer of alpha, these Kappa, whatever they are basic.
+
+28:56
+Like python functions, right, you have? I mean, Claude can generate yes, yes, 30 minutes for you, it can. But yeah, you have to make sure. The data is.
+
+  Speaker 3 29:07
+You know, witted, and all that so? And also, we have to do that golden golden set. So that there is congruence between this and the whatever the models. I mean, all the models might agree. Something is a false positive.
+
+  Speaker 2 29:20
+Yeah, but they need
+
+  Speaker 3 29:22
+Not be right, right? So we have to also. I mean there, I mean, at the end of the day, it's all about how good these, how good the ground truth is, correct. So if somebody comes back. And yeah, so that's the whole point of this exercise.
+
+  Speaker 2 29:38
+Was saying we'll hold on to the answer. Key, I, I tried to tell him that if he have an application, it becomes the, uh, cyber standard and stuff like that, he said. Yeah, about two, but why do you need an application you already have? The answer key you have?
+
+29:56
+And you'll make it available for others to use. Yeah, it's already
+
+  Speaker 3 29:59
+There. I mean, the answer, the ground truth. If somebody wants to use it. It's not secret, you know, it's open, actually. The the Jeff and team, they are testing Mythos 5.2, and uh. You know, open AI. Solve 6.2 all those are out, right? They only came like few days ago.
+
+30:19
+Yeah, and they are testing. They are using the ground truth to independently test those models to see how good they are. So, yes, even internet. Yeah, they're internally using it. You know, without our, you know, it's out there in. I put it in GitHub, so. And when each updates we make, they are consuming them.
+
+30:37
+So it's, I mean, that's the whole point of the Benchmark, right? So what we do is we are benchmarking the actual scanner, the BAU production scanner, and the bulk scanner.
+
+  Speaker 2 30:48
+And if
+
+  Speaker 3 30:49
+They make changes that, that's something that we are doing. But I mean, anybody could do it, right? So, we just give, maybe some additional insight into. How to improve it and stuff, but anybody can, you know, take that and run their own benchmarking. And it's all open out there.
+
+31:06
+Yeah, yeah. So the golden database with a golden database is an extension of that correct.
+
+31:16
+Oh yeah, the golden set is it's primarily for metrics so internally to make the the true false use and false positive. The answer key is stronger. We use the golden data set as a as a reference to make that data strange to arrive at those metrics. And that will be all internal, so we don't have to expose that.
+
+31:35
+The consumer repo will only have it will still have the answer key. But now, the answer key will have all the. The additional flags of how? How you know how good this decision is right, whether when something is being listed as a true positive? You also will have indicators of whether why this is, and to what extent you will have like a quantifier saying that this is.
+
+32:00
+Really accurate, right, and some of the other testing team can give us right from their application because they basically build it. To test. After to run the packages correct? Yeah, but pen testing is, is dynamic, uh, really? So they are actually deploying their application. And they have like a runtime environment, and then they are doing testing right, which is sort of different from the ground through the ground.
+
+32:26
+Truth, it doesn't look at. It only purely looks at the source code. So, if you add other factors to the source code? Like, where this application is deployed or what you know? How exploit, uh? Is it on the perimeter? Is it internal only all that? Knowledge. Then it your basically?
+
+32:47
+The, what do you call it the knowledge of what the ground truth is, it becomes wider than just the source code, right? If you do that, then that's the whole point of the deep freaky thing. So, the DPG guys came. They wanted to do something like that, you know, they wanted to bring in more?
+
+33:05
+Knowledge to those. They wanted to look at the chain of applications and build the ground truth for that. And then see how the models are identifying it. So, if so, that the ground the gd50 is, it's primarily. It only looks at source code and nothing else, and that is intentional.
+
+  Speaker 2 33:24
+I see, I see, I see, yeah. So the
+
+  Speaker 3 33:27
+Pen test, I mean, we can take their application source code.
+
+  Speaker 2 33:30
+Yeah, but we cannot get
+
+  Speaker 3 33:31
+Anything more, so if they say that a certain finding is valid because it is exploitable. Then they have other. They are using other mechanism to actually. Arrive at the decision, right? We cannot use that decision because the gt50 would not know right any. Any Frontier model, which is?
+
+  Speaker 2 33:51
+Scanning. It's only scanning the source code. It's not looking at other parameters.
+
+  Speaker 3 33:56
+Yeah, yeah, yeah, so it will just be a repo additional repo basically for us. Correct. Yeah, exactly here.
+
+  Speaker 2 34:05
+Yeah, but what I am not clear is the golden data set. You have to show it to me what it is. Yeah, the golden data set is it's basically a smaller sample, so there are so many findings, so the smaller sample would be. It's the core set, which is really thoroughly adjudicated.
+
+34:21
+As an, you know, it will go through manual reviews. And it will be decided. Is the gt50 is 50 repos where we have the answer key of true, positive, and false positive. Then we measure it. We measure every model education against the answer key correct. That's our quote unquotness.
+
+34:43
+The golden leader set is a subset of that, yes. Which is manually executed correct, which is of extremely high confidence. And that will be used as a reference for the multi-modal adjudication so that, you know.
+
+  Speaker 3 35:00
+So when we, when we have this golden data set, we will use that to see if the multi-modal adjudication is in agreeing with what the golden data set. If there is variation there, then you know, that means, the frontier models are also. Something is something fishy is going on there.
+
+35:18
+Either that or the golden red data set is wrong, right? So it's that golden data set is only to establish more validity for the entire gt50. That's all. It's an internal. It is an internal voltage still an exact subtest subset, right? Correct. Yeah, exactly? Yes. That I got it so?
+
+  Speaker 2 35:41
+Basically. Okay, so let's try to get this VM thing. Yeah, we are not going to withdraw our let it happen, right? Yeah, if it can stay stalled for six months, let it let it install. Right, yeah, basically said, don't don't pursue it. But what I'm thinking is, we can let it be because you just have to just answer an email once, uh, once a week or something correct.
+
+36:11
+So, the ARR process also has something called the gala.
+
+  Speaker 3 36:15
+So, I already put the ARR request, and I got the AR model ID and the tool ID. That for cyber initiate AI initiatives, there is something called Gala request. So, the gala request is an additional like a twin of. Ar, which is only for the Cyber. Um, you know, derived AI stuff so?
+
+36:40
+And they've they've changed. Uh, you know, revamping that process of Gala ID creation? And that, yeah, that is something that. Also, we are trying to pursue and get. That's basically another. The same set of questions for ARR. We also have to submit for Gala. And get the gal ID, and we have to link the Gala ID and the AR process.
+
+36:58
+I don't know why they're doing that, but yeah, that's the you know, we have to go through that as well.
+
+37:06
+I see, I see. Okay, it's a it's a lot of paperwork, and uh, it's a mess basically.
+
+  Speaker 2 37:14
+Yeah, I think I realized that. That's why he said, don't pursue it. It has DC gt50 without
+
+  Speaker 3 37:20
+It. Yep,
+
+  Speaker 2 37:21
+Hopefully, if if Ryan, let's give then. I don't have to go again to John, right? I can. We can just use. Ryan's teams access correct,
+
+  Speaker 3 37:31
+Correct? Yep, the the VM thing I requested is sent a request for for you to approve that RSA thing. Yeah, and then once we get that, I think somebody it will go to somebody else. Also, for approval, I think a joy or Albert. And then once they approve, I will get that RSA token set up, and I can log into the Linux
+
+  Speaker 2 37:54
+Machine. I sent you a forward your email also. So, if you look for my email, one of them?
+
+  Speaker 3 38:02
+It would have the.
+
+  Speaker 2 38:14
+It, like a Senator like 10 am.
+
+  Speaker 3 38:22
+Okay. The name today. Yes.
+
+  Speaker 1 38:29
+Uh, reaction required, and I think right, yes. Then we do it right now while I'm talking.
+
+  Speaker 3 38:38
+And then the Art of the well forget, something else will come up.
+
+  Speaker 2 38:46
+Yeah, so that's our plan basically. So you have the action item, right? Let's get the keys. Let's do the volatility model education.
+
+  Speaker 3 38:54
+Yep, next week,
+
+  Speaker 2 38:55
+The week after the week, not next week, the week after. We're gonna talk to John to get here, get his access to his apps, right?
+
+39:06
+Actually, we are making progress on both of them, and then the check marks was one which we have wanted to. Uh, yeah, so you, you, and then he said cx1. He commented upon that. And then he's going to see that. We are not causing any delays, right? So, I mean, we are not look and.
+
+39:27
+Yeah, another interesting information is this guy?
+
+  Speaker 3 39:31
+Or John. What was his name, Ron? Yeah, uh, so he basically said he still has that money, right? So he has. Back down to a vendor. Who is going to provide them resources like check marks? Engineering resources. Who can help with any POC or any work? So it doesn't have to be in December, or he said he can do, like, any time.
+
+40:00
+He's just waiting for our. We really have. Will he have?
+
+  Speaker 2 40:05
+By in January. I think he,
+
+  Speaker 3 40:08
+I don't know how he, whether he paid them or not, but they're already engaged. And he said, yeah, I told him, this might. By end of the month or. We might get a decision, so he said, yeah, then it looks like January q1, so he said he's going to slowly.
+
+40:24
+Delay the onboarding of those people, but he is already looks like he's already signed up for. You know, he figured out a way to spend that money. So, it looks like an AVR work. Ron Griggs is doing this now. Okay, not heaping me like yesterday out of the blue.
+
+40:44
+And he said can. Can be sync on. I mean, I can talk to him like this is what chat? And he said, here we have. So, he's he's actually on standby. So, if he, if you have to do like a POC?
+
+  Speaker 2 41:07
+No, it's still, it's still premature really. So, let's wait for this to complete.
+
+  Speaker 3 41:12
+And let everybody agree that. On some tool, and then we can do the POC if we start a checkbox from POC. Now, it will be. I mean, there is no goal and goal for that.
+
+41:27
+Okay, let me.
+
+  Speaker 2 41:31
+Uh, okay, so you, you have our action items, right? Because I'm gonna yes, yes.
+
+  Speaker 3 41:37
+Okay, can you repeat them to me so that we are all the same page? Oh, okay. So, we have to get the. The keys. From reinstein and then get the Linux VM set up. And then get started on the multimodal education. And you know, get to that quickly right away, right?
+
+42:01
+If not, if doesn't, if it doesn't go that way, you'll have to rely on. John, you are going to reach out to John. Yeah, if you get it through Lion's team, then I don't have to reach up to John. I'll reach out to John for.
+
+  Speaker 2 42:26
+Which adds to our?
+
+  Speaker 3 42:35
+Uh, and
+
+  Speaker 2 42:36
 Okay,
 
-  Speaker 1 23:55
-So this should be the same gt50 findings coming out, you know, scan over scan, and then you know what's in those two older data sets is, you know, is locked into. So,
+  Speaker 3 42:36
+Yeah, also said. Look into John's application that they have custom built to see if that can be added to the gt50. Uh, so which is what it is, right? John samples that. So, yeah, John sample tabs, yeah, okay? And then also look at we're going to use for.
 
-  Speaker 2 24:07
-Okay. So, when you say, is it like removing certain findings or? Yeah, yeah, so it does a matching.
+43:00
+Correct? Yep. And this is pathetic rate. John reports to a joy he sits. He says, hi, to me.
 
-  Speaker 1 24:17
-You know, and then that flags it. And then the query removes any findings where they're, you know, in the uh flagged as being, uh, an llm duplicated.
+  Speaker 2 43:06
+Uh, I had dinner with him a couple of times. He was on the same slide, but he's not giving his keys. And then Ryan is giving the keys. How sad can it be correct? Yeah, and no comments ready.
 
-24:30
-Okay, so if we look at the numbers when you know we were kind of? Banning about yesterday, let me see. Yeah, it put the go back to that chat. Yeah, I put it in the chat here. The the one that you shared the last TPS? Yeah. Correct yes, so 672 so?
+43:26
+Um.
 
-24:51
-A little over half of the total ones that were were filtered. We're from the llmd dude filter. So there were almost 1200 just shot of 1200 findings total that were filtered out and 672 of those were from llmd dude filtering. Sorry to meet you here. No, I
+  Speaker 3 43:29
+Just, yeah, AR process, just let it. Still run with it, but
 
-  Speaker 4 25:14
-Know, we're getting close to time, and I'm, you know, I've been trying to follow what's been being discussed, um, specific next steps, ultimately, to certify these. Jeff, I heard you kind of talking about, you know,
+43:38
+Let's run, abandon it, let it keep running. You said mention, you know, it might take whatever time it takes, but let it still process on the side.
 
-  Speaker 1 25:26
-Some options that
+  Speaker 2 43:46
+I mean, Joyce said, don't pursue that. Yeah, what
 
-  Speaker 4 25:27
-You may need to look into. Have we come to a definitive, uh, Direction forward, or is it still some more discussion that needs to be had?
+  Speaker 3 43:50
+Do you think? I
 
-  Speaker 1 25:38
-I mean, ultimately, it sounds like we do need to implement the new filtering rules and and scarpy. It sounds like Jays that's not going to be a a big lift, but we still need to do it right, and then we do also need to figure out where we're going to tap for the post.
+  Speaker 2 43:50
+Mean, do it. If it takes too much of your time from other things, and we don't do it. No, no. Yeah, I am not. That's not happening so. It's, uh, it's only a side. Activity, so that's not going to take. We'll just keep it there and!
 
-25:54
-Um. For that right column, the the post scar B gradient. Because we're not tapping in the right place now. And, and maybe we don't, but I do think there's it's important to see how these things look after they've gone through all of these systems or pushing the findings through to make sure we're not losing things, but from a from a validators from a um.
+  Speaker 3 44:08
+Or it is probably just sit in the system as a AR or entry. That's all it may not proceed. Beyond that. Yeah, yeah.
 
-26:22
-Scanner side. I think we're good, right? I think that the input is. Good, better. Yeah, this needs to translate that to actions and owners. So, Demetrius, please pull up the plan harass work. Like, let's update this plan.
+  Speaker 2 44:21
+A multi-modal, and gt50200 those are the key things you can get through. Hopefully, yeah, and you wanted the migration to be done by December. Uh, and then quantify any activities which are going Beyond December for the migration. And then you also wanted to pursue the upgrade, he said. You'll reach out to Rajiv.
 
-  Speaker 2 26:50
-Okay, so the main question is, what do we need to do with certify gt50?
+44:42
+This week. And then see. Yeah, I, yeah.
 
-  Speaker 1 26:55
-Right in a timeline behind that. If we're saying like Aaron up here saying that the scanner's good, it'll be saying that we're at a point because I saw some conversation that a new pull from the bulk scanner looks good. I don't know if that was relevant to this, but right now, what do we need to do from a timeline perspective to get Mike a sign off on this?
+  Speaker 3 44:49
+Also Raj. If you can talk to Raj panissetti.
 
-27:17
-And then the next question is based off that. Is there any work required by Molly for scarpie? The line nine has to be. I don't think. By nine. What's that? A line nine still needs to be done. You agree, Molly. That that work is going to be within the query.
+  Speaker 1 45:04
+And if needed, we will go to.
 
-27:39
-That's not something that scarpie has to actually Implement.
+45:19
+All right. What else? I think that is those other things.
 
-27:49
-Right. The new group Keys are are already added. So they're in, you know? They're all and refined tables. Um, so the query can can use those to do the the filtering. The one thing we do need to check, though, is if the recommended you know primary finding to keep if that is in a field that, for whatever reason, we didn't pull in, we'll have to get that added.
+  Speaker 2 45:25
+Yep.
 
-28:17
-There's a field addition, then I will have to do Jeff. So, maybe, like, you know, we may need just to be clear, we can split this task into two, right? One is. Like, update Skype for any field conditions and the second one is like, update, filtering logic for SP Creator and deduplication.
+  Speaker 1 45:29
+All right, I'll let's hope we can get the keys quickly. I just approved your articles out of my case.
 
-28:36
-The filter is something that J and Pradi canon, but if there is a addition of the field, that is something I will know. I hope that will help. And come some packing. Yeah. Yeah, all on the the filtering. For you, duplicates. That's like pretty much on the query, so I'll own that stuff.
+  Speaker 2 45:36
+So, try to try to get that quickly. Yes, I will, I don't know. Now, it's probably with Albert. I'll send him a message. Hey, I have my I have my VM. So this, uh, yeah, they already know. So I've already told them, but I'm just waiting on that.
 
-28:58
-Does that mean today? Can that happen today that I can implement it today or how much time do we need for that? Yeah, yeah. Can we add a new row if it's a new person you wrote? Don't don't edit them. I'll take care of that offline. Oh, um, Tom, it depends.
+45:59
+Yeah, yeah. Yeah, so that this was. Yeah, because he gave a bunch of a bunch of action items for Jay also, but surviving items.
 
-29:14
-It depends on whether there's a field. That we need, that's that's missing. Or or not, if everything that we need is there, then we should be able to turn it around today. Yes.
+46:16
+Yeah, but gd50, let's. Let's show some progress.
 
-  Speaker 3 29:26
-Okay,
+46:25
+And be sure I recorded there. You have Claude, you have. You get cursor, you get. It's hard enough, right? Yeah, yeah.
 
-  Speaker 1 29:26
-So if there is a field missing, that's a volley fast too, right? But so these concerned with? If there's anything you need to update Molly and then we can? We can get Jay moving on this ASAP. Try to, let's try to get it done today. And dude. What? What are you like, where are you updating?
+  Speaker 3 46:35
+You can generate the code and then we can come up with the design, but I want to show something in the. If we can do, because there is something for Manish or the 16th. There's a special topic.
 
-29:51
-Okay, so remember, for, for the for the bulk scanning, we still have. We still run that query manually. Um, now, on the BAU pipeline side of things. Once these changes are moved over to to their side. Um, the same query runs, but it runs in an automated fashion, so I'll have to, you know, basically update that query as well.
+  Speaker 2 46:52
+Uh, I don't know if he can do it to solve that, or we just pull it at the Jaguary one. Yeah, okay. At least that when you can see him give announcement for multi-modal education for your model access thing like that, right? So, it's very clear.
 
-30:12
-When we get to that point, we just don't run it manually. For vau pipeline, it's the same logic, though. I, I see, I think that's why I was confused. Bulk scanner, you still do manually, so that's why the you're just updating the query, but in the pipeline, you'll be updating it some in some system somewhere, not okay.
+  Speaker 3 47:10
+Yeah, they need like a white paper so that they can really get their laser.
 
-30:33
-Um, that's right, yeah, basically take that query. We push it up to a SharePoint site, and then scarby pulls it from the SharePoint site, and they have logic to basically run that query whatever they pull from SharePoint. So for the bifer. Maybe not your piece, but but Molly's, when these changes are made.
+  Speaker 2 47:17
+Today, I will generate a Wi-Fi exactly. You need a white paper once we get to a few additional resource. We'll generate another wise paper. That's what what I want to do. Yeah, I want to establish this and then figure out. Ground truth for SCA wasn't that well received. Yep, okay.
 
-30:53
-Molly's doing his changes in Scarpie. Sounds like there's still something he has to do with scarby. Is that going to break pipeline scatter? There are two different, uh, process we have independent of each other. Okay, perfect, so you can make this change. Our bulk scanner has no impact on pipeline scanner.
+  Speaker 3 47:46
+So, even if you please? The variation would be that much correct.
 
-31:12
-Because it will not have any impact of problems. Got it okay, but we want these things updated in the pipeline scanner as well, right, I mean, if we're applying filtering to the voltage we want to do, it eventually correct. And that's a fast follow. The reason I asked that question was is updating pipeline scanner critical power for bulk scanner to run.
+  Speaker 2 47:52
+Yeah, it's a little more nuanced. I mean, you can argue that you'll have transitioned transitional dependencies.
 
-31:31
-The answer now is no, that's why it's that question, but you're actually correct, if if, um, let me see if you can scroll down a little, you'll see. Right under. This is a table basically. Exactly like, I think I'm putting a rope too. Row two table action number three, or it's the yellow.
+  Speaker 3 47:59
+And it it. You can be basically look at how models are looking at.
 
-31:55
-Okay, look at the yellow color. Um, but yes, Tom, we definitely have to update the pipeline scanner, um, the the, and ultimately, like, I know what you mean you're. You're trying to say, this is a prerequisite for the bulk scanner, which I totally agree with. But let's keep in mind that pipeline scanning is running ahead of the volt scanner, right?
+48:10
+I mean, it's a it's a different use case, but yeah, it's certainly different. And also. And your the ground root key might change because there may be new CDs. Which are still present in the old code base, right? So, it's kind of a different Beast compared to this one.
 
-32:12
-So, it's, it's actually my view. It's almost more critical than scanner. So, so then? Um, yeah, so you as Africa get to decide if this is critical path? Then we've got to build out this plan now and then the.
+48:29
+Can you repeat that last part as I lost you there? No, no, the. So every time the. There might be new series added, right? And they may impact older versions of the libraries.
 
-32:30
-Dependent on pipeline scan, getting updated. But like you, as apps I get full Authority over that all the nutrients that I try and do is just understand what all the steps are who the owners are.
+  Speaker 2 48:43
+Yeah,
 
-  Speaker 3 32:45
-It's just basically two separate tasks, right, that we should be doing simultaneously.
+  Speaker 3 48:43
+So your ground truth is not fixed. It will be slightly variable. So you have an existing set of ground truth and then you. You might have variants on top of it, so. Slightly different process for establishing ground tools for SCA compared to this one. Do you see any value FCA ground group because I mentioned it?
 
-  Speaker 1 32:51
-Well, we can't really do it simultaneously. We have to certify the changes first before they can be shared with lots of. Oh, you're right, you're right, you're right. Okay. So, so that's what I'm saying. Tom, your decision is, is pipelines kind of getting updated critical path or not. If it is, then it has to get sequences.
+49:04
+Joy said, we should. Need to come up with a case for the fruits of SCA. Yeah.
 
-33:09
-As Jay said, if it's not? Then, we sequence public scanner. Get all that done and then fast. Follow pipeline scan has got updated. Yeah, okay, I'm with you on that. I mean. I I want it to be a very fast follow is the thing, though. Ultimately, if, uh, if we need to test it through the bulk scanner and certify it that way first, that's fine.
+  Speaker 2 49:12
+Is what is happening, right? So he scanners voices cannot defaults, right? So pipeline scanners were lucky. Correct? Yep. And the most scanners won't make spending is doing.
 
-33:29
-But, like, we just need to. Be sure that we quickly follow up and update the pipelines again. Just because you know, we're going to have more more stuff to load in two days on that. And, and I think the logic behind that was, you know, locksmith needs to figure out what's all going to be?
+  Speaker 1 49:32
+He taught his team, but it's still, he's they're not earning any scans. They are still relying on either Ryan Lynn's team or lakshman's team.
 
-33:47
-Involved for that timeline to make that update to the pipeline scanner. As for my initial question, my initial question for him? Um, you initially said, and we're looking at, like, you know, a month, time frame based off of everything that needs to be accomplished, but I don't know what all was entailed in that, but it's it seemed like it was, you know?
+  Speaker 3 49:41
+So, Mike is not actually running any actual. There's nobody in this team who's actually running those games.
 
-34:15
-Quite a bit to it. So, question, I know we're over here. So the two items that we've outlined, for, you know? Molly and Jay, is that something we think can be done today? Accomplished today, our timeline. For that to be completed. So, one question right are the fees that have pinned over there in the chat.
+  Speaker 2 49:49
+Yeah, but the static scans the bulb scan. That's what he's doing, right. All these repos and stuff he facilitates that he doesn't do the scanning, he, you know, gets people from other teams to do it for him. Yeah, so the controls of that was the question that came up in the joyous of site, who showed all the controls for that.
 
-34:40
-Jeff, are there new fields that are being added to the view? Yeah, I think they're already there, Molly. I think they've already been added. Yeah. Okay, hello, uh, let me go back and look, because, uh, three of them, for sure. Let me pull this up again. Yeah, duke kind dupe group key, for sure, are there.
+50:11
+So it's currently with Mike, but it may come to us even the SAS controls. Apparently, the Richard Gobel has it. Yeah, he is the control person. So,
 
-35:00
-I'm pretty sure canonical member is there and collapse. Wait, yeah, I think they're all there. Um. I did look at canonical member yesterday Jacks. I thought maybe that might hold the primary if it's there. It's, it's some sort of formatted string, though. So, uh, we might need a little bit of deciphering as to, uh, you know how?
+  Speaker 3 50:21
+He's the one who talks to, you know, him, and. Uh, literally, I forget her name.
 
-35:20
-Extract what we need. From there, I mean, I probably couldn't look at it and figure it out, too. But if there's? Anything from the AI that can be generated that might save us all the time. I just need I need to find that dock. I think I sent the two, uh, sent you a recipe doc, like last week, the week before, um, it should be in there.
+50:34
+This guy, so he's Richard is like the control owner for, you know, all have sex stuff. So he deals with all these audit questions, and so he's like the, so that's his role basically. So, why would we take that over. I mean, we don't have a person like that here, right?
 
-35:40
-Um, but I need to find it and review it. There's just so many things about at the same time that it's out of my brain already. Yeah, same. I can go back and look for that. Um, and see if it's there. Um, I'm sure it is. Um, so Demetrius to your question.
+50:50
+That's a new. It's a new function pretty much.
 
-35:56
-I think we have. What we need from a field standpoint in scarby, so. Um. Doesn't feel like there's any action item for for Molly. Um, it's just a matter of now. Adding the new logic to the query to handle the? Removal of the intra llm, the exact duplicates based on these new Fields.
+50:58
+Uh, it's a new function. That's where Joy said you should own it. Then, we should get we should Google there. I hope so, yeah. But I don't know where it is going, and he is he. What level is he? What does he do? Yeah, he is primarily he is reasonably technical, and he also does all the control stuff he understands that pretty well, reasonably.
 
-36:21
-Um. I think that's entirely doable today. As long as I don't get pulled off from, you know some other fire drill? Yep, and another thing, though, I do like, so pretty, but I lead to. Get together and and come up with what that final set of filters needs to be, you know, now, and going forward for.
+51:21
+You know he understands how? What audit is asking for and? They are not super technical, but this guy is, and he helps them out, and he ensures that all the blues are tied. Yeah, yeah, yeah. So, yeah, he's in charge of all the controls.
 
-36:43
-For all our, you know, benchmarking? To the earlier discussion, so we'll do that as well. All right. Last question I have is there was a lot of chatter on. You know, zero noise in AVR, and I know we talked about that. This is a future State, not deterministic. Um, we need to determine if this is like critical path, and if it's not realistic for, you know, the next auction hand because of timing, the timeline behind it.
+  Speaker 4 51:47
+Yeah, so that came that came in. Also, that's not an action item for me.
 
-37:15
-What is everybody's input on that? If it takes a Sprint? At this point, um, to accomplish, you know, does that put us, you know, two weeks out, or how long to to do that, or is it even realistic to get to zero? Um, given where we currently see.
+  Speaker 2 51:52
+Just think about it. Okay, can we make a business case leaning? Let's say the OSS. Uh, is. There are scans that are happening. The IBM says these are fixed packages with zero vulnerable. Our scanner goes very specific set of prompts. There are handled, steam says. These failed okay in such situations.
 
-  Speaker 2 37:34
-Zero noise and headline scanning zero? The
+52:16
+Can a ground truth help? But how do you freeze the ground tooth? Yeah, yeah, because itself keeps changing, right? It's a. It's a hard-earned package today. It's passed. Then again, there could be another patch, which is the same package with the different version correct. Yeah, follow what I'm saying yes, yes, yeah.
 
-  Speaker 1 37:39
-Great Gold's never happening, right, right? So I, I think it's less about specifically zero my experience, UBC said. This needs to happen. The implementing non-terroristic YouTube code. I personally don't really know what that means, but if Mike is saying this needs to happen, the question is, where does it happen, or if there's things that doesn't need to happen.
+  Speaker 3 52:39
+How will? How will? Education help at all in this case. Yep, that, that, that's a valid question. We'll have to think about how to. Build that? Framework. Yeah, it's like a thought exercise we can propose. Once we do this.
 
-38:03
-Then, who's taking this back to Mike to help have that discussion with him? I do think it needs to happen. I don't have the numbers in front of me, but um, and I know, Jeff, you have some numbers. I think maybe yours might be a little bit lower, just based on probably just, you know, the gt50 versus some of the other.
+  Speaker 2 52:59
+And I am trying to tag on gt50, right? So I'm trying to see, okay, we have gt50. Let's apply gt50 logic Beyond static. But on the or at least. The fundamental concept of it, right? So then answer key things like that, yeah? And follow. Nobody else is going in it.
 
-38:24
-Um, you know, reviews that have been scanned, but there there was a significant number of of, like Raven quote unquote failures, because you know, certain PRS were were already fixed, and that comes from duplicates that are not exact duplicates, but have a single best fix. Um and I, I personally saw numbers a little bit higher, Jeff than what you were saying.
+53:18
+Correct? Well, yeah. I
 
-38:48
-In some of my analysis as well, again. I don't have them in front of me, but I do remember they were a little bit higher, so we do need to do this. It's not something. Am I not to speak for you, but I know this is not something that's going to be turned around quickly in Scarpie, especially with the?
+  Speaker 3 53:23
+Mean, think about it that that's that's low priority. I think the joy will be good with if we show some progress on the border, but in online, yeah.
 
-39:04
-The re-platforming that's happening. And there there just isn't anything that exists today. Um, that
+  Speaker 2 53:33
+Good job, and I mean he's overall happy. Okay, I've spoken to him. Oh, great. I hope that it translates to.
 
-  Speaker 2 39:10
-Lets Scorpio, you know?
+53:43
+I hope. I hope it is more and work. What exactly. I hope it's more than just words. Uh, yeah, I can't promise anything, right? Yeah, of course. So, we will see, I mean. And I'm sure it'll reflect in rating. Bonus stuff like that, but, uh yeah, so we'll see.
 
-  Speaker 1 39:13
-You know, leverage, or integrate with, um, you know, llms? Then we have an estimated I guess percentage right to implement this. What is the outcome of that? It's going to reduce noise by X percent roughly. I think that's kind of a picture, and then a point we need to.
+54:08
+Got it. But no promises. Everything gets approved. Final approvals all happen. At a very high level. Very high level. You can only make a recommendation that goes through several rounds. I don't know what you have heard before, but. Everything goes all the way to project. Just let me, let me just tell you that, oh, is it okay?
 
-39:36
-Turn it. Focus on right as far as like, if, how, what's the value? If it's going to be, you know? 20, 30 reduction, then yes. Give them the ability to make that decision based off of those numbers. And I feel like this is a broader conversation like I can keep going long.
+54:32
+Everything, everything. Be single nine, I think. Whether it's? Budget for a PO, which went through budget. For this, this is a bit better. Does all these rfps, right? So, those rfps also finally proposes. Uh, sourcing all of that? Uh, it's in his forecast. I don't know how they do it, but it goes there, so that is one part of it.
 
-39:54
-But, uh, I feel like this is a dedicated meeting, because okay, like I, this is going to be. This is going to be accomplished by looking at data that's in, you know, build data Lake over all the time. The scans have been happening. That's not data I look at, and I feel like this.
+55:01
+And then all the other piece salary bought us things stuff like that. Everything goes there. Uh, there's overall project. Oh yeah, I mean, this is usually how our company works. I am not surprised. Maybe somebody didn't walk you through all this, but? But that's how it is. Yeah. Okay, all the cios have their budgets.
 
-40:12
-The rules that are going to be applied have to be developed. Against data sets that's in scar B. Um, so sorry Jeff to cut you off. This would be the the same scan. Um, sort of best fixed scenario, not not like scanner or scan. This is just, you know, additional collapsing of duplicates, when, when they are like, related, like, nearly the same thing, same block of code, but maybe describe, you know, slightly different weaknesses and have slightly different fixes, but?
+55:23
+Tech has the budget fiber has the budget groups within cyber after budget, right, right? So? Has extra money for. It's not that he can take that money for him. That's why he's looking for. How to spend it? Okay, so that's what it is. Oh, you mean Ron bricks, right?
 
-40:47
-In these cases, there's typically. Fix, that is a best fix that, you know, once it's applied addresses.
+55:46
+Yeah. Somehow, it got allocated something. Yeah, I think it. It's tied to check marks one, so he has to spend it on.
+
+  Speaker 3 55:58
+I, I don't know how. Yeah, why are these guys? I mean, this is problem, right? It's a Crystal's problem. You should have just gotten a checkbox one and don't be done with it, right? Yeah, easier said than than Rudy. Yeah, yeah, yeah. I
+
+  Speaker 1 56:17
+Mean, he's happy in the sense.
+
+  Speaker 2 56:19
+Ground truth CC's value? Yeah, okay.
+
+  Speaker 3 56:24
+But he was not happy that we didn't make progress at three months. Let me put it this way, write me up.
+
+  Speaker 2 56:30
+Yeah, so he sees value in it. He was listening and all that SCA people shut it down. So, he said, we should think about it. It's interesting, we can think about, he didn't say, don't do it. Uh, he's helping us try to find ways to, you know, show some progress so?
+
+56:50
+Let's keep that in mind, and the same thing with. I mean, he's hoping we can pull off the engine pack update, right? That's what he still thinks if he escalated enough and do it because they are doing an ECR on blackjack right now. Yeah. Right, yeah, you've been. I mean, this is mere politics, so if they want, they can do it.
+
+  Speaker 3 57:13
+Even the migration. They could have done it like a few months ago, but there was no, not enough push on their side. And they kept like delaying a delaying, and now they wanna, you know, just do it before Friday.
+
+  Speaker 2 57:27
+And Before Friday, meaning tomorrow, right,
+
+  Speaker 3 57:29
+Yeah, tomorrow. Yes, Saturday, you'll have some work to do, right? Yeah, you overseeing the validation, right? Uh, yeah, a small portion of it. We don't really have to be there. Uh, but yeah, we. We will, uh, you know, neon again, that if it's like, late midnight, then we'll pull in one person from India team to do the violation, but?
+
+57:50
+Just make sure we have our fingerprints on it. Yeah, sure. I mean, don't say, then I'm going to bed. An India team will do it right. I mean, you can. You can just observe and have a couple of calls, and then you know, yeah, yes, yes.
+
+  Speaker 2 58:12
+And have them do the work. I mean, if it's like, 2 A.M in the morning, then I clearly it's a focus issue also, but have them do the work and watch over it, so they should have a fingerprints. Yeah, of course, yeah. Um, yeah, yeah, I'll be there, I mean.
+
+58:31
+Eyes can take turns to just watch over the process, right?
+
+  Speaker 3 58:35
+Then, they'll have a 24-hour bridge. I'm assuming, right? Yeah, there's already a call. I think you're on in the in the call. Okay, okay.
+
+  Speaker 2 58:45
+And then go back. And yeah, that's what I wanted to just. Uh, share with you on.
+
+58:52
+Uh, and every team he has asked to speed thingam. You need to get better at this. You need to get better. So I got similar feedback, right? Yeah. I mean, I didn't have to. I could defend it, saying, Utah, you talked about this in September. Why haven't you done the multi-modal education right?
+
+59:10
+And the fact I said we are waiting for the keys? It's like, you don't have to do gcp get the keys from others, and John was there trying. Say, yeah, we can talk about it or something. He could have.
+
+  Speaker 3 59:25
+Yeah, I know, I know, I know I can't put him on the spot either.
+
+  Speaker 2 59:33
+So, that's how those things go in. The sense, he questions everything, but he's very attentive. I mean, he's completely tiled into everything that's going on, right? Which is a good thing. I mean, I guess, Manish is also like that. Yeah, it's probably even. Even worse.
+
+  Speaker 3 59:55
+Even worse, right?
+
+  Speaker 2 59:56
+So you cannot, which is fine. This is which is fire well as we do our due diligence. It's fine. Yeah.
+
+  Speaker 3 1:00:05
+I'll let you go. We've got an update on the migration. We talked about all these action items.
+
+  Speaker 2 1:00:12
+I want to follow with Raja. Let me let me chase down Ranger fact. Yeah,
+
+  Speaker 3 1:00:17
+And I
+
+  Speaker 2 1:00:18
+And we will settle back with John about the ACT. You can just ask him, hey, you had some apps? Those are the two things we can we can do, but. Right, trying to, you know, generate something with Claude and do it quickly. Okay, all right. All right. Thanks, yeah.
+
+1:00:36
+Thanks.
